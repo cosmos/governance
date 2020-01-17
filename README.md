@@ -1,2 +1,2 @@
 # CosmosParametersWiki
-An educational wiki for the Cosmos Hub that outlines the Hub's parameters, describes their functions, and describes the potential implications of modifying each parameter.
+An Cosmos Hub educational wiki that aims to outline the Hub's parameters, describe their functions, and describe the potential implications of modifying each parameter.
