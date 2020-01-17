@@ -11,5 +11,4 @@ There are currently 9 modules active in the Cosmos Hub with parameters that may 
 6. Distribution - Fee distribution, and staking token provision distribution
 7. Crisis - Halting the blockchain under certain circumstances (e.g. if an invariant is broken)
 8. Mint - Creation of new units of staking token
-9. Params - Globally available parameter store
-10. Supply - Total token supply of the chain
+9. Supply - Total token supply of the chain
