@@ -2,10 +2,15 @@ The `Auth` module is active on Cosmos Hub 3.
 `Auth` currently has five parameters modifiable by governance proposal:
 
 1. **`MaxMemoCharacters` - the character limit for each transaction memo.**
+
 **`cosmoshub-3` default**: `512`
+
 There is an option to include a "memo," or additional information (data) to Cosmos Hub transactions, whether sending funds, delegating, voting, or other transaction types. This parameter limits the number of characters that may be included in the memo line of each transaction.
+
 **Potential implications**:
+
 a) **Decreasing the value** of this parameter may break the functionality of applications that rely upon the data in the memo field to eg. sort transactions. For example, an exchange may use a common deposit address for all of its users, and then individualize account deposits using the memo field. If the memo field suddenly decreased, the exchange may no longer be able to sort transactions.
+
 b) **Decreasing the value** of this parameter --> to do <--
 
 2. TxSigLimit - 
