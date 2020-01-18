@@ -25,6 +25,6 @@ You can query the current parameter(s) of each module with the command line prog
 ### Full nodes
 You may use a third-party full node so that you don't have to run your own, which can be difficult for those not technically-inclined. The primary security risk is that of censorship: it's the single place where you have a single gateway to the network, and any messages submitted through an untrusted node could be censored. (Thanks to Joe from Chorus One!)
 - cosmos-node-1.figment.network:26657 ([Figment Networks](https://figment.network/networks/cosmos/))
-- 63.35.133.166:26657 [Chorus One](cosmos.chorus.one)
-- 18.217.97.195:26657 [Melea Trust](https://meleatrust.com)
+- 63.35.133.166:26657 ([Chorus One](cosmos.chorus.one))
+- 18.217.97.195:26657 ([Melea Trust](https://meleatrust.com))
 
