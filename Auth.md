@@ -1,10 +1,10 @@
 # The `Auth` module
 The `Auth` module is active on Cosmos Hub 3. `Auth` currently has five parameters that may be modified by governance proposal:
-1. [`MaxMemoCharacters`](/Auth.md#1-maxmemocharacters)
-2. `TxSigLimit`
-3. `TxSizeCostPerByte`
-4. `SigVerifyCostED25519`
-5. `SigVerifyCostSecp256k1`
+1. [`MaxMemoCharacters`](#1-maxmemocharacters)
+2. [`TxSigLimit`](#2-txsiglimit)
+3. `TxSizeCostPerByte`(#3-txsizecostperbyte)
+4. `SigVerifyCostED25519`(#4-sigverifycosted25519)
+5. `SigVerifyCostSecp256k1`(#5-sigverifycostsecp256k1)
 
 ## 1. `MaxMemoCharacters`
 ### The character limit for each transaction memo.
