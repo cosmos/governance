@@ -18,6 +18,6 @@ You can query the current parameter(s) of each module with the command line prog
 
 **Note**:
 - You will need to compile gaiacli from source into a binary file executable by your operating system eg. MacOS, Windows, Linux
-- You will need to connect to a full node. If gaiacli isn't already configured for this, you can use this tag in your command `--node cosmos-node-1.figment.network:26657` (where Figment Networks is providing the full node). -> link to full node list here <-
+- You will need to connect to a full node. If gaiacli isn't already configured for this, you can use this tag in your command `--node cosmos-node-1.figment.network:26657` (where [Figment Networks](https://figment.network/networks/cosmos/) is providing the full node). -> link to full node list here <-
 - You will need to indicate which chain you are querying, and currently this is `--chain-id cosmoshub-3`
 - You cannot query the `Bank` module's parameter, which is `sendenabled`. You also cannot query the `Crisis` module's parameters.
