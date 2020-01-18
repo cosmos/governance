@@ -6,8 +6,9 @@ The `Auth` module is active on Cosmos Hub 3. `Auth` currently has five parameter
 4. `SigVerifyCostED25519`
 5. `SigVerifyCostSecp256k1`
 
-## 1. `MaxMemoCharacters` - the character limit for each transaction memo.
-### `cosmoshub-3` default: `512`
+## 1. `MaxMemoCharacters`
+### The character limit for each transaction memo.
+#### `cosmoshub-3` default: `512`
 
 There is an option to include a "memo," or additional information (data) to Cosmos Hub transactions, whether sending funds, delegating, voting, or other transaction types. This parameter limits the number of characters that may be included in the memo line of each transaction.
 
