@@ -18,10 +18,53 @@ Decreasing the value of `MaxMemoCharacters` may break the functionality of appli
 #### Increasing the value of `MaxMemoCharacters`
 Increasing the value of `MaxMemoCharacters` may --> **to do** <--
 
-## 2. `TxSigLimit` - 
-## 3. `TxSizeCostPerByte` - 
-## 4. `SigVerifyCostED25519` - 
-## 5. `SigVerifyCostSecp256k1` - 
+## 2. `TxSigLimit`
+### --> short description <--
+#### `cosmoshub-3` default: `7`
+
+--> long description <--
+
+### Potential implications
+#### Decreasing the value of `TxSigLimit`
+Decreasing the value of `TxSigLimit` may --> **to do** <--
+#### Increasing the value of `TxSigLimit`
+Increasing the value of `TxSigLimit` may --> **to do** <--
+
+## 3. `TxSizeCostPerByte`
+### --> short description <--
+#### `cosmoshub-3` default: `10`
+
+--> long description <--
+
+### Potential implications
+#### Decreasing the value of `TxSizeCostPerByte`
+Decreasing the value of `TxSizeCostPerByte` may --> **to do** <--
+#### Increasing the value of `TxSizeCostPerByte`
+Increasing the value of `TxSizeCostPerByte` may --> **to do** <--
+
+## 4. `SigVerifyCostED25519`
+### --> short description <--
+#### `cosmoshub-3` default: `590`
+
+--> long description <--
+
+### Potential implications
+#### Decreasing the value of `SigVerifyCostED25519`
+Decreasing the value of `SigVerifyCostED25519` may --> **to do** <--
+#### Increasing the value of `SigVerifyCostED25519`
+Increasing the value of `SigVerifyCostED25519` may --> **to do** <--
+
+## 5. `SigVerifyCostSecp256k1`
+### --> short description <--
+#### `cosmoshub-3` default: `1000`
+
+--> long description <--
+
+### Potential implications
+#### Decreasing the value of `SigVerifyCostSecp256k1`
+Decreasing the value of `SigVerifyCostSecp256k1` may --> **to do** <--
+#### Increasing the value of `SigVerifyCostSecp256k1`
+Increasing the value of `SigVerifyCostSecp256k1` may --> **to do** <--
 
 # Verify Original Parameter Values
 ## Genesis (ie. most recent launch) Parameters
