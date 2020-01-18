@@ -1,5 +1,5 @@
 # Cosmos Parameters Wiki
-This Cosmos Hub educational wiki aims to outline the Hub's parameters, describe their functions, and describe the potential implications of modifying each parameter. **This wiki is in active development, so please do not rely upon this information yet.** [Discuss here its development here](https://forum.cosmos.network/t/gwg-cosmos-hub-parameters-wiki/3170).
+This Cosmos Hub educational wiki aims to outline the Hub's parameters, describe their functions, and describe the potential implications of modifying each parameter. **This wiki is in active development, so please do not rely upon this information yet.** [Discuss its development here](https://forum.cosmos.network/t/gwg-cosmos-hub-parameters-wiki/3170).
 
 There are currently 9 modules active in the Cosmos Hub, each with parameters that may be altered via governance proposal.
 
