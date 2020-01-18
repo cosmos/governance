@@ -14,7 +14,7 @@ There are currently 9 modules active in the Cosmos Hub, each with parameters tha
 8. [Mint](/Mint.md) - Creation of new units of staking token
 9. [Supply](/Supply.md) - Total token supply of the chain
 
-You can query the current parameter(s) of each module with the command line program `gaiacli`. Use the command `gaia q [module] -h` to get help about the subcommands for the module you want to query. For example, `gaiacli q staking` --> to do <--
+You can query the current parameter(s) of each module with the command line program [`gaiacli`](/gaiacli). Use the command `gaia q [module] -h` to get help about the subcommands for the module you want to query. For example, `gaiacli q staking` --> to do <--
 
 ## Note
 - You cannot currently query the `Bank` module's parameter, which is `sendenabled`. You also cannot query the `Crisis` module's parameters.
