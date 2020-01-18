@@ -6,7 +6,9 @@ The `Auth` module is active on Cosmos Hub 3. `Auth` currently has five parameter
 4. [`SigVerifyCostED25519`](#4-sigverifycosted25519)
 5. [`SigVerifyCostSecp256k1`](#5-sigverifycostsecp256k1)
 
-The parameters at launch are outlined, but you can [verify them yourself](#verify-original-parameter-values). If you're technically-inclined, [these are the technical specifications](#technical-specifications).
+The value for each launch parameter is outlined here, but you can [verify them yourself](#verify-original-parameter-values). 
+
+If you're technically-inclined, [these are the technical specifications](#technical-specifications).
 
 ## 1. `MaxMemoCharacters`
 ### The character limit for each transaction memo.
