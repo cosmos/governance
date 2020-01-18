@@ -82,7 +82,7 @@ For example, if I want to search for MaxMemoCharacters, I'll search the [genesis
 
 ## Current Parameters
 You may verify the current parameter values (in case they were modified via governance proposal post-launch) with the [gaiacli command-line application](/gaiacli). Here are the commands for each:
-1. `MaxMemoCharacters` - `gaiacli q 
+1. `MaxMemoCharacters` - `gaiacli q ..` --> to do <--
 2. `TxSigLimit` - 
 3. `TxSizeCostPerByte` - 
 4. `SigVerifyCostED25519` - 
