@@ -4,7 +4,7 @@ An Cosmos Hub educational wiki that aims to outline the Hub's parameters, descri
 There are currently 9 modules active in the Cosmos Hub, each with parameters that may be altered via governance proposal.
 
 # Modules:
-1. Auth - Authentication of accounts and transactions for Cosmos SDK application
+1. [Auth](/auth) - Authentication of accounts and transactions for Cosmos SDK application
 2. Bank - Token transfer functionalities
 3. Governance - On-chain proposals and voting
 4. Staking - Proof-of-stake layer for public blockchains
