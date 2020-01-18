@@ -17,12 +17,23 @@ Increasing the value of `MaxMemoCharacters` may --> **to do** <--
 ## 4. `SigVerifyCostED25519` - 
 ## 5. `SigVerifyCostSecp256k1` - 
 
-# Verifying the Current Parameter Values
+# Verify Original Parameter Values
+## Genesis (ie. most recent launch) Parameters
+This is useful if you don't have `gaiacli` installed and don't have a reason to believe that the parameter has changed since the chain launched.
+
 Each parameter may be verified in the chain's genesis file, [found here](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json). These are the parameters that the latest Cosmos Hub chain launched with, and will remain so, unless a governance proposal changes them. I've outlined those original values in the [Technical Specifications section](https://github.com/gavinly/CosmosParametersWiki/blob/master/Auth.md#technical-specifications).
 
 The genesis file is text-based and large. The genesis parameter naming scheme isn't identical to those listed above, so when I search, I put one underscore between upper and lowercase characters, then convert all characters to lowercase.
 
 For example, if I want to search for MaxMemoCharacters, I'll search the [genesis file](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json) for `max_memo_characters`.
+
+## Verify current Parameters
+You may verify the current parameter values (in case they were modified via governance proposal post-launch) with the [gaiacli command-line application](/gaiacli). Here are the commands for each:
+1. `MaxMemoCharacters` - `gaiacli q 
+2. `TxSigLimit` - 
+3. `TxSizeCostPerByte` - 
+4. `SigVerifyCostED25519` - 
+5. `SigVerifyCostSecp256k1`
 
 # Technical Specifications
 
