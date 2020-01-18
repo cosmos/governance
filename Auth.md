@@ -70,7 +70,7 @@ Decreasing the value of `SigVerifyCostSecp256k1` may --> **to do** <--
 #### Increasing the value of `SigVerifyCostSecp256k1`
 Increasing the value of `SigVerifyCostSecp256k1` may --> **to do** <--
 
-# Verify Original Parameter Values
+# Verify Parameter Values
 ## Genesis (ie. most recent launch) Parameters
 This is useful if you don't have `gaiacli` installed and don't have a reason to believe that the parameter has changed since the chain launched.
 
