@@ -1,7 +1,14 @@
-The `Auth` module is active on Cosmos Hub 3. 
+# The `Auth` module is active on Cosmos Hub 3. 
+
+Each parameter may be verified in the chain's genesis file, [found here](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json). These are the parameters that the latest Cosmos Hub chain launched with, and will remain so, unless a governance proposal changes them. I've outlined those original values in the [Technical Specifications section](https://github.com/gavinly/CosmosParametersWiki/blob/master/Auth.md#technical-specifications).
+
+The genesis file is text-based and large. The genesis parameter naming scheme isn't identical to those listed above, so when I search, I put one underscore between upper and lowercase characters, then convert all characters to lowercase.
+
+For example, if I want to search for MaxMemoCharacters, I'll search the [genesis file](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json) for `max_memo_characters`.
+
 `Auth` currently has five parameters modifiable by governance proposal:
 
-1. **`MaxMemoCharacters` - the character limit for each transaction memo.**
+# 1. **`MaxMemoCharacters` - the character limit for each transaction memo.**
 
 **`cosmoshub-3` default**: `512`
 
@@ -13,16 +20,10 @@ a) **Decreasing the value** of this parameter may break the functionality of app
 
 b) **Decreasing the value** of this parameter --> to do <--
 
-2. TxSigLimit - 
-3. TxSizeCostPerByte - 
-4. SigVerifyCostED25519 - 
-5. SigVerifyCostSecp256k1 - 
-
-Each parameter may be verified in the chain's genesis file, [found here](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json). These are the parameters that the latest Cosmos Hub chain launched with, and will remain so, unless a governance proposal changes them. I've outlined those original values in the [Technical Specifications section](https://github.com/gavinly/CosmosParametersWiki/blob/master/Auth.md#technical-specifications).
-
-The genesis file is text-based and large. The genesis parameter naming scheme isn't identical to those listed above, so when I search, I put one underscore between upper and lowercase characters, then convert all characters to lowercase.
-
-For example, if I want to search for MaxMemoCharacters, I'll search the [genesis file](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json) for `max_memo_characters`.
+# 2. TxSigLimit - 
+# 3. TxSizeCostPerByte - 
+# 4. SigVerifyCostED25519 - 
+# 5. SigVerifyCostSecp256k1 - 
 
 # Technical Specifications
 
