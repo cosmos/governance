@@ -80,7 +80,7 @@ The genesis file is text-based and large. The genesis parameter naming scheme is
 
 For example, if I want to search for MaxMemoCharacters, I'll search the [genesis file](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json) for `max_memo_characters`.
 
-## Verify current Parameters
+## Current Parameters
 You may verify the current parameter values (in case they were modified via governance proposal post-launch) with the [gaiacli command-line application](/gaiacli). Here are the commands for each:
 1. `MaxMemoCharacters` - `gaiacli q 
 2. `TxSigLimit` - 
