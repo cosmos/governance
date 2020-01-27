@@ -1,4 +1,5 @@
-# Submitting a Community-Spend Proposal [under active development]
+# Submitting a Community-Spend Proposal 
+# [under active development]
 
 ## Begin with a well-considered proposal
 1. Ensure that you have considered your proposal and anticipated questions that the community will likely ask. Once your proposal is on-chain, you will not be able to change it.
