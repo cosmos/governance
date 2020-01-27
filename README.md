@@ -2,7 +2,8 @@
 The Cosmos Hub 3 launched with community-spend capabilities on December 11, 2019, effectively unlocking the potential for token-holders to vote to approve spending from the Community Pool.
 
 ### How is the Community Pool funded?
-2% of all staking rewards generated are immediately transferred to the Community Pool.
+2% of all staking rewards generated are continually transferred to the Community Pool, where they accrue.
+For example, from Dec 19, 2019 until Jan 20, 2020 (32 days), 28,726 ATOM were added to the pool. Though the rate of funding is currently fixed at 2% of staking rewards, the rate is dependent upon the Cosmos Hub's inflation rate, which affects staking rewards.
 
 ### How is the Community Pool spent?
 Funds from the Cosmos Community Pool may be spent via successful governance proposal. Currently, these
