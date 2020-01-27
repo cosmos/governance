@@ -17,7 +17,7 @@ Funds from the Cosmos Community Pool may be spent via successful governance prop
 
 Currently, these proposals operate the same way signaling proposals and parameter change proposals operate: a minimum
 deposit of 512 ATOM is required for the proposal to enter the voting period, and the proposal has a 14-day lifespan. A proposal requires a minimum of 40% voting power in order to meet quorum, followed by a simple majority of the participating voting power backing the 'yes' option 
-ie. the 'yes' vote must exceed 50%.
+ie. the 'yes' vote must exceed 50%. The only exception is when greater than 1/3 (ie 33.34% or more) of participating voting power votes 'no with veto.'
 
 ### How are funds disbursed?
 If a community-spend proposal passes successfully, the number of ATOM encoded in the proposal will be transferred from the community pool to the address encoded in the proposal, and this will happen immediately after the voting period ends.
