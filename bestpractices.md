@@ -19,7 +19,7 @@ In practice, the Cosmos Hub community tends to submit a new proposal in these wa
   
   "description": "This is the summary of the key information about this proposal",
   
-  "recipient": "cosmos1<hex address>",
+  "recipient": "cosmos1_hex_address",
   
   "amount": [
   
