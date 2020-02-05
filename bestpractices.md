@@ -14,21 +14,37 @@ In practice, the Cosmos Hub community tends to submit a new proposal in these wa
 
 ### Example: on-chain community-spend proposal
 {
+
   "title": "Community Pool Spend",
+  
   "description": "This is the summary of the key information about this proposal",
+  
   "recipient": "cosmos1<hex address>",
+  
   "amount": [
+  
     {
+    
       "denom": "uatom",
+      
       "amount": "1000000"
+      
     }
+    
   ],
+  
   "deposit": [
+  
     {
+    
       "denom": "uatom",
+      
       "amount": "512000000"
+      
     }
+    
   ]
+  
 }
 
 # Final step: transaction command for submitting the proposal on-chain
