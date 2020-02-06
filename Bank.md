@@ -20,7 +20,7 @@ Setting the `sendenabled` parameter to `true` will enable ATOMs to be transferre
 Setting the `sendenabled` parameter to `false` will prevent ATOMs from being transferred between accounts. ATOMs may still be staked and earn rewards. This is how the cosmoshub-1 chain launched.
 
 # Verify Parameter Values
-## Genesis (ie. most recent launch) Parameters
+## Genesis (aka launch) Parameters
 This is useful if you don't have `gaiacli` installed and don't have a reason to believe that the parameter has changed since the chain launched.
 
 Each parameter may be verified in the chain's genesis file, [found here](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json). These are the parameters that the latest Cosmos Hub chain launched with, and will remain so, unless a governance proposal changes them. I've outlined those original values in the [Technical Specifications section](#technical-specifications).
