@@ -71,6 +71,67 @@ Increasing the value of the `voting_period` subkey will increase the time for vo
 #### Notes
 Historically, off-chain discussions and engagement appears to be have been greater occurred during the voting period of a governance proposal than when the proposal is posted off-chain as a draft. A non-trivial amount of the voting power has voted in the second week of the voting period. Proposals 23, 19, and 13 each had approximately 80% network participation or more.
 
+## 2. `tallyparams`
+## `quorum`
+### The minimum proportion of network voting power required for a governance proposal's outcome to be considered valid.
+#### `cosmoshub-3` default: `0.400000000000000000`
+
+Long Description
+
+### Potential implications
+#### Decreasing the value of `quorum`
+Decreasing the value of the `quorum` subkey will decrease the time for voting on governance proposals. This will likely:
+1. decrease the proportion of the network that participates in voting, and
+2. decrease the likelihood that quorum will be reached. 
+
+#### Increasing the value of `quorum`
+Increasing the value of the `quorum` subkey will increase the time for voting on governance proposals. This may:
+1. increase the proportion of the network that participates in voting, and
+2. increase the likelihood that quorum will be reached. 
+
+#### Notes
+Historically, off-chain discussions and engagement appears to be have been greater occurred during the voting period of a governance proposal than when the proposal is posted off-chain as a draft. A non-trivial amount of the voting power has voted in the second week of the voting period. Proposals 23, 19, and 13 each had approximately 80% network participation or more.
+
+## `threshold`
+### The minimum proportion of participating voting power for a governance proposal to pass.
+#### `cosmoshub-3` default: `0.400000000000000000`
+
+Long Description
+
+### Potential implications
+#### Decreasing the value of `threshold`
+Decreasing the value of the `threshold` subkey will decrease the time for voting on governance proposals. This will likely:
+1. decrease the proportion of the network that participates in voting, and
+2. decrease the likelihood that quorum will be reached. 
+
+#### Increasing the value of `threshold`
+Increasing the value of the `threshold` subkey will increase the time for voting on governance proposals. This may:
+1. increase the proportion of the network that participates in voting, and
+2. increase the likelihood that quorum will be reached. 
+
+#### Notes
+Historically, off-chain discussions and engagement appears to be have been greater occurred during the voting period of a governance proposal than when the proposal is posted off-chain as a draft. A non-trivial amount of the voting power has voted in the second week of the voting period. Proposals 23, 19, and 13 each had approximately 80% network participation or more.
+
+## `veto`
+### The minimum proportion of participating voting power to veto (ie. fail) a governance proposal.
+#### `cosmoshub-3` default: `0.334000000000000000`
+
+Long Description
+
+### Potential implications
+#### Decreasing the value of `veto`
+Decreasing the value of the `veto` subkey will decrease the time for voting on governance proposals. This will likely:
+1. decrease the proportion of the network that participates in voting, and
+2. decrease the likelihood that quorum will be reached. 
+
+#### Increasing the value of `veto`
+Increasing the value of the `veto` subkey will increase the time for voting on governance proposals. This may:
+1. increase the proportion of the network that participates in voting, and
+2. increase the likelihood that quorum will be reached. 
+
+#### Notes
+Historically, off-chain discussions and engagement appears to be have been greater occurred during the voting period of a governance proposal than when the proposal is posted off-chain as a draft. A non-trivial amount of the voting power has voted in the second week of the voting period. Proposals 23, 19, and 13 each had approximately 80% network participation or more.
+
 # Verify Parameter Values
 ## Genesis (aka launch) Parameters
 This is useful if you don't have `gaiacli` installed and don't have a reason to believe that the parameter has changed since the chain launched.
