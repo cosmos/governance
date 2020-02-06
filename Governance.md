@@ -5,12 +5,12 @@ The `Governance` module is responsible for on-chain proposals and voting functio
    - [`max_deposit_period`](#max_deposit_period)
 
 2. [`votingparams`](#2-votingparams)
-  - [`voting_period`](#voting_period)
+   - [`voting_period`](#voting_period)
 
 3. [`tallyparams`](#3-tallyparams)
-  - [`quorum`](#quorum)
-  - [`threshold`](#threshold)
-  - [`veto`](#veto)
+   - [`quorum`](#quorum)
+   - [`threshold`](#threshold)
+   - [`veto`](#veto)
 
 The value of each launch parameter is outlined below, but you can [verify it yourself](#verify-parameter-values). 
 
