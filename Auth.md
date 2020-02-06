@@ -23,16 +23,16 @@ Decreasing the value of `MaxMemoCharacters` may break the functionality of appli
 Increasing the value of `MaxMemoCharacters` may --> **to do** <--
 
 ## 2. `TxSigLimit`
-### --> short description <--
+### The max number of signatures per transaction
 #### `cosmoshub-3` default: `7`
 
---> long description <--
+Users and applications may create multisignature (aka multisig) accounts. These accounts require more than one signature to generate a transaction. This parameter limits the number of signatures in a transaction.
 
 ### Potential implications
 #### Decreasing the value of `TxSigLimit`
-Decreasing the value of `TxSigLimit` may --> **to do** <--
+Decreasing the value of `TxSigLimit` may constrain stakeholders that want to use as many as seven signatures to authorize a transaction. It will also break the functionality of anything dependent upon up to seven transactions, meaning that those transactions will no longer be able to be authorized. In this case, funds and functions controlled by a multisignature address will no longer be accessible, and funds may become stranded.
 #### Increasing the value of `TxSigLimit`
-Increasing the value of `TxSigLimit` may --> **to do** <--
+Increasing the value of `TxSigLimit` increases the maximum number of signatures possible. As this value increases, the network becomes more likely to be susceptible to denial of service attacks due to the burden of computational cost when verifying more signatures (since signature verification is costlier than other operations). --> **to do** <--
 
 ## 3. `TxSizeCostPerByte`
 ### --> short description <--
