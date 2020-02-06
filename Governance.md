@@ -18,32 +18,33 @@ If you're technically-inclined, [these are the technical specifications](#techni
 
 ## 1. `depositparams`
 ## `min_deposit`
-### The minimum deposit required for a proposal to enter the voting period.
-### Denomination: micro-ATOMs.
+### The minimum deposit required for a proposal to enter the voting period in micro-ATOMs.
 #### `cosmoshub-3` default: `512000000` `uatom`
 
-Prior to a governance proposal to entering the voting period (ie. for the proposal to be voted upon), there must be at least a minimum number of ATOMs deposited. Anyone may contribute to this deposit. 512000000uatom is equivalent to 512 ATOM.
+Prior to a governance proposal entering the voting period (ie. for the proposal to be voted upon), there must be at least a minimum number of ATOMs deposited. Anyone may contribute to this deposit. This parameter subkey value represents the minimum deposit required for a proposal to enter the voting period in micro-ATOMs, where `512000000uatom` is equivalent to 512 ATOM.
 
 ### Potential implications
 #### Decreasing the value of `min_deposit`
-Decreasing the value of the `min_deposit` parameter will enable governance proposals to enter the voting period with fewer ATOMs at risk. This will likely increase the volume of new governance proposals.
+Decreasing the value of the `min_deposit` subkey will enable governance proposals to enter the voting period with fewer ATOMs at risk. This will likely increase the volume of new governance proposals.
 
 #### Increasing the value of `min_deposit`
-Increasing the value of the `min_deposit` parameter will require risking a greater number of ATOMs before governance proposals may enter the voting period. This will likely decrease the volume of new governance proposals.
+Increasing the value of the `min_deposit` subkey will require risking a greater number of ATOMs before governance proposals may enter the voting period. This will likely decrease the volume of new governance proposals.
 
 ## `max_deposit_period`
-### The maximum amount of time that a proposal can accept deposit contributions before expiring. 
-### Denomination: nanoseconds.
+### The maximum amount of time that a proposal can accept deposit contributions before expiring in nanoseconds.
 #### `cosmoshub-3` default: `1209600000000000`
 
-Prior to a governance proposal to entering the voting period (ie. for the proposal to be voted upon), there must be at least a minimum number of ATOMs deposited. Anyone may contribute to this deposit.
+Prior to a governance proposal entering the voting period, there must be at least a minimum number of ATOMs deposited. This parameter subkey value represents the maximum amount of time that the proposal has to reach the minimum deposit amount before expiring. The maximum amount of time that a proposal can accept deposit contributions before expiring is currently `1209600000000000` nanoseconds or 14 days. If the proposal expires, any deposit amounts will be burned.
 
 ### Potential implications
 #### Decreasing the value of `max_deposit_period`
-Decreasing the value of the `max_deposit_period` parameter will enable governance proposals to enter the voting period with fewer ATOMs at risk. This will likely increase the volume of new governance proposals.
+Decreasing the value of the `max_deposit_period` subkey will decrease the time for deposit contributions to governance proposals. This will likely decrease the time that some proposals remain visible and potentially decrease the likelihood that they will enter the voting period.
 
 #### Increasing the value of `max_deposit_period`
-Increasing the value of the `max_deposit_period` parameter will require risking a greater number of ATOMs before governance proposals may enter the voting period. This will likely decrease the volume of new governance proposals.
+Increasing the value of the `max_deposit_period` subkey will extend the time for deposit contributions to governance proposals. This will likely increase the time that some proposals remain visible and potentially increase the likelihood that they will enter the voting period.
+
+#### Notes
+Currently most network explorers (eg. Hubble, Big Dipper, Mintscan) give the same visibility to proposals in the deposit period as those in the voting period. This means that a proposal with a small deposit (eg. 0.001 ATOM) will have the same visibility as those with a full 512 ATOM deposit in the voting period.
 
 # Verify Parameter Values
 ## Genesis (aka launch) Parameters
