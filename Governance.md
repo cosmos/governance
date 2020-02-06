@@ -1,7 +1,7 @@
 # The `Governance` Module
 The `Governance` module is responsible for on-chain proposals and voting functionality. `Governance` is active on Cosmos Hub 3 and currently has three parameters with six subkeys that may be modified by governance proposal:
 1. [`depositparams`](#1-depositparams)
-   - [`min_deposit`](#min_deposit) - `512000000``uatom`
+   - [`min_deposit`](#min_deposit) - `512000000` `uatom`
    - [`max_deposit_period`](#max_deposit_period) - `1209600000000000`
 
 2. [`votingparams`](#2-votingparams)
