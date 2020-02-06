@@ -6,7 +6,7 @@ The `Auth` module is active on Cosmos Hub 3. It's responsible for authenticating
 4. [`SigVerifyCostED25519`](#4-sigverifycosted25519) - 590
 5. [`SigVerifyCostSecp256k1`](#5-sigverifycostsecp256k1) - 1000
 
-The value for each launch parameter is outlined here, but you can [verify them yourself](#verify-parameter-values). 
+The value for each launch parameter is outlined below, but you can [verify them yourself](#verify-parameter-values). 
 
 If you're technically-inclined, [these are the technical specifications](#technical-specifications).
 
