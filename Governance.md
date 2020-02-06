@@ -25,7 +25,7 @@ If you're technically-inclined, [these are the technical specifications](#techni
 ### The minimum deposit required for a proposal to enter the voting period, in micro-ATOMs.
 #### `cosmoshub-3` default: `512000000` `uatom`
 
-Prior to a governance proposal entering the voting period (ie. for the proposal to be voted upon), there must be at least a minimum number of ATOMs deposited. Anyone may contribute to this deposit. Deposits of passed and failed proposals are returned to the contributors. Deposits are burned when 1) proposals expire, 2) fail to reach quorum, or 3) are vetoed. This parameter subkey value represents the minimum deposit required for a proposal to enter the voting period in micro-ATOMs, where `512000000uatom` is equivalent to 512 ATOM.
+Prior to a governance proposal entering the voting period (ie. for the proposal to be voted upon), there must be at least a minimum number of ATOMs deposited. Anyone may contribute to this deposit. Deposits of passed and failed proposals are returned to the contributors. Deposits are burned when proposals 1) [expire](#max_deposit_period), 2) fail to reach [quorum](#quorum), or 3) are [vetoed](#veto). This parameter subkey value represents the minimum deposit required for a proposal to enter the voting period in micro-ATOMs, where `512000000uatom` is equivalent to 512 ATOM.
 
 ### Potential implications
 #### Decreasing the value of `min_deposit`
