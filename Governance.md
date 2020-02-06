@@ -12,9 +12,13 @@ The `Governance` module is responsible for on-chain proposals and voting functio
    - [`threshold`](#threshold) - `0.500000000000000000` (proportion of voters)
    - [`veto`](#veto) - `0.334000000000000000` (proportion of voters)
 
-The launch values for each parameter's subkeys are outlined above, but you can [verify them yourself](#verify-parameter-values). 
+The launch values for each parameter's subkeys are outlined above, but you can [verify them yourself](#verify-parameter-values).
+
+There is some [additional functionality being considered](#future) for the development of the governance module.
 
 If you're technically-inclined, [these are the technical specifications](#technical-specifications).
+
+
 
 ## 1. `depositparams`
 ## `min_deposit`
@@ -80,6 +84,35 @@ For example, if I want to search for `depositparams`, I'll search the [genesis f
 ## Current Parameters
 You may verify the current parameter values (in case they were modified via governance proposal post-launch) with the [gaiacli command-line application](/gaiacli). Here are the commands for each:
 1. `depositparams` - `gaiacli q ..` --> **to do** <--
+
+## Future
+
+The current documentation only describes the minimum viable product for the 
+governance module. Future improvements may include:
+
+* **`BountyProposals`:** If accepted, a `BountyProposal` creates an open 
+  bounty. The `BountyProposal` specifies how many Atoms will be given upon
+  completion. These Atoms will be taken from the `reserve pool`. After a 
+  `BountyProposal` is accepted by governance, anybody can submit a 
+  `SoftwareUpgradeProposal` with the code to claim the bounty. Note that once a 
+  `BountyProposal` is accepted, the corresponding funds in the `reserve pool` 
+  are locked so that payment can always be honored. In order to link a 
+  `SoftwareUpgradeProposal` to an open bounty, the submitter of the 
+  `SoftwareUpgradeProposal` will use the `Proposal.LinkedProposal` attribute. 
+  If a `SoftwareUpgradeProposal` linked to an open bounty is accepted by 
+  governance, the funds that were reserved are automatically transferred to the
+  submitter.
+* **Complex delegation:** Delegators could choose other representatives than 
+  their validators. Ultimately, the chain of representatives would always end 
+  up to a validator, but delegators could inherit the vote of their chosen 
+  representative before they inherit the vote of their validator. In other 
+  words, they would only inherit the vote of their validator if their other 
+  appointed representative did not vote.
+* **Better process for proposal review:** There would be two parts to 
+  `proposal.Deposit`, one for anti-spam (same as in MVP) and an other one to 
+  reward third party auditors.
+  
+  ([source](https://github.com/cosmos/cosmos-sdk/blob/master/x/gov/spec/05_future_improvements.md))
 
 # Technical Specifications
 
