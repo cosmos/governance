@@ -2,9 +2,9 @@
 The `Bank` module is active on Cosmos Hub 3. It's responsible for token transfer functionalities. `Bank` currently has one parameter that may be modified by governance proposal:
 1. [`sendenabled`](#1-sendenabled)
 
-The value for each launch parameter is outlined here, but you can [verify them yourself](#verify-parameter-values). 
+The value for the launch parameter is outlined here, but you can [verify it yourself](#verify-parameter-values). 
 
-If you're technically-inclined, [these are the technical specifications](#technical-specifications).
+If you're technically-inclined, [this is the technical specification](#technical-specifications).
 
 ## 1. `sendenabled`
 ### The character limit for each transaction memo.
@@ -35,7 +35,7 @@ You may verify the current parameter values (in case they were modified via gove
 
 # Technical Specifications
 
-The `Auth` module is responsible for specifying the base transaction and account types for an application, since the SDK itself is agnostic to these particulars. It contains the ante handler, where all basic transaction validity checks (signatures, nonces, auxiliary fields) are performed, and exposes the account keeper, which allows other modules to read, write, and modify accounts.
+The `Bank` module is responsible for handling multi-asset coin transfers between accounts and tracking special-case pseudo-transfers, which must work differently with particular kinds of accounts (notably delegating/undelegating for vesting accounts). It exposes several interfaces with varying capabilities for secure interaction with other modules, which must alter user balances.
 
 The `Bank` module contains the following parameters:
 
