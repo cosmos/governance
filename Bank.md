@@ -37,7 +37,7 @@ You may verify the current parameter values (in case they were modified via gove
 
 The `Bank` module is responsible for handling multi-asset coin transfers between accounts and tracking special-case pseudo-transfers, which must work differently with particular kinds of accounts (notably delegating/undelegating for vesting accounts). It exposes several interfaces with varying capabilities for secure interaction with other modules, which must alter user balances.
 
-The `Bank` module contains the following parameters:
+The `Bank` module contains the following parameter:
 
 | Key                    | Type            | cosmoshub-3 genesis setting|
 |------------------------|-----------------|---------|
