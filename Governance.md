@@ -18,10 +18,10 @@ If you're technically-inclined, [these are the technical specifications](#techni
 
 ## 1. `depositparams`
 ## `min_deposit`
-### The minimum deposit required for a proposal to enter the voting period in micro-ATOMs.
+### The minimum deposit required for a proposal to enter the voting period, in micro-ATOMs.
 #### `cosmoshub-3` default: `512000000` `uatom`
 
-Prior to a governance proposal entering the voting period (ie. for the proposal to be voted upon), there must be at least a minimum number of ATOMs deposited. Anyone may contribute to this deposit. This parameter subkey value represents the minimum deposit required for a proposal to enter the voting period in micro-ATOMs, where `512000000uatom` is equivalent to 512 ATOM.
+Prior to a governance proposal entering the voting period (ie. for the proposal to be voted upon), there must be at least a minimum number of ATOMs deposited. Anyone may contribute to this deposit. Deposits of passed and failed proposals are returned to the contributors. Deposits are burned when proposals expire, fail to reach quorum, or are vetoed. This parameter subkey value represents the minimum deposit required for a proposal to enter the voting period in micro-ATOMs, where `512000000uatom` is equivalent to 512 ATOM.
 
 ### Potential implications
 #### Decreasing the value of `min_deposit`
@@ -31,20 +31,41 @@ Decreasing the value of the `min_deposit` subkey will enable governance proposal
 Increasing the value of the `min_deposit` subkey will require risking a greater number of ATOMs before governance proposals may enter the voting period. This will likely decrease the volume of new governance proposals.
 
 ## `max_deposit_period`
-### The maximum amount of time that a proposal can accept deposit contributions before expiring in nanoseconds.
+### The maximum amount of time that a proposal can accept deposit contributions before expiring, in nanoseconds.
 #### `cosmoshub-3` default: `1209600000000000`
 
 Prior to a governance proposal entering the voting period, there must be at least a minimum number of ATOMs deposited. This parameter subkey value represents the maximum amount of time that the proposal has to reach the minimum deposit amount before expiring. The maximum amount of time that a proposal can accept deposit contributions before expiring is currently `1209600000000000` nanoseconds or 14 days. If the proposal expires, any deposit amounts will be burned.
 
 ### Potential implications
 #### Decreasing the value of `max_deposit_period`
-Decreasing the value of the `max_deposit_period` subkey will decrease the time for deposit contributions to governance proposals. This will likely decrease the time that some proposals remain visible and potentially decrease the likelihood that they will enter the voting period.
+Decreasing the value of the `max_deposit_period` subkey will decrease the time for deposit contributions to governance proposals. This will likely decrease the time that some proposals remain visible and potentially decrease the likelihood that they will enter the voting period. This may increase the likelihood that proposals will expire and have their deposits burned.
 
 #### Increasing the value of `max_deposit_period`
-Increasing the value of the `max_deposit_period` subkey will extend the time for deposit contributions to governance proposals. This will likely increase the time that some proposals remain visible and potentially increase the likelihood that they will enter the voting period.
+Increasing the value of the `max_deposit_period` subkey will extend the time for deposit contributions to governance proposals. This will likely increase the time that some proposals remain visible and potentially increase the likelihood that they will enter the voting period. This may decrease the likelihood that proposals will expire and have their deposits burned.
 
 #### Notes
 Currently most network explorers (eg. Hubble, Big Dipper, Mintscan) give the same visibility to proposals in the deposit period as those in the voting period. This means that a proposal with a small deposit (eg. 0.001 ATOM) will have the same visibility as those with a full 512 ATOM deposit in the voting period.
+
+## 2. `votingparams`
+## `voting_period`
+### The maximum amount of time that a proposal can accept votes before the voting period concludes, in nanoseconds.
+#### `cosmoshub-3` default: `1209600000000000`
+
+Once a governance proposal enters the voting period, there is a maximum period of time that may elapse before the voting period concludes. This parameter subkey value represents the maximum amount of time that the proposal has to accept votes, which is currently `1209600000000000` nanoseconds or 14 days. If the proposal vote does not reach quorum ((ie. 40% of the network's voting power is participating) before this time, any deposit amounts will be burned and the proposal will not be valid. Voters may change their vote any number of times before the voting period ends. This voting period is currently the same for any kind of governance proposal.
+
+### Potential implications
+#### Decreasing the value of `voting_period`
+Decreasing the value of the `voting_period` subkey will decrease the time for voting on governance proposals. This will likely:
+1. decrease the proportion of the network that participates in voting, and
+2. decrease the likelihood that quorum will be reached. 
+
+#### Increasing the value of `voting_period`
+Increasing the value of the `voting_period` subkey will increase the time for voting on governance proposals. This may:
+1. increase the proportion of the network that participates in voting, and
+2. increase the likelihood that quorum will be reached. 
+
+#### Notes
+Historically, off-chain discussions and engagement appears to be have been greater occurred during the voting period of a governance proposal than when the proposal is posted off-chain as a draft. A non-trivial amount of the voting power has voted in the second week of the voting period. Proposals 23, 19, and 13 each had approximately 80% network participation or more.
 
 # Verify Parameter Values
 ## Genesis (aka launch) Parameters
@@ -62,24 +83,29 @@ You may verify the current parameter values (in case they were modified via gove
 
 # Technical Specifications
 
-The `Governance` module is responsible for 
+The `Governance` module is responsible for the on-chain governance system. In this system, holders of the native staking token of the chain may vote on proposals on a 1-token per 1-vote basis. Next is a list of features the module currently supports:
+
+- **Proposal submission**: Users can submit proposals with a deposit. Once the minimum deposit is reached, proposal enters voting period
+- **Vote**: Participants can vote on proposals that reached MinDeposit
+- **Inheritance and penalties**: Delegators inherit their validator's vote if they don't vote themselves.
+- **Claiming deposit**: Users that deposited on proposals can recover their deposits if the proposal was accepted OR if the proposal never entered voting period.
 
 The `Governance` module contains the following parameters:
 
 | Key           | Type   | cosmoshub-3 genesis setting                                                                     |
 |---------------|--------|----------------------------------------------------------------------------------------------------|
-| depositparams | object | {"min_deposit":[{"denom":"uatom","amount":"10000000"}],"max_deposit_period":"172800000000000"}     |
-| votingparams  | object | {"voting_period":"172800000000000"}                                                                |
-| tallyparams   | object | {"quorum":"0.334000000000000000","threshold":"0.500000000000000000","veto":"0.334000000000000000"} |
+| depositparams | object | {"min_deposit":[{"denom":"uatom","amount":"512000000"}],"max_deposit_period":"1209600000000000"}     |
+| votingparams  | object | {"voting_period":"1209600000000000"}                                                                |
+| tallyparams   | object | {"quorum":"0.400000000000000000","threshold":"0.500000000000000000","veto":"0.334000000000000000"} |
 
 ## SubKeys
 
 | Key                | Type             | cosmoshub-3 genesis setting             |
 |--------------------|------------------|-----------------------------------------|
-| min_deposit        | array (coins)    | [{"denom":"uatom","amount":"10000000"}] |
-| max_deposit_period | string (time ns) | "172800000000000"                       |
-| voting_period      | string (time ns) | "172800000000000"                       |
-| quorum             | string (dec)     | "0.334000000000000000"                  |
+| min_deposit        | array (coins)    | [{"denom":"uatom","amount":"512000000"}] |
+| max_deposit_period | string (time ns) | "1209600000000000"                       |
+| voting_period      | string (time ns) | "1209600000000000"                       |
+| quorum             | string (dec)     | "0.400000000000000000"                  |
 | threshold          | string (dec)     | "0.500000000000000000"                  |
 | veto               | string (dec)     | "0.334000000000000000"                  |
 
