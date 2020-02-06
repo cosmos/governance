@@ -18,7 +18,8 @@ If you're technically-inclined, [these are the technical specifications](#techni
 
 ## 1. `depositparams`
 ## `min_deposit`
-### The minimum deposit required for a proposal to enter the voting period. Denomination: micro-ATOMs.
+### The minimum deposit required for a proposal to enter the voting period.
+### Denomination: micro-ATOMs.
 #### `cosmoshub-3` default: `512000000` `uatom`
 
 Prior to a governance proposal to entering the voting period (ie. for the proposal to be voted upon), there must be at least a minimum number of ATOMs deposited. Anyone may contribute to this deposit. 512000000uatom is equivalent to 512 ATOM.
@@ -31,7 +32,8 @@ Decreasing the value of the `min_deposit` parameter will enable governance propo
 Increasing the value of the `min_deposit` parameter will require risking a greater number of ATOMs before governance proposals may enter the voting period. This will likely decrease the volume of new governance proposals.
 
 ## `max_deposit_period`
-### The maximum amount of time that a proposal can accept deposit contributions before expiring. Denomination: nanoseconds.
+### The maximum amount of time that a proposal can accept deposit contributions before expiring. 
+### Denomination: nanoseconds.
 #### `cosmoshub-3` default: `1209600000000000`
 
 Prior to a governance proposal to entering the voting period (ie. for the proposal to be voted upon), there must be at least a minimum number of ATOMs deposited. Anyone may contribute to this deposit.
