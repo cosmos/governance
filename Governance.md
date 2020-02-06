@@ -1,33 +1,47 @@
 # The `Governance` Module
 The `Governance` module is responsible for on-chain proposals and voting functionality. `Governance` is active on Cosmos Hub 3 and currently has three parameters with six subkeys that may be modified by governance proposal:
 1. [`depositparams`](#1-depositparams)
-   - [`min_deposit`](#min_deposit) - `512000000uatom`
-   - [`max_deposit_period`](#max_deposit_period) - `1209600000000000`
+   - [`min_deposit`](#min_deposit) - `512000000` `uatom` (micro-ATOMs)
+   - [`max_deposit_period`](#max_deposit_period) - `1209600000000000` (nanoseconds)
 
 2. [`votingparams`](#2-votingparams)
-   - [`voting_period`](#voting_period) - `1209600000000000`
+   - [`voting_period`](#voting_period) - `1209600000000000` (nanoseconds)
 
 3. [`tallyparams`](#3-tallyparams)
-   - [`quorum`](#quorum) - `0.400000000000000000`
-   - [`threshold`](#threshold) - `0.500000000000000000`
-   - [`veto`](#veto) - `0.334000000000000000`
+   - [`quorum`](#quorum) - `0.400000000000000000` (percent)
+   - [`threshold`](#threshold) - `0.500000000000000000` (percent)
+   - [`veto`](#veto) - `0.334000000000000000` (percent)
 
 The launch values for each parameter's subkeys are outlined above, but you can [verify them yourself](#verify-parameter-values). 
 
 If you're technically-inclined, [these are the technical specifications](#technical-specifications).
 
 ## 1. `depositparams`
-### Token transfer functionality.
-#### `cosmoshub-3` default: `true`
+## `min_deposit`
+### The minimum deposit required for a proposal to enter the voting period. Denomination: micro-ATOMs.
+#### `cosmoshub-3` default: `512000000` `uatom`
 
-The Cosmos Hub (cosmoshub-1) launched without transfer functionality enabled. Users were able to stake and earn rewards, but were unable to transfer ATOMs between accounts until the cosmoshub-2 chain launched. Transfer functionality may be disabled and enabled via governance proposal.
+Prior to a governance proposal to entering the voting period (ie. for the proposal to be voted upon), there must be at least a minimum number of ATOMs deposited. Anyone may contribute to this deposit. 512000000uatom is equivalent to 512 ATOM.
 
 ### Potential implications
-#### Enabling `depositparams`
-Setting the `sendenabled` parameter to `true` will enable ATOMs to be transferred between accounts. This capability was first enabled when the cosmoshub-2 chain launched.
+#### Decreasing the value of `min_deposit`
+Decreasing the value of the `min_deposit` parameter will enable governance proposals to enter the voting period with fewer ATOMs at risk. This will likely increase the volume of new governance proposals.
 
-#### Disabling `depositparams`
-Setting the `sendenabled` parameter to `false` will prevent ATOMs from being transferred between accounts. ATOMs may still be staked and earn rewards. This is how the cosmoshub-1 chain launched.
+#### Increasing the value of `min_deposit`
+Increasing the value of the `min_deposit` parameter will require risking a greater number of ATOMs before governance proposals may enter the voting period. This will likely decrease the volume of new governance proposals.
+
+## `max_deposit_period`
+### The maximum amount of time that a proposal can accept deposit contributions before expiring. Denomination: nanoseconds.
+#### `cosmoshub-3` default: `1209600000000000`
+
+Prior to a governance proposal to entering the voting period (ie. for the proposal to be voted upon), there must be at least a minimum number of ATOMs deposited. Anyone may contribute to this deposit.
+
+### Potential implications
+#### Decreasing the value of `max_deposit_period`
+Decreasing the value of the `max_deposit_period` parameter will enable governance proposals to enter the voting period with fewer ATOMs at risk. This will likely increase the volume of new governance proposals.
+
+#### Increasing the value of `max_deposit_period`
+Increasing the value of the `max_deposit_period` parameter will require risking a greater number of ATOMs before governance proposals may enter the voting period. This will likely decrease the volume of new governance proposals.
 
 # Verify Parameter Values
 ## Genesis (aka launch) Parameters
