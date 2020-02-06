@@ -1,12 +1,21 @@
 # The `Governance` Module
-The `Governance` module is active on Cosmos Hub 3. It's responsible for token transfer functionalities. `Governance` currently has one parameter that may be modified by governance proposal:
-1. [`sendenabled`](#1-sendenabled)
+The `Governance` module is responsible for on-chain proposals and voting functionality. `Governance` is active on Cosmos Hub 3 and currently has three parameters and six subkeys that may be modified by governance proposal:
+1. [`depositparams`](#1-depositparams)
+2. [`votingparams`](#2-votingparams)
+3. [`tallyparams`](#3-tallyparams)
 
-The value of the launch parameter is outlined here, but you can [verify it yourself](#verify-parameter-values). 
+a. [`min_deposit`](#a-min_deposit)
+b. [`max_deposit_period`](#b-max_deposit_period)
+c. [`voting_period`](#c-voting_period)
+d. [`quorum`](#d-quorum)
+e. [`threshold`](#e-threshold)
+f. [`veto`](#f-veto)
+
+The value of each launch parameter is outlined below, but you can [verify it yourself](#verify-parameter-values). 
 
 If you're technically-inclined, [this is the technical specification](#technical-specifications).
 
-## 1. `sendenabled`
+## 1. `depositparams`
 ### Token transfer functionality.
 #### `cosmoshub-3` default: `true`
 
@@ -27,11 +36,11 @@ Each parameter may be verified in the chain's genesis file, [found here](https:/
 
 The genesis file is text-based and large. The genesis parameter naming scheme isn't identical to those listed above, so when I search, I put one underscore between upper and lowercase characters, then convert all characters to lowercase.
 
-For example, if I want to search for `sendenabled`, I'll search the [genesis file](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json) for `send_enabled`.
+For example, if I want to search for `depositparams`, I'll search the [genesis file](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json) for `deposit_params`.
 
 ## Current Parameters
 You may verify the current parameter values (in case they were modified via governance proposal post-launch) with the [gaiacli command-line application](/gaiacli). Here are the commands for each:
-1. `sendenabled` - `gaiacli q ..` --> **to do** <--
+1. `depositparams` - `gaiacli q ..` --> **to do** <--
 
 # Technical Specifications
 
@@ -39,7 +48,7 @@ The `Governance` module is responsible for
 
 The `Governance` module contains the following parameters:
 
-| Key           | Type   | Example                                                                                            |
+| Key           | Type   | cosmoshub-3 genesis setting                                                                     |
 |---------------|--------|----------------------------------------------------------------------------------------------------|
 | depositparams | object | {"min_deposit":[{"denom":"uatom","amount":"10000000"}],"max_deposit_period":"172800000000000"}     |
 | votingparams  | object | {"voting_period":"172800000000000"}                                                                |
@@ -47,7 +56,7 @@ The `Governance` module contains the following parameters:
 
 ## SubKeys
 
-| Key                | Type             | Example                                 |
+| Key                | Type             | cosmoshub-3 genesis setting             |
 |--------------------|------------------|-----------------------------------------|
 | min_deposit        | array (coins)    | [{"denom":"uatom","amount":"10000000"}] |
 | max_deposit_period | string (time ns) | "172800000000000"                       |
