@@ -7,10 +7,10 @@ The value for the launch parameter is outlined here, but you can [verify it your
 If you're technically-inclined, [this is the technical specification](#technical-specifications).
 
 ## 1. `sendenabled`
-### The character limit for each transaction memo.
+### Token transfer functionality.
 #### `cosmoshub-3` default: `true`
 
-There is an option to include a "memo," or additional information (data) to Cosmos Hub transactions, whether sending funds, delegating, voting, or other transaction types. This parameter limits the number of characters that may be included in the memo line of each transaction.
+The Cosmos Hub (cosmoshub-1) launched without transfer functionality enabled. Users were able to stake and earn rewards, but were unable to transfer ATOMs between accounts until the cosmoshub-2 chain launched. Transfer functionality may be disabled and enabled via governance proposal.
 
 ### Potential implications
 #### Enabling `sendenabled`
