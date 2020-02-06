@@ -14,7 +14,7 @@ The Cosmos Hub (cosmoshub-1) launched without transfer functionality enabled. Us
 
 ### Potential implications
 #### Enabling `sendenabled`
-Setting the `sendenabled` parameter to `false` will enables ATOMs to be transferred between accounts. This capability was first enabled when the cosmoshub-2 chain launched.
+Setting the `sendenabled` parameter to `true` will enable ATOMs to be transferred between accounts. This capability was first enabled when the cosmoshub-2 chain launched.
 
 #### Disabling `sendenabled`
 Setting the `sendenabled` parameter to `false` will prevent ATOMs from being transferred between accounts. ATOMs may still be staked and earn rewards. This is how the cosmoshub-1 chain launched.
