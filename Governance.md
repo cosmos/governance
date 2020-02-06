@@ -1,20 +1,20 @@
 # The `Governance` Module
-The `Governance` module is responsible for on-chain proposals and voting functionality. `Governance` is active on Cosmos Hub 3 and currently has three parameters and six subkeys that may be modified by governance proposal:
+The `Governance` module is responsible for on-chain proposals and voting functionality. `Governance` is active on Cosmos Hub 3 and currently has three parameters with six subkeys that may be modified by governance proposal:
 1. [`depositparams`](#1-depositparams)
-   - [`min_deposit`](#min_deposit)
-   - [`max_deposit_period`](#max_deposit_period)
+   - [`min_deposit`](#min_deposit) - `512000000``uatom`
+   - [`max_deposit_period`](#max_deposit_period) - `1209600000000000`
 
 2. [`votingparams`](#2-votingparams)
-   - [`voting_period`](#voting_period)
+   - [`voting_period`](#voting_period) - `1209600000000000`
 
 3. [`tallyparams`](#3-tallyparams)
-   - [`quorum`](#quorum)
-   - [`threshold`](#threshold)
-   - [`veto`](#veto)
+   - [`quorum`](#quorum) - `0.400000000000000000`
+   - [`threshold`](#threshold) - `0.500000000000000000`
+   - [`veto`](#veto) - `0.334000000000000000`
 
-The value of each launch parameter is outlined below, but you can [verify it yourself](#verify-parameter-values). 
+The launch values for each parameter's subkeys are outlined above, but you can [verify them yourself](#verify-parameter-values). 
 
-If you're technically-inclined, [this is the technical specification](#technical-specifications).
+If you're technically-inclined, [these are the technical specifications](#technical-specifications).
 
 ## 1. `depositparams`
 ### Token transfer functionality.
