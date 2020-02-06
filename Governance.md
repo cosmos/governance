@@ -1,15 +1,16 @@
 # The `Governance` Module
 The `Governance` module is responsible for on-chain proposals and voting functionality. `Governance` is active on Cosmos Hub 3 and currently has three parameters and six subkeys that may be modified by governance proposal:
 1. [`depositparams`](#1-depositparams)
-2. [`votingparams`](#2-votingparams)
-3. [`tallyparams`](#3-tallyparams)
-
 a. [`min_deposit`](#a-min_deposit)
 b. [`max_deposit_period`](#b-max_deposit_period)
-c. [`voting_period`](#c-voting_period)
-d. [`quorum`](#d-quorum)
-e. [`threshold`](#e-threshold)
-f. [`veto`](#f-veto)
+
+2. [`votingparams`](#2-votingparams)
+[`voting_period`](#voting_period)
+
+3. [`tallyparams`](#3-tallyparams)
+a. [`quorum`](#d-quorum)
+b. [`threshold`](#e-threshold)
+c. [`veto`](#f-veto)
 
 The value of each launch parameter is outlined below, but you can [verify it yourself](#verify-parameter-values). 
 
@@ -22,10 +23,10 @@ If you're technically-inclined, [this is the technical specification](#technical
 The Cosmos Hub (cosmoshub-1) launched without transfer functionality enabled. Users were able to stake and earn rewards, but were unable to transfer ATOMs between accounts until the cosmoshub-2 chain launched. Transfer functionality may be disabled and enabled via governance proposal.
 
 ### Potential implications
-#### Enabling `sendenabled`
+#### Enabling `depositparams`
 Setting the `sendenabled` parameter to `true` will enable ATOMs to be transferred between accounts. This capability was first enabled when the cosmoshub-2 chain launched.
 
-#### Disabling `sendenabled`
+#### Disabling `depositparams`
 Setting the `sendenabled` parameter to `false` will prevent ATOMs from being transferred between accounts. ATOMs may still be staked and earn rewards. This is how the cosmoshub-1 chain launched.
 
 # Verify Parameter Values
