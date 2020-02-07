@@ -7,15 +7,15 @@ The `Staking` module is responsible for the proof of stake (PoS) layer of the Co
 
 The launch values for each parameter are outlined above, but you can [verify them yourself](#verify-parameter-values).
 
-The next upgrade will include the `HistoricalEntries` parameter. You can learn more about the [implementation here](https://github.com/cosmos/cosmos-sdk/pull/5380/) and the [reasoning here](https://github.com/cosmos/cosmos-sdk/issues/4647).
+The next upgrade will include the [`HistoricalEntries` parameter](https://github.com/cosmos/cosmos-sdk/blob/master/x/staking/spec/01_state.md#historicalinfo). `HistoricalInfo` objects will be stored and pruned at each block such that the staking keeper persists only the `n` most recent historical info entries, defined by this staking module parameter. You can learn more about the [implementation here](https://github.com/cosmos/cosmos-sdk/pull/5380/) and the [reasoning here](https://github.com/cosmos/cosmos-sdk/issues/4647).
 
 If you're technically-inclined, [these are the technical specifications](#technical-specifications).
 
 ## 1. `UnbondingTime`
-### The time required for bonded ATOMs to unbond and become transferrable, in nanoseconds.
+### The time duration required for bonded ATOMs to unbond and become transferrable, in nanoseconds.
 #### `cosmoshub-3` default: `1814400000000000`
 
-In order to participate as a Cosmos Hub validator or delegator, ATOMs must be bonded (also known as staking). Once bonded, ATOMs are locked by the protocol and are no longer transferrable. When ATOM unbonding is initiated, the `UnbondingTime` of 1814400000000000 nanoseconds (21 days) must pass before the ATOMs will be unlocked and transferrable.
+In order to participate as a Cosmos Hub validator or delegator, ATOMs must be bonded (also known as staking). Once bonded, ATOMs are locked by the protocol and are no longer transferrable. When ATOM unbonding is initiated, the `UnbondingTime` of 1814400000000000 nanoseconds (21 days) duration must pass before the ATOMs will be unlocked and transferrable.
 
 ATOMs are used as a bond when staking. A bond may be slashed (ie. partially destroyed) when a validator has been proven to have broken protocol rules. Why? Primarily as a solution to the "[nothing-at-stake](https://medium.com/coinmonks/understanding-proof-of-stake-the-nothing-at-stake-theory-1f0d71bc027)" problem. In the scenario of an accidental or malicious attempt to rewrite history and reverse a transaction, a new chain ("fork") may be created in parallel with the primary chain. Without the risk of losing this bond, the optimal strategy for any validator is to validate blocks on both chains so that the validator gets their reward no matter which fork wins. A bond makes it more likely that the optimal strategy for validators will be to only validate blocks for the true ("canonical") chain.
 
@@ -52,31 +52,29 @@ Prior to `cosmoshub-3`, the Cosmos Hub had a maximum set of 100 active validator
 It may be argued that after the Cosmos creators, the validator cohort may be the largest group of contributors to the Cosmos Hub community. Changes to the number of active validator participants may also affect the non-validator contributions to the Cosmos Hub.
 
 ## 3. `KeyMaxEntries`
-### The maximum.
+### The maximum number of entries for an unbonding delegation or redelegation (per pair/trio).
 #### `cosmoshub-3` default: `7`
 
-Once a governance proposal enters the voting period, there is a maximum period of time that may elapse before the voting period concludes. This parameter subkey value represents the maximum amount of time that the proposal has to accept votes, which is currently `1209600000000000` nanoseconds or 14 days. If the proposal vote does not reach quorum ((ie. 40% of the network's voting power is participating) before this time, any deposit amounts will be burned and the proposal's outcome will not be considered to be valid. Voters may change their vote any number of times before the voting period ends. This voting period is currently the same for any kind of governance proposal.
 
 ### Potential implications
 #### Decreasing the value of `KeyMaxEntries`
-Decreasing the value of the `KeyMaxEntries` subkey will decrease the time for voting on governance proposals. This will likely:
+Decreasing the value of the `KeyMaxEntries` parameter will decrease the time for voting on governance proposals. This will likely:
 1. decrease the proportion of the network that participates in voting, and
 2. decrease the likelihood that quorum will be reached. 
 
 #### Increasing the value of `KeyMaxEntries`
-Increasing the value of the `KeyMaxEntries` subkey will increase the time for voting on governance proposals. This may:
+Increasing the value of the `KeyMaxEntries` parameter will increase the time for voting on governance proposals. This may:
 1. increase the proportion of the network that participates in voting, and
 2. increase the likelihood that quorum will be reached. 
 
 ## 4. `BondDenom`
-### The unit denomination for the asset bonded in the system.
+### The unit and denomination for the asset bonded in the system.
 #### `cosmoshub-3` default: `uatom`
 
-A simple majority 'yes' vote (ie. 50% of participating voting power) is required for a governance proposal vote to pass. Though necessary, a simple majority 'yes' vote may not be sufficient to pass a proposal in two scenarios:
-1. Failure to reach [quorum](#quorum) of 40% network power or
-2. A 'no-with-veto' vote of 33.4% of participating voting power or greater.
+When using an asset as a bond on the Cosmos Hub, the unit and denomination of the asset is denoted as the `uatom`, or micro-ATOM, where 1 ATOM is considered 1000000uatom. The protocol doesn't use ATOM for bonds, only uatom.
 
-If a governance proposal passes, deposit amounts are returned to contributors. If a text-based proposal passes, nothing is enacted automatically, but there is a social expectation that participants will co-ordinate to enact the commitments signalled in the proposal. If a parameter change proposal passes, the protocol parameter will automatically change immediately after the [voting period](#voting_period) ends, and without the need to run new software. If a community-spend proposal passes, the Community Pool balance will decrease by the number of ATOMs indicated in the proposal and the recipient's address will increase by this same number of ATOMs immediately after the voting period ends.
+#### Changing the value of `BondDenom`
+Changing the `BondDenom` parameter will make any bond transactions with `uatom` fail and will require the new `BondDenom` parameter string in order for bond transactions to be successful. Changing this parameter is likely to have breaking changes for applications that offer staking and delegation functionality.
 
 # Verify Parameter Values
 ## Genesis (aka launch) Parameters
