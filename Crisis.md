@@ -32,8 +32,9 @@ The genesis file is text-based and large. The genesis parameter naming scheme is
 For example, if I want to search for `ConstantFee`, I'll search the [genesis file](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json) for `constant_fee`.
 
 ## Current Parameters
-You may verify the current parameter values (in case they were modified via governance proposal post-launch) with the [gaiacli command-line application](/gaiacli). Here are the commands for each:
-1. `ConstantFee` - `gaiacli q ..` --> **to do** <--
+You may verify the current parameter value (in case they were modified via governance proposal post-launch) with the [gaiacli command-line application](/gaiacli). Here is the command:
+
+`ConstantFee` - `gaiacli q ..` --> **to do** <--
 
 # Technical Specifications
 
