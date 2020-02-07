@@ -162,7 +162,7 @@ governance module. Future improvements may include:
   `proposal.Deposit`, one for anti-spam (same as in MVP) and an other one to 
   reward third party auditors.
   
-  ([source](https://github.com/cosmos/cosmos-sdk/blob/master/x/gov/spec/05_future_improvements.md))
+  [source](https://github.com/cosmos/cosmos-sdk/blob/master/x/gov/spec/05_future_improvements.md)
 
 # Technical Specifications
 
