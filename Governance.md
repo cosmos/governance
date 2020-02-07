@@ -194,13 +194,7 @@ The `Governance` module contains the following parameters:
 | **Subkeys** |
 | quorum             | string (dec)     | "0.400000000000000000" |
 | threshold          | string (dec)     | "0.500000000000000000"                       |
-
- Key           | Type   | cosmoshub-3 genesis setting                                                                     |
-|---------------|--------|:----------------------------------------------------------------------------------------------------|
-| tallyparams   | object | {"quorum":"0.400000000000000000","threshold":"0.500000000000000000","veto":"0.334000000000000000"} | **Subkeys** |  |  |
-| quorum             | string (dec)     | "0.400000000000000000"                  |
-| threshold          | string (dec)     | "0.500000000000000000"                  |
-| veto               | string (dec)     | "0.334000000000000000"                  |
+| veto               | string (dec)     | "0.334000000000000000" |
 
 __NOTE__: The governance module contains parameters that are objects unlike other
 modules. If only a subset of parameters are desired to be changed, only they need
