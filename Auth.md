@@ -1,5 +1,5 @@
 # The `Auth` Module
-The `Auth` module is active on Cosmos Hub 3. It's responsible for authenticating accounts and transactions. `Auth` currently has five parameters that may be modified by governance proposal:
+The `Auth` module is responsible for authenticating accounts and transactions. `Auth` is active on Cosmos Hub 3 and currently has five parameters that may be modified by governance proposal:
 1. [`MaxMemoCharacters`](#1-maxmemocharacters) - 512
 2. [`TxSigLimit`](#2-txsiglimit) - 7
 3. [`TxSizeCostPerByte`](#3-txsizecostperbyte) - 10
