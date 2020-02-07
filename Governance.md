@@ -186,13 +186,14 @@ The `Governance` module contains the following parameters:
 |---------------|--------|:----------------------------------------------------------------------------------------------------|
 | votingparams  | object | {"voting_period":"1209600000000000"}     |
 | **Subkey** |
+| voting_period      | string (time ns) | "1209600000000000" |
+
+| Key           | Type   | cosmoshub-3 genesis setting                                                                     |
+|---------------|--------|:----------------------------------------------------------------------------------------------------|
+| depositparams | object | {"min_deposit":[{"denom":"uatom","amount":"512000000"}],"max_deposit_period":"1209600000000000"}     |
+| **Subkeys** |
 | min_deposit        | array (coins)    | [{"denom":"uatom","amount":"512000000"}] |
 | max_deposit_period | string (time ns) | "1209600000000000"                       |
-
- Key           | Type   | cosmoshub-3 genesis setting                                                                     |
-|---------------|--------|:----------------------------------------------------------------------------------------------------|
-| votingparams  | object | {"voting_period":"1209600000000000"}                                                                | **Subkey** |  |  |
-| voting_period      | string (time ns) | "1209600000000000"                       |
 
  Key           | Type   | cosmoshub-3 genesis setting                                                                     |
 |---------------|--------|:----------------------------------------------------------------------------------------------------|
