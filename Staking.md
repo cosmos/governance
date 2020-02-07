@@ -15,7 +15,7 @@ If you're technically-inclined, [these are the technical specifications](#techni
 ### The time required for bonded ATOMs to unbond and become transferrable, in nanoseconds.
 #### `cosmoshub-3` default: `1814400000000000`
 
-In order to participate as a Cosmos Hub validator or delegator, ATOMs must be bonded (also known as staking). Once bonded, ATOMs are locked in-protocol and are no longer transferrable. When ATOM unbonding is initiated, the `UnbondingTime` of 1814400000000000 nanoseconds (21 days) must pass before the ATOMs will be unlocked and transferrable.
+In order to participate as a Cosmos Hub validator or delegator, ATOMs must be bonded (also known as staking). Once bonded, ATOMs are locked by the protocol and are no longer transferrable. When ATOM unbonding is initiated, the `UnbondingTime` of 1814400000000000 nanoseconds (21 days) must pass before the ATOMs will be unlocked and transferrable.
 
 ATOMs are used as a bond when staking. A bond may be slashed (ie. partially destroyed) when a validator has been proven to have broken protocol rules. Why? Primarily as a solution to the "[nothing-at-stake](https://medium.com/coinmonks/understanding-proof-of-stake-the-nothing-at-stake-theory-1f0d71bc027)" problem. In the scenario of an accidental or malicious attempt to rewrite history and reverse a transaction, without the risk of losing this bond, the optimal strategy for any validator is to validate blocks on every chain so that the validator gets their reward no matter which fork wins. A bond makes it more likely that the optimal strategy for validators will be to only validate blocks for the canonical chain.
 
