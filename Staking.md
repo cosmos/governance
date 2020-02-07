@@ -52,20 +52,18 @@ Prior to `cosmoshub-3`, the Cosmos Hub had a maximum set of 100 active validator
 It may be argued that after the Cosmos creators, the validator cohort may be the largest group of contributors to the Cosmos Hub community. Changes to the number of active validator participants may also affect the non-validator contributions to the Cosmos Hub.
 
 ## 3. `KeyMaxEntries`
-### The maximum number of entries for an unbonding delegation or redelegation (per pair/trio).
+### The maximum number of unbondings between a delegator and validator within the [unbonding period](#1-UnbondingTime).
+### A delegator's maximum number of simultaneous redelegations from one validator to another validator within the [unbonding period](#1-UnbondingTime).
 #### `cosmoshub-3` default: `7`
 
+Each delegator has a limited number of times that they may unbond ATOM amounts from a unique validator within the [unbonding period](#1-UnbondingTime). Each delegator also has a limited number of times that they may redelegate from one unique validator to another unique validator within the unbonding period. This limit is set by the parameter `KeyMaxEntries`, which is currently `7`. To be clear, this limit does not apply to a delegator that is redelegating from one validator to different validators.
 
 ### Potential implications
 #### Decreasing the value of `KeyMaxEntries`
-Decreasing the value of the `KeyMaxEntries` parameter will decrease the time for voting on governance proposals. This will likely:
-1. decrease the proportion of the network that participates in voting, and
-2. decrease the likelihood that quorum will be reached. 
+Decreasing the value of the `KeyMaxEntries` parameter will, within the unbonding period, decrease the number of times that a delegator may unbond ATOM amounts from a single, unique validator. It will also decrease the number of redelegations a delegator may initiate between two unique validators. Since this activity across many accounts can affect the performance of the Cosmos Hub, decreasing this parameter's value decreases the likelihood of a performance reduction in the network. 
 
 #### Increasing the value of `KeyMaxEntries`
-Increasing the value of the `KeyMaxEntries` parameter will increase the time for voting on governance proposals. This may:
-1. increase the proportion of the network that participates in voting, and
-2. increase the likelihood that quorum will be reached. 
+Increasing the value of the `KeyMaxEntries` parameter will, within the unbonding period, increase the number of times that a delegator may unbond ATOM amounts from a single, unique validator. It will also increase the number of redelegations a delegator may initiate between two unique validators. Since this activity across many accounts can affect the performance of the Cosmos Hub, increasing this parameter's value may increase the likelihood of a performance reduction in the network.
 
 ## 4. `BondDenom`
 ### The unit and denomination for the asset bonded in the system.
