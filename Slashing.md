@@ -47,7 +47,7 @@ Increasing the value of the `MinSignedPerWindow` parameter will ---. This may --
 
 ## 3. `DowntimeJailDuration`
 ### Short desc, in nanoseconds.
-#### `cosmoshub-3` default: `7`
+#### `cosmoshub-3` default: `600000000000`
 
 Long Desc
 
