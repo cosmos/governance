@@ -1,6 +1,6 @@
 # The `Mint` Module
 
-The `Mint` module is responsible for enabling the Cosmos Hub to 
+The `Mint` module is responsible for enabling the Cosmos Hub to have a flexible inflation rate that depends upon a [bonded stake ratio target](#5-GoalBonded).
 
 `Mint` is active on Cosmos Hub 3 and currently has six parameters that may be modified by governance proposal:
 1. [`MintDenom`](#1-MintDenom) - uatom (micro-ATOM)
