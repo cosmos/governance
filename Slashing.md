@@ -1,11 +1,8 @@
 # The `Slashing` Module
 
-Penalties may include, but are not limited to:
+The `Slashing` module is responsible for enabling the Cosmos Hub to penalize any validator for an attributable violation of protocol rules by slashing (ie. partially destroying) the bonded ATOMs of their stake-backing. Penalties may include a) burning some amount of a staked bond and b) removing the ability to vote on future blocks and proposals for a period of time.
 
-Burning some amount of their stake
-Removing their ability to vote on future blocks for a period of time.
-
-The `Slashing` module is responsible for enabling the Cosmos Hub to penalize any validator for an attributable violation of protocol rules by slashing (ie. partially destroying) the bonded ATOMs of their stake-backing. `Slashing` is active on Cosmos Hub 3 and currently has five parameters that may be modified by governance proposal:
+`Slashing` is active on Cosmos Hub 3 and currently has five parameters that may be modified by governance proposal:
 1. [`SignedBlocksWindow`](#1-SignedBlocksWindow) - 10000 (blocks)
 2. [`MinSignedPerWindow`](#2-MinSignedPerWindow) - 0.500000000000000000 (proportion)
 3. [`DowntimeJailDuration`](#3-DowntimeJailDuration) - 600000000000 (nanoseconds)
