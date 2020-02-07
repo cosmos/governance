@@ -37,21 +37,23 @@ The ability to punish a validator for committing equivocation is associated with
 ### The maximum number of validators that may participate in validating blocks, earning rewards, and governance voting.
 #### `cosmoshub-3` default: `125`
 
-Prior to a governance proposal entering the [voting period](#voting_period), there must be at least a minimum number of ATOMs deposited. This parameter subkey value represents the maximum amount of time that the proposal has to reach the minimum deposit amount before expiring. The maximum amount of time that a proposal can accept deposit contributions before expiring is currently `1209600000000000` nanoseconds or 14 days. If the proposal expires, any deposit amounts will be burned.
+Validators are ranked by stake-backing based upon the sum of their delegations, and only the top 125 are designated to be active (aka "the active set"). The active set may change any time delegation amounts change. Only active validators may participate in validating blocks, earning rewards, and governance voting. ATOM-holders may participate in staking by delegating their bonded ATOMs to one or more validators in the active set. Delegators may only earn rewards and have their governance votes count if they are delegating to an active validator, the set of which is capped by `MaxValidators`.
 
 ### Potential implications
 #### Decreasing the value of `MaxValidators`
-Decreasing the value of the `max_deposit_period` subkey will decrease the time for deposit contributions to governance proposals. This will likely decrease the time that some proposals remain visible and potentially decrease the likelihood that they will enter the [voting period](#voting_period). This may increase the likelihood that proposals will expire and have their deposits burned.
+Decreasing the value of the `MaxValidators` parameter will likely reduce the number of validators actively participating in validating blocks, earning rewards, and governance voting for the Cosmos Hub. This may decrease the time it takes to produce each new Cosmos Hub block.
 
 #### Increasing the value of `MaxValidators`
-Increasing the value of the `max_deposit_period` subkey will extend the time for deposit contributions to governance proposals. This will likely increase the time that some proposals remain visible and potentially increase the likelihood that they will enter the [voting period](#voting_period). This may decrease the likelihood that proposals will expire and have their deposits burned.
+Increasing the value of the `MaxValidators` parameter will likely increase the number of validators actively participating in validating blocks, earning rewards, and governance voting for the Cosmos Hub. This may increase the time it takes to produce each new Cosmos Hub block.
 
 #### Notes
-Currently most network explorers (eg. Hubble, Big Dipper, Mintscan) give the same visibility to proposals in the deposit period as those in the [voting period](#voting_period). This means that a proposal with a small deposit (eg. 0.001 ATOM) will have the same visibility as those with a full 512 ATOM deposit in the voting period.
+Prior to `cosmoshub-3`, the Cosmos Hub had a maximum set of 100 active validators. Text-based governance proposal [Prop10](https://hubble.figment.network/cosmos/chains/cosmoshub-2/governance/proposals/10) signalled agreement that the active set be increased to 125 validators. Block times were ~6.94 seconds/block with 100 validators, and are now ~7.08 seconds/block with 125 validators.
+
+It may be argued that the Cosmos creators, the validator cohort may be the largest group of contributors to the Cosmos Hub community. Changes to the number of active validator participants may also affect the non-validator contributions to the Cosmos Hub.
 
 ## 3. `KeyMaxEntries`
 ### The maximum.
-#### `cosmoshub-3` default: `1209600000000000`
+#### `cosmoshub-3` default: `7`
 
 Once a governance proposal enters the voting period, there is a maximum period of time that may elapse before the voting period concludes. This parameter subkey value represents the maximum amount of time that the proposal has to accept votes, which is currently `1209600000000000` nanoseconds or 14 days. If the proposal vote does not reach quorum ((ie. 40% of the network's voting power is participating) before this time, any deposit amounts will be burned and the proposal's outcome will not be considered to be valid. Voters may change their vote any number of times before the voting period ends. This voting period is currently the same for any kind of governance proposal.
 
