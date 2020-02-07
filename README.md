@@ -1,5 +1,5 @@
 # Cosmos Hub 3 and the Community Pool
-The Cosmos Hub 3 launched with community-spend capabilities on December 11, 2019, effectively unlocking the potential for token-holders to vote to approve spending from the Community Pool.
+The Cosmos Hub 3 launched with community-spend capabilities on December 11, 2019, effectively unlocking the potential for token-holders to vote to approve spending from the Community Pool. **This wiki is in active development, so please do not rely upon this information yet.** [Discuss its development here](https://forum.cosmos.network/t/gwg-community-spend-best-practices/3240).
 
 ### How is the Community Pool funded?
 2% of all staking rewards generated (via block rewards & transaction fees) are continually transferred to and accrue within the Community Pool.
