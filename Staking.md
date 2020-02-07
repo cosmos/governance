@@ -1,8 +1,8 @@
 # The `Staking` Module
 The `Staking` module is responsible for on-chain proposals and voting functionality. `Staking` is active on Cosmos Hub 3 and currently has four parameters that may be modified by governance proposal:
-1. [`UnbondingTime`](#1-UnbondingTime) - (nanoseconds)
+1. [`UnbondingTime`](#1-UnbondingTime) - 1814400000000000 (nanoseconds)
 2. [`MaxValidators`](#2-MaxValidators) - 125
-3. [`KeyMaxEntries`](#3-KeyMaxEntries)
+3. [`KeyMaxEntries`](#3-KeyMaxEntries) - 7
 4. [`BondDenom`](#4-BondDenom) - uatom (micro-ATOM)
 
 The launch values for each parameter are outlined above, but you can [verify them yourself](#verify-parameter-values).
@@ -92,5 +92,5 @@ The `Staking` module contains the following parameters:
 | UnbondingTime     | string (time ns) | "1814400000000000" |
 | MaxValidators     | uint16           | 125               |
 | KeyMaxEntries     | uint16           | 7                 |
-| HistoricalEntries | uint16           | **not yet applicable**                 |
 | BondDenom         | string           | "uatom"           |
+| HistoricalEntries | uint16           | **not yet applicable**                 |
