@@ -8,7 +8,7 @@ The `Mint` module is responsible for enabling the Cosmos Hub to
 3. [`InflationMax`](#3-InflationMax) - 0.200000000000000000 (proportion)
 4. [`InflationMin`](#4-InflationMin) - 0.070000000000000000 (proportion)
 5. [`GoalBonded`](#5-GoalBonded) - 0.670000000000000000 (proportion)
-6. [`BlocksPerYear`](#5-BlocksPerYear) - 4855015 (blocks)
+6. [`BlocksPerYear`](#6-BlocksPerYear) - 4855015 (blocks)
 
 The launch values for each parameter are outlined above, but you can [verify them yourself](#verify-parameter-values).
 
