@@ -1,5 +1,5 @@
 # The `Staking` Module
-The `Staking` module is responsible for on-chain proposals and voting functionality. `Staking` is active on Cosmos Hub 3 and currently has four parameters that may be modified by governance proposal:
+The `Staking` module is responsible for the Proof-of-stake layer of the Cosmos Hub blockchain. `Staking` is active on Cosmos Hub 3 and currently has four parameters that may be modified by governance proposal:
 1. [`UnbondingTime`](#1-UnbondingTime) - 1814400000000000 (nanoseconds)
 2. [`MaxValidators`](#2-MaxValidators) - 125
 3. [`KeyMaxEntries`](#3-KeyMaxEntries) - 7
@@ -13,19 +13,28 @@ If you're technically-inclined, [these are the technical specifications](#techni
 
 ## 1. `UnbondingTime`
 ### The time required for bonded ATOMs to unbond and become transferrable, in nanoseconds.
-#### `cosmoshub-3` default: `512000000`
+#### `cosmoshub-3` default: `1814400000000000`
 
-Prior to a governance proposal entering the [voting period](#voting_period) (ie. for the proposal to be voted upon), there must be at least a minimum number of ATOMs deposited. Anyone may contribute to this deposit. Deposits of passed and failed proposals are returned to the contributors. Deposits are burned when proposals 1) [expire](#max_deposit_period), 2) fail to reach [quorum](#quorum), or 3) are [vetoed](#veto). This parameter subkey value represents the minimum deposit required for a proposal to enter the [voting period](#voting_period) in micro-ATOMs, where `512000000uatom` is equivalent to 512 ATOM.
+In order to participate as a validator or delegator, ATOMs must be bonded (also known as staking). Once bonded, ATOMs are locked in-protocol and are no longer transferrable. When ATOM unbonding is initiated, the `UnbondingTime` of 1814400000000000 nanoseconds (21 days) must pass before the ATOMs will be unlocked and transferrable.
+
+ATOMs are used as a bond when staking. A bond may be slashed (ie. partially destroyed) when a validator has been proven to have broken protocol rules. Why? Primarily as a solution to the "[nothing-at-stake](https://medium.com/coinmonks/understanding-proof-of-stake-the-nothing-at-stake-theory-1f0d71bc027)" problem. In the scenario of an accidental or malicious attempt to rewrite history and reverse a transaction, without the risk of losing this bond, the optimal strategy for any validator is to validate blocks on every chain so that the validator gets their reward no matter which fork wins. A bond makes it more likely that the optimal strategy for validators will be to only validate blocks for the canonical chain.
+
+Why is `UnbondingTime` so long? It can take time to catch a validator that has committed equivocation ie. signed two blocks at the same block height. If a validator commits equivocation and then unbonds before being caught, the protocol can no longer slash (ie. partially destroy) the validator's bond.
 
 ### Potential implications
 #### Decreasing the value of `UnbondingTime`
-Decreasing the value of the `UnbondingTime` subkey will enable governance proposals to enter the [voting period](#voting_period) with fewer ATOMs at risk. This will likely increase the volume of new governance proposals.
+Decreasing the value of the `UnbondingTime` parameter will reduce the time it takes to unbond ATOMs. This will make it less likely for a validator's bond to be slashed after committing equivocation (aka double-signing).
 
 #### Increasing the value of `UnbondingTime`
-Increasing the value of the `UnbondingTime` subkey will require risking a greater number of ATOMs before governance proposals may enter the [voting period](#voting_period). This will likely decrease the volume of new governance proposals.
+Increasing the value of the `UnbondingTime` parameter will increase the time it takes to unbond ATOMs. This will make it more likely for a validator's bond to be slashed after committing equivocation (aka double-signing).
+
+#### Notes
+The ability to punish a validator for committing equivocation is associated with the strength of the protocol's security guarantees.
+
+1 second is equal to 1,000,000,000 nanoseconds.
 
 ## 2. `MaxValidators`
-### The maximum number of validators that may .
+### The maximum number of validators that may participate in validating blocks, earning rewards, and governance voting.
 #### `cosmoshub-3` default: `125`
 
 Prior to a governance proposal entering the [voting period](#voting_period), there must be at least a minimum number of ATOMs deposited. This parameter subkey value represents the maximum amount of time that the proposal has to reach the minimum deposit amount before expiring. The maximum amount of time that a proposal can accept deposit contributions before expiring is currently `1209600000000000` nanoseconds or 14 days. If the proposal expires, any deposit amounts will be burned.
