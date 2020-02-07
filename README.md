@@ -7,12 +7,12 @@ There are currently 9 modules active in the Cosmos Hub, each with parameters tha
 1. [Auth](/Auth.md) - Authentication of accounts and transactions for Cosmos SDK application
 2. [Bank](/Bank.md) - Token transfer functionalities
 3. [Governance](/Governance.md) - On-chain proposals and voting
-4. [Staking](/Staking.md) - Proof-of-stake layer for public blockchains
-5. [Slashing](/Slashing.md) - Validator punishment mechanisms
-6. [Distribution](/Distribution.md) - Fee distribution, and staking token provision distribution
-7. [Crisis](/Crisis.md) - Halting the blockchain under certain circumstances (e.g. if an invariant is broken)
-8. [Mint](/Mint.md) - Creation of new units of staking token
-9. [Supply](/Supply.md) - Total token supply of the chain
+4. [Staking](/Staking.md) - Proof-of-stake layer for public blockchains **to do**
+5. [Slashing](/Slashing.md) - Validator punishment mechanisms **to do**
+6. [Distribution](/Distribution.md) - Fee distribution, and staking token provision distribution **to do**
+7. [Crisis](/Crisis.md) - Halting the blockchain under certain circumstances (e.g. if an invariant is broken) **to do**
+8. [Mint](/Mint.md) - Creation of new units of staking token **to do**
+9. [Supply](/Supply.md) - Total token supply of the chain **to do**
 
 You can query the current parameter(s) of each module with the command line program [`gaiacli`](/gaiacli). Use the command `gaia q [module] -h` to get help about the subcommands for the module you want to query. For example, `gaiacli q staking` --> to do <--
 
@@ -22,7 +22,7 @@ You can query the current parameter(s) of each module with the command line prog
 - You will need to indicate which chain you are querying, and currently this is `--chain-id cosmoshub-3`
 - You will need to connect to a full node. If gaiacli isn't already configured for this, you can use this tag in your command `--node [address]:26657`.
 
-### Full nodes
+### Full nodes  **to do**
 Running a full node can be difficult for those not technically-inclined, so you may choose to use a third-party's full node. In this case, the primary security risk is that of censorship: it's the single place where you have a single gateway to the network, and any messages submitted through an untrusted node could be censored.
 - cosmos-node-1.figment.network:26657 ([Figment Networks](https://figment.network/networks/cosmos/))
 - 63.35.133.166:26657 ([Chorus One](cosmos.chorus.one))
