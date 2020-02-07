@@ -9,8 +9,8 @@ The `Governance` module is responsible for on-chain proposals and voting functio
 
 3. [`tallyparams`](#3-tallyparams)
    - [`quorum`](#quorum) - `0.400000000000000000` (proportion of network)
-   - [`threshold`](#threshold) - `0.500000000000000000` (proportion of voters)
-   - [`veto`](#veto) - `0.334000000000000000` (proportion of voters)
+   - [`threshold`](#threshold) - `0.500000000000000000` (proportion of voting power)
+   - [`veto`](#veto) - `0.334000000000000000` (proportion of voting power)
 
 The launch values for each parameter's subkeys are outlined above, but you can [verify them yourself](#verify-parameter-values).
 
