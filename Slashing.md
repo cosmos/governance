@@ -107,7 +107,13 @@ You may verify the current parameter values (in case they were modified via gove
 
 # Technical Specifications
 
-The `Slashing` module is responsible for supporting an advanced Proof of Stake (PoS) system. In this system, holders of the native staking token of the chain can become validators and can delegate tokens to validators, ultimately determining the effective validator set for the system.
+The `Slashing` module enables Cosmos SDK-based blockchains to disincentivize any attributable action
+by a protocol-recognized actor with value at stake by penalizing them ("slashing").
+
+Penalties may include, but are not limited to:
+
+- Burning some amount of their stake
+- Removing their ability to vote on future blocks and governance proposals for a period of time.
 
 The `Slashing` module contains the following parameters:
 
