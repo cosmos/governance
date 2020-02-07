@@ -7,12 +7,12 @@ There are currently 9 modules active in the Cosmos Hub, each with parameters tha
 1. [Auth](/Auth.md) - Authentication of accounts and transactions for Cosmos SDK application
 2. [Bank](/Bank.md) - Token transfer functionalities
 3. [Governance](/Governance.md) - On-chain proposals and voting
-4. [Staking](/Staking.md) - Proof-of-stake layer for public blockchains **to do**
-5. [Slashing](/Slashing.md) - Validator punishment mechanisms **to do**
-6. [Distribution](/Distribution.md) - Fee distribution, and staking token provision distribution **to do**
-7. [Crisis](/Crisis.md) - Halting the blockchain under certain circumstances (e.g. if an invariant is broken) **to do**
-8. [Mint](/Mint.md) - Creation of new units of staking token **to do**
-9. [Supply](/Supply.md) - Total token supply of the chain **to do**
+4. [Staking](/Staking.md) - Proof-of-stake layer for public blockchains --> **to do** <--
+5. [Slashing](/Slashing.md) - Validator punishment mechanisms --> **to do** <--
+6. [Distribution](/Distribution.md) - Fee distribution, and staking token provision distribution --> **to do** <--
+7. [Crisis](/Crisis.md) - Halting the blockchain under certain circumstances (e.g. if an invariant is broken) --> **to do** <--
+8. [Mint](/Mint.md) - Creation of new units of staking token --> **to do** <--
+9. [Supply](/Supply.md) - Total token supply of the chain --> **to do** <--
 
 You can query the current parameter(s) of each module with the command line program [`gaiacli`](/gaiacli). Use the command `gaia q [module] -h` to get help about the subcommands for the module you want to query. For example, `gaiacli q staking` --> to do <--
 
