@@ -1,6 +1,6 @@
 # The `Crisis` Module
 The `Crisis` module is responsible for halting the Cosmos Hub if an invariant is broken. `Crisis` is active on Cosmos Hub 3 and currently has one parameter that may be modified by governance proposal:
-1. [`ConstantFee`](#1-ConstantFee) - 1333000000uatom (micro-atom)
+1. [`ConstantFee`](#1-ConstantFee) - 1333000000uatom (micro-ATOM)
 
 The launch value for this parameter is outlined above, but you can [verify them yourself](#verify-parameter-values).
 
