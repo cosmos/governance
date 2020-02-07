@@ -32,9 +32,9 @@ The genesis file is text-based and large. The genesis parameter naming scheme is
 For example, if I want to search for `ConstantFee`, I'll search the [genesis file](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json) for `constant_fee`.
 
 ## Current Parameters
-You may verify the current parameter value (in case they were modified via governance proposal post-launch) with the [gaiacli command-line application](/gaiacli). Here is the command:
+You may verify the current `ConstantFee` parameter value (in case they were modified via governance proposal post-launch) with the [gaiacli command-line application](/gaiacli). Here is the command:
 
-`ConstantFee` - `gaiacli q ..` --> **to do** <--
+ `gaiacli q ..` --> **to do** <--
 
 # Technical Specifications
 
@@ -44,5 +44,4 @@ The `Crisis` module contains the following parameter:
 
 | Key           | Type   | cosmoshub-3 genesis setting                                                                     |
 |---------------|--------|:----------------------------------------------------------------------------------------------------|
-|-------------|---------------|-----------------------------------|
 | ConstantFee | object (coin) | {"denom":"uatom","amount":"1333000000"} |
