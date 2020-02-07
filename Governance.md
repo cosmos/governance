@@ -183,7 +183,7 @@ The `Governance` module contains the following parameters:
 | max_deposit_period | string (time ns) | "1209600000000000"                       |
 |                                                                                   |
 | |
-| votingparams  | object | {"voting_period":"1209600000000000"}                                                                | **Subkey**  |
+| votingparams  | object | {"voting_period":"1209600000000000"}                                                                | **Subkey**  | test |
 | voting_period      | string (time ns) | "1209600000000000"                       |
 |                           |
 | |
