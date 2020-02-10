@@ -38,8 +38,8 @@ We can expect this to take shape as proposals are discussed, accepted, and rejec
 There are four criteria Currently, community-spend proposals operate the same way that signaling proposals and parameter-change proposals operate.
 
 1. A minimum deposit of 512 ATOM is required for the proposal to enter the voting period
-  - anyone may contribute to this deposit
-  - the deposit must be reached within 14 days
+   - anyone may contribute to this deposit
+   - the deposit must be reached within 14 days
 2. A minimum of 40% of the network's voting power (quorum) is required to participate to make the proposal valid
 3. A simple majority (greater than 50%) of the participating voting power must back the 'yes' vote 
 4. Less than 33.4% of participating voting power votes 'no-with-veto'
