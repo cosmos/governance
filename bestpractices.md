@@ -3,9 +3,9 @@
 
 ## Begin with a well-considered proposal
 1. Ensure that you have considered your proposal and anticipated questions that the community will likely ask. Once your proposal is on-chain, you will not be able to change it.
-2. Post a draft of your proposal on the Cosmos forum, then directly engage key members of the community for feedback. These could be large contributors and high-ranked validators.
-3. Target members of the community in a semi-public way before bringing the draft to a full public audience. It's not a matter of hiding the proposal, so much as maintaining a high signal-to-noise ratio. For example, there is a private Telegram group called Cosmos Network VIP. Ask for an invite if you would like to be a contributor to Cosmos.
-4. Alert the community to the draft proposals via Twitter, Telegram, and Discord.
+2. Post a draft of your proposal on the [Cosmos forum](https://forum.cosmos.network/c/governance), then directly engage key members of the community for feedback. These could be large contributors, those likely to be most impacted by the proposal, and entities with high stake-backing (eg. high-ranked validators; large stakers).
+3. Target members of the community in a semi-public way before bringing the draft to a full public audience. The burden of public scrutiny in a semi-anonymized environment (eg. Twitter) can be stressful and overwhelming. Solicit opinions in places with people who established reputations first. For example, there is a private Telegram group called Cosmos Network VIP (ask for an invite if you are or would like to be a Cosmos contributor). Let people in [Discord community](https://discord.gg/cVwYX9u) know about your draft proposal.
+4. Alert the community to the draft proposal via [Twitter](https://twitter.com/CosmosGov) and [Telegram](https://t.me/cosmosproject).
 
 ## Submission formatting
 In practice, the Cosmos Hub community tends to submit a new proposal in these ways:
