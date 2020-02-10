@@ -44,9 +44,9 @@ There are four criteria Currently, community-spend proposals operate the same wa
 3. A simple majority (greater than 50%) of the participating voting power must back the 'yes' vote 
 4. Less than 33.4% of participating voting power votes 'no-with-veto'
 
-The voting period lasts for 14 days, and participants may change their vote at any time before the voting period ends. The votes of validators (and their delegators) of inactive validators will not count. That means that if I delegate to validator that is jailed, tombstoned, or ranks lower than 125 in stake-backing at the time that the voting period ends, I my stake-weight will not count in the vote.
-
 Currently, the criteria for a community-spend proposals is the same as those of signaling and parameter-change proposals.
+
+The voting period lasts for 14 days, and participants may change their vote at any time before the voting period ends. The votes of validators (and their delegators) of inactive validators will not count. That means that if I delegate to validator that is jailed, tombstoned, or ranks lower than 125 in stake-backing at the time that the voting period ends, my stake-weight will not count in the vote.
 
 ### How are funds disbursed after a community-spend proposal is passed?
 If a community-spend proposal passes successfully, the number of ATOM encoded in the proposal will be transferred from the community pool to the address encoded in the proposal, and this will happen immediately after the voting period ends.
