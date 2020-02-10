@@ -8,32 +8,43 @@
 4. Alert the community to the draft proposal via [Twitter](https://twitter.com/CosmosGov) and [Telegram](https://t.me/cosmosproject).
 
 ## Elements of a Community-Spend Proposal
-1. Overview
-   - Why are you 
-2. Applicant(s) - the profile of the person/entity making the proposal
+1. Summary - the key details 
+   - who is submitting the proposal
+   - the amount of the proposal
+   - the items being delivered deliverable
+   - the date for which the deliverables will be met
+   - a short summary of the history (what compelled this proposal), solution that's being presented, and future expectations
+2. Applicant(s) - the profile of the person(s)/entity making the proposal
    - who you are and your involvement in Cosmos and/or blockchain
-   - your business (if applicable)
+   - your organization/business (if applicable)
    - past work you've done
    - some sort of proof of who you are eg. Keybase
-3. Problem you're solving and/or opportunity you're addressing
-4. Solution and/or value you're proposing to deliver
+3. Problem - generally what you're solving and/or opportunity you're addressing
+   - past, present (and possibly a prediction of the future without this work being done)
+4. Solution - generally how you're proposing to deliver the solution and/or value
    - your plan to fix the problem or deliver the value
    - the beneficiaries of this plan (ie. who will your plan impact and how?)
    - your reasons for selecting this plan
    - your motivation for delivering this solution/value
-5. Deliverables and timeline
+5. Deliverables and timeline - the specifics of what you're delivering and how, and what to expect
    - what are the specific deliverables? (be detailed)
    - when will each of these be delivered?
    - will there be a date at which the project will be considered failed if the deliverables have not been met?
    - how will each of these be delivered?
-   - what will happen if you do not deliver on time? eg. a plan to return the funds
+   - what will happen if you do not deliver on time?
+     - what is the deadline for the project to be considered failed?
+     - do you have a plan to return the funds?
    - how will you be accountable to the Cosmos Hub stakeholders?
      - how will you communicate updates and how often?
      - how can the community observe your progress?
      - how can the community provide feedback?
+   - how should the quality of deliverables be assessed? eg. metrics
 6. Relationships and disclosures
-   - have you received grants or funding for similar work? eg. from the Interchain Foundation
-   - 
+   - have you received or applied for grants or funding? for similar work? eg. from the Interchain Foundation
+   - how will you and/or your organization benefit?
+   - do you see this work continuing in the future and is there a plan?
+   - what are the risks involved with this work?
+   - do you have conflicts of interest to declare?
 
 
 ## Submission formatting
