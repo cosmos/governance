@@ -34,7 +34,7 @@ The prevailing assumption is that funds should be spent in a way that brings val
 
 We can expect this to take shape as proposals are discussed, accepted, and rejected by the Cosmos Hub community.
 
-#### What determines whether or not a community-spend governance proposal passes?
+### What determines whether or not a community-spend governance proposal passes?
 There are four criteria Currently, community-spend proposals operate the same way that signaling proposals and parameter-change proposals operate.
 
 1. A minimum deposit of 512 ATOM is required for the proposal to enter the voting period
