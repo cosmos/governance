@@ -26,7 +26,11 @@ Funds from the Cosmos Community Pool may be spent via successful governance prop
 ### How should funds from the Community Pool be spent?
 We don't know 🤷
 
-The prevailing assumption is that funds should be spent in a way that brings value to the Cosmos Hub. However, there is debate about how to keep the fund sustainable. There is also some debate about who should receive funding. For example, part of the community believes that the funds should only be used for those who need funding most.
+The prevailing assumption is that funds should be spent in a way that brings value to the Cosmos Hub. However, there is debate about how to keep the fund sustainable. There is also some debate about who should receive funding. For example, part of the community believes that the funds should only be used for those who need funding most. Other topics of concern include:
+- retroactive grants
+- price negotiation
+- fund disbursal (eg. payments in stages; payments pegged to reduce volitiliy)
+- radical overhaul of how the community-spend mechanism functions
 
 We can expect this to take shape as proposals are discussed, accepted, and rejected by the Cosmos Hub community.
 
