@@ -8,16 +8,21 @@
 4. Alert the community to the draft proposal via [Twitter](https://twitter.com/CosmosGov) and [Telegram](https://t.me/cosmosproject).
 
 ## Elements of a Community-Spend Proposal
-1. Summary - the key details 
+
+It will be important to balance two things: being detailed and being concise. You'll want to be concise so that people can assess your proposal quickly. You'll want to be detailed so that people will have a clear understanding of what the agreement is and won't need to ask many questions before voting. These elements are likely what the Cosmos Hub community will be looking for:
+
+1. Summary - the key details of the proposal
    - who is submitting the proposal
    - the amount of the proposal
    - the items being delivered deliverable
    - the date for which the deliverables will be met
    - a short summary of the history (what compelled this proposal), solution that's being presented, and future expectations
+Assume that nobody will read beyond this point.
+
 2. Applicant(s) - the profile of the person(s)/entity making the proposal
    - who you are and your involvement in Cosmos and/or blockchain
-   - your organization/business (if applicable)
-   - past work you've done
+   - your organization/business (if applicable) eg. website
+   - past work you've done eg. include your Github
    - some sort of proof of who you are eg. Keybase
 3. Problem - generally what you're solving and/or opportunity you're addressing
    - past, present (and possibly a prediction of the future without this work being done)
@@ -45,7 +50,6 @@
    - do you see this work continuing in the future and is there a plan?
    - what are the risks involved with this work?
    - do you have conflicts of interest to declare?
-
 
 ## Submission formatting
 In practice, the Cosmos Hub community tends to submit a new proposal in these ways:
