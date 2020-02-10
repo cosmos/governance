@@ -7,7 +7,7 @@ The Cosmos Hub 3 launched with community-spend capabilities on December 11, 2019
 ### How can funding for the Community Pool change?
 Though the rate of funding is currently fixed at 2% of staking rewards, the effective rate is dependent upon the Cosmos Hub's staking rewards, which can change with inflation and block times.
 
-The current 2% tax rate of funding may be modified with a governance proposal, enacted immediately after the proposal passes.
+The current 2% tax rate of funding may be modified with a governance proposal and enacted immediately after the proposal passes.
 
 Currently, funds cannot be sent to the Community Pool, but we should expect this to change with the next upgrade. Read more about this new functionality [here](https://github.com/cosmos/cosmos-sdk/pull/5249). What makes this functionality important?
 1. Funded projects that fail to deliver may return funding to Community Pool;
