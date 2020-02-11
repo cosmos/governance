@@ -1,4 +1,4 @@
-# Best Practices for Drafting a Community-spend Proposal 
+# Best Practices for Drafting a Community-Spend Proposal 
 # [under active development]
 
 ## Begin with a well-considered proposal
