@@ -1,6 +1,19 @@
 # Cosmos Hub 3 and the Community Pool
 The Cosmos Hub 3 launched with community-spend capabilities on December 11, 2019, effectively unlocking the potential for token-holders to vote to approve spending from the Community Pool. **This wiki is in active development, so please do not rely upon this information yet.** [Discuss its development here](https://forum.cosmos.network/t/gwg-community-spend-best-practices/3240).
 
+## Drafting a Community-spend Proposal
+Drafting a proposal is a process that takes time, attention, and involves risk. The objective of this documentation is to make this process easier by preparing participants for what to pay attention to and how to reduce the risk of losing their deposit.
+
+If you are considering writing a proposal, you should know:
+1. [How the Community Pool works](#link)
+2. [How the voting process works](voting.md)
+2. [What the community will want to know](bestpractices.md)
+3. [Where and how to engage with the Cosmos community](bestpractices.md)
+4. [How to prepare your final proposal for submission](submitting.md)
+5. [How to submit your proposal to the Cosmos Hub testnet & mainnet](submitting.md)
+
+## Learn About the Community Pool
+
 ### How is the Community Pool funded?
 2% of all staking rewards generated (via block rewards & transaction fees) are continually transferred to and accrue within the Community Pool. For example, from Dec 19, 2019 until Jan 20, 2020 (32 days), 28,726 ATOM were generated and added to the pool.
 
