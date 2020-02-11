@@ -20,7 +20,7 @@ Share the URL with others and verify that your file is publicly accessible.
 The reason we use IPFS is that it is a decentralized means of storage, making it resistant to censorship or single points of failure. This increases the likelihood that the file will remain available in the future.
 
 ## Formatting the governance proposal
-Prior to sending the transaction that submits your proposal on-chain, you should create a JSON file containing the information that will be stored on-chain as the governance proposal. Begin my creating a new text (.txt) file. When you're done, save the file as a .json file.
+Prior to sending the transaction that submits your proposal on-chain, you should create a JSON file. This file will contain the information that will be stored on-chain as the governance proposal. Begin my creating a new text (.txt) file to enter this information. When you're done, save the file as a .json file.
 
 There are five (5) components:
 1. **Title** - the distinguishing name of the proposal, typically the way the that explorers list proposals
@@ -29,7 +29,7 @@ There are five (5) components:
 4. **Amount** - the amount of funding that the recipient will receive in micro-ATOMs (uatom)
 5. **Deposit** - the amount that will be contributed to the deposit (in micro-ATOMs "uatom") from the account submitting the proposal
 
-Once on-chain, most people will rely upon network explorers to read this information.
+Once on-chain, most people will rely upon network explorers to interpret this information with a graphical user interface (GUI).
 
 ### Simple example
 In this simple example (below), a network explorer will list the governance proposal as "Community Pool Spend." When an observer selects the proposal, they'll see the description. Not all explorers will show the recipient and amount, so ensure that you verify the description aligns with the what the governance proposal is programmed to enact.
