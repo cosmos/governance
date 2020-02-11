@@ -15,7 +15,9 @@ When you've finalized your community-spend proposal draft, convert it to a PDF f
 
 Ensure that you "pin" the PDF file so that it continues to be available on the network. You should get a URL like this: https://ipfs.io/ipfs/QmSMGEoY2dfxADPfgoAsJxjjC6hwpSNx1dXAqePiCEMCbY 
 
-Share the URL with others and verify that your file is publicly accessible. 
+Share the URL with others and verify that your file is publicly accessible.
+
+The reason we use IPFS is that it is a decentralized means of storage, making it resistant to censorship or single points of failure. This increases the likelihood that the file will remain available in the future.
 
 ## Formatting the governance proposal
 Prior to sending the transaction that submits your proposal on-chain, you should create a JSON file containing the information that will be stored on-chain as the governance proposal. Begin my creating a new text (.txt) file. When you're done, save the file as a .json file.
