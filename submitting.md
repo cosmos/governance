@@ -52,7 +52,7 @@ Share the URL with others and verify that your file is publicly accessible.
   ]
   
 }
-
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
 ## Sending the transaction that submits your governance proposal
 
