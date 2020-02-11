@@ -68,8 +68,10 @@ ___
 ___
 
 ### Real example
-This is the governance proposal that [Gavin Birch](https://twitter.com/Ether_Gavin) ([Figment Networks](https://figment.network/)) used to create [Prop23, the first successful Cosmos Hub community-spend proposal](https://hubble.figment.network/cosmos/chains/cosmoshub-3/governance/proposals/23). 
+This is the governance proposal that [Gavin Birch](https://twitter.com/Ether_Gavin) ([Figment Networks](https://figment.network/)) used to create [Prop23, the first successful Cosmos Hub community-spend proposal](https://hubble.figment.network/cosmos/chains/cosmoshub-3/governance/proposals/23).
+
 **Note**: "\n" is used to create a new line.
+___
 
 {
 
@@ -104,6 +106,7 @@ This is the governance proposal that [Gavin Birch](https://twitter.com/Ether_Gav
   ]
   
 }
+___
 
 ## Sending the transaction that submits your governance proposal
 
