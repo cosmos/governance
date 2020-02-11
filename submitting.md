@@ -18,12 +18,16 @@ Ensure that you "pin" the PDF file so that it continues to be available on the n
 Share the URL with others and verify that your file is publicly accessible. 
 
 ## Formatting the governance proposal
-This is the information that will be stored on-chain as the governance proposal. Most people rely upon network explorers to read this information. There are five (5) components:
+Prior to sending the transaction that submits your proposal on-chain, you should create a JSON file containing the information that will be stored on-chain as the governance proposal. Begin my creating a new text (.txt) file. When you're done, save the file as a .json file.
+
+There are five (5) components:
 1. **Title** - the distinguishing name of the proposal, typically the way the that explorers list proposals
 2. **Description** - the body of the proposal that further describes what is being proposed and details surrounding the proposal
 3. **Recipient** - the Cosmos Hub (hex-based) address that will receive funding from the Community Pool
 4. **Amount** - the amount of funding that the recipient will receive in micro-ATOMs (uatom)
 5. **Deposit** - the amount that will be contributed to the deposit (in micro-ATOMs "uatom") from the account submitting the proposal
+
+Once on-chain, most people will rely upon network explorers to read this information.
 
 ### Simple example
 In this simple example (below), a network explorer will list the governance proposal as "Community Pool Spend." When an observer selects the proposal, they'll see the description. Not all explorers will show the recipient and amount, so ensure that you verify the description aligns with the what the governance proposal is programmed to enact.
@@ -113,7 +117,7 @@ ___
 ___
 
 ## Sending the transaction that submits your governance proposal
-This is the basic format for the command-line transaction to submit your proposal:
+This is the basic command for using gaiacli (the command-line interface) to submit your proposal on-chain:
 ```gaiacli tx gov submit-proposal community-pool-spend <proposal.json> --from [key/address]```
 
 This is the complete command that I could use to submit a community spend proposal right now:
