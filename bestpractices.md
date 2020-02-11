@@ -6,7 +6,7 @@
 
 
 1. Ensure that you have considered your proposal and anticipated questions that the community will likely ask. Once your proposal is on-chain, you will not be able to change it.
-2. Post a draft of your proposal as a topic the 'governance' category of the [Cosmos forum](https://forum.cosmos.network/c/governance)
+2. Post a draft of your proposal as a topic the 'governance' category of the [Cosmos forum](https://forum.cosmos.network/c/governance).
 
 ## Elements of a Community-Spend Proposal
 
