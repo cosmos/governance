@@ -72,6 +72,8 @@ This is the governance proposal that [Gavin Birch](https://twitter.com/Ether_Gav
 
 You can query the proposal details with the gaiacli command-line interface using this command: `gaiacli q gov proposal 23 --chain-id cosmoshub-3 --node cosmos-node-1.figment.network:26657`
 
+You use can also use [Hubble](https://hubble.figment.network/cosmos/chains/cosmoshub-3/blocks/424035/transactions/B8E2662DE82413F03919712B18F7B23AF00B50DAEB499DAD8C436514640EFC79?format=json) or gaiacli to query the transaction that I sent to create this proposal on-chain in full detail: `gaiacli q tx B8E2662DE82413F03919712B18F7B23AF00B50DAEB499DAD8C436514640EFC79 --chain-id cosmoshub-3 --node cosmos-node-1.figment.network:26657`
+
 **Note**: "\n" is used to create a new line.
 ___
 
@@ -114,9 +116,21 @@ ___
 This is the basic format for the command-line transaction to submit your proposal:
 ```gaiacli tx gov submit-proposal community-pool-spend <proposal.json> --from [key/address]```
 
-This is the complete command that I could use to submit a community spend proposal now:
-`gaiacli tx gov submit-proposal community-pool-spend proposal.json --from gavin --gas 250000 --fees 6250uatom --chain-id cosmoshub-3 --node cosmos-node-1.figment.network:26657
+This is the complete command that I could use to submit a community spend proposal right now:
+`gaiacli tx gov submit-proposal community-pool-spend proposal.json --from gavin --gas 500000 --fees 7500uatom --chain-id cosmoshub-3 --node cosmos-node-1.figment.network:26657`
 
 1. `gaiacli` is the command-line interface client that is used to send transactions and query the Cosmos Hub
 2. `tx gov submit-proposal community-pool-spend` indicates that the transaction is submitting a community-spend proposal
-3. 
+3. `--from gavin` is the account key that pays the transaction fee and deposit amount
+4. `--gas 500000` is the maximum amount of gas permitted to be used to process the transaction
+   - the more content there is in the description of your proposal, the more gas your transaction will consume
+   - if the number isn't high enough and there isn't enough gas to process your transaction, the transaction will fail
+5. `--fees` is flat rate incentive for a validator to process your transaction
+   - the network still accepts zero fees, but many nodes will not transmit your transaction to the network without a minimum fee
+   - many nodes (including the Figment node) use a minimum fee to disincentivize transaction spamming
+   - 7500uatom is equal to 0.0075 ATOM
+6. `--chain-id cosmoshub-3` is Cosmos Hub 3
+   - the testnet chain ID is [gaia-13007](https://hubble.figment.network/cosmos/chains/gaia-13007)
+7. `--node cosmos-node-1.figment.network:26657` is using Figment Networks' node to send the transaction to the Cosmos Hub 3 network
+
+**Note**: be careful what you use for `--fees`. A mistake here could result in spending hundreds or thousands of ATOMs accidentally, which cannot be recovered.
