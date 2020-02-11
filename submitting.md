@@ -1,5 +1,6 @@
 # Submitting a Community-spend Proposal
-## WARNING: under active development. Do not use this information to submit a proposal.
+## WARNING: under active development. 
+## Do not use this information to submit a proposal.
 
 ## Submission formatting
 In practice, the Cosmos Hub community tends to submit a new proposal in these ways:
