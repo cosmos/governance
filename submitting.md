@@ -68,7 +68,7 @@ ___
 ___
 
 ### Real example
-This is the governance proposal that [Gavin Birch](https://twitter.com/Ether_Gavin) ([Figment Networks](https://figment.network/)) used to create [Prop23, the first successful Cosmos Hub community-spend proposal](https://hubble.figment.network/cosmos/chains/cosmoshub-3/governance/proposals/23).
+This is the governance proposal that [Gavin Birch](https://twitter.com/Ether_Gavin) ([Figment Networks](https://figment.network/)) used to create [Prop23, the first successful Cosmos Hub community-spend proposal](https://hubble.figment.network/cosmos/chains/cosmoshub-3/governance/proposals/23). You can query the proposal with the gaiacli command-line interface using this command: `q gov proposal 23 --chain-id cosmoshub-3 --node cosmos-node-1.figment.network:26657`
 
 **Note**: "\n" is used to create a new line.
 ___
@@ -109,5 +109,12 @@ ___
 ___
 
 ## Sending the transaction that submits your governance proposal
-
+This is the basic format for the command-line transaction to submit your proposal:
 ```gaiacli tx gov submit-proposal community-pool-spend <proposal.json> --from [key/address]```
+
+This is the complete command that I could use to submit a community spend proposal now:
+`gaiacli tx gov submit-proposal community-pool-spend proposal.json --from gavin --gas 250000 --fees 6250uatom --chain-id cosmoshub-3 --node cosmos-node-1.figment.network:26657
+
+1. `gaiacli` is the command-line interface client that is used to send transactions and query the Cosmos Hub
+2. `tx gov submit-proposal community-pool-spend` indicates that the transaction is submitting a community-spend proposal
+3. 
