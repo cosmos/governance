@@ -8,13 +8,6 @@
 1. Ensure that you have considered your proposal and anticipated questions that the community will likely ask. Once your proposal is on-chain, you will not be able to change it.
 2. Post a draft of your proposal as a topic the 'governance' category of the [Cosmos forum](https://forum.cosmos.network/c/governance)
 
-## Engage directly with the voting community and seek feedback
-Engagement is likely to be critical to the success of a proposal. A majority of the voting community should probably be aware of the proposal and considered it before the proposal goes live on-chain. 
-
-3. Directly engage key members of the community for feedback. These could be large contributors, those likely to be most impacted by the proposal, and entities with high stake-backing (eg. high-ranked validators; large stakers).
-4. Target members of the community in a semi-public way before bringing the draft to a full public audience. The burden of public scrutiny in a semi-anonymized environment (eg. Twitter) can be stressful and overwhelming. Solicit opinions in places with people who established reputations first. For example, there is a private Telegram group called Cosmos Network VIP (ask for an invite if you are or would like to be a Cosmos contributor). Let people in [Discord community](https://discord.gg/cVwYX9u) know about your draft proposal.
-5. Alert the community to the draft proposal via [Twitter](https://twitter.com/CosmosGov) and [Telegram](https://t.me/cosmosproject).
-
 ## Elements of a Community-Spend Proposal
 
 It will be important to balance two things: being detailed and being concise. You'll want to be concise so that people can assess your proposal quickly. You'll want to be detailed so that people will have a clear understanding of what the agreement is and won't need to ask many questions before voting. These are some elements that the Cosmos Hub community may be likely to be looking for:
@@ -65,3 +58,10 @@ Assume that nobody will read beyond this point.
    - do you see this work continuing in the future and is there a plan?
    - what are the risks involved with this work?
    - do you have conflicts of interest to declare?
+
+## Engage directly with the voting community and seek feedback
+Engagement is likely to be critical to the success of a proposal. A majority of the voting community should probably be aware of the proposal and considered it before the proposal goes live on-chain. 
+
+1. Directly engage key members of the community for feedback. These could be large contributors, those likely to be most impacted by the proposal, and entities with high stake-backing (eg. high-ranked validators; large stakers).
+2. Target members of the community in a semi-public way before bringing the draft to a full public audience. The burden of public scrutiny in a semi-anonymized environment (eg. Twitter) can be stressful and overwhelming. Solicit opinions in places with people who established reputations first. For example, there is a private Telegram group called Cosmos Network VIP (ask for an invite if you are or would like to be a Cosmos contributor). Let people in [Discord community](https://discord.gg/cVwYX9u) know about your draft proposal.
+3. Alert the community to the draft proposal via [Twitter](https://twitter.com/CosmosGov) and [Telegram](https://t.me/cosmosproject).
