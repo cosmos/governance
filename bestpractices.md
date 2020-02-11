@@ -61,7 +61,7 @@ Assume that nobody will read beyond this point.
 
 ## Engage directly with the voting community and seek feedback
 ### Last updated: Feb 11, 2020
-Engagement is likely to be critical to the success of a proposal. A majority of the voting community should probably be aware of the proposal and considered it before the proposal goes live on-chain. 
+Engagement is likely to be critical to the success of a proposal. A majority of the voting community should probably be aware of the proposal and have considered it before the proposal goes live on-chain. You should have reasonable confidence that your proposal will pass before risking deposit contributions.
 
 1. Directly engage key members of the community for feedback. These could be large contributors, those likely to be most impacted by the proposal, and entities with high stake-backing (eg. high-ranked validators; large stakers).
 2. Target members of the community in a semi-public way before bringing the draft to a full public audience. The burden of public scrutiny in a semi-anonymized environment (eg. Twitter) can be stressful and overwhelming. Solicit opinions in places with people who established reputations first. For example, there is a private Telegram group called Cosmos Network VIP (ask for an invite if you are or would like to be a Cosmos contributor). Let people in [Discord community](https://discord.gg/cVwYX9u) know about your draft proposal.
