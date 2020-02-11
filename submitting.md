@@ -129,6 +129,7 @@ This is the complete command that I could use to submit a community spend propos
 4. `--gas 500000` is the maximum amount of gas permitted to be used to process the transaction
    - the more content there is in the description of your proposal, the more gas your transaction will consume
    - if the number isn't high enough and there isn't enough gas to process your transaction, the transaction will fail
+   - the transaction will only use the amount of gas needed to be processed
 5. `--fees` is flat rate incentive for a validator to process your transaction
    - the network still accepts zero fees, but many nodes will not transmit your transaction to the network without a minimum fee
    - many nodes (including the Figment node) use a minimum fee to disincentivize transaction spamming
