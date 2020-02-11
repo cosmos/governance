@@ -12,7 +12,7 @@ In practice, the Cosmos Hub community tends to submit a new proposal in these wa
 
   "title": "Community Pool Spend",
   
-  "description": "This is the summary of the key information about this proposal",
+  "description": "This is the summary of the key information about this proposal. Include the URL to a PDF version of your full proposal.",
   
   "recipient": "cosmos1_hex_address",
   
