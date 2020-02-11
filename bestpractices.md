@@ -60,6 +60,7 @@ Assume that nobody will read beyond this point.
    - do you have conflicts of interest to declare?
 
 ## Engage directly with the voting community and seek feedback
+### Last updated: Feb 11, 2020
 Engagement is likely to be critical to the success of a proposal. A majority of the voting community should probably be aware of the proposal and considered it before the proposal goes live on-chain. 
 
 1. Directly engage key members of the community for feedback. These could be large contributors, those likely to be most impacted by the proposal, and entities with high stake-backing (eg. high-ranked validators; large stakers).
