@@ -2,7 +2,7 @@
 ## WARNING: under active development. 
 ## Do not use this information to submit a proposal.
 
-If you have a final draft of your proposal ready to submit, these are the three primary steps to getting your community-spend proposal live on-chain. Note that you can push your proposal live on the testnet first.
+If you have a final draft of your proposal ready to submit, these are the three primary steps to getting your community-spend proposal live on-chain. You may want to push your proposal live on the testnet first.
 
 1. [Hosting the final draft](#hosting-the-full-community-spend-proposal) of your community-spend proposal with IPFS (InterPlanetary File System)
 2. [Formatting the governance proposal](#formatting-the-governance-proposal) that will be on-chain
@@ -10,16 +10,14 @@ If you have a final draft of your proposal ready to submit, these are the three 
 
 ## Hosting the full community-spend proposal
 When you've finalized your community-spend proposal draft, convert it to a PDF file. Upload the PDF to the IPFS network:
-1. either by running an IPFS node and the IPFS software, or
+1. either by [running an IPFS node and the IPFS software](https://ipfs.io), or
 2. using a service such as [https://pinata.cloud](https://pinata.cloud)
+
 Ensure that you "pin" the PDF file so that it continues to be available on the network. You should get a URL like this: https://ipfs.io/ipfs/QmSMGEoY2dfxADPfgoAsJxjjC6hwpSNx1dXAqePiCEMCbY 
 
 Share the URL with others and verify that your file is publicly accessible. 
 
 ## Formatting the governance proposal
-
-## Sending the transaction that submits your governance proposal
-
 ### Example
 {
 
@@ -55,5 +53,7 @@ Share the URL with others and verify that your file is publicly accessible.
   
 }
 
-# Final step: transaction command for submitting the proposal on-chain
+
+## Sending the transaction that submits your governance proposal
+
 ```gaiacli tx gov submit-proposal community-pool-spend <proposal.json> --from [key/address]```
