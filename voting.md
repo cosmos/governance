@@ -1,4 +1,4 @@
-#The Voting Process & Governance Mechanism
+# The Voting Process & Governance Mechanism
 
 ## What determines whether or not a governance proposal passes?
 There are four criteria:
