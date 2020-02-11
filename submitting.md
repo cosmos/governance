@@ -18,6 +18,13 @@ Ensure that you "pin" the PDF file so that it continues to be available on the n
 Share the URL with others and verify that your file is publicly accessible. 
 
 ## Formatting the governance proposal
+This is the information that will be stored on-chain as the governance proposal. Most people rely upon network explorers to read this information. There are five (5) components:
+- title - the distinguishing name of the proposal, typically the way the that explorers list proposals
+- description - the body of the proposal that further describes what is being proposed and details surrounding the proposal
+- recipient - the Cosmos Hub (hex-based) address that will receive funding from the Community Pool
+- amount - the amount of funding that the recipient will receive in micro-ATOMs (uatom)
+- deposit - the amount that will be contributed to the deposit (in micro-ATOMs "uatom") from the account submitting the proposal
+
 ### Example
 {
 
@@ -52,7 +59,6 @@ Share the URL with others and verify that your file is publicly accessible.
   ]
   
 }
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
 ## Sending the transaction that submits your governance proposal
 
