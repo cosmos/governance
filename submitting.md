@@ -2,10 +2,18 @@
 ## WARNING: under active development. 
 ## Do not use this information to submit a proposal.
 
-## Submission formatting
-In practice, the Cosmos Hub community tends to submit a new proposal in these ways:
-1. In long form, also known as the "full proposal," which is often a PDF (portable document format) that is hosted and "pinned" with IPFS (InterPlanetary File System).
-2. 
+## Submitting a proposal on-chain
+If you have a final draft of your proposal ready to submit, these are the three primary steps to getting your community-spend proposal live on-chain. Note that you can push your proposal live on the testnet first.
+
+1. [Hosting the final draft] of your community-spend proposal with IPFS (InterPlanetary File System)
+2. [Formatting the governance proposal] that will be on-chain
+3. [Sending the transaction] that submits your governance proposal on-chain
+
+## Hosting the full community-spend proposal
+
+## Formatting the governance proposal
+
+## Sending the transaction that submits your governance proposal
 
 ### Example
 {
