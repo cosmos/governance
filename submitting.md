@@ -9,6 +9,12 @@ If you have a final draft of your proposal ready to submit, these are the three 
 3. [Sending the transaction](#sending-the-transaction-that-submits-your-governance-proposal) that submits your governance proposal on-chain
 
 ## Hosting the full community-spend proposal
+When you've finalized your community-spend proposal draft, convert it to a PDF file. Upload the PDF to the IPFS network:
+1. either by running an IPFS node and the IPFS software, or
+2. using a service such as [https://pinata.cloud](https://pinata.cloud)
+Ensure that you "pin" the PDF file so that it continues to be available on the network. You should get a URL like this: https://ipfs.io/ipfs/QmSMGEoY2dfxADPfgoAsJxjjC6hwpSNx1dXAqePiCEMCbY 
+
+Share the URL with others and verify that your file is publicly accessible. 
 
 ## Formatting the governance proposal
 
