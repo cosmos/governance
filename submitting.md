@@ -1,8 +1,7 @@
-# Submitting a Community-spend Proposal
+# Submitting a Community-Spend Proposal
 ## WARNING: under active development. 
 ## Do not use this information to submit a proposal.
 
-## Submitting a proposal on-chain
 If you have a final draft of your proposal ready to submit, these are the three primary steps to getting your community-spend proposal live on-chain. Note that you can push your proposal live on the testnet first.
 
 1. [Hosting the final draft] of your community-spend proposal with IPFS (InterPlanetary File System)
