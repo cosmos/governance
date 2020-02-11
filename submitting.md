@@ -4,9 +4,9 @@
 
 If you have a final draft of your proposal ready to submit, these are the three primary steps to getting your community-spend proposal live on-chain. Note that you can push your proposal live on the testnet first.
 
-1. [Hosting the final draft] of your community-spend proposal with IPFS (InterPlanetary File System)
-2. [Formatting the governance proposal] that will be on-chain
-3. [Sending the transaction] that submits your governance proposal on-chain
+1. [Hosting the final draft](#hosting-the-full-community-spend-proposal) of your community-spend proposal with IPFS (InterPlanetary File System)
+2. [Formatting the governance proposal](#formatting-the-governance-proposal) that will be on-chain
+3. [Sending the transaction](#sending-the-transaction-that-submits-your-governance-proposal) that submits your governance proposal on-chain
 
 ## Hosting the full community-spend proposal
 
