@@ -68,7 +68,8 @@ ___
 ___
 
 ### Real example
-This is the governance proposal that Gavin Birch from Figment Networks used for the first successful community-spend proposal. "\n" is used to create a new line.
+This is the governance proposal that Gavin Birch (Figment Networks) used for [Prop23, the first successful Cosmos Hub community-spend proposal](https://hubble.figment.network/cosmos/chains/cosmoshub-3/governance/proposals/23). 
+**Note**: "\n" is used to create a new line.
 
 {
 
