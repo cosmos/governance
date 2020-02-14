@@ -155,3 +155,15 @@ There are a number of reasons why a transaction may fail.
 2. Incorrect denomination - You may have specified an amount in 'utom' or 'atom' instead of 'uatom', causing the transaction to fail.
 
 If you encounter a problem, try to troubleshoot it first, and then ask for help on All in Bits' Cosmos forum: [https://forum.cosmos.network/c/governance](https://forum.cosmos.network/c/governance). We can learn from failed attempts and use them to improve upon this guide.
+
+### Submitting your proposal to the testnet
+I intend to expand this guide to include testnet instructions. You may want to submit your proposal to the testnet chain before the mainnet for a number of reasons:
+1. To see what the proposal description will look like
+2. To signal that your proposal is about to go live on the mainnet
+3. To share what the proposal will look like in advance with stakeholders
+4. To test the functionality of the governance features
+
+Submitting your proposal to the testnet increases the likelihood that you will discover a flaw before deploying your proposal on mainnet. A few things to keep in mind:
+- you'll need testnet tokens for your proposal (ask around for a faucet)
+- the parameters for testnet proposals are different (eg. voting period timing, deposit amount, deposit denomination)
+- the deposit denomination is in 'muon' instead of 'uatom'
