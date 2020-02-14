@@ -12,4 +12,9 @@ There are four criteria:
 
 Currently, the criteria for a community-spend proposals is the same as those of signaling and parameter-change proposals.
 
-The voting period lasts for 14 days, and participants may change their vote at any time before the voting period ends. The votes of validators (and their delegators) of inactive validators will not count. That means that if I delegate to validator that is jailed, tombstoned, or ranks lower than 125 in stake-backing at the time that the voting period ends, my stake-weight will not count in the vote.
+The voting period lasts for 14 days, and participants may change their vote at any time before the voting period ends. 
+
+### How is voting counted?
+Voting power is determined by stake weight. Only bonded ATOMs count towards the voting power for a governance proposal.
+
+Liquid ATOMs will not count toward a vote. Inactive validators can cast a vote, but their voting power (including the backing of their delegators) will not count toward the vote if they are not in the active set when the voting period ends. That means that if I delegate to validator that is jailed, tombstoned, or ranks lower than 125 in stake-backing at the time that the voting period ends, my stake-weight will not count in the vote.
