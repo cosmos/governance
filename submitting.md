@@ -151,8 +151,10 @@ You can see whether or not your transaction was successful with Hubble:
 ### Troublshooting a failed transaction
 There are a number of reasons why a transaction may fail.
 1. Running out of gas
+
 The more data there is in a transaction, the more gas it will need to be processed. If you don't specify enough gas, the transaction will fail.
 2. Incorrect denomination
+
 You may have specified an amount in 'utom' or 'atom' instead of 'uatom', causing the transaction to fail.
 
 If you encounter a problem, try to troubleshoot it first, and then ask for help on All in Bits' Cosmos forum: [https://forum.cosmos.network/c/governance](https://forum.cosmos.network/c/governance). We can learn from failed attempts and use them to improve upon this guide.
