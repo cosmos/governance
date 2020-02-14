@@ -3,7 +3,11 @@
 
 ## Engage directly with the voting community and seek feedback
 #### Last updated: Feb 14, 2020
-Engagement is likely to be critical to the success of a proposal. One strategy involves a few stages of engagement before submitting a proposal on chain. In the first stage of this strategy, you should engage people informally about your idea.
+Engagement is likely to be critical to the success of a proposal. There are many different ways to engage. 
+
+**Note**: this guide likely fails to capture all ways of engaging. Perhaps you could bring your idea to a podcast or a hackathon. You could host an AMA on [Reddit](https://www.reddit.com/r/cosmosnetwork) or host a Q&A (questions & answers) video call. Try to go above and beyond what's recommended here--experiment, and use your strengths.
+
+One strategy involves a few stages of engagement before and after submitting a proposal on chain. In the first stage of this strategy, you should engage people informally about your idea.
 
 ### Stage 1: Your Idea
 ### Not yet confident about your idea?
@@ -15,7 +19,9 @@ If you know people who are very involved with the Cosmos Hub, send them a privat
 Great! However, remember that governance proposals potentially impact many stakeholders, which can happen in unexpected ways. Introduce your idea with members of the community before investing resources into drafting a proposal. At this point you should seek out and carefully consider critical feedback in order to protect yourself from [confirmation bias](https://en.wikipedia.org/wiki/Confirmation_bias). This is the ideal time to see a critical flaw, because submitting a flawed proposal will waste resources.
 
 ### Are you ready to draft a governance proposal?
-There will likely be differences of opinion about the value of what you're proposing to do and the strategy by which you're planning to do it. If you've considered feedback from broad perspectives and think that what you're doing is valuable and that your strategy should work, and you believe that others feel this way as well, it's likely worth drafting a proposal. However, remember that the largest ATOM stakers have the biggest vote, so a vocal minority isn't necessarily representative or predictive of the outcome of an on-chain vote. A conservative approach is to have some confidence that you roughly have initial support from a majority of the voting power before proceeding to drafting your proposal. However, there are likely other approaches, and if your idea is important enough, you may want to pursue it regardless of whether or not you are confident that the voting power will support it.
+There will likely be differences of opinion about the value of what you're proposing to do and the strategy by which you're planning to do it. If you've considered feedback from broad perspectives and think that what you're doing is valuable and that your strategy should work, and you believe that others feel this way as well, it's likely worth drafting a proposal. However, remember that the largest ATOM stakers have the biggest vote, so a vocal minority isn't necessarily representative or predictive of the outcome of an on-chain vote. 
+
+A conservative approach is to have some confidence that you roughly have initial support from a majority of the voting power before proceeding to drafting your proposal. However, there are likely other approaches, and if your idea is important enough, you may want to pursue it regardless of whether or not you are confident that the voting power will support it.
 
 ### Stage 2: Your Draft Proposal
 ### Begin with a well-considered draft proposal
