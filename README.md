@@ -5,7 +5,7 @@ The Cosmos Hub 3 launched with community-spend capabilities on December 11, 2019
 Drafting a proposal is a process that takes time, attention, and involves risk. The objective of this documentation is to make this process easier by preparing participants for what to pay attention to and how to reduce the risk of losing deposits. Ideally, a proposal should only fail to pass because the voting is aware and makes an informed decision to vote down the proposal.
 
 If you are considering writing a proposal, you should know:
-1. [How the Community Pool works](#learn-about-the-community-pool)
+1. [About the Community Pool](#learn-about-the-community-pool)
 2. [How the voting process and governance mechanism works](voting.md) --> **to do**<--
 3. [What the community will likely want to know from your proposal](bestpractices.md#elements-of-a-community-spend-proposal)
 4. [Where and how to engage with the Cosmos community about your proposal](bestpractices.md)
