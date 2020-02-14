@@ -3,11 +3,11 @@
 
 ## Engage directly with the voting community and seek feedback
 #### Last updated: Feb 14, 2020
-Engagement is likely to be critical to the success of a proposal. There are many different ways to engage. 
-
-**Note**: this guide likely fails to capture all ways of engaging. Perhaps you could bring your idea to a podcast or a hackathon. You could host an AMA on [Reddit](https://www.reddit.com/r/cosmosnetwork) or host a Q&A (questions & answers) video call. Try to go above and beyond what's recommended here--experiment, and use your strengths.
+Engagement is likely to be critical to the success of a proposal. There are many different ways to engage.
 
 One strategy involves a few stages of engagement before and after submitting a proposal on chain. In the first stage of this strategy, you should engage people informally about your idea.
+
+**Note**: this guide likely fails to capture all ways of engaging. Perhaps you could bring your idea to a podcast or a hackathon. You could host an AMA on [Reddit](https://www.reddit.com/r/cosmosnetwork) or host a Q&A (questions & answers) video call. Try to go above and beyond what's recommended here--experiment, and use your strengths.
 
 ### Stage 1: Your Idea
 ### Not yet confident about your idea?
