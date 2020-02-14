@@ -2,7 +2,7 @@
 The Cosmos Hub 3 launched with community-spend capabilities on December 11, 2019, effectively unlocking the potential for token-holders to vote to approve spending from the Community Pool. **This documentation is in active development, so please do not rely upon this information yet.** [Discuss its development here](https://forum.cosmos.network/t/gwg-community-spend-best-practices/3240).
 
 ## Drafting a Community-spend Proposal
-Drafting and submitting a proposal is a process that takes time, attention, and involves risk. The objective of this documentation is to make this process easier by preparing participants for what to pay attention to and how to reduce the risk of losing deposits. Ideally, a proposal should only fail to pass because the voting is aware and makes an informed decision to vote down the proposal.
+Drafting and submitting a proposal is a process that takes time, attention, and involves risk. The objective of this documentation is to make this process easier by preparing participants for what to pay attention to and how to reduce the risk of losing deposits. Ideally, a proposal should only fail to pass because the voters 1) are aware and engaged and 2) are able to make an informed decision to vote down the proposal.
 
 If you are considering writing a proposal, you should know:
 1. [About the Community Pool](#learn-about-the-community-pool)
