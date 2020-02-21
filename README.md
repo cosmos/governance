@@ -1,7 +1,7 @@
 # Cosmos Parameters Wiki
 This Cosmos Hub educational wiki aims to outline the Hub's parameters, describe their functions, and describe the potential implications of modifying each parameter. **This wiki is in active development, so please do not rely upon this information yet.** [Discuss its development here](https://forum.cosmos.network/t/gwg-cosmos-hub-parameters-wiki/3170).
 
-There are currently 9 modules active in the Cosmos Hub, each with parameters that may be altered via governance proposal.
+There are currently 8 modules active in the Cosmos Hub with parameters that may be altered via governance proposal.
 
 # Modules
 1. [Auth](/Auth.md) - Authentication of accounts and transactions for Cosmos SDK application --> **to do** <--
@@ -12,7 +12,6 @@ There are currently 9 modules active in the Cosmos Hub, each with parameters tha
 6. [Distribution](/Distribution.md) - Fee distribution, and staking token provision distribution --> **to do** <--
 7. [Crisis](/Crisis.md) - Halting the blockchain under certain circumstances (e.g. if an invariant is broken) --> **to do** <--
 8. [Mint](/Mint.md) - Creation of new units of staking token --> **to do** <--
-9. [Supply](/Supply.md) - Total token supply of the chain --> **to do** <--
 
 You can query the current parameter(s) of each module with the command line program [`gaiacli`](/gaiacli). Use the command `gaia q [module] -h` to get help about the subcommands for the module you want to query. For example, `gaiacli q staking` --> to do <--
 
