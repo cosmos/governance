@@ -148,7 +148,7 @@ After posting your transaction, your command line interface will provide you wit
 You can see whether or not your transaction was successful with Hubble:
 ![Verify tx with Hubble](https://github.com/gavinly/CosmosCommunitySpend/blob/master/verify%20tx.png?raw=true)
 
-### Troublshooting a failed transaction
+### Troubleshooting a failed transaction
 There are a number of reasons why a transaction may fail.
 1. Running out of gas - The more data there is in a transaction, the more gas it will need to be processed. If you don't specify enough gas, the transaction will fail.
 
