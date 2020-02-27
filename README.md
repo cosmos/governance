@@ -6,7 +6,7 @@ Drafting and submitting a proposal is a process that takes time, attention, and 
 
 If you are considering writing a proposal, you should know:
 1. [About the Community Pool](#learn-about-the-community-pool)
-2. [How the voting process and governance mechanism works](voting.md) --> **to do**<--
+2. [How the voting process and governance mechanism works](voting.md)
 3. [What the community will likely want to know from your proposal](bestpractices.md#elements-of-a-community-spend-proposal)
 4. [Where and how to engage with the Cosmos community about your proposal](bestpractices.md)
 5. [How to prepare your final proposal draft for submission](submitting.md)
