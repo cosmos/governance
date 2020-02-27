@@ -5,7 +5,9 @@
 The deposit period lasts either 14 days or until the proposal deposit totals 512 ATOMs, whichever happens first.
 
 #### Deposits
-Prior to a governance proposal entering the voting period (ie. for the proposal to be voted upon), there must be at least a minimum number of ATOMs deposited. Anyone may contribute to this deposit. Deposits of passed and failed proposals are returned to the contributors.
+Deposit amounts are at risk of being burned. Prior to a governance proposal entering the voting period (ie. for the proposal to be voted upon), there must be at least a minimum number of ATOMs deposited. Anyone may contribute to this deposit. Deposits of passed and failed proposals are returned to the contributors.
+
+In the past, different people have considered contributions amounts differently. There is some consensus that this should be a personal choice. There is also some consensus that this can be an opportunity for supporters to signal their support by adding to the deposit amount, so a proposer may choose to leave contribution room for others to participate. It is important to remember that any contributed ATOMs are at risk of being burned.
 
 #### Burned deposits
 Deposits are burned when proposals:
