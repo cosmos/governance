@@ -47,7 +47,7 @@ Validators must now sign at least 5% of 20,000 blocks, which is 1000 blocks. Tha
 That's ~37 hours instead of ~18.5 hours, assuming 7s block times.
 
 ## 2. `MinSignedPerWindow`
-### Liveness threshold-proportion of signed blocks per window.
+### Minimum proportion of blocks signed per window without being slashed.
 #### `cosmoshub-3` default: `0.050000000000000000`
 
 If a validator in the active set is offline for too long, the validator will be slashed by [`SlashFractionDowntime`](#5-SlashFractionDowntime) and temporarily removed from the active set for at least the [`DowntimeJailDuration`](#3-DowntimeJailDuration), which is 10 minutes.
@@ -79,21 +79,20 @@ Validators must now sign at least 10% of 10,000 blocks, which is 1000 blocks. Th
 
 That's ~17.5 hours instead of ~18.5 hours, assuming 7s block times.
 
-
 ## 3. `DowntimeJailDuration`
-### Short desc, in nanoseconds.
+### The suspension time (aka jail time) for a validator that is offline too long, in nanoseconds.
 #### `cosmoshub-3` default: `600000000000`
 
-Long Desc
+A validator in the active set that's offline for too long, besides being slashed, will be temporarily removed from the active set (aka "jailed") for at least [`DowntimeJailDuration`](#3-DowntimeJailDuration), which is 10 minutes (`600000000000` nanoseconds). During this time, a validator is not able to sign blocks and its delegators will not earn staking rewards. After the `DowntimeJailDuration` period has passed, the validator operator may send an "unjail" transaction to resume validator operations.
+
+All in Bits has published more about liveness [here](https://docs.cosmos.network/master/modules/slashing/04_begin_block.html).
 
 ### Potential implications
 #### Decreasing the value of `DowntimeJailDuration`
-Decreasing the value of the `DowntimeJailDuration` parameter will ---. This may ---. 
+Decreasing the value of the `DowntimeJailDuration` parameter will require a validator to wait less time before resuming validator operations. During this time, a validator is not able to sign blocks and its delegators will not earn staking rewards.
 
 #### Increasing the value of `DowntimeJailDuration`
-Increasing the value of the `DowntimeJailDuration` parameter will ---. This may ---. 
-
-### Notes
+Increasing the value of the `DowntimeJailDuration` parameter will require a validator to wait more time before resuming validator operations. During this time, a validator is not able to sign blocks and its delegators will not earn staking rewards.
 
 
 ## 4. `SlashFractionDoubleSign`
