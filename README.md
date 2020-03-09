@@ -8,7 +8,7 @@ There are currently 8 modules active in the Cosmos Hub with parameters that may 
 2. [Bank](/Bank.md) - Token transfer functionalities
 3. [Governance](/Governance.md) - On-chain proposals and voting
 4. [Staking](/Staking.md) - Proof-of-stake layer
-5. [Slashing](/Slashing.md) - Validator punishment mechanisms --> **to do** <--
+5. [Slashing](/Slashing.md) - Validator punishment mechanisms
 6. [Distribution](/Distribution.md) - Fee distribution, and staking token provision distribution --> **to do** <--
 7. [Crisis](/Crisis.md) - Halting the blockchain under certain circumstances (e.g. if an invariant is broken) --> **to do** <--
 8. [Mint](/Mint.md) - Creation of new units of staking token --> **to do** <--
