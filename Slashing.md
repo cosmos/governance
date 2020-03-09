@@ -4,7 +4,7 @@ The `Slashing` module is responsible for enabling the Cosmos Hub to penalize any
 
 `Slashing` is active on Cosmos Hub 3 and currently has five parameters that may be modified by governance proposal:
 1. [`SignedBlocksWindow`](#1-SignedBlocksWindow) - 10000 (blocks)
-2. [`MinSignedPerWindow`](#2-MinSignedPerWindow) - 0.500000000000000000 (proportion)
+2. [`MinSignedPerWindow`](#2-MinSignedPerWindow) - 0.050000000000000000 (proportion)
 3. [`DowntimeJailDuration`](#3-DowntimeJailDuration) - 600000000000 (nanoseconds)
 4. [`SlashFractionDoubleSign`](#4-SlashFractionDoubleSign) - 0.050000000000000000 (proportion)
 5. [`SlashFractionDowntime`](#5-SlashFractionDowntime) - 0.000100000000000000 (proportion)
@@ -17,11 +17,22 @@ If you're technically-inclined, [these are the technical specifications](#techni
 ### Short desc, in blocks.
 #### `cosmoshub-3` default: `10000`
 
-Long Desc
+If a validator in the active set is offline for too long, the validator will be slashed by [`SlashFractionDowntime`](#5-SlashFractionDowntime) and temporarily removed from the active set for at least 10 minutes (aka [`DowntimeJailDuration`](#3-DowntimeJailDuration)).
+
+How long is being offline for too long? There are two components: `SignedBlocksWindow` and [`MinSignedPerWindow`](#2-MinSignedPerWindow). Since `MinSignedPerWindow` is 5% and `SignedBlocksWindow` is 10,000, a validator must have signed at least 5% of 10,000 blocks (500 out of 10,000) at any given time to comply with protocol rules. That means a validator that misses 9,500 consecutive blocks will be considered by the system to have committed a liveness violation. 
+
+All in Bits has published more about liveness [here](https://docs.cosmos.network/master/modules/slashing/02_state.html).
 
 ### Potential implications
 #### Decreasing the value of `SignedBlocksWindow`
-Decreasing the value of the `SignedBlocksWindow` parameter will ---. This will make it less likely ---.
+Decreasing the value of the `SignedBlocksWindow` parameter will decrease the window for complying with the system's liveness rules. This will make it more likely that offline
+
+**Example:**
+
+We pass a proposal to cut `SignedBlocksWindow` in half from 10,000 to 5,000 blocks. What happens?
+
+Validators must now sign at least 5% of 5,000 blocks, which is 250 blocks. That means that a validator that misses 4,750 consecutive blocks will be considered by the system to have committed a liveness violation, where previously 9,500 consecutive blocks would need to have been missed to violate these system rules.
+
 
 #### Increasing the value of `SignedBlocksWindow`
 Increasing the value of the `SignedBlocksWindow` parameter will ---. This will make it more likely ---.
@@ -31,7 +42,7 @@ Increasing the value of the `SignedBlocksWindow` parameter will ---. This will m
 
 ## 2. `MinSignedPerWindow`
 ### Short desc.
-#### `cosmoshub-3` default: `0.500000000000000000`
+#### `cosmoshub-3` default: `0.050000000000000000`
 
 Long Desc
 
@@ -120,7 +131,7 @@ The `Slashing` module contains the following parameters:
 | Key           | Type   | cosmoshub-3 genesis setting                |
 | ----------------------- | ---------------- | ---------------------- |
 | SignedBlocksWindow      | string (int64)   | "10000"                |
-| MinSignedPerWindow      | string (dec)     | "0.500000000000000000" |
+| MinSignedPerWindow      | string (dec)     | "0.050000000000000000" |
 | DowntimeJailDuration    | string (time ns) | "600000000000"         |
 | SlashFractionDoubleSign | string (dec)     | "0.050000000000000000" |
 | SlashFractionDowntime   | string (dec)     | "0.000100000000000000" |
