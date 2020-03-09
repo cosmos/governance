@@ -21,7 +21,7 @@ You can query the current parameter(s) of each module with the command line prog
 - You will need to indicate which chain you are querying, and currently this is `--chain-id cosmoshub-3`
 - You will need to connect to a full node. If gaiacli isn't already configured for this, you can use this tag in your command `--node [address]:26657`.
 
-### Full nodes  **to do**
+### Full nodes  -->**to do**<--
 Running a full node can be difficult for those not technically-inclined, so you may choose to use a third-party's full node. In this case, the primary security risk is that of censorship: it's the single place where you have a single gateway to the network, and any messages submitted through an untrusted node could be censored.
 - cosmos-node-1.figment.network:26657 ([Figment Networks](https://figment.network/networks/cosmos/))
 - 63.35.133.166:26657 ([Chorus One](cosmos.chorus.one))
