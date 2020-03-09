@@ -83,7 +83,7 @@ That's ~17.5 hours instead of ~18.5 hours, assuming 7s block times.
 ### The suspension time (aka jail time) for a validator that is offline too long, in nanoseconds.
 #### `cosmoshub-3` default: `600000000000`
 
-A validator in the active set that's offline for too long, besides being slashed, will be temporarily removed from the active set (aka "jailed") for at least [`DowntimeJailDuration`](#3-DowntimeJailDuration), which is 10 minutes (`600000000000` nanoseconds). During this time, a validator is not able to sign blocks and its delegators will not earn staking rewards. After the `DowntimeJailDuration` period has passed, the validator operator may send an "[unjail](https://docs.cosmos.network/master/modules/slashing/03_messages.html#unjail)" transaction to resume validator operations.
+A validator in the active set that's offline for too long, besides being slashed, will be temporarily removed from the active set (aka "[jailed](https://docs.cosmos.network/master/modules/slashing/03_messages.html#unjail)") for at least [`DowntimeJailDuration`](#3-DowntimeJailDuration), which is 10 minutes (`600000000000` nanoseconds). During this time, a validator is not able to sign blocks and its delegators will not earn staking rewards. After the `DowntimeJailDuration` period has passed, the validator operator may send an "[unjail](https://docs.cosmos.network/master/modules/slashing/03_messages.html#unjail)" transaction to resume validator operations.
 
 All in Bits has published more about liveness [here](https://docs.cosmos.network/master/modules/slashing/04_begin_block.html).
 
@@ -96,34 +96,31 @@ Increasing the value of the `DowntimeJailDuration` parameter will require a vali
 
 
 ## 4. `SlashFractionDoubleSign`
-### Proportion of stake that is slashed for equivocation (aka double-signing).
+### Proportion of stake-backing that is bruned for equivocation (aka double-signing).
 #### `cosmoshub-3` default: `0.050000000000000000`
 
 A validator proven to have signed two blocks at the same height is considered to have committed equivocation, and the system will then permanently burn ("slash") that validator's total delegations (aka stake-backing) by `0.050000000000000000` (5%). All delegators to an offending validator will lose 5% of all ATOMs delegated to this validator. At this point the validator will be "[tombstoned](https://docs.cosmos.network/master/modules/slashing/01_concepts.html)," which means the validator will be permanently removed from the active set of validators, and the validator's stake-backing will only be slashed one time (regardless of how many equivocations).
 
 ### Potential implications
 #### Decreasing the value of `SlashFractionDoubleSign`
-Decreasing the value of the `SlashFractionDoubleSign` parameter will lower the penalty . This may ---. 
+Decreasing the value of the `SlashFractionDoubleSign` parameter will lessen the penalty for equivocation, and offending validators will have a smaller proportion of their stake-backing burned. This may reduce the motivation for operators to ensure that their validators are secure.
 
 #### Increasing the value of `SlashFractionDoubleSign`
-Increasing the value of the `SlashFractionDoubleSign` parameter will ---. This may ---. 
-
-### Notes
+Increasing the value of the `SlashFractionDoubleSign` parameter will heighten the penalty for equivocation, and offending validators will have a larger proportion of their stake-backing burned. This may increase the motivation for operators to ensure that their validators are secure.
 
 ## 5. `SlashFractionDowntime`
 ### Proportion of stake that is slashed for being offline too long.
 #### `cosmoshub-3` default: `0.000100000000000000`
 
-Long Desc
+If a validator in the active set is offline for too long, the system will permanently burn ("slash") that validator's total delegations (aka stake-backing) by a `SlashFractionDowntime` of `0.000100000000000000` (0.01%). All delegators to an offending validator will lose 0.01% of all ATOMs delegated to this validator. At this point the validator will be "[jailed](https://docs.cosmos.network/master/modules/slashing/03_messages.html#unjail)," which means the validator will be temporarily removed from the active set of validators so the validator's stake-backing will only be slashed one time.
 
 ### Potential implications
 #### Decreasing the value of `SlashFractionDowntime`
-Decreasing the value of the `SlashFractionDowntime` parameter will ---. This may ---. 
+Decreasing the value of the `SlashFractionDowntime` parameter will lessen the penalty for liveness violations, and offending validators will have a smaller proportion of their stake-backing burned. This may reduce the motivation for operators to ensure that their validators are online.
 
 #### Increasing the value of `SlashFractionDowntime`
-Increasing the value of the `SlashFractionDowntime` parameter will ---. This may ---. 
+Increasing the value of the `SlashFractionDowntime` parameter will heighten the penalty for liveness violations, and offending validators will have a larger proportion of their stake-backing burned. This may increase the motivation for operators to ensure that their validators are online.
 
-### Notes
 
 # Verify Parameter Values
 ## Genesis (aka launch) Parameters
