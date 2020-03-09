@@ -66,7 +66,7 @@ Decreasing the value of the `KeyMaxEntries` parameter will, within the unbonding
 Increasing the value of the `KeyMaxEntries` parameter will, within the unbonding period, increase the number of times that a delegator may unbond ATOM amounts from a single, unique validator. It will also increase the number of redelegations a delegator may initiate between two unique validators. Since this activity across many accounts can affect the performance of the Cosmos Hub, increasing this parameter's value may increase the likelihood of a performance reduction in the network.
 
 ### Notes
-Aleks Bez from All in Bits wrote more about `KeyMaxEntries` [here in this article](https://blog.cosmos.network/re-delegations-in-the-cosmos-hub-7d2f5ea59f56).
+Aleksandr (All in Bits; Fission Labs) wrote more about `KeyMaxEntries` [here in this article](https://blog.cosmos.network/re-delegations-in-the-cosmos-hub-7d2f5ea59f56).
 
 ## 4. `BondDenom`
 ### The unit and denomination for the asset bonded in the system.
