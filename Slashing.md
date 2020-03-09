@@ -17,7 +17,7 @@ If you're technically-inclined, [these are the technical specifications](#techni
 ### Short desc, in blocks.
 #### `cosmoshub-3` default: `10000`
 
-If a validator in the active set is offline for too long, the validator will be slashed by [`SlashFractionDowntime`](#5-SlashFractionDowntime) and temporarily removed from the active set for at least 10 minutes (aka [`DowntimeJailDuration`](#3-DowntimeJailDuration)).
+If a validator in the active set is offline for too long, the validator will be slashed by [`SlashFractionDowntime`](#5-SlashFractionDowntime) and temporarily removed from the active set for at least the [`DowntimeJailDuration`](#3-DowntimeJailDuration), which is 10 minutes.
 
 How long is being offline for too long? There are two components: `SignedBlocksWindow` and [`MinSignedPerWindow`](#2-MinSignedPerWindow). Since `MinSignedPerWindow` is 5% and `SignedBlocksWindow` is 10,000, a validator must have signed at least 5% of 10,000 blocks (500 out of 10,000) at any given time to comply with protocol rules. That means a validator that misses 9,500 consecutive blocks will be considered by the system to have committed a liveness violation. 
 
