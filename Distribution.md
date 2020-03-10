@@ -99,13 +99,14 @@ Delegators' rewards: 100 * 80% - Commission = 79.2 Atoms (each delegator will be
 ### Short desc.
 #### `cosmoshub-3` default: `true`
 
-Long Desc
+A delegator can set a unique withdrawal address (account) that receives staking rewards when `withdrawaddrenabled` is set to `true`. When `withdrawaddrenabled` is set to `false`, the delegator can no longer set their validator's address for withdrawals. --> **to do** <--
 
 ### Potential implications
 #### Changing the `withdrawaddrenabled` parameter
-Changing the `withdrawaddrenabled` to false will ---. This may ---. 
+Changing the `withdrawaddrenabled` to false will prevent delegators from setting a unique withdrawal address (account) that receives the delegator's staking rewards. This may --> **to do** <--
 
 ### Notes
+--> **to do** <--
 
 # Verify Parameter Values
 ## Genesis (aka launch) Parameters
