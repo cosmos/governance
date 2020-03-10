@@ -17,19 +17,17 @@ The launch values for each parameter are outlined above, but you can [verify the
 If you're technically-inclined, [these are the technical specifications](#technical-specifications).
 
 ## 1. `communitytax`
-### Short desc.
+### The proportion of staking rewards diverted to the community pool.
 #### `cosmoshub-3` default: `0.020000000000000000`
 
-Long Desc
+Staking on the Cosmos Hub entitles participants to inflationary (aka "block") rewards and transaction fees. A portion of these staking rewards is diverted to the community pool, which can be spent with a successful community-spend governance proposal. `communitytax` is the parameter that determines the proportion of staking rewards diverted to the community pool, which is currently `0.020000000000000000` (2%) of all staking rewards.
 
 ### Potential implications
 #### Decreasing the value of `communitytax`
-Decreasing the value of the `communitytax` parameter will ---. This will make it less likely ---.
+Decreasing the value of the `communitytax` parameter will decrease the rate that the community pool is funded and will increase the staking rewards captured by staking participants. This will make it more likely for the community pool to be exhausted and could potentially increase the motivation for participants to stake.
 
 #### Increasing the value of `communitytax`
-Increasing the value of the `communitytax` parameter will ---. This will make it more likely ---.
-
-#### Notes
+Increasing the value of the `communitytax` parameter will increase the rate that the community pool is funded and will decrease the staking rewards captured by staking participants. This will make it more less for the community pool to be exhausted and could potentially decrease the motivation for participants to stake.
 
 
 ## 2. `baseproposerreward`
