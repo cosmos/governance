@@ -10,16 +10,17 @@ If you're technically-inclined, [these are the technical specifications](#techni
 ### Short desc.
 #### `cosmoshub-3` default: `1333000000` `uatom`
 
-A Cosmos account can send a transaction message that will halt the Cosmos Hub chain if an invariant is broken. This kind of  transaction could consume excessive amounts of gas to compute, beyond the maximum allowable block gas limit. `ConstantFee` makes it possible to bypass the block gas limit to process this transaction. The cost that will not be paid if the chain halts. If the invariant is not broken, then will `ConstantFee` be paid.
+A Cosmos account (address) can send a transaction message that will halt the Cosmos Hub chain if an invariant is broken. This kind of transaction could consume excessive amounts of gas to compute, beyond the maximum allowable block gas limit. `ConstantFee` makes it possible to bypass the block gas limit in order to process this transaction. The cost of the transaction is `1333000000` `uatom` (1,333 ATOM) and will not be paid if the chain halts (similar to being refunded). If the invariant is not broken, then `ConstantFee` will be paid. All in Bits has published more information about the [Crisis module here](https://docs.cosmos.network/master/modules/crisis/).
 
 ### Potential implications
 #### Decreasing the value of `ConstantFee`
-Decreasing the value of the `ConstantFee` parameter will ---. This may ---.
+Decreasing the value of the `ConstantFee` parameter will ---. This may ---. --> **to do** <--
 
 #### Increasing the value of `ConstantFee`
-Increasing the value of the `ConstantFee` parameter will ---. This may ---.
+Increasing the value of the `ConstantFee` parameter will ---. This may ---. --> **to do** <--
 
 #### Notes
+--> **to do** <--
 
 # Verify Parameter Values
 ## Genesis (aka launch) Parameters
