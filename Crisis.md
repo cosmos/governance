@@ -19,7 +19,7 @@ Decreasing the value of the `ConstantFee` parameter will ---. This may ---. --> 
 #### Increasing the value of `ConstantFee`
 Increasing the value of the `ConstantFee` parameter will ---. This may ---. --> **to do** <--
 
-#### Notes
+### Notes
 Only [registered invariants](https://github.com/cosmos/cosmos-sdk/blob/master/x/supply/keeper/invariants.go) may be checked with this transaction message.
 
 # Verify Parameter Values
