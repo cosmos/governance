@@ -96,17 +96,17 @@ Delegators' rewards: 100 * 80% - Commission = 79.2 Atoms (each delegator will be
 
 
 ## 4. `withdrawaddrenabled`
-### Enables a delegator to or prevents a delegator from setting a separate address for receiving staking rewards.
+### Determines whether or not delegators may set a separate address for receiving staking rewards.
 #### `cosmoshub-3` default: `true`
 
-A delegator can set a separate withdrawal address (account) that receives staking rewards when `withdrawaddrenabled` is set to `true`. When `withdrawaddrenabled` is set to `false`, the delegator can no longer set their validator's address for withdrawals. --> **to do** <--
+Delegators can designate a separate withdrawal address (account) that receives staking rewards when `withdrawaddrenabled` is set to `true`. When `withdrawaddrenabled` is set to `false`, the delegator can no longer designate a separate address for withdrawals.
 
 ### Potential implications
 #### Changing the `withdrawaddrenabled` parameter
-Changing the `withdrawaddrenabled` to false will prevent delegators from setting a separate withdrawal address (account) that receives the delegator's staking rewards. This may --> **to do** <--
+Changing the `withdrawaddrenabled` to false will prevent delegators from changing or setting a separate withdrawal address (account) that receives the staking rewards. This may disrupt the functionality of applications and the expectations of staking participants.
 
 ### Notes
---> **to do** <--
+This parameter was set to `false` before transfers were enabled in order to prevent stakers from diverting their rewards to other addresses ie. to avoid a loophole that would enable ATOM transfer via diverting staking rewards to a designated address. This parameter likely is only useful if [`sendenabled`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Bank.md#1-sendenabled) is set to `false`.
 
 # Verify Parameter Values
 ## Genesis (aka launch) Parameters
