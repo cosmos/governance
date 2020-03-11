@@ -19,6 +19,9 @@ Setting the `sendenabled` parameter to `true` will enable ATOMs to be transferre
 #### Disabling `sendenabled`
 Setting the `sendenabled` parameter to `false` will prevent ATOMs from being transferred between accounts. ATOMs may still be staked and earn rewards. This is how the cosmoshub-1 chain launched.
 
+### Notes
+The cosmoshub-1 chain launched with `sendenabled` set to `false` and with [`withdrawaddrenabled`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Distribution.md#4-withdrawaddrenabled) set to `false`. Staking was enabled on cosmoshub-1, so setting `withdrawaddrenabled` to false was necessary to prevent a loophole that would enable ATOM transfer via diverting staking rewards to a designated address.
+
 # Verify Parameter Values
 ## Genesis (aka launch) Parameters
 This is useful if you don't have `gaiacli` installed and don't have a reason to believe that the parameter has changed since the chain launched.
