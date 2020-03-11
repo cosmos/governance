@@ -4,13 +4,13 @@ This Cosmos Hub educational wiki aims to outline the Hub's parameters, describe 
 There are currently 8 modules active in the Cosmos Hub with parameters that may be altered via governance proposal.
 
 # Modules
-1. [Auth](/Auth.md) - Authentication of accounts and transactions for Cosmos SDK application --> **to do** <--
+1. [Auth](/Auth.md) - Authentication of accounts and transactions --> **to do** <--
 2. [Bank](/Bank.md) - Token transfer functionalities
 3. [Governance](/Governance.md) - On-chain proposals and voting
 4. [Staking](/Staking.md) - Proof-of-stake layer
 5. [Slashing](/Slashing.md) - Validator punishment mechanisms
 6. [Distribution](/Distribution.md) - Fee distribution, and staking token provision distribution
-7. [Crisis](/Crisis.md) - Halting the blockchain under certain circumstances (e.g. if an invariant is broken)
+7. [Crisis](/Crisis.md) - Halting the blockchain under certain circumstances (ie. if an invariant is broken)
 8. [Mint](/Mint.md) - Creation of new units of staking token --> **to do** <--
 
 You can query the current parameter(s) of each module with the command line program [`gaiacli`](/gaiacli). Use the command `gaia q [module] -h` to get help about the subcommands for the module you want to query. For example, `gaiacli q staking` --> to do <--
