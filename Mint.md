@@ -103,7 +103,7 @@ The calculation for seconds in one year:
 
 365.24 (days) * 24 (hours) * 60 (minutes) * 60 (seconds) = 31556736 seconds
 
-If block times are 7.12 seconds per block and 31556736 seconds per year:
+**Example:** If block times are 7.12 seconds per block and 31556736 seconds per year:
 
 31556736 / 7.12 = ~4432126 blocks per year
 
