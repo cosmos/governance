@@ -20,8 +20,8 @@ Drafting and submitting a parameter-change governance proposal involves two kind
 
 If you are considering drafting a proposal, you should know:
 1. [How the voting process and governance mechanism works](voting.md)
-2. [What the community will likely want to know from your proposal](bestpractices.md#elements-of-a-community-spend-proposal)
-3. [Where and how to engage with the Cosmos community about your proposal](bestpractices.md)
+2. [What the community will likely want to know about the proposed change(s)](bestpractices.md#elements-of-a-community-spend-proposal)
+3. [Where and how to engage with the Cosmos community about your proposed change(s)](bestpractices.md)
 4. [How to prepare your final proposal draft for submission](submitting.md)
 5. [How to submit your proposal to the Cosmos Hub testnet & mainnet](submitting.md)
 
