@@ -15,6 +15,16 @@ There are currently 8 modules active in the Cosmos Hub with parameters that may 
 
 You can query the current parameter(s) of each module with the command line program [`gaiacli`](/gaiacli). Use the command `gaia q [module] -h` to get help about the subcommands for the module you want to query. For example, `gaiacli q staking` --> to do <--
 
+# Parameter-Change Best Practices
+Drafting and submitting a parameter-change governance proposal involves two kinds risk: losing proposal deposit amounts and the potential to alter the function of the Cosmos Hub network in an undesirable way. The objective of this documentation is to reduce these risks by preparing participants for what to pay attention to and for what information to consider in a proposal. Ideally, a proposal should only fail to pass because the voters 1) are aware and engaged and 2) are able to make an informed decision to vote down the proposal.
+
+If you are considering writing a proposal, you should know:
+1. [How the voting process and governance mechanism works](voting.md)
+3. [What the community will likely want to know from your proposal](bestpractices.md#elements-of-a-community-spend-proposal)
+4. [Where and how to engage with the Cosmos community about your proposal](bestpractices.md)
+5. [How to prepare your final proposal draft for submission](submitting.md)
+6. [How to submit your proposal to the Cosmos Hub testnet & mainnet](submitting.md)
+
 ## Note
 - You cannot currently query the `Bank` module's parameter, which is `sendenabled`. You also cannot query the `Crisis` module's parameters.
 - You will need to compile [`gaiacli`](/gaiacli) from source into a binary file executable by your operating system eg. MacOS, Windows, Linux
