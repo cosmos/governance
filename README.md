@@ -20,10 +20,10 @@ Drafting and submitting a parameter-change governance proposal involves two kind
 
 If you are considering writing a proposal, you should know:
 1. [How the voting process and governance mechanism works](voting.md)
-3. [What the community will likely want to know from your proposal](bestpractices.md#elements-of-a-community-spend-proposal)
-4. [Where and how to engage with the Cosmos community about your proposal](bestpractices.md)
-5. [How to prepare your final proposal draft for submission](submitting.md)
-6. [How to submit your proposal to the Cosmos Hub testnet & mainnet](submitting.md)
+2. [What the community will likely want to know from your proposal](bestpractices.md#elements-of-a-community-spend-proposal)
+3. [Where and how to engage with the Cosmos community about your proposal](bestpractices.md)
+4. [How to prepare your final proposal draft for submission](submitting.md)
+5. [How to submit your proposal to the Cosmos Hub testnet & mainnet](submitting.md)
 
 ## Note
 - You cannot currently query the `Bank` module's parameter, which is `sendenabled`. You also cannot query the `Crisis` module's parameters.
