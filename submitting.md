@@ -3,12 +3,12 @@
 
 If you have a final draft of your proposal ready to submit, you may want to push your proposal live on the testnet first. These are the three primary steps to getting your community-spend proposal live on-chain.
 
-1. [Hosting the final draft](#hosting-the-full-community-spend-proposal) of your community-spend proposal with IPFS (InterPlanetary File System)
+1. **Optional** [Hosting supplementary materials](#hosting-supplementary-materials) for your parameter-change proposal with IPFS (InterPlanetary File System)
 2. [Formatting the governance proposal](#formatting-the-governance-proposal) that will be on-chain
 3. [Sending the transaction](#sending-the-transaction-that-submits-your-governance-proposal) that submits your governance proposal on-chain
 
-## Hosting the full community-spend proposal
-When you've finalized your community-spend proposal draft, convert it to a PDF file. Upload the PDF to the IPFS network:
+## Hosting supplementary materials
+If you think that the voting community will need more details (eg. modelling, research, etc) about the proposed parameter change(s), draft a document and convert it to a PDF file. Upload the PDF to the IPFS network:
 1. either by [running an IPFS node and the IPFS software](https://ipfs.io), or
 2. using a service such as [https://pinata.cloud](https://pinata.cloud)
 
