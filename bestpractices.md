@@ -4,7 +4,7 @@
 #### Last updated: Mar 13, 2020
 Engagement is likely to be important to the success of this kind of proposal, however, parameter-change proposals will likely be more straightforward than other kinds of proposal. The degree to which you engage with the Cosmos Hub community should be relative to the potential impact that your proposal may have on the stakeholders. There are many different ways to engage.
 
-One strategy involves a few stages of engagement before and after submitting a proposal on chain. In the first stage of this strategy, you should engage people informally about your idea.
+One strategy involves a few stages of engagement before and after submitting a proposal on chain. In the first stage of this strategy, you should engage with people informally about your idea.
 
 **Note**: this guide likely fails to capture all ways of engaging. Perhaps you could bring your idea to a podcast. You could host an AMA on [Reddit](https://www.reddit.com/r/cosmosnetwork) or host a Q&A (questions & answers) video call. Try to go above and beyond what's recommended here--experiment, and use your strengths.
 
@@ -12,15 +12,15 @@ One strategy involves a few stages of engagement before and after submitting a p
 ### Not yet confident about your idea?
 Great! Parameter-change proposals will likely impact many stakeholders. Introduce your idea with known members of the community before investing resources into drafting a proposal. Don't let negative feedback dissuade you from exploring your idea if you think that it's still important. 
 
-If you know people who are very involved with the Cosmos Hub, send them a private message with a concise overview of what you think the outcome(s) of your proposed changes will be. Wait for them to ask questions before providing details. Do the same in semi-private channels where people are not anonymous and tend to be respectful (and hopefully supportive). I recommend [this Cosmos Discord community](https://discord.gg/cVwYX9u) and the private Cosmos Network VIP Telegram channel (ask for an invite [on the forum](https://forum.cosmos.network/c/governance) if you are or would like to be a Cosmos contributor).
+If you know people who are very involved with the Cosmos Hub, send them a private message with a concise overview of what you think will result from your proposed changes. Wait for them to ask questions before providing details. Do the same in semi-private channels where people tend to be respectful (and hopefully supportive). I recommend [this Cosmos Discord community](https://discord.gg/cVwYX9u) and the private Cosmos Network VIP Telegram channel (ask for an invite [on the forum](https://forum.cosmos.network/c/governance) if you are or would like to be a Cosmos contributor).
 
 ### Confident with your idea?
 Great! However, remember that governance proposals potentially impact many stakeholders, which can happen in unexpected ways. Introduce your proposed changes to members of the community before investing resources into drafting a proposal. At this point you should seek out and carefully consider critical feedback in order to protect yourself from [confirmation bias](https://en.wikipedia.org/wiki/Confirmation_bias). This is the ideal time to see a critical flaw, because submitting a flawed proposal will waste resources, and could possibly cause confusion and initiate social rifts.
 
 ### Are you ready to draft a governance proposal?
-If you've considered feedback from broad perspectives and think that what you're doing is valuable and that your strategy should work, and you believe that others feel this way as well, it's likely worth drafting a proposal. However, remember that the largest ATOM stakers have the biggest vote, so a vocal minority isn't necessarily representative or predictive of the outcome of an on-chain vote. 
+If you've considered feedback from broad perspectives and think that the changes you have proposed are valuable, and you believe that others feel this way as well, it's likely worth drafting a proposal. However, remember that the largest ATOM stakers have the biggest vote, so a vocal minority isn't necessarily representative or predictive of the outcome of an on-chain vote. 
 
-A conservative approach is to have some confidence that you roughly have initial support from a majority of the voting power before proceeding to drafting your proposal. However, there are likely other approaches, and if your idea is important enough, you may want to pursue it regardless of whether or not you are confident that the voting power will support it.
+A conservative approach is to have some confidence that you roughly have enough initial support from a majority of the voting power before proceeding to drafting your proposal. However, there are likely other approaches, and if your idea is important enough, you may want to pursue it regardless of whether or not you are confident that the voting power will support it.
 
 ### Stage 2: Your Draft Proposal
 ### Begin with a well-considered draft proposal
@@ -69,3 +69,4 @@ It will be important to balance two things: being detailed and being concise. Yo
    - the beneficiaries of the change(s) (ie. who will these changes impact and how?)
       - voters should understand the importance of the change(s) in a simple way
 4. Risks & Benefits - clearly describe how making this/these change(s) may expose stakeholders to new benefits and/or risks
+5. Supplementary materials - optional materials eg. models, graphs, tables, research, signed petition, etc
