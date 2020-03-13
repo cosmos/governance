@@ -23,7 +23,7 @@ If you are considering drafting a proposal, you should know:
 2. [What the community will likely want to know about the proposed change(s)](bestpractices.md#elements-of-a-community-spend-proposal)
 3. [Where and how to engage with the Cosmos community about your proposed change(s)](bestpractices.md)
 4. [How to prepare your final proposal draft for submission](submitting.md)
-5. [How to submit your proposal to the Cosmos Hub testnet & mainnet](submitting.md)
+5. [How to submit your proposal to the Cosmos Hub testnet & mainnet](#sending-the-transaction-that-submits-your-governance-proposal)
 
 ## Note
 - You cannot currently query the `Bank` module's parameter, which is `sendenabled`. You also cannot query the `Crisis` module's parameters.
