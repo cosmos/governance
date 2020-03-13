@@ -4,7 +4,7 @@
 If you have a final draft of your proposal ready to submit, you may want to push your proposal live on the testnet first. These are the three primary steps to getting your parameter-change proposal live on-chain.
 
 1. **Optional** [Hosting supplementary materials](#hosting-supplementary-materials) for your parameter-change proposal with IPFS (InterPlanetary File System)
-2. [Formatting the JSON file for the governance proposal transaction](#formatting-the-json-file-for-the-governance-proposal) that will be on-chain
+2. [Formatting the JSON file](#formatting-the-json-file-for-the-governance-proposal) for the governance proposal transaction that will be on-chain
 3. [Sending the transaction](#sending-the-transaction-that-submits-your-governance-proposal) that submits your governance proposal on-chain
 
 ## Hosting supplementary materials
