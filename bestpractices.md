@@ -1,5 +1,4 @@
 # Best Practices for Drafting a Community-Spend Proposal 
-# [under active development]
 
 ## Engage directly with the voting community and seek feedback
 #### Last updated: Feb 14, 2020
