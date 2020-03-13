@@ -1,11 +1,11 @@
 # The `Governance` Module
 The `Governance` module is responsible for on-chain proposals and voting functionality. `Governance` is active on Cosmos Hub 3 and currently has three parameters with six subkeys that may be modified by governance proposal:
 1. [`depositparams`](#1-depositparams)
-   - [`min_deposit`](#min_deposit) - `512000000` `uatom` (micro-ATOMs)
-   - [`max_deposit_period`](#max_deposit_period) - `1209600000000000` (nanoseconds)
+   - [`mindeposit`](#mindeposit) - `512000000` `uatom` (micro-ATOMs)
+   - [`maxdepositperiod`](#maxdepositperiod) - `1209600000000000` (nanoseconds)
 
 2. [`votingparams`](#2-votingparams)
-   - [`voting_period`](#voting_period) - `1209600000000000` (nanoseconds)
+   - [`votingperiod`](#votingperiod) - `1209600000000000` (nanoseconds)
 
 3. [`tallyparams`](#3-tallyparams)
    - [`quorum`](#quorum) - `0.400000000000000000` (proportion of network)
@@ -21,50 +21,50 @@ If you're technically-inclined, [these are the technical specifications](#techni
 
 
 ## 1. `depositparams`
-## `min_deposit`
-### The minimum deposit required for a proposal to enter the [voting period](#voting_period), in micro-ATOMs.
+## `mindeposit`
+### The minimum deposit required for a proposal to enter the [voting period](#votingperiod), in micro-ATOMs.
 #### `cosmoshub-3` default: `512000000` `uatom`
 
-Prior to a governance proposal entering the [voting period](#voting_period) (ie. for the proposal to be voted upon), there must be at least a minimum number of ATOMs deposited. Anyone may contribute to this deposit. Deposits of passed and failed proposals are returned to the contributors. Deposits are burned when proposals 1) [expire](#max_deposit_period), 2) fail to reach [quorum](#quorum), or 3) are [vetoed](#veto). This parameter subkey value represents the minimum deposit required for a proposal to enter the [voting period](#voting_period) in micro-ATOMs, where `512000000uatom` is equivalent to 512 ATOM.
+Prior to a governance proposal entering the [voting period](#votingperiod) (ie. for the proposal to be voted upon), there must be at least a minimum number of ATOMs deposited. Anyone may contribute to this deposit. Deposits of passed and failed proposals are returned to the contributors. Deposits are burned when proposals 1) [expire](#maxdepositperiod), 2) fail to reach [quorum](#quorum), or 3) are [vetoed](#veto). This parameter subkey value represents the minimum deposit required for a proposal to enter the [voting period](#votingperiod) in micro-ATOMs, where `512000000uatom` is equivalent to 512 ATOM.
 
 ### Potential implications
-#### Decreasing the value of `min_deposit`
-Decreasing the value of the `min_deposit` subkey will enable governance proposals to enter the [voting period](#voting_period) with fewer ATOMs at risk. This will likely increase the volume of new governance proposals.
+#### Decreasing the value of `mindeposit`
+Decreasing the value of the `mindeposit` subkey will enable governance proposals to enter the [voting period](#votingperiod) with fewer ATOMs at risk. This will likely increase the volume of new governance proposals.
 
-#### Increasing the value of `min_deposit`
-Increasing the value of the `min_deposit` subkey will require risking a greater number of ATOMs before governance proposals may enter the [voting period](#voting_period). This will likely decrease the volume of new governance proposals.
+#### Increasing the value of `mindeposit`
+Increasing the value of the `mindeposit` subkey will require risking a greater number of ATOMs before governance proposals may enter the [voting period](#votingperiod). This will likely decrease the volume of new governance proposals.
 
-## `max_deposit_period`
+## `maxdepositperiod`
 ### The maximum amount of time that a proposal can accept deposit contributions before expiring, in nanoseconds.
 #### `cosmoshub-3` default: `1209600000000000`
 
-Prior to a governance proposal entering the [voting period](#voting_period), there must be at least a minimum number of ATOMs deposited. This parameter subkey value represents the maximum amount of time that the proposal has to reach the minimum deposit amount before expiring. The maximum amount of time that a proposal can accept deposit contributions before expiring is currently `1209600000000000` nanoseconds or 14 days. If the proposal expires, any deposit amounts will be burned.
+Prior to a governance proposal entering the [voting period](#votingperiod), there must be at least a minimum number of ATOMs deposited. This parameter subkey value represents the maximum amount of time that the proposal has to reach the minimum deposit amount before expiring. The maximum amount of time that a proposal can accept deposit contributions before expiring is currently `1209600000000000` nanoseconds or 14 days. If the proposal expires, any deposit amounts will be burned.
 
 ### Potential implications
-#### Decreasing the value of `max_deposit_period`
-Decreasing the value of the `max_deposit_period` subkey will decrease the time for deposit contributions to governance proposals. This will likely decrease the time that some proposals remain visible and potentially decrease the likelihood that they will enter the [voting period](#voting_period). This may increase the likelihood that proposals will expire and have their deposits burned.
+#### Decreasing the value of `maxdepositperiod`
+Decreasing the value of the `maxdepositperiod` subkey will decrease the time for deposit contributions to governance proposals. This will likely decrease the time that some proposals remain visible and potentially decrease the likelihood that they will enter the [voting period](#votingperiod). This may increase the likelihood that proposals will expire and have their deposits burned.
 
-#### Increasing the value of `max_deposit_period`
-Increasing the value of the `max_deposit_period` subkey will extend the time for deposit contributions to governance proposals. This will likely increase the time that some proposals remain visible and potentially increase the likelihood that they will enter the [voting period](#voting_period). This may decrease the likelihood that proposals will expire and have their deposits burned.
+#### Increasing the value of `maxdepositperiod`
+Increasing the value of the `maxdepositperiod` subkey will extend the time for deposit contributions to governance proposals. This will likely increase the time that some proposals remain visible and potentially increase the likelihood that they will enter the [voting period](#votingperiod). This may decrease the likelihood that proposals will expire and have their deposits burned.
 
 #### Notes
-Currently most network explorers (eg. Hubble, Big Dipper, Mintscan) give the same visibility to proposals in the deposit period as those in the [voting period](#voting_period). This means that a proposal with a small deposit (eg. 0.001 ATOM) will have the same visibility as those with a full 512 ATOM deposit in the voting period.
+Currently most network explorers (eg. Hubble, Big Dipper, Mintscan) give the same visibility to proposals in the deposit period as those in the [voting period](#votingperiod). This means that a proposal with a small deposit (eg. 0.001 ATOM) will have the same visibility as those with a full 512 ATOM deposit in the voting period.
 
 ## 2. `votingparams`
-## `voting_period`
+## `votingperiod`
 ### The maximum amount of time that a proposal can accept votes before the voting period concludes, in nanoseconds.
 #### `cosmoshub-3` default: `1209600000000000`
 
 Once a governance proposal enters the voting period, there is a maximum period of time that may elapse before the voting period concludes. This parameter subkey value represents the maximum amount of time that the proposal has to accept votes, which is currently `1209600000000000` nanoseconds or 14 days. If the proposal vote does not reach quorum ((ie. 40% of the network's voting power is participating) before this time, any deposit amounts will be burned and the proposal's outcome will not be considered to be valid. Voters may change their vote any number of times before the voting period ends. This voting period is currently the same for any kind of governance proposal.
 
 ### Potential implications
-#### Decreasing the value of `voting_period`
-Decreasing the value of the `voting_period` subkey will decrease the time for voting on governance proposals. This will likely:
+#### Decreasing the value of `votingperiod`
+Decreasing the value of the `votingperiod` subkey will decrease the time for voting on governance proposals. This will likely:
 1. decrease the proportion of the network that participates in voting, and
 2. decrease the likelihood that quorum will be reached. 
 
-#### Increasing the value of `voting_period`
-Increasing the value of the `voting_period` subkey will increase the time for voting on governance proposals. This may:
+#### Increasing the value of `votingperiod`
+Increasing the value of the `votingperiod` subkey will increase the time for voting on governance proposals. This may:
 1. increase the proportion of the network that participates in voting, and
 2. increase the likelihood that quorum will be reached. 
 
@@ -93,7 +93,7 @@ A simple majority 'yes' vote (ie. 50% of participating voting power) is required
 1. Failure to reach [quorum](#quorum) of 40% network power or
 2. A 'no-with-veto' vote of 33.4% of participating voting power or greater.
 
-If a governance proposal passes, deposit amounts are returned to contributors. If a text-based proposal passes, nothing is enacted automatically, but there is a social expectation that participants will co-ordinate to enact the commitments signalled in the proposal. If a parameter change proposal passes, the protocol parameter will automatically change immediately after the [voting period](#voting_period) ends, and without the need to run new software. If a community-spend proposal passes, the Community Pool balance will decrease by the number of ATOMs indicated in the proposal and the recipient's address will increase by this same number of ATOMs immediately after the voting period ends.
+If a governance proposal passes, deposit amounts are returned to contributors. If a text-based proposal passes, nothing is enacted automatically, but there is a social expectation that participants will co-ordinate to enact the commitments signalled in the proposal. If a parameter change proposal passes, the protocol parameter will automatically change immediately after the [voting period](#votingperiod) ends, and without the need to run new software. If a community-spend proposal passes, the Community Pool balance will decrease by the number of ATOMs indicated in the proposal and the recipient's address will increase by this same number of ATOMs immediately after the voting period ends.
 
 ### Potential implications
 #### Decreasing the value of `threshold`
