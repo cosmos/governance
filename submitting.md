@@ -21,7 +21,9 @@ The reason we use IPFS is that it is a decentralized means of storage, making it
 ## Formatting the JSON file for the governance proposal
 Prior to sending the transaction that submits your proposal on-chain, you must create a JSON file. This file will contain the information that will be stored on-chain as the governance proposal. Begin by creating a new text (.txt) file to enter this information. When you're done, save the file as a .json file. See the examples that follow to help format your proposal.
 
-For most parameter-change proposals, there are five (5) components:
+**Note:** Changes to the [`gov` module](/Governance.md) are different from the other kinds of parameter changes because `gov` has subkeys, [as discussed here](https://github.com/cosmos/cosmos-sdk/issues/5800). Only the `key` part of the JSON file is different for changes to `gov` parameters. Once on-chain, most people will rely upon network explorers to interpret this information with a graphical user interface (GUI).
+
+For parameter-change proposals, there are seven (7) components:
 1. **Title** - the distinguishing name of the proposal, typically the way the that explorers list proposals
 2. **Description** - the body of the proposal that further describes what is being proposed and details surrounding the proposal
 3. **Subspace** - the Cosmos Hub module with the parameter that is being changed
@@ -32,11 +34,7 @@ For most parameter-change proposals, there are five (5) components:
 
 **Note**: The formatting [may be changed to be more standardized](https://github.com/cosmos/cosmos-sdk/issues/5783) with other types of governance proposals.
 
-Once on-chain, most people will rely upon network explorers to interpret this information with a graphical user interface (GUI).
-
 ### Examples
-Changes to the [`gov` module](/Governance.md) are different from the other kinds of parameter changes because of subkeys, [as discussed here](https://github.com/cosmos/cosmos-sdk/issues/5800).
-
 In this simple example ([below](#testnet-example)), a network explorer will list the governance proposal as "Increase the minimum deposit amount for governance proposals." When a user selects the proposal, they'll see the description. Not all explorers will show the proposed parameter changes, so ensure that you verify that the description aligns with the what the governance proposal is programmed to enact. If the description says that a certain parameter will be increased, it should also be programmed to do that, but it's possible that that's not the case (accidentally or otherwise). A nearly identical proposal [can be found on the gaia-13007 testnet here](https://hubble.figment.network/cosmos/chains/gaia-13007/governance/proposals/30).
 
 You can query the proposal details with the gaiacli command-line interface using this command: `gaiacli q gov proposal 30 --chain-id gaia-13007 --node 45.77.218.219:26657`
