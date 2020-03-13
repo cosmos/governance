@@ -19,7 +19,7 @@ Share the URL with others and verify that your file is publicly accessible.
 The reason we use IPFS is that it is a decentralized means of storage, making it resistant to censorship or single points of failure. This increases the likelihood that the file will remain available in the future.
 
 ## Formatting the governance proposal
-Prior to sending the transaction that submits your proposal on-chain, you should create a JSON file. This file will contain the information that will be stored on-chain as the governance proposal. Begin my creating a new text (.txt) file to enter this information. When you're done, save the file as a .json file.
+Prior to sending the transaction that submits your proposal on-chain, you should create a JSON file. This file will contain the information that will be stored on-chain as the governance proposal. Begin by creating a new text (.txt) file to enter this information. When you're done, save the file as a .json file.
 
 There are five (5) components:
 1. **Title** - the distinguishing name of the proposal, typically the way the that explorers list proposals
