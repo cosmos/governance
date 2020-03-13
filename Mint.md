@@ -89,14 +89,14 @@ Increasing the value of the `GoalBonded` parameter will cause the Cosmos Hub's i
 
 
 ## 6. `BlocksPerYear`
-### Short desc, in blocks.
+### The system's assumed number of blocks that the Cosmos Hub will produce in one year.
 #### `cosmoshub-3` default: `4855015`
 
-`BlocksPerYear` is the assumed number of blocks that the Cosmos Hub will produce in one year, which is currently `4855015` and assumes that the average block time will be 6.50 seconds over one year. `BlocksPerYear` is most notably used in by the system to determine the rate that new ATOMs are minted, which can vary if block times vary from 6.50 seconds per block, since effectively a different number of blocks will be produced in one year and ATOMs are minted each block.
+`BlocksPerYear` is the setting for the system's assumed number of blocks that the Cosmos Hub will produce in one year. `BlocksPerYear` is currently `4855015` and the network's inflationary behaviour will be aligned with its settings when the average block time is 6.50 seconds over one year. `BlocksPerYear` is most notably used in by the system to determine the rate that new ATOMs are minted, which can vary if block times vary from 6.50 seconds per block, since effectively a different number of blocks will be produced in one year and ATOMs are minted each block.
 
 ### Potential implications
 #### Changing the `BlocksPerYear` parameter
-Changing the `BlocksPerYear` parameter will change the assumption that system makes about how many Cosmos Hub blocks will be produced per year. If block times are greater than 6.50 seconds, then this parameter should be decreased to make the Cosmos Hub's behaviour more aligned with its settings. If block times are less than 6.50 seconds, then this parameter should be increased to make the Cosmos Hub's behaviour more aligned with its settings.
+Changing the `BlocksPerYear` parameter will change the assumption that system makes about how many Cosmos Hub blocks will be produced per year. If block times are greater than 6.50 seconds, then this parameter should be decreased to make the Cosmos Hub's inflationary behaviour more aligned with its settings. If block times are less than 6.50 seconds, then this parameter should be increased to make the Cosmos Hub's behaviour more aligned with its settings.
 
 ### Notes
 The calculation for seconds in one year:
