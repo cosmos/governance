@@ -19,7 +19,7 @@ Share the URL with others and verify that your file is publicly accessible.
 The reason we use IPFS is that it is a decentralized means of storage, making it resistant to censorship or single points of failure. This increases the likelihood that the file will remain available in the future.
 
 ## Formatting the governance proposal
-Prior to sending the transaction that submits your proposal on-chain, you should create a JSON file. This file will contain the information that will be stored on-chain as the governance proposal. Begin my creating a new text (.txt) file to enter this information. When you're done, save the file as a .json file.
+Prior to sending the transaction that submits your proposal on-chain, you must create a JSON file. This file will contain the information that will be stored on-chain as the governance proposal. Begin by creating a new text (.txt) file to enter this information. When you're done, save the file as a .json file. See the examples that follow.
 
 For most parameter-change proposals, there are five (5) components:
 1. **Title** - the distinguishing name of the proposal, typically the way the that explorers list proposals
@@ -35,7 +35,7 @@ For most parameter-change proposals, there are five (5) components:
 Once on-chain, most people will rely upon network explorers to interpret this information with a graphical user interface (GUI).
 
 ### Testnet Example: changing a parameter from the `gov` module
-Changes to the `gov` module are different from the other kinds of parameter changes because of subkeys, [as discussed here](https://github.com/cosmos/cosmos-sdk/issues/5800).
+Changes to the [`gov` module](/Governance.md) are different from the other kinds of parameter changes because of subkeys, [as discussed here](https://github.com/cosmos/cosmos-sdk/issues/5800).
 
 In this simple example (below), a network explorer will list the governance proposal as "Increase the minimum deposit amount for governance proposals." When an observer selects the proposal, they'll see the description. Not all explorers will show the proposed parameter changes, so ensure that you verify that the description aligns with the what the governance proposal is programmed to enact. If the description says that a certain parameter will be increased, it should also be programmed to do that, but it's possible that that's not the case (accidentally or otherwise).
 
