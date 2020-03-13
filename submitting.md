@@ -41,10 +41,11 @@ In this simple example (below), a network explorer will list the governance prop
 
 A nearly identical proposal [can be found on the gaia-13007 testnet here](https://hubble.figment.network/cosmos/chains/gaia-13007/governance/proposals/30).
 
-The deposit `denom` is `uatom` and `amount` is `100000`. Since 1,000,000 micro-ATOM is equal to 1 ATOM, a deposit of 0.1 ATOM will be included with this proposal. This results in 0.1 ATOM being used from the proposal submitter's account. The gaia-13007 testnet currently has a 0.1 ATOM minimum deposit, so this will put the proposal directly into the voting period.
+The deposit `denom` is `uatom` and `amount` is `100000`. Since 1,000,000 micro-ATOM is equal to 1 ATOM, a deposit of 0.1 ATOM will be included with this proposal. The gaia-13007 testnet currently has a 0.1 ATOM minimum deposit, so this will put the proposal directly into the voting period.
 
 There is a minimum deposit required for a proposal to enter the voting period, and anyone may contribute to this deposit within a 14-day period. If the minimum deposit isn't reach before this time, the deposit amounts will be burned. Deposit amounts will also be burned if quorum isn't met in the vote or if the proposal is vetoed.
-___
+
+#### Testnet Example
 ```
 {
   "title": "Increase the minimum deposit amount for governance proposals",
