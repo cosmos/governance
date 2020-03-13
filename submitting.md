@@ -18,8 +18,8 @@ Share the URL with others and verify that your file is publicly accessible.
 
 The reason we use IPFS is that it is a decentralized means of storage, making it resistant to censorship or single points of failure. This increases the likelihood that the file will remain available in the future.
 
-## Formatting the governance proposal
-Prior to sending the transaction that submits your proposal on-chain, you must create a JSON file. This file will contain the information that will be stored on-chain as the governance proposal. Begin by creating a new text (.txt) file to enter this information. When you're done, save the file as a .json file. See the examples that follow.
+## Formatting the JSON file for the governance proposal
+Prior to sending the transaction that submits your proposal on-chain, you must create a JSON file. This file will contain the information that will be stored on-chain as the governance proposal. Begin by creating a new text (.txt) file to enter this information. When you're done, save the file as a .json file. See the examples that follow to help format your proposal.
 
 For most parameter-change proposals, there are five (5) components:
 1. **Title** - the distinguishing name of the proposal, typically the way the that explorers list proposals
@@ -34,18 +34,16 @@ For most parameter-change proposals, there are five (5) components:
 
 Once on-chain, most people will rely upon network explorers to interpret this information with a graphical user interface (GUI).
 
-### Testnet Example: changing a parameter from the `gov` module
+### Examples
 Changes to the [`gov` module](/Governance.md) are different from the other kinds of parameter changes because of subkeys, [as discussed here](https://github.com/cosmos/cosmos-sdk/issues/5800).
 
-In this simple example (below), a network explorer will list the governance proposal as "Increase the minimum deposit amount for governance proposals." When an observer selects the proposal, they'll see the description. Not all explorers will show the proposed parameter changes, so ensure that you verify that the description aligns with the what the governance proposal is programmed to enact. If the description says that a certain parameter will be increased, it should also be programmed to do that, but it's possible that that's not the case (accidentally or otherwise).
+In this simple example ([below](#testnet-example)), a network explorer will list the governance proposal as "Increase the minimum deposit amount for governance proposals." When a user selects the proposal, they'll see the description. Not all explorers will show the proposed parameter changes, so ensure that you verify that the description aligns with the what the governance proposal is programmed to enact. If the description says that a certain parameter will be increased, it should also be programmed to do that, but it's possible that that's not the case (accidentally or otherwise). A nearly identical proposal [can be found on the gaia-13007 testnet here](https://hubble.figment.network/cosmos/chains/gaia-13007/governance/proposals/30).
 
-A nearly identical proposal [can be found on the gaia-13007 testnet here](https://hubble.figment.network/cosmos/chains/gaia-13007/governance/proposals/30).
+You can query the proposal details with the gaiacli command-line interface using this command: `gaiacli q gov proposal 30 --chain-id gaia-13007 --node 45.77.218.219:26657`
 
-The deposit `denom` is `uatom` and `amount` is `100000`. Since 1,000,000 micro-ATOM is equal to 1 ATOM, a deposit of 0.1 ATOM will be included with this proposal. The gaia-13007 testnet currently has a 0.1 ATOM minimum deposit, so this will put the proposal directly into the voting period.
+You use can also use [Hubble](https://hubble.figment.network/cosmos/chains/gaia-13007/transactions/B5AB56719ADB7117445F6E191E1FCE775135832AFE6C9922B8703AADBC4B13F3?format=json) or gaiacli to query the transaction that I sent to create a similar proposal on-chain in full detail: `gaiacli q tx B5AB56719ADB7117445F6E191E1FCE775135832AFE6C9922B8703AADBC4B13F3 --chain-id gaia-13007 --node 45.77.218.219:26657`
 
-There is a minimum deposit required for a proposal to enter the voting period, and anyone may contribute to this deposit within a 14-day period. If the minimum deposit isn't reach before this time, the deposit amounts will be burned. Deposit amounts will also be burned if quorum isn't met in the vote or if the proposal is vetoed.
-
-#### Testnet Example
+#### Testnet Example: changing a parameter from the `gov` module
 ```
 {
   "title": "Increase the minimum deposit amount for governance proposals",
@@ -65,62 +63,51 @@ There is a minimum deposit required for a proposal to enter the voting period, a
   ]
 }
 ```
-___
+The deposit `denom` is `uatom` and `amount` is `100000`. Since 1,000,000 micro-ATOM is equal to 1 ATOM, a deposit of 0.1 ATOM will be included with this proposal. The gaia-13007 testnet currently has a 0.1 ATOM minimum deposit, so this will put the proposal directly into the voting period. There is a minimum deposit required for a proposal to enter the voting period, and anyone may contribute to this deposit within a 14-day period. If the minimum deposit isn't reach before this time, the deposit amounts will be burned. Deposit amounts will also be burned if quorum isn't met in the vote or if the proposal is vetoed.
 
-### Simple example
-This is the governance proposal that [Gavin Birch](https://twitter.com/Ether_Gavin) ([Figment Networks](https://figment.network/)) used to create [Prop23, the first successful Cosmos Hub community-spend proposal](https://hubble.figment.network/cosmos/chains/cosmoshub-3/governance/proposals/23). 
+### Mainnet example: 
+To date, the Cosmos Hub's parameters have not been changed by a parameter-change governance proposal. This is a hypothetical example of the JSON file that would be used with a command line transaction to create a new proposal. This is an example of a proposal that changes two parameters, and both parameters are from the [`slashing` module](Slashing.md). A single parameter-change governance proposal can reportedly change any number of parameters.
 
-You can query the proposal details with the gaiacli command-line interface using this command: `gaiacli q gov proposal 23 --chain-id cosmoshub-3 --node cosmos-node-1.figment.network:26657`
-
-You use can also use [Hubble](https://hubble.figment.network/cosmos/chains/cosmoshub-3/blocks/424035/transactions/B8E2662DE82413F03919712B18F7B23AF00B50DAEB499DAD8C436514640EFC79?format=json) or gaiacli to query the transaction that I sent to create this proposal on-chain in full detail: `gaiacli q tx B8E2662DE82413F03919712B18F7B23AF00B50DAEB499DAD8C436514640EFC79 --chain-id cosmoshub-3 --node cosmos-node-1.figment.network:26657`
-
-**Note**: "\n" is used to create a new line.
-___
-
+```
 {
-
-  "title": "Cosmos Governance Working Group - Q1 2020",
-  
-  "description": "Cosmos Governance Working Group - Q1 2020 funding\n\nCommunity-spend proposal submitted by Gavin Birch (https://twitter.com/Ether_Gavin) of Figment Networks (https://figment.network)\n\n-=-=-\n\nFull proposal: https://ipfs.io/ipfs/QmSMGEoY2dfxADPfgoAsJxjjC6hwpSNx1dXAqePiCEMCbY\n\n-=-=-\n\nAmount to spend from the community pool: 5250 ATOMs\n\nTimeline: Q1 2020\n\nDeliverables:\n1. A governance working group community & charter\n2. A template for community spend proposals\n3. A best-practices document for community spend proposals\n4. An educational wiki for the Cosmos Hub parameters\n5. A best-practices document for parameter changes\n6. Monthly governance working group community calls (three)\n7. Monthly GWG articles (three)\n8. One Q2 2020 GWG recommendations article\n\nMilestones:\nBy end of Month 1, the Cosmos Governance Working Group (GWG) should have been initiated and led by Gavin Birch of Figment Networks.\nBy end of Month 2, Gavin Birch is to have initiated and led GWG’s education, best practices, and Q2 recommendations.\nBy end of Month 3, Gavin Birch is to have led and published initial governance education, best practices, and Q2 recommendations.\n\nDetailed milestones and funding:\nhttps://docs.google.com/spreadsheets/d/1mFEvMSLbiHoVAYqBq8lo3qQw3KtPMEqDFz47ESf6HEg/edit?usp=sharing\n\nBeyond the milestones, Gavin will lead the GWG to engage in and answer governance-related questions on the Cosmos Discourse forum, Twitter, the private Cosmos VIP Telegram channel, and the Cosmos subreddit. The GWG will engage with stake-holders to lower the barriers to governance participation with the aim of empowering the Cosmos Hub’s stakeholders. The GWG will use this engagement to guide recommendations for future GWG planning.\n\nRead more about the our efforts to launch the Cosmos GWG here: https://figment.network/resources/introducing-the-cosmos-governance-working-group/\n\n-=-=-\n\n_Problem_\nPerhaps the most difficult barrier to effective governance is that it demands one of our most valuable and scarce resources: our attention. Stakeholders may be disadvantaged by informational or resource-based asymmetries, while other entities may exploit these same asymmetries to capture value controlled by the Cosmos Hub’s governance mechanisms.\n\nWe’re concerned that without establishing community standards, processes, and driving decentralized delegator-based participation, the Cosmos Hub governance mechanism could be co-opted by a centralized power. As governance functionality develops, potential participants will need to understand how to assess proposals by knowing what to pay attention to.\n\n_Solution_\nWe’re forming a focused, diverse group that’s capable of assessing and synthesizing the key parts of a proposal so that the voting community can get a fair summary of what they need to know before voting.\n\nOur solution is to initiate a Cosmos governance working group that develops decentralized community governance efforts alongside the Hub’s development. We will develop and document governance features and practices, and then communicate these to the broader Cosmos community.\n\n_Future_\nAt the end of Q1, we’ll publish recommendations for the future of the Cosmos GWG, and ideally we’ll be prepared to submit a proposal based upon those recommendations for Q2 2020. We plan to continue our work in blockchain governance, regardless of whether the Hub passes our proposals.\n\n-=-=-\n\nCosmos forum: https://forum.cosmos.network/c/governance\nCosmos GWG Telegram channel: https://t.me/hubgov\nTwitter: https://twitter.com/CosmosGov",
-  
-  "recipient": "cosmos1hjct6q7npsspsg3dgvzk3sdf89spmlpfg8wwf7",
-  
-  "amount": [
-  
+  "title": "Parameter changes for validator downtime",
+  "description": "If passed, this governance proposal will do two things:\n\n1. Increase the slashing penalty for downtime from 0.01% to 0.50%\n2. Decrease the window \n\nIf this proposal passes, validators must sign at least 5% of 5,000 blocks, which is 250 blocks. That means that a validator that misses 4,750 consecutive blocks will be considered by the system to have committed a liveness violation, where previously 9,500 consecutive blocks would need to have been missed to violate these system rules. Assuming 7s block times, validators offline for approximately 9.25 consecutive hours (instead of ~18.5 hours) will be slashed 0.5% (instead of 0.01%).",
+  "changes": [
     {
-    
-      "denom": "uatom",
-      
-      "amount": "5250000000"
-      
+      "subspace": "slashing",
+      "key": "SlashFractionDowntime",
+      "value": 0.005000000000000000
     }
-    
+{
+      "subspace": "slashing",
+      "key": "SignedBlocksWindow",
+      "value": 5000
+    }
   ],
-  
   "deposit": [
-  
     {
-    
       "denom": "uatom",
-      
-      "amount": "12000000"
-      
+      "amount": "512000000"
     }
-    
   ]
-  
 }
-___
+```
+**Note:** in the JSON file, `\n` creates a new line.
+
+It's worth noting that this example proposal doesn't provide reasoning/justification for these changes. Consider consulting the [parameter-change best practices documentation](submitting.md) for guidance on the contents of a parameter-change proposal.
 
 ## Sending the transaction that submits your governance proposal
 This is the basic command for using gaiacli (the command-line interface) to submit your proposal on-chain:
-```gaiacli tx gov submit-proposal community-pool-spend <proposal.json> --from [key/address]```
+```gaiacli tx gov submit-proposal param-change <proposal.json> --from [key/address]```
 
-This is the complete command that I could use to submit a community spend proposal right now:
-`gaiacli tx gov submit-proposal community-pool-spend proposal.json --from gavin --gas 500000 --fees 7500uatom --chain-id cosmoshub-3 --node cosmos-node-1.figment.network:26657`
+This is the complete command that I could use to submit a **testnet** parameter-change proposal right now:
+`gaiacli tx gov submit-proposal param-change param.json --from gavin --chain-id gaia-13007 --node 45.77.218.219:26657`
+
+This is the complete command that I could use to submit a **mainnet** parameter-change proposal right now:
+`gaiacli tx gov submit-proposal param-change param.json --from gavin --gas 500000 --fees 7500uatom --chain-id cosmoshub-3 --node cosmos-node-1.figment.network:26657`
 
 1. `gaiacli` is the command-line interface client that is used to send transactions and query the Cosmos Hub
-2. `tx gov submit-proposal community-pool-spend` indicates that the transaction is submitting a community-spend proposal
+2. `tx gov submit-proposal param-change` indicates that the transaction is submitting a parameter-change proposal
 3. `--from gavin` is the account key that pays the transaction fee and deposit amount
 4. `--gas 500000` is the maximum amount of gas permitted to be used to process the transaction
    - the more content there is in the description of your proposal, the more gas your transaction will consume
@@ -151,7 +138,7 @@ There are a number of reasons why a transaction may fail.
 If you encounter a problem, try to troubleshoot it first, and then ask for help on All in Bits' Cosmos forum: [https://forum.cosmos.network/c/governance](https://forum.cosmos.network/c/governance). We can learn from failed attempts and use them to improve upon this guide.
 
 ### Submitting your proposal to the testnet
-I intend to expand this guide to include testnet instructions. You may want to submit your proposal to the testnet chain before the mainnet for a number of reasons:
+You may want to submit your proposal to the testnet chain before the mainnet for a number of reasons:
 1. To see what the proposal description will look like
 2. To signal that your proposal is about to go live on the mainnet
 3. To share what the proposal will look like in advance with stakeholders
