@@ -26,10 +26,10 @@ Changing the `MintDenom` will change the asset that the Cosmos Hub mints from th
 
 
 ## 2. `InflationRateChange`
-### Short desc.
+### Short desc. --> **to do** <--
 #### `cosmoshub-3` default: `0.130000000000000000`
 
-Long Desc
+Long Desc --> **to do** <--
 
 ### Potential implications
 #### Decreasing the value of `InflationRateChange`
