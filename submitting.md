@@ -1,6 +1,5 @@
 # Submitting a Community-Spend Proposal
-## WARNING: under active development. 
-## Do not use this information to submit a proposal.
+## WARNING: This process hasn't been thoroughly tested. Consider discussing this process with the [Cosmos governance working group (GWG)](https://t.me/hubgov) before using it to submit a proposal.
 
 If you have a final draft of your proposal ready to submit, you may want to push your proposal live on the testnet first. These are the three primary steps to getting your community-spend proposal live on-chain.
 
