@@ -19,9 +19,9 @@ Share the URL with others and verify that your file is publicly accessible.
 The reason we use IPFS is that it is a decentralized means of storage, making it resistant to censorship or single points of failure. This increases the likelihood that the file will remain available in the future.
 
 ## Formatting the JSON file for the governance proposal
-Prior to sending the transaction that submits your proposal on-chain, you must create a JSON file. This file will contain the information that will be stored on-chain as the governance proposal. Begin by creating a new text (.txt) file to enter this information. When you're done, save the file as a .json file. See the examples that follow to help format your proposal.
+Prior to sending the transaction that submits your proposal on-chain, you must create a JSON file. This file will contain the information that will be stored on-chain as the governance proposal. Begin by creating a new text (.txt) file to enter this information. Use [these best practices](bestpractices.md) as a guide for the contents of your proposal. When you're done, save the file as a .json file. See the examples that follow to help format your proposal.
 
-**Note:** Changes to the [`gov` module](/Governance.md) are different from the other kinds of parameter changes because `gov` has subkeys, [as discussed here](https://github.com/cosmos/cosmos-sdk/issues/5800). Only the `key` part of the JSON file is different for changes to `gov` parameters. Once on-chain, most people will rely upon network explorers to interpret this information with a graphical user interface (GUI).
+**Note:** Changes to the [`gov` module](/Governance.md) are different from the other kinds of parameter changes because `gov` has subkeys, [as discussed here](https://github.com/cosmos/cosmos-sdk/issues/5800). Only the `key` part of the JSON file is different for changes to `gov` parameters.
 
 For parameter-change proposals, there are seven (7) components:
 1. **Title** - the distinguishing name of the proposal, typically the way the that explorers list proposals
@@ -31,6 +31,8 @@ For parameter-change proposals, there are seven (7) components:
 5. **Value** - the value of the parameter that will be changed by the governance mechanism
 6. **Denom** - `uatom` (micro-ATOM) will be the type of asset used as the deposit
 7. **Amount** - the amount that will be contributed to the deposit (in micro-ATOMs "uatom") from the account submitting the proposal
+
+Once on-chain, most people will rely upon network explorers to interpret this information with a graphical user interface (GUI).
 
 **Note**: The formatting [may be changed to be more standardized](https://github.com/cosmos/cosmos-sdk/issues/5783) with other types of governance proposals.
 
