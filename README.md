@@ -11,7 +11,7 @@ There are currently 8 modules active in the Cosmos Hub with parameters that may 
 5. [Slashing](/Slashing.md) - Validator punishment mechanisms
 6. [Distribution](/Distribution.md) - Fee distribution, and staking token provision distribution
 7. [Crisis](/Crisis.md) - Halting the blockchain under certain circumstances (ie. if an invariant is broken)
-8. [Mint](/Mint.md) - Creation of new units of staking token --> **to do** <--
+8. [Mint](/Mint.md) - Creation of new units of staking token
 
 You can query the current parameter(s) of each module with the command line program [`gaiacli`](/gaiacli). Use the command `gaia q [module] -h` to get help about the subcommands for the module you want to query. For example, `gaiacli q staking` --> to do <--
 
