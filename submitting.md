@@ -1,7 +1,7 @@
-# Submitting a Community-Spend Proposal
+# Submitting a Parameter-Change Proposal
 ## WARNING: This process is in active development and has not been thoroughly tested. Consider discussing this process with the [Cosmos governance working group (GWG)](https://t.me/hubgov) before using it to submit a proposal.
 
-If you have a final draft of your proposal ready to submit, you may want to push your proposal live on the testnet first. These are the three primary steps to getting your community-spend proposal live on-chain.
+If you have a final draft of your proposal ready to submit, you may want to push your proposal live on the testnet first. These are the three primary steps to getting your parameter-change proposal live on-chain.
 
 1. **Optional** [Hosting supplementary materials](#hosting-supplementary-materials) for your parameter-change proposal with IPFS (InterPlanetary File System)
 2. [Formatting the governance proposal](#formatting-the-governance-proposal) that will be on-chain
