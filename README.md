@@ -43,3 +43,4 @@ Special thanks to the following for helping to provide credible information that
 - Joe (Chorus One)
 - Sunny (All in Bits; Sikka)
 - Vidor
+- Alessio (All in Bits)
