@@ -44,16 +44,16 @@ Increasing the value of `TxSigLimit` will increase the maximum number of signatu
 
 ### Potential implications
 #### Decreasing the value of `TxSizeCostPerByte`
-Decreasing the value of `TxSizeCostPerByte` will reduce the number of gas units used for transaction. This may also reduce the fees that validators earn for processing transactions. There may be other effects that have not been detailed here.
+Decreasing the value of `TxSizeCostPerByte` will reduce the number of gas units used per transaction. This may also reduce the fees that validators earn for processing transactions. There may be other effects that have not been detailed here.
 
 #### Increasing the value of `TxSizeCostPerByte`
-Increasing the value of `TxSizeCostPerByte` will raise the number of gas units used for transaction. This may also increase the fees that validators earn for processing transactions. There may be other effects that have not been detailed here.
+Increasing the value of `TxSizeCostPerByte` will raise the number of gas units used per transaction. This may also increase the fees that validators earn for processing transactions. There may be other effects that have not been detailed here.
 
 ## 4. `SigVerifyCostED25519`
 ### The cost for verifying ED25519 signatures, in units of gas.
 #### `cosmoshub-3` default: `590`
 
-Ed25519 is the EdDSA signature scheme (using SHA-512 (SHA-2) and Curve25519) used by validators. `SigVerifyCostED25519` is the gas (ie. computational) cost for verifying ED25519 signatures.
+Ed25519 is the EdDSA cryptographic signature scheme (using SHA-512 (SHA-2) and Curve25519) that is used by Cosmos Hub validators. `SigVerifyCostED25519` is the gas (ie. computational) cost for verifying ED25519 signatures.
 
 ### Potential implications
 #### Decreasing the value of `SigVerifyCostED25519`
@@ -65,7 +65,7 @@ Increasing the value of `SigVerifyCostED25519` may --> **to do** <--
 ### --> short description <--
 #### `cosmoshub-3` default: `1000`
 
---> long description <--
+Secp256k1 is an elliptic curve domain parameter for cryptographic signatures used by user accounts in the Cosmos Hub. `SigVerifyCostSecp256k1` is the gas (ie. computational) cost for verifying Secp256k1 signatures.
 
 ### Potential implications
 #### Decreasing the value of `SigVerifyCostSecp256k1`
