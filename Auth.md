@@ -18,9 +18,10 @@ There is an option to include a "memo," or additional information (data) to Cosm
 
 ### Potential implications
 #### Decreasing the value of `MaxMemoCharacters`
-Decreasing the value of `MaxMemoCharacters` may break the functionality of applications that rely upon the data in the memo field to eg. sort transactions. For example, an exchange may use a common deposit address for all of its users, and then individualize account deposits using the memo field. If the memo field suddenly decreased, the exchange may no longer be able to sort transactions.
+Decreasing the value of `MaxMemoCharacters` will decrease the character limit for each transaction memo. This may break the functionality of applications that rely upon the data in the memo field. For example, an exchange may use a common deposit address for all of its users, and then individualize account deposits using the memo field. If the memo field suddenly decreased, the exchange may no longer automatically sort its users' transactions.
+
 #### Increasing the value of `MaxMemoCharacters`
-Increasing the value of `MaxMemoCharacters` may --> **to do** <--
+Increasing the value of `MaxMemoCharacters` will increase the character limit for each transaction memo. This may enable new functionality for applications that use transaction memos. It may also enable an increase in the amount of data in each block, leading to an increased storage need for the blockchain and [state bloat](https://thecontrol.co/state-growth-a-look-at-the-problem-and-its-solutions-6de9d7634b0b).
 
 ## 2. `TxSigLimit`
 ### The max number of signatures per transaction
@@ -30,27 +31,29 @@ Users and applications may create multisignature (aka multisig) accounts. These 
 
 ### Potential implications
 #### Decreasing the value of `TxSigLimit`
-Decreasing the value of `TxSigLimit` may constrain stakeholders that want to use as many as seven signatures to authorize a transaction. It will also break the functionality of anything dependent upon up to seven transactions, meaning that those transactions will no longer be able to be authorized. In this case, funds and functions controlled by a multisignature address will no longer be accessible, and funds may become stranded.
+Decreasing the value of `TxSigLimit` will decrease the maximum number of signatures possible. This may constrain stakeholders that want to use as many as seven signatures to authorize a transaction. It will also break the functionality of entities or applications dependent upon up to seven transactions, meaning that those transactions will no longer be able to be authorized. In this case, funds and functions controlled by a multisignature address will no longer be accessible, and funds may become stranded.
+
 #### Increasing the value of `TxSigLimit`
-Increasing the value of `TxSigLimit` increases the maximum number of signatures possible. As this value increases, the network becomes more likely to be susceptible to denial of service attacks due to the burden of computational cost when verifying more signatures (since signature verification is costlier than other operations). --> **to do** <--
+Increasing the value of `TxSigLimit` will increase the maximum number of signatures possible. As this value increases, the network becomes more likely to be susceptible to attacks that slow block production, due to the burden of computational cost when verifying more signatures (since signature verification is costlier than other operations).
 
 ## 3. `TxSizeCostPerByte`
-### --> short description <--
+### Sets the cost of transactions, in units of gas.
 #### `cosmoshub-3` default: `10`
 
---> long description <--
+`TxSizeCostPerByte` is used to compute the gas-unit consumption for each transaction.
 
 ### Potential implications
 #### Decreasing the value of `TxSizeCostPerByte`
-Decreasing the value of `TxSizeCostPerByte` may --> **to do** <--
+Decreasing the value of `TxSizeCostPerByte` will reduce the number of gas units used for transaction. This may also reduce the fees that validators earn for processing transactions. There may be other effects that have not been detailed here.
+
 #### Increasing the value of `TxSizeCostPerByte`
-Increasing the value of `TxSizeCostPerByte` may --> **to do** <--
+Increasing the value of `TxSizeCostPerByte` will raise the number of gas units used for transaction. This may also increase the fees that validators earn for processing transactions. There may be other effects that have not been detailed here.
 
 ## 4. `SigVerifyCostED25519`
-### --> short description <--
+### The cost for verifying ED25519 signatures, in units of gas.
 #### `cosmoshub-3` default: `590`
 
---> long description <--
+Ed25519 is the EdDSA signature scheme (using SHA-512 (SHA-2) and Curve25519) used by validators. `SigVerifyCostED25519` is the gas (ie. computational) cost for verifying ED25519 signatures.
 
 ### Potential implications
 #### Decreasing the value of `SigVerifyCostED25519`
