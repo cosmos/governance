@@ -1,5 +1,5 @@
-# The `Crisis` Module
-The `Crisis` module is responsible for halting the Cosmos Hub if an invariant is broken. `Crisis` is active on Cosmos Hub 3 and currently has one parameter that may be modified by governance proposal:
+# The `crisis` Module
+The `crisis` module is responsible for halting the Cosmos Hub if an invariant is broken. `crisis` is active on Cosmos Hub 3 and currently has one parameter that may be modified by governance proposal:
 1. [`ConstantFee`](#1-ConstantFee) - 1333000000uatom (micro-ATOM)
 
 The launch value for this parameter is outlined above, but you can [verify them yourself](#verify-parameter-values).
@@ -10,7 +10,7 @@ If you're technically-inclined, [these are the technical specifications](#techni
 ### The amount required to send a message to halt the Cosmos Hub chain if an invariant is broken, in micro-ATOM.
 #### `cosmoshub-3` default: `1333000000` `uatom`
 
-A Cosmos account (address) can send a transaction message that will halt the Cosmos Hub chain if an invariant is broken. An example of this would be if all of the account balances in total did not equal the total supply. This kind of transaction could consume excessive amounts of gas to compute, beyond the maximum allowable block gas limit. `ConstantFee` makes it possible to bypass the gas limit in order to process this transaction, while setting a cost to disincentivize using the function to attack the network. The cost of the transaction is `1333000000` `uatom` (1,333 ATOM) and will effectively not be paid if the chain halts due to a broken invariant (which similar to being refunded). If the invariant is not broken, then `ConstantFee` will be paid. All in Bits has published more information about the [Crisis module here](https://docs.cosmos.network/master/modules/crisis/).
+A Cosmos account (address) can send a transaction message that will halt the Cosmos Hub chain if an invariant is broken. An example of this would be if all of the account balances in total did not equal the total supply. This kind of transaction could consume excessive amounts of gas to compute, beyond the maximum allowable block gas limit. `ConstantFee` makes it possible to bypass the gas limit in order to process this transaction, while setting a cost to disincentivize using the function to attack the network. The cost of the transaction is `1333000000` `uatom` (1,333 ATOM) and will effectively not be paid if the chain halts due to a broken invariant (which similar to being refunded). If the invariant is not broken, then `ConstantFee` will be paid. All in Bits has published more information about the [crisis module here](https://docs.cosmos.network/master/modules/crisis/).
 
 ### Potential implications
 #### Decreasing the value of `ConstantFee`
@@ -39,9 +39,9 @@ You may verify the current `ConstantFee` parameter value (in case they were modi
 
 # Technical Specifications
 
-The `Crisis` module is responsible for halting the blockchain under the circumstance that a blockchain invariant is broken. Invariants can be registered with the application during the application initialization process.
+The `crisis` module is responsible for halting the blockchain under the circumstance that a blockchain invariant is broken. Invariants can be registered with the application during the application initialization process.
 
-The `Crisis` module contains the following parameter:
+The `crisis` module contains the following parameter:
 
 | Key           | Type   | cosmoshub-3 genesis setting                                                                     |
 |---------------|--------|:----------------------------------------------------------------------------------------------------|
