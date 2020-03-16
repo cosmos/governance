@@ -1,5 +1,5 @@
-# The `Bank` Module
-The `Bank` module is responsible for token transfer functionalities. `Bank` is active on Cosmos Hub 3 and currently has one parameter that may be modified by governance proposal:
+# The `bank` Module
+The `bank` module is responsible for token transfer functionalities. `bank` is active on Cosmos Hub 3 and currently has one parameter that may be modified by governance proposal:
 1. [`sendenabled`](#1-sendenabled)
 
 The value of the launch parameter is outlined here, but you can [verify it yourself](#verify-parameter-values). 
@@ -38,9 +38,9 @@ You may verify the current parameter values (in case they were modified via gove
 
 # Technical Specifications
 
-The `Bank` module is responsible for handling multi-asset coin transfers between accounts and tracking special-case pseudo-transfers, which must work differently with particular kinds of accounts (notably delegating/undelegating for vesting accounts). It exposes several interfaces with varying capabilities for secure interaction with other modules, which must alter user balances.
+The `bank` module is responsible for handling multi-asset coin transfers between accounts and tracking special-case pseudo-transfers, which must work differently with particular kinds of accounts (notably delegating/undelegating for vesting accounts). It exposes several interfaces with varying capabilities for secure interaction with other modules, which must alter user balances.
 
-The `Bank` module contains the following parameter:
+The `bank` module contains the following parameter:
 
 | Key                    | Type            | cosmoshub-3 genesis setting|
 |------------------------|-----------------|---------|
