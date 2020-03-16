@@ -39,9 +39,10 @@ Running a full node can be difficult for those not technically-inclined, so you 
 
 ### Contributors
 Special thanks to the following for helping to provide credible information that contributed to this wiki's development:
-- Aleks (All in Bits; Fission Labs)
-- Alessio (All in Bits)
-- Vidor
+- Aleks (All in Bits; Fission Labs) for answering countless questions about these parameters
+- Alessio (All in Bits) for explaining how [`SigVerifyCostED25519`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Auth.md#4-sigverifycosted25519) & [`SigVerifyCostSecp256k1`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Auth.md#5-sigverifycostsecp256k1) work, and detailed answers to my many questions
+- Vidor for volunteering to explain [`ConstantFee`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Crisis.md#1-constantfee) and answering my many questions in detail
+- Hyung (B-Harvest) for volunteering how [`InflationRateChange`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Mint.md#2-inflationratechange) works
 - Joe (Chorus One)
 - Sunny (All in Bits; Sikka)
 
