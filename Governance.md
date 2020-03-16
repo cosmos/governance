@@ -1,5 +1,5 @@
-# The `Governance` Module
-The `Governance` module is responsible for on-chain proposals and voting functionality. **Note** [that this module has requires a unique way to change its parameters](https://github.com/cosmos/cosmos-sdk/issues/5800). `Governance` is active on Cosmos Hub 3 and currently has three parameters with six subkeys that may be modified by governance proposal:
+# The `gov` Module
+The `gov` module is responsible for on-chain governance proposals and voting functionality. **Note** [that this module has requires a unique way to change its parameters](https://github.com/cosmos/cosmos-sdk/issues/5800). `gov` is active on Cosmos Hub 3 and currently has three parameters with six subkeys that may be modified by governance proposal:
 1. [`depositparams`](#1-depositparams)
    - [`mindeposit`](#mindeposit) - `512000000` `uatom` (micro-ATOMs)
    - [`maxdepositperiod`](#maxdepositperiod) - `1209600000000000` (nanoseconds)
@@ -166,14 +166,14 @@ governance module. Future improvements may include:
 
 # Technical Specifications
 
-The `Governance` module is responsible for the on-chain governance system. In this system, holders of the native staking token of the chain may vote on proposals on a 1-token per 1-vote basis. Next is a list of features the module currently supports:
+The `gov` module is responsible for the on-chain governance system. In this system, holders of the native staking token of the chain may vote on proposals on a 1-token per 1-vote basis. Next is a list of features the module currently supports:
 
 - **Proposal submission**: Users can submit proposals with a deposit. Once the minimum deposit is reached, proposal enters voting period
 - **Vote**: Participants can vote on proposals that reached MinDeposit
 - **Inheritance and penalties**: Delegators inherit their validator's vote if they don't vote themselves.
 - **Claiming deposit**: Users that deposited on proposals can recover their deposits if the proposal was accepted OR if the proposal never entered voting period.
 
-The `Governance` module contains the following parameters:
+The `gov` module contains the following parameters:
 
 | Key           | Type   | cosmoshub-3 genesis setting                                                                     |
 |---------------|--------|:----------------------------------------------------------------------------------------------------|
