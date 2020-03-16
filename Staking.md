@@ -1,5 +1,5 @@
-# The `Staking` Module
-The `Staking` module is responsible for the proof of stake (PoS) layer of the Cosmos Hub blockchain. `Staking` is active on Cosmos Hub 3 and currently has four parameters that may be modified by governance proposal:
+# The `staking` Module
+The `staking` module is responsible for the proof of stake (PoS) layer of the Cosmos Hub blockchain. `staking` is active on Cosmos Hub 3 and currently has four parameters that may be modified by governance proposal:
 1. [`UnbondingTime`](#1-UnbondingTime) - 1814400000000000 (nanoseconds)
 2. [`MaxValidators`](#2-MaxValidators) - 125
 3. [`KeyMaxEntries`](#3-KeyMaxEntries) - 7
@@ -93,9 +93,9 @@ You may verify the current parameter values (in case they were modified via gove
 
 # Technical Specifications
 
-The `Staking` module is responsible for supporting an advanced Proof of Stake (PoS) system. In this system, holders of the native staking token of the chain can become validators and can delegate tokens to validators, ultimately determining the effective validator set for the system.
+The `staking` module is responsible for supporting an advanced Proof of Stake (PoS) system. In this system, holders of the native staking token of the chain can become validators and can delegate tokens to validators, ultimately determining the effective validator set for the system.
 
-The `Staking` module contains the following parameters:
+The `staking` module contains the following parameters:
 
 | Key           | Type   | cosmoshub-3 genesis setting                                                                     |
 |---------------|--------|:----------------------------------------------------------------------------------------------------|
