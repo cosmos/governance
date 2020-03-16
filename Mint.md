@@ -41,13 +41,21 @@ The inflation rate increases when under 67% of the token supply is staking, and 
 
 ### Potential implications
 #### Decreasing the value of `InflationRateChange`
-Decreasing the value of the `InflationRateChange` parameter will cause the rate of inflation to have a smaller . This may ---.
+Decreasing the value of the `InflationRateChange` parameter will decrease both how fast the inflation rate changes and also the maximum speed that it can potentially change. It will then take longer for inflation to reach [`InflationMin`](#4-InflationMin) or [`InflationMax`](#3-InflationMax). This may lessen the response of staking behaviour to the incentive mechanism [described in the notes below](#notes).
 
 #### Increasing the value of `InflationRateChange`
-Increasing the value of the `InflationRateChange` parameter will ---. This may ---.
+Increasing the value of the `InflationRateChange` parameter will increase both how fast the inflation rate changes and also the maximum speed that it can potentially change. It will then take less time for inflation to reach [`InflationMin`](#4-InflationMin) or [`InflationMax`](#3-InflationMax). This may quicken the response of staking behaviour to the incentive mechanism [described in the notes below](#notes).
 
 ### Notes
-inflationRateChangePerYear = (1 - bondedRatio/params.GoalBonded) * params.InflationRateChange
+**Example:** if the current staking participation ratio (aka "bond ratio") is 73%, then this is the calculation for speed that the inflation rate will change:
+
+(1 - 73%/67%) * 13% = -1.16% per year
+
+This means that if the staking participation rate stays the same, the inflation rate will be decrease by 1.16% over the course of one year, during which time the Hub's inflation rate will decrease by about 0.1% per month.
+
+If `InflationRateChange` is 26% and the current staking participation ratio (aka "bond ratio") is 73%, then the inflation will  decrease by 2.33% over the course of one year, during which time inflation will decrease by about 0.19% per month.
+
+The Cosmos Hub's inflation rate is tied to its staking participation ratio in order to make staking more or less desirable, since most of the Hub's inflation is used to fund staking rewards. If the speed of inflation responds more strongly to staking participation, it could be that staking behaviour will also respond more strongly.
 
 ## 3. `InflationMax`
 ### The maximum rate that the Cosmos Hub can mint new ATOMs, proportional to the supply.
