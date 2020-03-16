@@ -11,7 +11,7 @@ The `slashing` module is responsible for enabling the Cosmos Hub to penalize any
 
 The launch values for each parameter are outlined above, but you can [verify them yourself](#verify-parameter-values).
 
-If you're technically-inclined, [these are the technical specifications](#technical-specifications).
+If you're technically-inclined, [these are the technical specifications](#technical-specifications). If you're looking to create a proposal to change one or more of these parameters, [check out this section for formatting](https://github.com/gavinly/CosmosParametersWiki/blob/master/submitting.md#formatting-the-json-file-for-the-governance-proposal).
 
 ## 1. `SignedBlocksWindow`
 ### Window for being offline without being slashed, in blocks.
