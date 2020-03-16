@@ -1,8 +1,8 @@
-# The `Slashing` Module
+# The `slashing` Module
 
-The `Slashing` module is responsible for enabling the Cosmos Hub to penalize any validator for an attributable violation of protocol rules by slashing (ie. partially destroying) the bonded ATOMs of their stake-backing. Penalties may include a) burning some amount of a staked bond and b) removing the ability to vote on future blocks and governance proposals for a period of time.
+The `slashing` module is responsible for enabling the Cosmos Hub to penalize any validator for an attributable violation of protocol rules by slashing (ie. partially destroying) the bonded ATOMs of their stake-backing. Penalties may include a) burning some amount of a staked bond and b) removing the ability to vote on future blocks and governance proposals for a period of time.
 
-`Slashing` is active on Cosmos Hub 3 and currently has five parameters that may be modified by governance proposal:
+`slashing` is active on Cosmos Hub 3 and currently has five parameters that may be modified by governance proposal:
 1. [`SignedBlocksWindow`](#1-SignedBlocksWindow) - 10000 (blocks)
 2. [`MinSignedPerWindow`](#2-MinSignedPerWindow) - 0.050000000000000000 (proportion)
 3. [`DowntimeJailDuration`](#3-DowntimeJailDuration) - 600000000000 (nanoseconds)
@@ -138,7 +138,7 @@ You may verify the current parameter values (in case they were modified via gove
 
 # Technical Specifications
 
-The `Slashing` module enables Cosmos SDK-based blockchains to disincentivize any attributable action
+The `slashing` module enables Cosmos SDK-based blockchains to disincentivize any attributable action
 by a protocol-recognized actor with value at stake by penalizing them ("slashing").
 
 Penalties may include, but are not limited to:
@@ -146,7 +146,7 @@ Penalties may include, but are not limited to:
 - Burning some amount of their stake
 - Removing their ability to vote on future blocks and governance proposals for a period of time.
 
-The `Slashing` module contains the following parameters:
+The `slashing` module contains the following parameters:
 
 | Key           | Type   | cosmoshub-3 genesis setting                |
 | ----------------------- | ---------------- | ---------------------- |
