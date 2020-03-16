@@ -1,7 +1,7 @@
 # Best Practices for Drafting a Parameter-Change Proposal 
 
 ## Engage directly with the voting community and seek feedback
-#### Last updated: Mar 13, 2020
+#### Last updated: Mar 16, 2020
 Engagement is likely to be important to the success of this kind of proposal, however, parameter-change proposals will likely be more straightforward than other kinds of proposal. The degree to which you engage with the Cosmos Hub community should be relative to the potential impact that your proposal may have on the stakeholders. There are many different ways to engage.
 
 One strategy involves a few stages of engagement before and after submitting a proposal on chain. In the first stage of this strategy, you should engage with people informally about your idea.
