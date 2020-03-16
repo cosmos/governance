@@ -1,5 +1,5 @@
-# The `Auth` Module
-The `Auth` module is responsible for authenticating accounts and transactions. `Auth` is active on Cosmos Hub 3 and currently has five parameters that may be modified by governance proposal:
+# The `auth` Module
+The `auth` module is responsible for authenticating accounts and transactions. `auth` is active on Cosmos Hub 3 and currently has five parameters that may be modified by governance proposal:
 1. [`MaxMemoCharacters`](#1-maxmemocharacters) - 512
 2. [`TxSigLimit`](#2-txsiglimit) - 7
 3. [`TxSizeCostPerByte`](#3-txsizecostperbyte) - 10
@@ -53,7 +53,7 @@ Increasing the value of `TxSizeCostPerByte` will raise the number of gas units u
 ### The cost for verifying ED25519 signatures, in units of gas.
 #### `cosmoshub-3` default: `590`
 
-Ed25519 is the EdDSA cryptographic signature scheme (using SHA-512 (SHA-2) and Curve25519) that is used by Cosmos Hub validators. `SigVerifyCostED25519` is the gas (ie. computational) cost for verifying ED25519 signatures.
+Ed25519 is the EdDSA cryptographic signature scheme (using SHA-512 (SHA-2) and Curve25519) that is used by Cosmos Hub validators. `SigVerifyCostED25519` is the gas (ie. computational) cost for verifying ED25519 signatures, which are not typically used by 
 
 ### Potential implications
 #### Decreasing the value of `SigVerifyCostED25519`
@@ -93,9 +93,9 @@ You may verify the current parameter values (in case they were modified via gove
 
 # Technical Specifications
 
-The `Auth` module is responsible for specifying the base transaction and account types for an application, since the SDK itself is agnostic to these particulars. It contains the ante handler, where all basic transaction validity checks (signatures, nonces, auxiliary fields) are performed, and exposes the account keeper, which allows other modules to read, write, and modify accounts.
+The `auth` module is responsible for specifying the base transaction and account types for an application, since the SDK itself is agnostic to these particulars. It contains the ante handler, where all basic transaction validity checks (signatures, nonces, auxiliary fields) are performed, and exposes the account keeper, which allows other modules to read, write, and modify accounts.
 
-The `Auth` module contains the following parameters:
+The `auth` module contains the following parameters:
 
 | Key                    | Type            | cosmoshub-3 genesis setting|
 |------------------------|-----------------|---------|
