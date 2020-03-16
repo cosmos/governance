@@ -4,7 +4,7 @@ The `bank` module is responsible for token transfer functionalities. `bank` is a
 
 The value of the launch parameter is outlined here, but you can [verify it yourself](#verify-parameter-values). 
 
-If you're technically-inclined, [this is the technical specification](#technical-specifications).
+If you're technically-inclined, [this is the technical specification](#technical-specifications). If you're looking to create a proposal to change one or more of these parameters, [check out this section for formatting](https://github.com/gavinly/CosmosParametersWiki/blob/master/submitting.md#formatting-the-json-file-for-the-governance-proposal).
 
 ## 1. `sendenabled`
 ### Token transfer functionality.
