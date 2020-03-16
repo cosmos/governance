@@ -1,6 +1,6 @@
-# The `Distribution` Module
+# The `distribution` Module
 
-The `Distribution` module is responsible for distributing staking rewards between validators, delegators, and the Community Pool. `Distribution` is active on Cosmos Hub 3 and currently has four parameters that may be modified by governance proposal:
+The `distribution` module is responsible for distributing staking rewards between validators, delegators, and the Community Pool. `distribution` is active on Cosmos Hub 3 and currently has four parameters that may be modified by governance proposal:
 
 | communitytax        | string (dec) | "0.020000000000000000" |
 | baseproposerreward  | string (dec) | "0.010000000000000000" |
@@ -124,9 +124,9 @@ You may verify the current parameter values (in case they were modified via gove
 
 # Technical Specifications
 
-The `Distribution` module enables a simple distribution mechanism that passively distributes rewards between validators and delegators. Collected rewards are pooled globally and divided out passively to validators and delegators. Each validator has the opportunity to charge commission to the delegators on the rewards collected on behalf of the delegators. Fees are collected directly into a global reward pool and validator proposer-reward pool.
+The `distribution` module enables a simple distribution mechanism that passively distributes rewards between validators and delegators. Collected rewards are pooled globally and divided out passively to validators and delegators. Each validator has the opportunity to charge commission to the delegators on the rewards collected on behalf of the delegators. Fees are collected directly into a global reward pool and validator proposer-reward pool.
 
-The `Distribution` module contains the following parameters:
+The `distribution` module contains the following parameters:
 
 | Key           | Type   | cosmoshub-3 genesis setting        |
 |---------------------|--------------|------------------------|
