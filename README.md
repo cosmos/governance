@@ -40,7 +40,8 @@ Running a full node can be difficult for those not technically-inclined, so you 
 ### Contributors
 Special thanks to the following for helping to provide credible information that contributed to this wiki's development:
 - Aleks (All in Bits; Fission Labs)
+- Alessio (All in Bits)
+- Vidor
 - Joe (Chorus One)
 - Sunny (All in Bits; Sikka)
-- Vidor
-- Alessio (All in Bits)
+
