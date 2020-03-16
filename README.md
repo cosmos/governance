@@ -31,7 +31,8 @@ If you are considering drafting a proposal, you should know:
 - You will need to indicate which chain you are querying, and currently this is `--chain-id cosmoshub-3`
 - You will need to connect to a full node. If gaiacli isn't already configured for this, you can use this tag in your command `--node [address]:26657`.
 
-### Full nodes  -->**to do**<--
+### Full nodes
+-->**to do**<--
 Running a full node can be difficult for those not technically-inclined, so you may choose to use a third-party's full node. In this case, the primary security risk is that of censorship: it's the single place where you have a single gateway to the network, and any messages submitted through an untrusted node could be censored.
 - cosmos-node-1.figment.network:26657 ([Figment Networks](https://figment.network/networks/cosmos/))
 - 63.35.133.166:26657 ([Chorus One](cosmos.chorus.one))
@@ -43,6 +44,5 @@ Special thanks to the following for helping to provide credible information that
 - Alessio (All in Bits) for explaining how [`SigVerifyCostED25519`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Auth.md#4-sigverifycosted25519) & [`SigVerifyCostSecp256k1`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Auth.md#5-sigverifycostsecp256k1) work, and detailed answers to my many questions
 - Vidor for volunteering to explain [`ConstantFee`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Crisis.md#1-constantfee) and answering my many questions in detail
 - Hyung (B-Harvest) for volunteering how [`InflationRateChange`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Mint.md#2-inflationratechange) works
-- Joe (Chorus One)
-- Sunny (All in Bits; Sikka)
-
+- Joe (Chorus One) for explaining the security details involved with [using full nodes for transactions](https://github.com/gavinly/CosmosParametersWiki/blob/master/README.md#full-nodes)
+- Sunny (All in Bits; Sikka) for volunteering an explanation of the purpose of [`withdrawaddrenabled`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Distribution.md#4-withdrawaddrenabled)
