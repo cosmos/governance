@@ -1,8 +1,8 @@
-# The `Mint` Module
+# The `mint` Module
 
-The `Mint` module is responsible for enabling the Cosmos Hub to have a flexible inflation rate that depends upon a [bonded stake ratio target](#5-GoalBonded).
+The `mint` module is responsible for enabling the Cosmos Hub to have a flexible inflation rate that depends upon a [bonded stake ratio target](#5-GoalBonded).
 
-`Mint` is active on Cosmos Hub 3 and currently has six parameters that may be modified by governance proposal:
+`mint` is active on Cosmos Hub 3 and currently has six parameters that may be modified by governance proposal:
 1. [`MintDenom`](#1-MintDenom) - uatom (micro-ATOM)
 2. [`InflationRateChange`](#2-InflationRateChange) - 0.130000000000000000 (proportion)
 3. [`InflationMax`](#3-InflationMax) - 0.200000000000000000 (proportion)
@@ -124,7 +124,7 @@ You may verify the current parameter values (in case they were modified via gove
 
 # Technical Specifications
 
-The `Mint` module was designed to allow for a flexible inflation rate determined by market demand targeting a particular bonded-stake ratio, and effect a balance between market liquidity and staked supply.
+The `mint` module was designed to allow for a flexible inflation rate determined by market demand targeting a particular bonded-stake ratio, and effect a balance between market liquidity and staked supply.
 
 In order to best determine the appropriate market rate for inflation rewards, a moving change rate is used. The moving change rate mechanism ensures that if the % bonded is either over or under the goal %-bonded, the inflation rate will adjust to further incentivize or disincentivize being bonded, respectively. Setting the goal %-bonded at less than 100% encourages the network to maintain some non-staked tokens in order to help provide some liquidity.
 
@@ -134,7 +134,7 @@ It can be broken down in the following way:
 - If the goal % bonded (67% in Cosmos-Hub) is maintained, then the inflation rate will stay constant
 - If the inflation rate is above the goal %-bonded the inflation rate will decrease until a minimum value is reached
 
-The `Mint` module contains the following parameters:
+The `mint` module contains the following parameters:
 
 | Key           | Type   | cosmoshub-3 genesis setting                |
 | ----------------------- | ---------------- | ---------------------- |
