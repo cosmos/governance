@@ -26,20 +26,28 @@ Changing the `MintDenom` will change the asset that the Cosmos Hub mints from th
 
 
 ## 2. `InflationRateChange`
-### Short desc. --> **to do** <--
+### A factor of and limit to the speed at which the Cosmos Hub's inflation rate changes.
 #### `cosmoshub-3` default: `0.130000000000000000`
 
-Long Desc --> **to do** <--
+Cosmos Hub's inflation rate can change faster or slower, depending on staking participation, and is limited to a minimum of 7% and maximum of 20%. The inflation rate cannot increase or decrease faster than 13% per year (`InflationRateChange`). The speed that the inflation rate changes depends upon two things:
+1. how far away the *current staking participation ratio* is from [`GoalBonded`](#5-GoalBonded) (67%)
+2. the value of `InflationRateChange`, which is `0.130000000000000000` (13%)
+```
+inflationRateChangePerYear = (1 - bondedRatio/params.GoalBonded) * params.InflationRateChange
+```
+[The source for this information can be found here](https://github.com/cosmos/cosmos-sdk/blob/master/x/mint/spec/03_begin_block.md).
+
+The inflation rate increases when under 67% of the token supply is staking, and it will take less time to reach the maximum of rate of 20% inflation if (for example) 30% of the token supply is staking than if 50% is staking. 
 
 ### Potential implications
 #### Decreasing the value of `InflationRateChange`
-Decreasing the value of the `InflationRateChange` parameter will ---. This may ---.
+Decreasing the value of the `InflationRateChange` parameter will cause the rate of inflation to have a smaller . This may ---.
 
 #### Increasing the value of `InflationRateChange`
 Increasing the value of the `InflationRateChange` parameter will ---. This may ---.
 
-#### Notes
-
+### Notes
+inflationRateChangePerYear = (1 - bondedRatio/params.GoalBonded) * params.InflationRateChange
 
 ## 3. `InflationMax`
 ### The maximum rate that the Cosmos Hub can mint new ATOMs, proportional to the supply.
