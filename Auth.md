@@ -53,25 +53,33 @@ Increasing the value of `TxSizeCostPerByte` will raise the number of gas units u
 ### The cost for verifying ED25519 signatures, in units of gas.
 #### `cosmoshub-3` default: `590`
 
-Ed25519 is the EdDSA cryptographic signature scheme (using SHA-512 (SHA-2) and Curve25519) that is used by Cosmos Hub validators. `SigVerifyCostED25519` is the gas (ie. computational) cost for verifying ED25519 signatures, which are not typically used by 
+Ed25519 is the EdDSA cryptographic signature scheme (using SHA-512 (SHA-2) and Curve25519) that is used by Cosmos Hub validators. `SigVerifyCostED25519` is the gas (ie. computational) cost for verifying ED25519 signatures, and ED25519-based transactions are not currently accepted by the Cosmos Hub.
 
 ### Potential implications
 #### Decreasing the value of `SigVerifyCostED25519`
-Decreasing the value of `SigVerifyCostED25519` may --> **to do** <--
+Decreasing the value of `SigVerifyCostED25519` will decrease the amount of gas that is consumed by transactions that require Ed25519 signature verifications. Since Ed25519-signed transactions are not currently accepted by Cosmos Hub, changing this parameter is unlikely to affect stakeholders at this time.
+
 #### Increasing the value of `SigVerifyCostED25519`
-Increasing the value of `SigVerifyCostED25519` may --> **to do** <--
+Increasing the value of `SigVerifyCostED25519` will increase the amount of gas that is consumed by transactions that require Ed25519 signature verifications. Since Ed25519 signature transactions are not currently accepted by Cosmos Hub, changing this parameter is unlikely to affect stakeholders at this time.
+
+### Notes
+Ed25519 signatures are not currently being accepted by the Cosmos Hub. Ed25519 signatures will be verified and can be considered valid, so the gas to verify them will be consumed. However, the transaction itself will be rejected. It could be that these signatures will be used for transactions a later time, such as after inter-blockchain communication (IBC) evidence upgrades happen.
 
 ## 5. `SigVerifyCostSecp256k1`
-### --> short description <--
+### The cost for verifying Secp256k1 signatures, in units of gas.
 #### `cosmoshub-3` default: `1000`
 
-Secp256k1 is an elliptic curve domain parameter for cryptographic signatures used by user accounts in the Cosmos Hub. `SigVerifyCostSecp256k1` is the gas (ie. computational) cost for verifying Secp256k1 signatures.
+Secp256k1 is an elliptic curve domain parameter for cryptographic signatures used by user accounts in the Cosmos Hub. `SigVerifyCostSecp256k1` is the gas (ie. computational) cost for verifying Secp256k1 signatures. Practically all Cosmos Hub transactions require Secp256k1 signature verifications.
 
 ### Potential implications
 #### Decreasing the value of `SigVerifyCostSecp256k1`
-Decreasing the value of `SigVerifyCostSecp256k1` may --> **to do** <--
+Decreasing the value of `SigVerifyCostSecp256k1` will decrease the amount of gas that is consumed by practically all Cosmos Hub transactions, which require Secp256k1 signature verifications. Decreasing this parameter may have unintended effects on how the Cosmos Hub operates, since the computational cost of verifying a transaction may be greater than what the system's assumption is.
+
 #### Increasing the value of `SigVerifyCostSecp256k1`
-Increasing the value of `SigVerifyCostSecp256k1` may --> **to do** <--
+Increasing the value of `SigVerifyCostSecp256k1` will increase the amount of gas that is consumed by practically all Cosmos Hub transactions, which require Secp256k1 signature verifications. Increasing this parameter may have unintended effects on how the Cosmos Hub operates, since the computational cost of verifying a transaction may be less than what the system's assumption is.
+
+### Notes
+There should be a better understanding of what the potential implications are for changing `SigVerifyCostSecp256k1`. For example, gas calculations are important because transactions could be rejected for exceeding the block gas limit, breaking application functionality or perhaps preventing addresses controlled by multiple signatures from moving funds.
 
 # Verify Parameter Values
 ## Genesis (ie. most recent launch) Parameters
