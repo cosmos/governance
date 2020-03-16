@@ -4,7 +4,7 @@ The `crisis` module is responsible for halting the Cosmos Hub if an invariant is
 
 The launch value for this parameter is outlined above, but you can [verify them yourself](#verify-parameter-values).
 
-If you're technically-inclined, [these are the technical specifications](#technical-specifications).
+If you're technically-inclined, [these are the technical specifications](#technical-specifications). If you're looking to create a proposal to change one or more of these parameters, [check out this section for formatting](https://github.com/gavinly/CosmosParametersWiki/blob/master/submitting.md#formatting-the-json-file-for-the-governance-proposal).
 
 ## 1. `ConstantFee`
 ### The amount required to send a message to halt the Cosmos Hub chain if an invariant is broken, in micro-ATOM.
