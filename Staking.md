@@ -9,7 +9,7 @@ The launch values for each parameter are outlined above, but you can [verify the
 
 The next upgrade will include the [`HistoricalEntries` parameter](https://github.com/cosmos/cosmos-sdk/blob/master/x/staking/spec/01_state.md#historicalinfo). `HistoricalInfo` objects will be stored and pruned at each block such that the staking keeper persists only the `n` most recent historical info entries, defined by this staking module parameter. You can learn more about the [implementation here](https://github.com/cosmos/cosmos-sdk/pull/5380/) and the [reasoning here](https://github.com/cosmos/cosmos-sdk/issues/4647).
 
-If you're technically-inclined, [these are the technical specifications](#technical-specifications).
+If you're technically-inclined, [these are the technical specifications](#technical-specifications). If you're looking to create a proposal to change one or more of these parameters, [check out this section for formatting](https://github.com/gavinly/CosmosParametersWiki/blob/master/submitting.md#formatting-the-json-file-for-the-governance-proposal).
 
 ## 1. `UnbondingTime`
 ### The time duration required for bonded ATOMs to unbond and become transferrable, in nanoseconds.
