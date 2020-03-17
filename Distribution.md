@@ -110,13 +110,13 @@ This parameter was set to `false` before transfers were enabled in order to prev
 
 
 ## Known Bug
-There is a known bug associated with this module that has reportedly caused a chain to halt. In the [reported case](https://github.com/cosmos/cosmos-sdk/issues/5808), the values were:
+There is a known bug associated with this module that has reportedly caused a chain to halt. In [this reported case](https://github.com/cosmos/cosmos-sdk/issues/5808), the chain's parameter values were changed to be:
 ```
 community_tax: "0.020000000000000000"
 base_proposer_reward: "0.999000000000000000"
 bonus_proposer_reward: "0.040000000000000000"
 ```
-Though the system will not allow eg. `baseproposerreward` to be a value greater than 1.0, it will allow the [`communitytax`](#1-communitytax), [`baseproposerreward`](#2-baseproposerreward), and [`bonusproposerreward`](#3-bonusproposerreward) parameters values to total an amount greater than 1.00, which will apparently cause the chain to halt. You can [read more about the reported issue here](https://github.com/cosmos/cosmos-sdk/issues/5808).
+Though the system will not allow eg. `baseproposerreward` to be a value greater than 1.0, it will allow the [`communitytax`](#1-communitytax), [`baseproposerreward`](#2-baseproposerreward), and [`bonusproposerreward`](#3-bonusproposerreward) parameters values to total an amount greater than 1.00, which will apparently cause the chain to panic and halt. You can [read more about the reported issue here](https://github.com/cosmos/cosmos-sdk/issues/5808).
 
 # Verify Parameter Values
 ## Genesis (aka launch) Parameters
