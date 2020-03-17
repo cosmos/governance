@@ -2,11 +2,6 @@
 
 The `distribution` module is responsible for distributing staking rewards between validators, delegators, and the Community Pool. `distribution` is active on Cosmos Hub 3 and currently has four parameters that may be modified by governance proposal:
 
-| communitytax        | string (dec) | "0.020000000000000000" |
-| baseproposerreward  | string (dec) | "0.010000000000000000" |
-| bonusproposerreward | string (dec) | "0.040000000000000000" |
-| withdrawaddrenabled | bool         | true                   |
-
 1. [`communitytax`](#1-communitytax) - 0.020000000000000000 (proportion)
 2. [`baseproposerreward`](#2-baseproposerreward) - 0.010000000000000000 (proportion)
 3. [`bonusproposerreward`](#3-bonusproposerreward) - 0.040000000000000000 (proportion)
