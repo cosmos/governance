@@ -12,7 +12,7 @@ The `distribution` module is responsible for distributing staking rewards betwee
 3. [`bonusproposerreward`](#3-bonusproposerreward) - 0.040000000000000000 (proportion)
 4. [`withdrawaddrenabled`](#4-withdrawaddrenabled) - true
 
-There is [a known bug](#known-bug) associated with this module. The launch values for each parameter are outlined above, but you can [verify them yourself](#verify-parameter-values).
+**There is [a known bug](#known-bug) associated with this module.** The launch values for each parameter are outlined above, but you can [verify them yourself](#verify-parameter-values).
 
 If you're technically-inclined, [these are the technical specifications](#technical-specifications). If you're looking to create a proposal to change one or more of these parameters, [check out this section for formatting](https://github.com/gavinly/CosmosParametersWiki/blob/master/submitting.md#formatting-the-json-file-for-the-governance-proposal).
 
@@ -110,13 +110,13 @@ This parameter was set to `false` before transfers were enabled in order to prev
 
 
 ## Known Bug
-There is a known bug associated with this module that has reportedly caused a chain to halt. In the reported case, the values were:
+There is a known bug associated with this module that has reportedly caused a chain to halt. In the [reported case](https://github.com/cosmos/cosmos-sdk/issues/5808), the values were:
 ```
 community_tax: "0.020000000000000000"
 base_proposer_reward: "0.999000000000000000"
 bonus_proposer_reward: "0.040000000000000000"
 ```
-Though the system will not allow eg. `baseproposerreward` to be a value greater than 1.0, it will allow the [`communitytax`](#1-communitytax), [`baseproposerreward`](#2-baseproposerreward), and [`bonusproposerreward`](#3-bonusproposerreward) parameters values to total an amount greater than 1.00, which will apparently cause the chain to halt.
+Though the system will not allow eg. `baseproposerreward` to be a value greater than 1.0, it will allow the [`communitytax`](#1-communitytax), [`baseproposerreward`](#2-baseproposerreward), and [`bonusproposerreward`](#3-bonusproposerreward) parameters values to total an amount greater than 1.00, which will apparently cause the chain to halt. You can [read more about the reported issue here](https://github.com/cosmos/cosmos-sdk/issues/5808).
 
 # Verify Parameter Values
 ## Genesis (aka launch) Parameters
