@@ -12,7 +12,7 @@ The `distribution` module is responsible for distributing staking rewards betwee
 3. [`bonusproposerreward`](#3-bonusproposerreward) - 0.040000000000000000 (proportion)
 4. [`withdrawaddrenabled`](#4-withdrawaddrenabled) - true
 
-There is [a known bug](#bug) associated with this module. The launch values for each parameter are outlined above, but you can [verify them yourself](#verify-parameter-values).
+There is [a known bug](#known-bug) associated with this module. The launch values for each parameter are outlined above, but you can [verify them yourself](#verify-parameter-values).
 
 If you're technically-inclined, [these are the technical specifications](#technical-specifications). If you're looking to create a proposal to change one or more of these parameters, [check out this section for formatting](https://github.com/gavinly/CosmosParametersWiki/blob/master/submitting.md#formatting-the-json-file-for-the-governance-proposal).
 
