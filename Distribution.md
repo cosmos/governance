@@ -58,9 +58,9 @@ Increasing the value of the `bonusproposerreward` parameter will increase the ad
 The Cosmos Hub transaction fee volume is proportionally very low in value compared to the inflationary block rewards, and until that changes, this parameter will likely have very little impact on validator behaviours. As fee volumes increase, the `bonusproposerreward` bonus may incentivize delegations to the validator(s) with the greatest stake-backing. There are some detailed discussions about the proposer bonus [here](https://github.com/cosmos/cosmos-sdk/issues/3529).
 
 ### Example
-In this example from the [All in Bits website](https://hub.cosmos.network/master/validators/validator-faq.html#how-are-fees-distributed), there are 10 validators with equal stake. Each of them applies a 1% commission rate and has 20% of self-delegated Atoms. Now comes a successful block that collects a total of 1025.51020408 Atoms in fees.
+**Note** that "reserve pool" refers to the community pool. In this example from the [All in Bits website](https://hub.cosmos.network/master/validators/validator-faq.html#how-are-fees-distributed), there are 10 validators with equal stake. Each of them applies a 1% commission rate and has 20% of self-delegated Atoms. Now comes a successful block that collects a total of 1025.51020408 Atoms in fees.
 
-First, a 2% tax is applied. The corresponding Atoms go to the reserve pool. Reserve pool's funds can be allocated through governance to fund bounties and upgrades.
+First, a 2% tax is applied. The corresponding Atoms go to the reserve pool (aka community pool). Reserve pool's funds can be allocated through governance to fund bounties and upgrades.
 
 2% * 1025.51020408 = 20.51020408 Atoms go to the reserve pool.
 1005 Atoms now remain. Let's assume that the proposer included 100% of the signatures in its block. It thus obtains the full bonus of 5%.
