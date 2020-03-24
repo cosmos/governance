@@ -1,5 +1,5 @@
-# Cosmos Parameters Wiki
-This Cosmos Hub educational wiki aims to outline the Hub's parameters, describe their functions, and describe the potential implications of modifying each parameter. **This wiki is in active development, so please do not rely upon this information yet.** [Discuss its development here](https://forum.cosmos.network/t/gwg-cosmos-hub-parameters-wiki/3170). If you are technically inclined, this is the full [list of modules](https://github.com/cosmos/cosmos-sdk/tree/master/x) in the Cosmos SDK.
+# Cosmos Parameters Wiki & Best Practices
+This Cosmos Hub educational documentation aims to outline the Hub's parameters, describe their functions, and describe the potential implications of modifying each parameter. This documentation also aims to provide guidelines for parameter-change proposals. **This documentation has not had adequate review from experts or testing from participants, so please be cautious when using it.** [Discuss its development here](https://forum.cosmos.network/t/gwg-cosmos-hub-parameters-wiki/3170) and please provide feedback either in the forum or by opening a Github issue. If you are technically inclined, this is the full [list of modules](https://github.com/cosmos/cosmos-sdk/tree/master/x) in the Cosmos SDK.
 
 # Modules Wiki
 There are currently 8 modules active in the Cosmos Hub with parameters that may be altered via governance proposal:
