@@ -1,9 +1,8 @@
 # Cosmos Parameters Wiki
 This Cosmos Hub educational wiki aims to outline the Hub's parameters, describe their functions, and describe the potential implications of modifying each parameter. **This wiki is in active development, so please do not rely upon this information yet.** [Discuss its development here](https://forum.cosmos.network/t/gwg-cosmos-hub-parameters-wiki/3170). If you are technically inclined, this is the full [list of modules](https://github.com/cosmos/cosmos-sdk/tree/master/x) in the Cosmos SDK.
 
-There are currently 8 modules active in the Cosmos Hub with parameters that may be altered via governance proposal.
-
-# Modules
+# Modules Wiki
+There are currently 8 modules active in the Cosmos Hub with parameters that may be altered via governance proposal:
 1. [auth](/Auth.md) - Authentication of accounts and transactions
 2. [bank](/Bank.md) - Token transfer functionalities
 3. [gov](/Governance.md) - On-chain governance proposals and voting
@@ -13,7 +12,15 @@ There are currently 8 modules active in the Cosmos Hub with parameters that may 
 7. [crisis](/Crisis.md) - Halting the blockchain under certain circumstances (ie. if an invariant is broken)
 8. [mint](/Mint.md) - Creation of new units of staking token
 
-You can query the current parameter(s) of each module with the command line program [`gaiacli`](/gaiacli). Use the command `gaia q [module] -h` to get help about the subcommands for the module you want to query. For example, `gaiacli q staking` --> to do <--
+The value or setting of each parameter may be verified in the chain's genesis file, [found here](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json). These are the parameter settings that the latest Cosmos Hub chain launched with, and will remain so unless a governance proposal or software upgrade changes them.
+
+There are also ways to query the current settings for each module's parameter(s). Some can be queried with the command line program [`gaiacli`](/gaiacli), but I'm still exploring the ways that these setting can be queried. Want to help? I've opened this up as an issue [here](https://github.com/gavinly/CosmosParametersWiki/issues/1). You can begin by using the command `gaia q [module] -h` to get help about the subcommands for the module you want to query. For example, `gaiacli q staking params --chain-id cosmoshub-3 --node cosmos-node-1.figment.network:26657` returns the settings of four parameters:
+```
+unbonding_time: 504h0m0s
+max_validators: 125
+max_entries: 7
+bond_denom: uatom
+```
 
 # Best Practices
 Drafting and submitting a parameter-change governance proposal involves two kinds risk: losing proposal deposit amounts and the potential to alter the function of the Cosmos Hub network in an undesirable way. The objective of this documentation is to reduce these risks by preparing participants for what to pay attention to and for what information to consider in a proposal. Ideally, a proposal should only fail to pass because the voters 1) are aware and engaged and 2) are able to make an informed decision to vote down the proposal.
