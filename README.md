@@ -1,7 +1,17 @@
 # Cosmos Parameters Wiki & Best Practices
-This Cosmos Hub educational documentation aims to outline the Hub's parameters, describe their functions, and describe the potential implications of modifying each parameter. This documentation also aims to provide guidelines for creating and assessing parameter-change proposals.
+This Cosmos Hub educational documentation aims to outline the [Hub's parameters](#modules-wiki), describe their functions, and describe the potential implications of modifying each parameter. This documentation also aims to provide [guidelines for creating and assessing parameter-change proposals](#best-practices).
 
 **This documentation has not had adequate review from experts or testing from participants, so please be cautious when using it.** [Discuss its development here](https://forum.cosmos.network/t/gwg-cosmos-hub-parameters-wiki/3170) and please provide feedback either in the forum or by opening a Github issue. If you are technically inclined, this is the full [list of modules](https://github.com/cosmos/cosmos-sdk/tree/master/x) in the Cosmos SDK.
+
+# Best Practices
+Drafting and submitting a parameter-change governance proposal involves two kinds risk: losing proposal deposit amounts and the potential to alter the function of the Cosmos Hub network in an undesirable way. The objective of this documentation is to reduce these risks by preparing participants for what to pay attention to and for what information to consider in a proposal. Ideally, a proposal should only fail to pass because the voters 1) are aware and engaged and 2) are able to make an informed decision to vote down the proposal.
+
+If you are considering drafting a proposal, you should know:
+1. [How the voting process and governance mechanism works](voting.md)
+2. [What the community will likely want to know about the proposed change(s)](bestpractices.md#elements-of-a-community-spend-proposal)
+3. [Where and how to engage with the Cosmos community about your proposed change(s)](bestpractices.md)
+4. [How to prepare your final proposal draft for submission](submitting.md)
+5. [How to submit your proposal to the Cosmos Hub testnet & mainnet](#sending-the-transaction-that-submits-your-governance-proposal)
 
 # Modules Wiki
 There are currently 8 modules active in the Cosmos Hub with parameters that may be altered via governance proposal:
@@ -36,16 +46,6 @@ Running a full node can be difficult for those not technically-inclined, so you 
 - cosmos-node-1.figment.network:26657 ([Figment Networks](https://figment.network/networks/cosmos/))
 - 63.35.133.166:26657 ([Chorus One](cosmos.chorus.one))
 - 18.217.97.195:26657 ([Melea Trust](https://meleatrust.com))
-
-# Best Practices
-Drafting and submitting a parameter-change governance proposal involves two kinds risk: losing proposal deposit amounts and the potential to alter the function of the Cosmos Hub network in an undesirable way. The objective of this documentation is to reduce these risks by preparing participants for what to pay attention to and for what information to consider in a proposal. Ideally, a proposal should only fail to pass because the voters 1) are aware and engaged and 2) are able to make an informed decision to vote down the proposal.
-
-If you are considering drafting a proposal, you should know:
-1. [How the voting process and governance mechanism works](voting.md)
-2. [What the community will likely want to know about the proposed change(s)](bestpractices.md#elements-of-a-community-spend-proposal)
-3. [Where and how to engage with the Cosmos community about your proposed change(s)](bestpractices.md)
-4. [How to prepare your final proposal draft for submission](submitting.md)
-5. [How to submit your proposal to the Cosmos Hub testnet & mainnet](#sending-the-transaction-that-submits-your-governance-proposal)
 
 ### Contributors
 Special thanks to the following for helping to provide credible information that contributed to this wiki's development:
