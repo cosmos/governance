@@ -47,7 +47,7 @@ Running a full node can be difficult for those not technically-inclined, so you 
 - 63.35.133.166:26657 ([Chorus One](cosmos.chorus.one))
 - 18.217.97.195:26657 ([Melea Trust](https://meleatrust.com))
 
-### Contributors
+# Contributors
 Special thanks to the following for helping to provide credible information that contributed to this wiki's development:
 - Aleks (All in Bits; Fission Labs) for answering countless questions about these parameters
 - Alessio (All in Bits) for explaining how [`SigVerifyCostED25519`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Auth.md#4-sigverifycosted25519) & [`SigVerifyCostSecp256k1`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Auth.md#5-sigverifycostsecp256k1) work, and detailed answers to my many questions
