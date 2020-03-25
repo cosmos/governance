@@ -3,7 +3,7 @@
 
 If you have a final draft of your proposal ready to submit, you may want to push your proposal live on the testnet first. These are the three primary steps to getting your parameter-change proposal live on-chain.
 
-1. **Optional** [Hosting supplementary materials](#hosting-supplementary-materials) for your parameter-change proposal with IPFS (InterPlanetary File System)
+1. (**Optional**) [Hosting supplementary materials](#hosting-supplementary-materials) for your parameter-change proposal with IPFS (InterPlanetary File System)
 2. [Formatting the JSON file](#formatting-the-json-file-for-the-governance-proposal) for the governance proposal transaction that will be on-chain
 3. [Sending the transaction](#sending-the-transaction-that-submits-your-governance-proposal) that submits your governance proposal on-chain
 
@@ -21,7 +21,7 @@ The reason we use IPFS is that it is a decentralized means of storage, making it
 ## Formatting the JSON file for the governance proposal
 Prior to sending the transaction that submits your proposal on-chain, you must create a JSON file. This file will contain the information that will be stored on-chain as the governance proposal. Begin by creating a new text (.txt) file to enter this information. Use [these best practices](bestpractices.md) as a guide for the contents of your proposal. When you're done, save the file as a .json file. See the examples that follow to help format your proposal.
 
-**Note:** Changes to the [`gov` module](/Governance.md) are different from the other kinds of parameter changes because `gov` has subkeys, [as discussed here](https://github.com/cosmos/cosmos-sdk/issues/5800). Only the `key` part of the JSON file is different for changes to `gov` parameters.
+**Note:** Changes to the [`gov` module](/Governance.md) are different from the other kinds of parameter changes because `gov` has subkeys, [as discussed here](https://github.com/cosmos/cosmos-sdk/issues/5800). Only the `key` part of the JSON file is different for `gov` parameter-change proposals.
 
 For parameter-change proposals, there are seven (7) components:
 1. **Title** - the distinguishing name of the proposal, typically the way the that explorers list proposals
@@ -34,10 +34,12 @@ For parameter-change proposals, there are seven (7) components:
 
 Once on-chain, most people will rely upon network explorers to interpret this information with a graphical user interface (GUI).
 
-**Note**: The formatting [may be changed to be more standardized](https://github.com/cosmos/cosmos-sdk/issues/5783) with other types of governance proposals.
+**Note**: In future, this formatting [may be changed to be more standardized](https://github.com/cosmos/cosmos-sdk/issues/5783) with other the types of governance proposals.
 
 ### Examples
-In this simple example ([below](#testnet-example)), a network explorer will list the governance proposal as "Increase the minimum deposit amount for governance proposals." When a user selects the proposal, they'll see the description. Not all explorers will show the proposed parameter changes, so ensure that you verify that the description aligns with what the governance proposal is programmed to enact. If the description says that a certain parameter will be increased, it should also be programmed to do that, but it's possible that that's not the case (accidentally or otherwise). A nearly identical proposal [can be found on the gaia-13007 testnet here](https://hubble.figment.network/cosmos/chains/gaia-13007/governance/proposals/30).
+In this simple example ([below](#testnet-example)), a network explorer will list the governance proposal by its title: "Increase the minimum deposit amount for governance proposals." When a user selects the proposal, they'll see the proposal’s description. A nearly identical proposal [can be found on the gaia-13007 testnet here](https://hubble.figment.network/cosmos/chains/gaia-13007/governance/proposals/30).
+
+Not all explorers will show the proposed parameter changes that are coded into the proposal, so ensure that you verify that the description aligns with what the governance proposal is programmed to enact. If the description says that a certain parameter will be increased, it should also be programmed to do that, but it's possible that that's not the case (accidentally or otherwise).
 
 You can query the proposal details with the gaiacli command-line interface using this command: `gaiacli q gov proposal 30 --chain-id gaia-13007 --node 45.77.218.219:26657`
 
@@ -97,7 +99,7 @@ To date, the Cosmos Hub's parameters have not been changed by a parameter-change
 It's worth noting that this example proposal doesn't provide reasoning/justification for these changes. Consider consulting the [parameter-change best practices documentation](submitting.md) for guidance on the contents of a parameter-change proposal.
 
 ## Sending the transaction that submits your governance proposal
-This is the basic command for using gaiacli (the command-line interface) to submit your proposal on-chain:
+This is the command format for using gaiacli (the command-line interface) to submit your proposal on-chain:
 ```gaiacli tx gov submit-proposal param-change <proposal.json> --from [key/address]```
 
 This is the complete command that I could use to submit a **testnet** parameter-change proposal right now:
@@ -111,9 +113,9 @@ This is the complete command that I could use to submit a **mainnet** parameter-
 3. `--from gavin` is the account key that pays the transaction fee and deposit amount
 4. `--gas 500000` is the maximum amount of gas permitted to be used to process the transaction
    - the more content there is in the description of your proposal, the more gas your transaction will consume
-   - if the number isn't high enough and there isn't enough gas to process your transaction, the transaction will fail
-   - the transaction will only use the amount of gas needed to be processed
-5. `--fees` is flat rate incentive for a validator to process your transaction
+   - if this number isn't high enough and there isn't enough gas to process your transaction, the transaction will fail
+   - the transaction will only use the amount of gas needed to process the transaction
+5. `--fees` is a flat-rate incentive for a validator to process your transaction
    - the network still accepts zero fees, but many nodes will not transmit your transaction to the network without a minimum fee
    - many nodes (including the Figment node) use a minimum fee to disincentivize transaction spamming
    - 7500uatom is equal to 0.0075 ATOM
@@ -124,18 +126,18 @@ This is the complete command that I could use to submit a **mainnet** parameter-
 **Note**: be careful what you use for `--fees`. A mistake here could result in spending hundreds or thousands of ATOMs accidentally, which cannot be recovered.
 
 ### Verifying your transaction
-After posting your transaction, your command line interface will provide you with the transaction's hash, which you can either query using gaiacli or search the hash with [Hubble](https://hubble.figment.network/cosmos/chains/cosmoshub-3/transactions/B8E2662DE82413F03919712B18F7B23AF00B50DAEB499DAD8C436514640EFC79). The hash should look something like this: `B8E2662DE82413F03919712B18F7B23AF00B50DAEB499DAD8C436514640EFC79`
+After posting your transaction, your command line interface (gaiacli) will provide you with the transaction's hash, which you can either query using gaiacli or by searching the hash using [Hubble](https://hubble.figment.network/cosmos/chains/cosmoshub-3/transactions/B8E2662DE82413F03919712B18F7B23AF00B50DAEB499DAD8C436514640EFC79). The hash should look something like this: `B8E2662DE82413F03919712B18F7B23AF00B50DAEB499DAD8C436514640EFC79`
 
 You can see whether or not your transaction was successful with Hubble:
 ![Verify tx with Hubble](https://github.com/gavinly/CosmosCommunitySpend/blob/master/verify%20tx.png?raw=true)
 
 ### Troubleshooting a failed transaction
-There are a number of reasons why a transaction may fail.
-1. Running out of gas - The more data there is in a transaction, the more gas it will need to be processed. If you don't specify enough gas, the transaction will fail.
+There are a number of reasons why a transaction may fail. Here are two examples:
+1. **Running out of gas** - The more data there is in a transaction, the more gas it will need to be processed. If you don't specify enough gas, the transaction will fail.
 
-2. Incorrect denomination - You may have specified an amount in 'utom' or 'atom' instead of 'uatom', causing the transaction to fail.
+2. **Incorrect denomination** - You may have specified an amount in 'utom' or 'atom' instead of 'uatom', causing the transaction to fail.
 
-If you encounter a problem, try to troubleshoot it first, and then ask for help on All in Bits' Cosmos forum: [https://forum.cosmos.network/c/governance](https://forum.cosmos.network/c/governance). We can learn from failed attempts and use them to improve upon this guide.
+If you encounter a problem, try to troubleshoot it first, and then ask for help on the All in Bits Cosmos forum: [https://forum.cosmos.network/c/governance](https://forum.cosmos.network/c/governance). We can learn from failed attempts and use them to improve upon this guide.
 
 ### Submitting your proposal to the testnet
 You may want to submit your proposal to the testnet chain before the mainnet for a number of reasons:
