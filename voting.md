@@ -16,7 +16,7 @@ Deposits are burned when proposals:
 3. **Are vetoed** - deposits for proposals with 33.4% of voting power backing the 'no-with-veto' option are also burned
 
 ### 2. Voting Period
-The voting period is a currently a fixed 14-day period. During the voting period, participants may select a vote of either 'yes', 'no', 'abstain', or 'no-with-veto'. Voters may change their vote at any time before the voting period ends.
+The voting period is currently a fixed 14-day period. During the voting period, participants may select a vote of either 'yes', 'no', 'abstain', or 'no-with-veto'. Voters may change their vote at any time before the voting period ends.
 
 ## What determines whether or not a governance proposal passes?
 There are four criteria:
