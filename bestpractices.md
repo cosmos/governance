@@ -2,9 +2,9 @@
 
 ## Engage directly with the voting community and seek feedback
 #### Last updated: Mar 16, 2020
-Engagement is likely to be important to the success of this kind of proposal, however, parameter-change proposals will likely be more straightforward than other kinds of proposal. The degree to which you engage with the Cosmos Hub community should be relative to the potential impact that your proposal may have on the stakeholders. There are many different ways to engage.
+Engagement is likely to be important to the success of this kind of proposal, however, parameter-change proposals will likely be more straightforward than other kinds of proposal. The degree to which you engage with the Cosmos Hub community should be relative to the potential impact that your proposal may have on the stakeholders. 
 
-One strategy involves a few stages of engagement before and after submitting a proposal on chain. In the first stage of this strategy, you should engage with people informally about your idea.
+There are many different ways to engage. One strategy involves a few stages of engagement before and after submitting a proposal on chain. In the first stage of this strategy, you should engage with people informally about your idea.
 
 **Note**: this guide likely fails to capture all ways of engaging. Perhaps you could bring your idea to a podcast. You could host an AMA on [Reddit](https://www.reddit.com/r/cosmosnetwork) or host a Q&A (questions & answers) video call. Try to go above and beyond what's recommended here--experiment, and use your strengths.
 
@@ -15,10 +15,10 @@ Great! Parameter-change proposals will likely impact many stakeholders. Introduc
 If you know people who are very involved with the Cosmos Hub, send them a private message with a concise overview of what you think will result from your proposed changes. Wait for them to ask questions before providing details. Do the same in semi-private channels where people tend to be respectful (and hopefully supportive). I recommend [this Cosmos Discord community](https://discord.gg/cVwYX9u) and the private Cosmos Network VIP Telegram channel (ask for an invite [on the forum](https://forum.cosmos.network/c/governance) if you are or would like to be a Cosmos contributor).
 
 ### Confident with your idea?
-Great! However, remember that governance proposals potentially impact many stakeholders, which can happen in unexpected ways. Introduce your proposed changes to members of the community before investing resources into drafting a proposal. At this point you should seek out and carefully consider critical feedback in order to protect yourself from [confirmation bias](https://en.wikipedia.org/wiki/Confirmation_bias). This is the ideal time to see a critical flaw, because submitting a flawed proposal will waste resources, and could possibly cause confusion and initiate social rifts.
+Great! However, remember that parameter-change proposals likely impact many stakeholders, which can happen in unexpected ways. Introduce your proposed changes to members of the community before investing resources into drafting a proposal. At this point you should seek out and carefully consider critical feedback in order to protect yourself from [confirmation bias](https://en.wikipedia.org/wiki/Confirmation_bias). This is the ideal time to see a critical flaw, because submitting a flawed proposal will waste resources and it could possibly cause confusion and initiate social rifts.
 
 ### Are you ready to draft a governance proposal?
-If you've considered feedback from broad perspectives and think that the changes you have proposed are valuable, and you believe that others feel this way as well, it's likely worth drafting a proposal. However, remember that the largest ATOM stakers have the biggest vote, so a vocal minority isn't necessarily representative or predictive of the outcome of an on-chain vote. 
+If you've considered feedback from broad perspectives and think that the changes you have proposed are valuable, and you believe that others think this way as well, it's likely worth drafting a proposal. However, remember that the largest ATOM stakers have the biggest vote, so a vocal minority isn't necessarily representative or predictive of the outcome of an on-chain vote. 
 
 A conservative approach is to have some confidence that you roughly have enough initial support from a majority of the voting power before proceeding to drafting your proposal. However, there are likely other approaches, and if your idea is important enough, you may want to pursue it regardless of whether or not you are confident that the voting power will support it.
 
@@ -37,7 +37,7 @@ The next major section outlines and describes some potential elements of a param
    - [Discord](https://discord.gg/cVwYX9u)
 
 ### Stage 3: Your On-Chain Proposal
-A majority of the voting community should probably be aware of the proposal and have considered it before the proposal goes live on-chain. If you're taking a conservative approach, you should have reasonable confidence that your proposal will pass before risking deposit contributions. Make revisions to your draft proposal after each stage of engagement.
+A majority of the voting community should probably be aware of the proposal and have considered it before the proposal goes live on chain. If you're taking a conservative approach, you should have reasonable confidence that your proposal will pass before risking deposit contributions. Make revisions to your draft proposal after each stage of engagement.
 
 ### Submit your proposal to the testnet
 You may want to submit your proposal to the testnet chain before the mainnet for a number of reasons, such as wanting to see what the proposal description will look like, to share what the proposal will look like in advance with stakeholders, and to signal that your proposal is about to go live on the mainnet. Perhaps most importantly, you can test the parameter changes in advance (if you have enough support from the voting power on the testnet).
