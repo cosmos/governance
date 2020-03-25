@@ -6,7 +6,7 @@ This Cosmos Hub educational documentation aims to outline the [Hub's parameters]
 # Best Practices
 Drafting and submitting a parameter-change governance proposal involves two kinds of risk: losing proposal deposit amounts and the potential to alter the function of the Cosmos Hub network in an undesirable way. The objective of this documentation is to reduce these risks by preparing participants for what to pay attention to and for what information to consider in a proposal. Ideally, a proposal should only fail to pass because the voters 1) are aware and engaged and 2) are able to make an informed decision to vote down the proposal.
 
-If you are considering drafting a proposal, you should know:
+If you are considering drafting a community-spend proposal, you should know:
 1. [How the voting process and governance mechanism works](voting.md)
 2. [What the community will likely want to know about the proposed change(s)](bestpractices.md#elements-of-a-community-spend-proposal)
 3. [Where and how to engage with the Cosmos community about your proposed change(s)](bestpractices.md)
