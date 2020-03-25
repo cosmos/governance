@@ -4,7 +4,7 @@ This Cosmos Hub educational documentation aims to outline the [Hub's parameters]
 **This documentation has not had adequate review from experts or testing from participants, so please be cautious when using it.** [Discuss its development here](https://forum.cosmos.network/t/gwg-cosmos-hub-parameters-wiki/3170) and please provide feedback either in the forum or by opening a Github issue. If you are technically inclined, this is the full [list of modules](https://github.com/cosmos/cosmos-sdk/tree/master/x) in the Cosmos SDK.
 
 # Best Practices
-Drafting and submitting a parameter-change governance proposal involves two kinds risk: losing proposal deposit amounts and the potential to alter the function of the Cosmos Hub network in an undesirable way. The objective of this documentation is to reduce these risks by preparing participants for what to pay attention to and for what information to consider in a proposal. Ideally, a proposal should only fail to pass because the voters 1) are aware and engaged and 2) are able to make an informed decision to vote down the proposal.
+Drafting and submitting a parameter-change governance proposal involves two kinds of risk: losing proposal deposit amounts and the potential to alter the function of the Cosmos Hub network in an undesirable way. The objective of this documentation is to reduce these risks by preparing participants for what to pay attention to and for what information to consider in a proposal. Ideally, a proposal should only fail to pass because the voters 1) are aware and engaged and 2) are able to make an informed decision to vote down the proposal.
 
 If you are considering drafting a proposal, you should know:
 1. [How the voting process and governance mechanism works](voting.md)
