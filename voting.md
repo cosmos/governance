@@ -1,4 +1,4 @@
-# The Proposal Process & Governance Mechanism
+# The Voting Process & Governance Mechanism
 
 ## The Proposal Process: Two Periods
 ### 1. Deposit Period
