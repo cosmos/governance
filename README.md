@@ -26,7 +26,7 @@ There are currently 8 modules active in the Cosmos Hub with parameters that may 
 
 The value or setting of each parameter may be verified in the chain's genesis file, [found here](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json). These are the parameter settings that the latest Cosmos Hub chain launched with, and will remain so unless a governance proposal or software upgrade changes them.
 
-There are also ways to query the current settings for each module's parameter(s). Some can be queried with the command line program [`gaiacli`](/gaiacli), but I'm still exploring the ways that these setting can be queried. Want to help? I've opened this up as an issue [here](https://github.com/gavinly/CosmosParametersWiki/issues/1). You can begin by using the command `gaia q [module] -h` to get help about the subcommands for the module you want to query. For example, `gaiacli q staking params --chain-id cosmoshub-3 --node cosmos-node-1.figment.network:26657` returns the settings of four parameters:
+There are also ways to query the current settings for each module's parameter(s). Some can be queried with the command line program [`gaiacli`](/gaiacli), but I'm still exploring the ways that these settings can be queried. Want to help? I've opened this up as an issue [here](https://github.com/gavinly/CosmosParametersWiki/issues/1). You can begin by using the command `gaia q [module] -h` to get help about the subcommands for the module you want to query. For example, `gaiacli q staking params --chain-id cosmoshub-3 --node cosmos-node-1.figment.network:26657` returns the settings of four parameters:
 ```
 unbonding_time: 504h0m0s
 max_validators: 125
