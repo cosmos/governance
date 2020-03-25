@@ -20,11 +20,13 @@ There are currently 8 modules active in the Cosmos Hub with parameters that may 
 3. [gov](/Governance.md) - On-chain governance proposals and voting
 4. [staking](/Staking.md) - Proof-of-stake layer
 5. [slashing](/Slashing.md) - Validator punishment mechanisms
-6. [distribution](/Distribution.md) - Fee distribution, and staking token provision distribution
+6. [distribution](/Distribution.md) - Fee distribution and staking token provision distribution
 7. [crisis](/Crisis.md) - Halting the blockchain under certain circumstances (ie. if an invariant is broken)
 8. [mint](/Mint.md) - Creation of new units of staking token
 
-The value or setting of each parameter may be verified in the chain's genesis file, [found here](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json). These are the parameter settings that the latest Cosmos Hub chain launched with, and will remain so unless a governance proposal or software upgrade changes them.
+There is an [index of these parameters here](https://github.com/gavinly/CosmosParametersWiki/blob/master/param_index.md).
+
+The value or setting for each parameter may be verified in the chain's genesis file, [found here](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json). These are the parameter settings that the latest Cosmos Hub chain launched with, and will remain so unless a governance proposal or software upgrade changes them.
 
 There are also ways to query the current settings for each module's parameter(s). Some can be queried with the command line program [`gaiacli`](/gaiacli), but I'm still exploring the ways that these settings can be queried. Want to help? I've opened this up as an issue [here](https://github.com/gavinly/CosmosParametersWiki/issues/1). You can begin by using the command `gaia q [module] -h` to get help about the subcommands for the module you want to query. For example, `gaiacli q staking params --chain-id cosmoshub-3 --node cosmos-node-1.figment.network:26657` returns the settings of four parameters:
 ```
@@ -35,7 +37,7 @@ bond_denom: uatom
 ```
 
 ## Note
-- You cannot currently query the `Bank` module's parameter, which is `sendenabled`. You also cannot query the `Crisis` module's parameters.
+- You cannot currently query the `bank` module's parameter, which is `sendenabled`. You also cannot query the `crisis` module's parameters.
 - You will need to compile [`gaiacli`](/gaiacli) from source into a binary file executable by your operating system eg. MacOS, Windows, Linux
 - You will need to indicate which chain you are querying, and currently this is `--chain-id cosmoshub-3`
 - You will need to connect to a full node. If gaiacli isn't already configured for this, you can use this tag in your command `--node [address]:26657`.
