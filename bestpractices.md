@@ -58,7 +58,7 @@ The next major section outlines and describes some potential elements of a commu
    - [Telegram](https://t.me/cosmosproject), [Adriana](https://t.me/adriana_KalpaTech) (All in Bits)
    - [Discord](https://discord.gg/cVwYX9u)
 
-### Stage 3: Your On-Chain Proposal
+## Stage 4: Your On-Chain Proposal
 A majority of the voting community should probably be aware of the proposal and have considered it before the proposal goes live on-chain. If you're taking a conservative approach, you should have reasonable confidence that your proposal will pass before risking deposit contributions. Make revisions to your draft proposal after each stage of engagement.
 
 ### Submit your proposal to the testnet
