@@ -10,7 +10,7 @@ The [`auth` module](https://github.com/gavinly/CosmosParametersWiki/blob/master/
 The [`bank` module](https://github.com/gavinly/CosmosParametersWiki/blob/master/Bank.md) is responsible for token transfer functionalities.
 1. [`sendenabled`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Bank.md#1-sendenabled)
 ## The `gov` Module
-The [`gov` module](https://github.com/gavinly/CosmosParametersWiki/blob/master/Governance.md) is responsible for on-chain governance proposals and voting functionality. **Note** [that this module has requires a unique way to change its parameters](https://github.com/cosmos/cosmos-sdk/issues/5800).
+The [`gov` module](https://github.com/gavinly/CosmosParametersWiki/blob/master/Governance.md) is responsible for on-chain governance proposals and voting functionality. **Note** [that this module requires a unique way to change its parameters](https://github.com/cosmos/cosmos-sdk/issues/5800).
 1. [`depositparams`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Governance.md#1-depositparams)
    - [`mindeposit`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Governance.md#mindeposit) - `512000000` `uatom` (micro-ATOMs)
    - [`maxdepositperiod`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Governance.md#maxdepositperiod) - `1209600000000000` (nanoseconds)
