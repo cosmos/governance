@@ -8,7 +8,7 @@ The [`auth` module](https://github.com/gavinly/CosmosParametersWiki/blob/master/
 5. [`SigVerifyCostSecp256k1`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Auth.md#5-sigverifycostsecp256k1) - 1000
 ## The `bank` Module
 The [`bank` module](https://github.com/gavinly/CosmosParametersWiki/blob/master/Bank.md) is responsible for token transfer functionalities.
-1. [`sendenabled`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Bank.md#1-sendenabled)
+1. [`sendenabled`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Bank.md#1-sendenabled) - true
 ## The `gov` Module
 The [`gov` module](https://github.com/gavinly/CosmosParametersWiki/blob/master/Governance.md) is responsible for on-chain governance proposals and voting functionality. **Note** [that this module requires a unique way to change its parameters](https://github.com/cosmos/cosmos-sdk/issues/5800).
 1. [`depositparams`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Governance.md#1-depositparams)
