@@ -26,6 +26,20 @@ A conservative approach is to have some confidence that you roughly have enough 
 ### Begin with a well-considered draft proposal
 The next major section outlines and describes some potential elements of a parameter-change proposal. Ensure that you have considered your proposal and anticipated questions that the community will likely ask. Once your proposal is on-chain, you will not be able to change it.
 
+## Elements of a Parameter-Change Proposal
+
+It will be important to balance two things: being detailed and being concise. You'll want to be concise so that people can assess your proposal quickly. You'll want to be detailed so that voters will have a clear, meaningful understanding of what the changes are and how they are likely to be impacted. These are some elements that the Cosmos Hub community may be likely to be looking for:
+
+1. Summary - the key details of the proposal: parameter(s) being changed; reasoning for the changes; potential impacts to stakeholders
+   - assume that most people will not read beyond this section
+   - try to describe what you are proposing here as simply and concisely as possible
+2. Problem/Value - generally the problem or value that's motivating the parameter change(s)
+3. Solution - generally how changing the parameter(s) will address the problem or improve the network
+   - the beneficiaries of the change(s) (ie. who will these changes impact and how?)
+      - voters should understand the importance of the change(s) in a simple way
+4. Risks & Benefits - clearly describe how making this/these change(s) may expose stakeholders to new benefits and/or risks
+5. Supplementary materials - optional materials eg. models, graphs, tables, research, signed petition, etc
+
 ### Engage the community with your draft proposal
 1. Post a draft of your proposal as a topic in the 'governance' category of the [Cosmos forum](https://forum.cosmos.network/c/governance).
 2. Directly engage key members of the community for feedback. These could be large contributors, those likely to be most impacted by the proposal, and entities with high stake-backing (eg. high-ranked validators; large stakers).
@@ -58,17 +72,3 @@ At this point you'll want to track which validator has voted and which has not. 
 3. they are prepared to vote.
 
 Remember that any voter may change their vote at any time before the voting period ends. That historically doesn't happen often, but there may be an opportunity to convince a voter to change their vote. The biggest risk is that stakeholders won't vote at all (for a number of reasons). Validator operators tend to need multiple reminders to vote. How you choose to contact validator operators, how often, and what you say is up to you--remember that no validator is obligated to vote, and that operators are likely occupied by competing demands for their attention. Take care not to stress any potential relationship with validator operators.
-
-## Elements of a Parameter-Change Proposal
-
-It will be important to balance two things: being detailed and being concise. You'll want to be concise so that people can assess your proposal quickly. You'll want to be detailed so that voters will have a clear, meaningful understanding of what the changes are and how they are likely to be impacted. These are some elements that the Cosmos Hub community may be likely to be looking for:
-
-1. Summary - the key details of the proposal: parameter(s) being changed; reasoning for the changes; potential impacts to stakeholders
-   - assume that most people will not read beyond this section
-   - try to describe what you are proposing here as simply and concisely as possible
-2. Problem/Value - generally the problem or value that's motivating the parameter change(s)
-3. Solution - generally how changing the parameter(s) will address the problem or improve the network
-   - the beneficiaries of the change(s) (ie. who will these changes impact and how?)
-      - voters should understand the importance of the change(s) in a simple way
-4. Risks & Benefits - clearly describe how making this/these change(s) may expose stakeholders to new benefits and/or risks
-5. Supplementary materials - optional materials eg. models, graphs, tables, research, signed petition, etc
