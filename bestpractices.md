@@ -31,9 +31,9 @@ A conservative approach is to have some confidence that you roughly have initial
 
 ### Stage 2: Draft an overview of what you're proposing
 Define the minimal, critical components of your proposal:
-- Name your project
+- Name of your project
 - Value to the Cosmos Hub
-- Timeline
+- Rough timeline
 - Estimated amount of funding
 
 You should be able to use these to enagage with a key stakeholder (eg. a large validator operator) with a few short sentences to measure their support. Here's an example:
