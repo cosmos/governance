@@ -1,12 +1,14 @@
 # Best Practices for Drafting a Community-Spend Proposal 
 
 ## Engage directly with the voting community and seek feedback
-#### Last updated: Feb 14, 2020
+#### Last updated: Mar 27, 2020
 Engagement is likely to be critical to the success of a proposal. There are many different ways to engage.
 
-One strategy involves a few stages of engagement before and after submitting a proposal on chain. In the first stage of this strategy, you should engage people informally about your idea.
+One strategy involves a few stages of engagement before and after submitting a proposal on chain. **Why do it in stages?** It's a more conservative approach to save resources. The idea is to check in with key stakeholders at each stage before investing more resources into developing your proposal.
 
-**Note**: this guide likely fails to capture all ways of engaging. Perhaps you could bring your idea to a podcast or a hackathon. You could host an AMA on [Reddit](https://www.reddit.com/r/cosmosnetwork) or host a Q&A (questions & answers) video call. Try to go above and beyond what's recommended here--experiment, and use your strengths.
+In the first stage of this strategy, you should engage people (ideally experts) informally about your idea. Does it make sense? Are there critical flaws? Does it need to be reconsidered? If you're already confident about your idea, skip to Stage 2.
+
+**Note**: this guide likely fails to capture all ways of engaging. Perhaps you could bring your idea to a podcast or a hackathon. You could host an AMA on [Reddit](https://www.reddit.com/r/cosmosnetwork) or host a Q&A (questions & answers) video call. Try to go above and beyond what's recommended here--experiment, and use your strengths and connections.
 
 ### Stage 1: Your Idea
 ### Not yet confident about your idea?
@@ -22,7 +24,21 @@ There will likely be differences of opinion about the value of what you're propo
 
 A conservative approach is to have some confidence that you roughly have initial support from a majority of the voting power before proceeding to drafting your proposal. However, there are likely other approaches, and if your idea is important enough, you may want to pursue it regardless of whether or not you are confident that the voting power will support it.
 
-### Stage 2: Your Draft Proposal
+### Stage 2: Draft an overview of what you're proposing
+- Name your project
+- Value to the Cosmos Hub
+- Timeline
+- Estimated amount of funding
+
+You should be able to enagage with a key stakeholder eg. a large validator with a few short sentences to gauge their support. Here's an example:
+
+"We are considering a proposal for funding to work on `project`. We think it will help the Hub to `outcome`. Timeline is `x`, and we're asking for `y` amount. Do you think that this is a proposal that `large validator` may support?"
+
+Why a large validator? They tend to be the de facto decision-makers on the Cosmos Hub, since their delegators also delegate their voting power. If you can establish a base layer of off-chain support, you can be more confident that it's worth proceeding to the next stage.
+
+These stakeholders will likely hesitate to commit, and that's okay. It will be important to reassure these stakeholders that this isn't a binding a commitment. You're just canvasing the community to get a feel for whether it's worthwhile to proceed. It's also an opportunity to connect with new people and to answer their questions about what it is you're working on. It will be important for them to clearly understand why you think what you're proposing will be valuable to the Cosmos Hub, and if possible, why it will be valuable to them as stakeholders.
+
+## Stage 3: Your Draft Proposal
 ### Begin with a well-considered draft proposal
 The next major section outlines and describes some potential elements of a community-spend proposal. Ensure that you have considered your proposal and anticipated questions that the community will likely ask. Once your proposal is on-chain, you will not be able to change it.
 
