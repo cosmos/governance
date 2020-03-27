@@ -1,6 +1,6 @@
 # The `bank` Module
 The `bank` module is responsible for token transfer functionalities. `bank` is active on Cosmos Hub 3 and currently has one parameter that may be modified by governance proposal:
-1. [`sendenabled`](#1-sendenabled)
+1. [`sendenabled`](#1-sendenabled) - true
 
 The value of the launch parameter is outlined here, but you can [verify it yourself](#verify-parameter-values). 
 
