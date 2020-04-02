@@ -1,6 +1,17 @@
 # Cosmos Hub 3 and the Community Pool
 The Cosmos Hub 3 launched with community-spend capabilities on December 11, 2019, effectively unlocking the potential for token-holders to vote to approve spending from the Community Pool. **This documentation is in active development, so please do not rely upon this information yet.** [Discuss its development here](https://forum.cosmos.network/t/gwg-community-spend-best-practices/3240).
 
+## Why create a proposal to use Community Pool funds?
+There are other funding options, most notably the Interchain Foundation's grant program. Why create a community-spend proposal?
+
+**As a strategy: you can do both.** You can submit your proposal to the Interchain Foundation, but also consider submitting your proposal publicly on-chain. If the Hub votes in favour, you can withdraw your Interchain Foundation application.
+
+**As a strategy: funding is fast.** Besides the time it takes to push your proposal on-chain, the only other limiting factor is a fixed 14-day voting period. As soon as the proposal passes, your account will be credited the full amount of your proposal request.
+
+**To build rapport.** Engaging publicly with the community is the opportunity to develop relationships with stakeholders and to educate them about the importance of your work. Unforeseen partnerships could arise, and overall the community may value your work more if they are involved as stakeholders.
+
+**To be more independent.** The Interchain Foundation (ICF) may not always be able to fund work. Having a more consistently funded source and having a report with its stakeholders means you can use your rapport to have confidence in your ability to secure funding without having to be dependent upon the ICF alone.
+
 ## Drafting a Community-spend Proposal
 Drafting and submitting a proposal is a process that takes time, attention, and involves risk. The objective of this documentation is to make this process easier by preparing participants for what to pay attention to, the information that should be considered in a proposal, and how to reduce the risk of losing deposits. Ideally, a proposal should only fail to pass because the voters 1) are aware and engaged and 2) are able to make an informed decision to vote down the proposal.
 
