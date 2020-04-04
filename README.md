@@ -45,8 +45,6 @@ bond_denom: uatom
 ## Full nodes
 Running a full node can be difficult for those not technically-inclined, so you may choose to use a third-party's full node. In this case, the primary security risk is that of censorship: it's the single place where you have a single gateway to the network, and any messages submitted through an untrusted node could be censored.
 - cosmos-node-1.figment.network:26657 ([Figment Networks](https://figment.network/networks/cosmos/))
-- 63.35.133.166:26657 ([Chorus One](cosmos.chorus.one))
-- 18.217.97.195:26657 ([Melea Trust](https://meleatrust.com))
 
 # Contributors
 This documentation was created by Gavin Birch ([Figment Networks](https://figment.network)). Its development was supported by community funding that was approved on January 29, 2020 by the Cosmos Hub via community-spend proposal [Prop23](https://hubble.figment.network/cosmos/chains/cosmoshub-3/governance/proposals/23). You can read the [full proposal PDF here](https://ipfs.io/ipfs/QmSMGEoY2dfxADPfgoAsJxjjC6hwpSNx1dXAqePiCEMCbY). You can also create an issue or pull request to participate in its development at any time!
