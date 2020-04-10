@@ -91,6 +91,7 @@ It will be important to balance two things: being detailed and being concise. Yo
    - the items being delivered deliverable
    - the date for which the deliverables will be met
    - a short summary of the history (what compelled this proposal), solution that's being presented, and future expectations
+
 Assume that nobody will read beyond this point.
 
 2. Applicant(s) - the profile of the person(s)/entity making the proposal
