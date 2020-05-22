@@ -1,5 +1,5 @@
 # Cosmos Hub 3 and the Community Pool
-The Cosmos Hub 3 launched with community-spend capabilities on December 11, 2019, effectively unlocking the potential for token-holders to vote to approve spending from the Community Pool. **This documentation is in active development, so please do not rely upon this information yet.** [Discuss its development here](https://forum.cosmos.network/t/gwg-community-spend-best-practices/3240). Esta página también está [disponible en español](https://github.com/raquetelio/CosmosCommunitySpend/blob/master/README%5BES_es%5D.md).
+The Cosmos Hub 3 launched with community-spend capabilities on December 11, 2019, effectively unlocking the potential for token-holders to vote to approve spending from the Community Pool. **This documentation is in active development, so please seek feedback and take care when using this information.** [Discuss its development here](https://forum.cosmos.network/t/gwg-community-spend-best-practices/3240). Esta página también está [disponible en español](https://github.com/raquetelio/CosmosCommunitySpend/blob/master/README%5BES_es%5D.md).
 
 ## Why create a proposal to use Community Pool funds?
 There are other funding options, most notably the Interchain Foundation's grant program. Why create a community-spend proposal?
