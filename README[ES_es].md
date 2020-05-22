@@ -13,7 +13,7 @@ Hay otras opciones de financiación, principalmente el programa de concesión de
 **Para ser más independiente.** La Interchain Foundation (ICF) puede no ser capaz de financiar trabajo siempre. Tener una fuente de financiación más constante y con un canal directo a los stakeholders, significa que puedes usar tus buenas relaciones para tener la confianza de ser capaz de encontrar financiación segura sin depender únicamente de la ICF.
 
 ## Creación de una propuesta de gastos a la comunidad
-Crear y enviar una propuesta es un proceso que lleva tiempo, atención y conlleva riesgo. El objetivo de esta documentación es hacer este proceso más fácil, preparando a los participantes para aquello para aquello en lo que deben prestar atención, la información que debe ser incluida en la propuesta, y cómo reducir el riesgo de perder depósitos. Idealmente, una propuesta que no sigue adelante debería ser solamente porque los votantes 1) son conscientes y están involucrados y 2) son capaces de tomar una decisión e informarla votando en la propuesta. 
+Crear y enviar una propuesta es un proceso que lleva tiempo, atención y conlleva riesgo. El objetivo de esta documentación es hacer este proceso más fácil, preparando a los participantes para aquello en lo que deben prestar atención, la información que debe ser incluida en la propuesta, y cómo reducir el riesgo de perder depósitos. Idealmente, una propuesta que no sigue adelante debería ser solamente porque los votantes 1) son conscientes y están involucrados y 2) son capaces de tomar una decisión e informarla votando en la propuesta. 
 
 
 Si estás considerando realizar una propuesta, deberías conocer:
@@ -34,7 +34,7 @@ Aunque la tasa de financiación está actualmente fijada en el 2% de las delegac
 
 La tasa actual del 2% de financiación podría ser modificada con una propuesta de gobernanza y aprobaba de forma inmediata en cuanto la propuesta sea aprobada.
 
-Actualmente, no se pueden enviar fondos a la Community Pool, pero esperamos que esto cambie con la siguiente actualización. Lee más sobre esta nueva funcionalidad [aqui](https://github.com/cosmos/cosmos-sdk/pull/5249). ¿Qué hace de esta funcionalidad importante?
+Actualmente, no se pueden enviar fondos a la Community Pool, pero esperamos que esto cambie con la siguiente actualización. Lee más sobre esta nueva funcionalidad [aqui](https://github.com/cosmos/cosmos-sdk/pull/5249). ¿Qué hace que esta funcionalidad sea importante?
 1. Los proyectos financiados que finalmente no se ejecuten deben devolver los fondos a la Community Pool;
 2. Las entidades podrían ayudar a aportar fondos a la Community Pool mediante aportación directa a la cuenta.
 
@@ -54,7 +54,7 @@ No lo sabemos 🤷
 La suposición principal es que los fondos deberían ser gastados de forma que aporte valor al Cosmos Hub. Sin embargo, hay debate entorno a cómo hacer el fondo sostenible. También hay algún debate acerca de cómo se debería recibir financiación. Por ejemplo, parte de la comunidad cree que los fondos solamente deberían ser utilizados por aquellas personas que más los necesiten. Otros temas de discusión son:  
 - concesiones retroactivas
 - negociación de precio
-- desembolso de fondos (por ejemplo, pagos por fases; pagos fijos para reducir volatibidad)
+- desembolso de fondos (por ejemplo, pagos por fases; pagos fijos para reducir volatilidad)
 - revisión drástica de cómo los mecanimos de gastos de comunidad funcionan
 
 Esperamos que todo esto tome forma a medida que las propuestas sean debatidas, aceptadas, y rechazadas por parte de la comunidad Cosmos Hub.
