@@ -28,7 +28,7 @@ There is an [index of these parameters here](https://github.com/gavinly/CosmosPa
 
 The value or setting for each parameter may be verified in the chain's genesis file, [found here](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json). These are the parameter settings that the latest Cosmos Hub chain launched with, and will remain so unless a governance proposal or software upgrade changes them.
 
-There are also ways to query the current settings for each module's parameter(s). Some can be queried with the command line program [`gaiacli`](/gaiacli), but I'm still exploring the ways that these settings can be queried. Want to help? I've opened this up as an issue [here](https://github.com/gavinly/CosmosParametersWiki/issues/1). You can begin by using the command `gaia q [module] -h` to get help about the subcommands for the module you want to query. For example, `gaiacli q staking params --chain-id cosmoshub-3 --node cosmos-node-1.figment.network:26657` returns the settings of four parameters:
+There are also ways to query the current settings for each module's parameter(s). Some can be queried with the command line program [`gaiacli`](/gaiacli), but I'm still exploring the ways that these settings can be queried. Want to help? I've opened this up as an issue [here](https://github.com/gavinly/CosmosParametersWiki/issues/1). You can begin by using the command `gaia q [module] -h` to get help about the subcommands for the module you want to query. For example, `gaiacli q staking params --chain-id cosmoshub-3 --node http://51.79.82.228:26657` returns the settings of four parameters:
 ```
 unbonding_time: 504h0m0s
 max_validators: 125
@@ -44,7 +44,7 @@ bond_denom: uatom
 
 ## Full nodes
 Running a full node can be difficult for those not technically-inclined, so you may choose to use a third-party's full node. In this case, the primary security risk is that of censorship: it's the single place where you have a single gateway to the network, and any messages submitted through an untrusted node could be censored.
-- cosmos-node-1.figment.network:26657 ([Figment Networks](https://figment.network/networks/cosmos/))
+- http://51.79.82.228:26657 ([Figment Networks](https://figment.network/networks/cosmos/))
 
 # Contributors
 This documentation was created by Gavin Birch ([Figment Networks](https://figment.network)). Its development was supported by community funding that was approved on January 29, 2020 by the Cosmos Hub via community-spend proposal [Prop23](https://hubble.figment.network/cosmos/chains/cosmoshub-3/governance/proposals/23). You can read the [full proposal PDF here](https://ipfs.io/ipfs/QmSMGEoY2dfxADPfgoAsJxjjC6hwpSNx1dXAqePiCEMCbY). You can also create an issue or pull request to participate in its development at any time!
