@@ -30,7 +30,7 @@ If you'd like to help draft a proposal, start [here](./drafts).
 
 - [Cosmos On-Chain Governance Overview](./overview.md)
 - Proposal Types:
-    - [Text Proposal](./types/text))
+    - [Text Proposal](./types/text)
     - [Parameter Change Proposal](./types/params)
     - [Community Spend Proposal](./types/fund)
 - [Draft Proposals](./drafts)
