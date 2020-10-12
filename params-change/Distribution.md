@@ -9,7 +9,7 @@ The `distribution` module is responsible for distributing staking rewards betwee
 
 **There is [a known bug](#known-bug) associated with this module.** The launch values for each parameter are outlined above, but you can [verify them yourself](#verify-parameter-values).
 
-If you're technically-inclined, [these are the technical specifications](#technical-specifications). If you're looking to create a proposal to change one or more of these parameters, [check out this section for formatting](https://github.com/gavinly/CosmosParametersWiki/blob/master/submitting.md#formatting-the-json-file-for-the-governance-proposal).
+If you're technically-inclined, [these are the technical specifications](#technical-specifications). If you're looking to create a proposal to change one or more of these parameters, [check out this section for formatting](params-change/submitting.md#formatting-the-json-file-for-the-governance-proposal).
 
 ## 1. `communitytax`
 ### The proportion of staking rewards diverted to the community pool.
@@ -101,7 +101,7 @@ Delegators can designate a separate withdrawal address (account) that receives s
 Changing the `withdrawaddrenabled` to false will prevent delegators from changing or setting a separate withdrawal address (account) that receives the staking rewards. This may disrupt the functionality of applications and the expectations of staking participants.
 
 ### Notes
-This parameter was set to `false` before transfers were enabled in order to prevent stakers from diverting their rewards to other addresses ie. to avoid a loophole that would enable ATOM transfer via diverting staking rewards to a designated address. This parameter likely is only useful if [`sendenabled`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Bank.md#1-sendenabled) is set to `false`.
+This parameter was set to `false` before transfers were enabled in order to prevent stakers from diverting their rewards to other addresses ie. to avoid a loophole that would enable ATOM transfer via diverting staking rewards to a designated address. This parameter likely is only useful if [`sendenabled`](params-change/Bank.md#1-sendenabled) is set to `false`.
 
 
 ## Known Bug

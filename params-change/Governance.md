@@ -16,7 +16,7 @@ The launch values for each parameter's subkeys are outlined above, but you can [
 
 There is some [additional functionality being considered](#future) for the development of the governance module.
 
-If you're technically-inclined, [these are the technical specifications](#technical-specifications). If you're looking to create a proposal to change one or more of these parameters, [check out this section for formatting](https://github.com/gavinly/CosmosParametersWiki/blob/master/submitting.md#formatting-the-json-file-for-the-governance-proposal).
+If you're technically-inclined, [these are the technical specifications](#technical-specifications). If you're looking to create a proposal to change one or more of these parameters, [check out this section for formatting](params-change/submitting.md#formatting-the-json-file-for-the-governance-proposal).
 
 
 

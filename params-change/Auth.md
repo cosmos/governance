@@ -8,7 +8,7 @@ The `auth` module is responsible for authenticating accounts and transactions. `
 
 The value for each launch parameter is outlined below, but you can [verify them yourself](#verify-parameter-values). 
 
-If you're technically-inclined, [these are the technical specifications](#technical-specifications). If you're looking to create a proposal to change one or more of these parameters, [check out this section for formatting](https://github.com/gavinly/CosmosParametersWiki/blob/master/submitting.md#formatting-the-json-file-for-the-governance-proposal).
+If you're technically-inclined, [these are the technical specifications](#technical-specifications). If you're looking to create a proposal to change one or more of these parameters, [check out this section for formatting](params-change/submitting.md#formatting-the-json-file-for-the-governance-proposal).
 
 ## 1. `MaxMemoCharacters`
 ### The character limit for each transaction memo.
@@ -85,7 +85,7 @@ There should be a better understanding of what the potential implications are fo
 ## Genesis (ie. most recent launch) Parameters
 This is useful if you don't have `gaiacli` installed and don't have a reason to believe that the parameter has changed since the chain launched.
 
-Each parameter may be verified in the chain's genesis file, [found here](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json). These are the parameters that the latest Cosmos Hub chain launched with, and will remain so, unless a governance proposal changes them. I've outlined those original values in the [Technical Specifications section](https://github.com/gavinly/CosmosParametersWiki/blob/master/Auth.md#technical-specifications).
+Each parameter may be verified in the chain's genesis file, [found here](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json). These are the parameters that the latest Cosmos Hub chain launched with, and will remain so, unless a governance proposal changes them. I've outlined those original values in the [Technical Specifications section](params-change/Auth.md#technical-specifications).
 
 The genesis file is text-based and large. The genesis parameter naming scheme isn't identical to those listed above, so when I search, I put one underscore between upper and lowercase characters, then convert all characters to lowercase.
 

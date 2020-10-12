@@ -4,7 +4,7 @@ The `bank` module is responsible for token transfer functionalities. `bank` is a
 
 The value of the launch parameter is outlined here, but you can [verify it yourself](#verify-parameter-values). 
 
-If you're technically-inclined, [this is the technical specification](#technical-specifications). If you're looking to create a proposal to change one or more of these parameters, [check out this section for formatting](https://github.com/gavinly/CosmosParametersWiki/blob/master/submitting.md#formatting-the-json-file-for-the-governance-proposal).
+If you're technically-inclined, [this is the technical specification](#technical-specifications). If you're looking to create a proposal to change one or more of these parameters, [check out this section for formatting](params-change/submitting.md#formatting-the-json-file-for-the-governance-proposal).
 
 ## 1. `sendenabled`
 ### Token transfer functionality.
@@ -20,7 +20,7 @@ Setting the `sendenabled` parameter to `true` will enable ATOMs to be transferre
 Setting the `sendenabled` parameter to `false` will prevent ATOMs from being transferred between accounts. ATOMs may still be staked and earn rewards. This is how the cosmoshub-1 chain launched.
 
 ### Notes
-The cosmoshub-1 chain launched with `sendenabled` set to `false` and with [`withdrawaddrenabled`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Distribution.md#4-withdrawaddrenabled) set to `false`. Staking was enabled on cosmoshub-1, so setting `withdrawaddrenabled` to false was necessary to prevent a loophole that would enable ATOM transfer via diverting staking rewards to a designated address.
+The cosmoshub-1 chain launched with `sendenabled` set to `false` and with [`withdrawaddrenabled`](params-change/Distribution.md#4-withdrawaddrenabled) set to `false`. Staking was enabled on cosmoshub-1, so setting `withdrawaddrenabled` to false was necessary to prevent a loophole that would enable ATOM transfer via diverting staking rewards to a designated address.
 
 # Verify Parameter Values
 ## Genesis (aka launch) Parameters

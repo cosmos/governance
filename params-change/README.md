@@ -34,7 +34,7 @@ There are currently 8 modules active in the Cosmos Hub with parameters that may 
 7. [crisis](/Crisis.md) - Halting the blockchain under certain circumstances (ie. if an invariant is broken)
 8. [mint](/Mint.md) - Creation of new units of staking token
 
-There is an [index of these parameters here](https://github.com/gavinly/CosmosParametersWiki/blob/master/param_index.md).
+There is an [index of these parameters here](params-change/param_index.md).
 
 The value or setting for each parameter may be verified in the chain's genesis file, [found here](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json). These are the parameter settings that the latest Cosmos Hub chain launched with, and will remain so unless a governance proposal or software upgrade changes them.
 
@@ -61,8 +61,8 @@ This documentation was created by Gavin Birch ([Figment Networks](https://figmen
 
 **Special thanks** to the following for helping to provide credible information that contributed to this wiki's development:
 - Aleks (All in Bits; Fission Labs) for answering countless questions about these parameters
-- Alessio (All in Bits) for explaining how [`SigVerifyCostED25519`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Auth.md#4-sigverifycosted25519) & [`SigVerifyCostSecp256k1`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Auth.md#5-sigverifycostsecp256k1) work, and detailed answers to my many questions
-- Vidor for volunteering to explain [`ConstantFee`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Crisis.md#1-constantfee) and answering my many questions in detail
-- Hyung (B-Harvest) for volunteering how [`InflationRateChange`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Mint.md#2-inflationratechange) works
+- Alessio (All in Bits) for explaining how [`SigVerifyCostED25519`](params-change/Auth.md#4-sigverifycosted25519) & [`SigVerifyCostSecp256k1`](params-change/Auth.md#5-sigverifycostsecp256k1) work, and detailed answers to my many questions
+- Vidor for volunteering to explain [`ConstantFee`](params-change/Crisis.md#1-constantfee) and answering my many questions in detail
+- Hyung (B-Harvest) for volunteering how [`InflationRateChange`](params-change/Mint.md#2-inflationratechange) works
 - Joe (Chorus One) for explaining the security details involved with [using full nodes for transactions](#full-nodes)
-- Sunny (All in Bits; Sikka) for volunteering an explanation of the purpose of [`withdrawaddrenabled`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Distribution.md#4-withdrawaddrenabled)
+- Sunny (All in Bits; Sikka) for volunteering an explanation of the purpose of [`withdrawaddrenabled`](params-change/Distribution.md#4-withdrawaddrenabled)
