@@ -1,7 +1,9 @@
-# The Voting Process & Governance Mechanism
+# The Proposal Process & Governance Mechanism
 
-## The proposal has two periods
+## The Proposal Process: Two Periods
+
 ### 1. Deposit Period
+
 The deposit period lasts either 14 days or until the proposal deposit totals 512 ATOMs, whichever happens first.
 
 #### Deposits
@@ -28,7 +30,7 @@ There are four criteria:
 3. A simple majority (greater than 50%) of the participating voting power must back the 'yes' vote during the 14-day voting period
 4. Less than 33.4% of participating voting power votes 'no-with-veto'
 
-Currently, the criteria for submitting and passing/failing a parameter-change proposal is the same as the criteria for signaling (text-based) proposals and community-spend proposals.
+Currently, the criteria for submitting and passing/failing all proposal types is the same. 
 
 ### How is voting tallied?
 Voting power is determined by stake weight at the end of the 14-day voting period and is proportional to the number of total ATOMs participating in the vote. Only bonded ATOMs count towards the voting power for a governance proposal. Liquid ATOMs will not count toward a vote or quorum. 
@@ -39,4 +41,4 @@ Though a simple majority 'yes' vote (ie. 50% of participating voting power) is r
 
 ### How is quorum determined?
 
-Voting power, whether backing a vote of 'yes', 'abstain', 'no', or 'no-with-veto' counts toward quorum. Quorum is required for the outcome of a governance proposal vote to be considered valid and for deposit contributors to recover their deposit amounts. If the proposal vote does not reach quorum (ie. less than 40% of the network's voting power participates) within 14 days, any deposit amounts will be burned and the proposal outcome will not be considered to be valid.
+Voting power, whether backing a vote of 'yes', 'abstain', 'no', or 'no-with-veto', counts toward quorum. Quorum is required for the outcome of a governance proposal vote to be considered valid and for deposit contributors to recover their deposit amounts. If the proposal vote does not reach quorum (ie. less than 40% of the network's voting power is participating) within 14 days, any deposit amounts will be burned and the proposal outcome will not be considered to be valid.

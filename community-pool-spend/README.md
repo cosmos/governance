@@ -1,9 +1,11 @@
 # Cosmos Hub 3 and the Community Pool
+
 The Cosmos Hub 3 launched with community-spend capabilities on December 11, 2019, effectively unlocking the potential for token-holders to vote to approve spending from the Community Pool. **This documentation is in active development, so please seek feedback and take care when using this information.** [Discuss its development here](https://forum.cosmos.network/t/gwg-community-spend-best-practices/3240).
 
 🇪🇸 Esta página también está [disponible en español](https://github.com/raquetelio/CosmosCommunitySpend/blob/master/README%5BES_es%5D.md).
 
 ## Why create a proposal to use Community Pool funds?
+
 There are other funding options, most notably the Interchain Foundation's grant program. Why create a community-spend proposal?
 
 **As a strategy: you can do both.** You can submit your proposal to the Interchain Foundation, but also consider submitting your proposal publicly on-chain. If the Hub votes in favour, you can withdraw your Interchain Foundation application.
@@ -15,15 +17,20 @@ There are other funding options, most notably the Interchain Foundation's grant 
 **To be more independent.** The Interchain Foundation (ICF) may not always be able to fund work. Having a more consistently funded source and having a report with its stakeholders means you can use your rapport to have confidence in your ability to secure funding without having to be dependent upon the ICF alone.
 
 ## Drafting a Community-spend Proposal
+
 Drafting and submitting a proposal is a process that takes time, attention, and involves risk. The objective of this documentation is to make this process easier by preparing participants for what to pay attention to, the information that should be considered in a proposal, and how to reduce the risk of losing deposits. Ideally, a proposal should only fail to pass because the voters 1) are aware and engaged and 2) are able to make an informed decision to vote down the proposal.
 
-If you are considering drafting a proposal, you should know:
+If you are considering drafting a proposal, you should review the general
+background on drafting and submitting a proposal:
+1. [How the voting process and governance mechanism works](/voting.md)
+1. [How to draft your proposal and engage with the Cosmos community about it](/best_practices.md)
+1. [How to submit your proposal](/submitting.md)
+
+You should also review details specific to Community Pool Spend proposals:
+
 1. [About the Community Pool](#learn-about-the-community-pool)
-2. [How the voting process and governance mechanism works](voting.md)
-3. [Where and how to engage with the Cosmos community about your idea](bestpractices.md)
-4. [What the community will likely want to know from your proposal](bestpractices.md#elements-of-a-community-spend-proposal)
-5. [How to prepare your final proposal draft for submission](submitting.md)
-6. [How to submit your proposal to the Cosmos Hub testnet & mainnet](submitting.md)
+1. [Best practices for a Community Spend Proposal](best_practices.md)
+1. [How to format Community Spend Proposals](formatting.md)
 
 ## Learn About the Community Pool
 

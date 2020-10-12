@@ -13,6 +13,19 @@ It may also come to serve as a place where proposals can be committed to, and
 potentially even modified slightly during voting. This would complement and/or
 augment current practices of posting proposals as PDF files to IPFS.
 
+## Contents
+
+- [Cosmos On-Chain Governance Overview](./overview.md)
+- [Best Practices for Drafting a Proposal](./best_practices.md)
+- Proposal Types:
+    - [Text Proposal](./text)
+    - [Parameter Change Proposal](./params-change)
+    - [Community Spend Proposal](./community-pool-spend)
+- [Proposal Drafts](./drafts)
+- [Submitted Proposals](./proposals)
+
+## Community
+
 Cosmos governance is driven by the Cosmos community, and much of the documentation is this repo was funded by
 the community fund itself in [Proposal 23](https://www.mintscan.io/cosmos/proposals/23). 
 Governance discussions happens in a number of places moderated by diverse
@@ -24,14 +37,5 @@ community members, including:
 - [Telegram (Governance Working Group)](https://t.me/hubgov)
 - anywhere else you might interact with members of the Cosmos community!
 
-If you'd like to help draft a proposal, start [here](./drafts).
+If you'd like to draft a proposal, start [here](./drafts).
 
-## Contents
-
-- [Cosmos On-Chain Governance Overview](./overview.md)
-- Proposal Types:
-    - [Text Proposal](./types/text)
-    - [Parameter Change Proposal](./types/params)
-    - [Community Spend Proposal](./types/fund)
-- [Draft Proposals](./drafts)
-- [Submitted Proposals](./proposals)

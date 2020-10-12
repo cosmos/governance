@@ -3,17 +3,27 @@ This Cosmos Hub educational documentation aims to outline the [Hub's parameters]
 
 **This documentation has not had adequate review from experts or testing from participants, so please be cautious when using it.** [Discuss its development here](https://forum.cosmos.network/t/gwg-cosmos-hub-parameters-wiki/3170) and please provide feedback either in the forum or by opening a Github issue. If you are technically inclined, this is the full [list of modules](https://github.com/cosmos/cosmos-sdk/tree/master/x) in the Cosmos SDK.
 
-# Best Practices
+## Drafting a Parameter Change Proposal
 Drafting and submitting a parameter-change governance proposal involves two kinds of risk: losing proposal deposit amounts and the potential to alter the function of the Cosmos Hub network in an undesirable way. The objective of this documentation is to reduce these risks by preparing participants for what to pay attention to and for what information to consider in a proposal. Ideally, a proposal should only fail to pass because the voters 1) are aware and engaged and 2) are able to make an informed decision to vote down the proposal.
 
-If you are considering drafting a community-spend proposal, you should know:
-1. [How the voting process and governance mechanism works](voting.md)
-2. [Where and how to engage with the Cosmos community about your proposed change(s)](bestpractices.md)
-3. [What the community will likely want to know about the proposed change(s)](bestpractices.md#elements-of-a-community-spend-proposal)
-4. [How to prepare your final proposal draft for submission](submitting.md)
-5. [How to submit your proposal to the Cosmos Hub testnet & mainnet](#sending-the-transaction-that-submits-your-governance-proposal)
+If you are considering drafting a proposal, you should review the general
+background on drafting and submitting a proposal:
+1. [How the voting process and governance mechanism works](/voting.md)
+1. [How to draft your proposal and engage with the Cosmos community about it](/best_practices.md)
+1. [How to submit your proposal](/submitting.md)
 
-# Modules Wiki
+You should also review details specific to Parameter Change proposals:
+
+1. [Params Wiki](#params-wiki)
+1. [Best practices for a Parameter Change Proposal](best_practices.md)
+1. [How to format Parameter Change Proposals](formatting.md)
+
+# Params Wiki
+
+The complete parameters of the Cosmos Hub are split up into different modules.
+Each module has its own set of parameters. Any of them can be updated with a
+Params Change Proposal.
+
 There are currently 8 modules active in the Cosmos Hub with parameters that may be altered via governance proposal:
 1. [auth](/Auth.md) - Authentication of accounts and transactions
 2. [bank](/Bank.md) - Token transfer functionalities

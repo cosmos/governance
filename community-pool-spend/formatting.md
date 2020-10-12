@@ -1,25 +1,4 @@
-# Submitting a Community-Spend Proposal
-## WARNING: This process hasn't been thoroughly tested. Consider discussing this process with the [Cosmos governance working group (GWG)](https://t.me/hubgov) before using it to submit a proposal.
-
-If you have a final draft of your proposal ready to submit, you may want to push your proposal live on the testnet first. These are the three primary steps to getting your community-spend proposal live on-chain.
-
-1. [Hosting the final draft](#hosting-the-full-community-spend-proposal) of your community-spend proposal with IPFS (InterPlanetary File System)
-2. [Formatting the governance proposal](#formatting-the-governance-proposal) that will be on-chain
-3. [Sending the transaction](#sending-the-transaction-that-submits-your-governance-proposal) that submits your governance proposal on-chain
-
-## Hosting the full community-spend proposal
-When you've finalized your community-spend proposal draft, convert it to a PDF file. Upload the PDF to the IPFS network:
-1. either by [running an IPFS node and the IPFS software](https://ipfs.io), or
-2. using a service such as [https://pinata.cloud](https://pinata.cloud)
-
-Ensure that you "pin" the PDF file so that it continues to be available on the network. You should get a URL like this: https://ipfs.io/ipfs/QmSMGEoY2dfxADPfgoAsJxjjC6hwpSNx1dXAqePiCEMCbY 
-
-Share the URL with others and verify that your file is publicly accessible.
-
-The reason we use IPFS is that it is a decentralized means of storage, making it resistant to censorship or single points of failure. This increases the likelihood that the file will remain available in the future.
-
-## Formatting the governance proposal
-Prior to sending the transaction that submits your proposal on-chain, you should create a JSON file. This file will contain the information that will be stored on-chain as the governance proposal. Begin by creating a new text (.txt) file to enter this information. When you're done, save the file as a .json file.
+# Formatting a Community Pool Spend Proposal
 
 There are five (5) components:
 1. **Title** - the distinguishing name of the proposal, typically the way the that explorers list proposals
@@ -27,8 +6,6 @@ There are five (5) components:
 3. **Recipient** - the Cosmos Hub (hex-based) address that will receive funding from the Community Pool
 4. **Amount** - the amount of funding that the recipient will receive in micro-ATOMs (uatom)
 5. **Deposit** - the amount that will be contributed to the deposit (in micro-ATOMs "uatom") from the account submitting the proposal
-
-Once on-chain, most people will rely upon network explorers to interpret this information with a graphical user interface (GUI).
 
 ### Simple example
 In this simple example (below), a network explorer will list the governance proposal as "Community Pool Spend." When an observer selects the proposal, they'll see the description. Not all explorers will show the recipient and amount, so ensure that you verify that the description aligns with the what the governance proposal is programmed to enact. If the description says that a certain address will receive a certain number of ATOMs, it should also be programmed to do that, but it's possible that that's not the case (accidentally or otherwise).
@@ -116,53 +93,3 @@ ___
   
 }
 ___
-
-## Sending the transaction that submits your governance proposal
-This is the basic command for using gaiacli (the command-line interface) to submit your proposal on-chain:
-```gaiacli tx gov submit-proposal community-pool-spend <proposal.json> --from [key/address]```
-
-This is the complete command that I could use to submit a community spend proposal right now:
-`gaiacli tx gov submit-proposal community-pool-spend proposal.json --from gavin --gas 500000 --fees 7500uatom --chain-id cosmoshub-3 --node cosmos-node-1.figment.network:26657`
-
-1. `gaiacli` is the command-line interface client that is used to send transactions and query the Cosmos Hub
-2. `tx gov submit-proposal community-pool-spend` indicates that the transaction is submitting a community-spend proposal
-3. `--from gavin` is the account key that pays the transaction fee and deposit amount
-4. `--gas 500000` is the maximum amount of gas permitted to be used to process the transaction
-   - the more content there is in the description of your proposal, the more gas your transaction will consume
-   - if the number isn't high enough and there isn't enough gas to process your transaction, the transaction will fail
-   - the transaction will only use the amount of gas needed to be processed
-5. `--fees` is flat rate incentive for a validator to process your transaction
-   - the network still accepts zero fees, but many nodes will not transmit your transaction to the network without a minimum fee
-   - many nodes (including the Figment node) use a minimum fee to disincentivize transaction spamming
-   - 7500uatom is equal to 0.0075 ATOM
-6. `--chain-id cosmoshub-3` is Cosmos Hub 3
-   - the testnet chain ID is [gaia-13007](https://hubble.figment.network/cosmos/chains/gaia-13007)
-7. `--node cosmos-node-1.figment.network:26657` is using Figment Networks' node to send the transaction to the Cosmos Hub 3 network
-
-**Note**: be careful what you use for `--fees`. A mistake here could result in spending hundreds or thousands of ATOMs accidentally, which cannot be recovered.
-
-### Verifying your transaction
-After posting your transaction, your command line interface will provide you with the transaction's hash, which you can either query using gaiacli or search the hash with [Hubble](https://hubble.figment.network/cosmos/chains/cosmoshub-3/transactions/B8E2662DE82413F03919712B18F7B23AF00B50DAEB499DAD8C436514640EFC79). The hash should look something like this: `B8E2662DE82413F03919712B18F7B23AF00B50DAEB499DAD8C436514640EFC79`
-
-You can see whether or not your transaction was successful with Hubble:
-![Verify tx with Hubble](https://github.com/gavinly/CosmosCommunitySpend/blob/master/verify%20tx.png?raw=true)
-
-### Troubleshooting a failed transaction
-There are a number of reasons why a transaction may fail.
-1. Running out of gas - The more data there is in a transaction, the more gas it will need to be processed. If you don't specify enough gas, the transaction will fail.
-
-2. Incorrect denomination - You may have specified an amount in 'utom' or 'atom' instead of 'uatom', causing the transaction to fail.
-
-If you encounter a problem, try to troubleshoot it first, and then ask for help on All in Bits' Cosmos forum: [https://forum.cosmos.network/c/governance](https://forum.cosmos.network/c/governance). We can learn from failed attempts and use them to improve upon this guide.
-
-### Submitting your proposal to the testnet
-I intend to expand this guide to include testnet instructions. You may want to submit your proposal to the testnet chain before the mainnet for a number of reasons:
-1. To see what the proposal description will look like
-2. To signal that your proposal is about to go live on the mainnet
-3. To share what the proposal will look like in advance with stakeholders
-4. To test the functionality of the governance features
-
-Submitting your proposal to the testnet increases the likelihood that you will discover a flaw before deploying your proposal on mainnet. A few things to keep in mind:
-- you'll need testnet tokens for your proposal (ask around for a faucet)
-- the parameters for testnet proposals are different (eg. voting period timing, deposit amount, deposit denomination)
-- the deposit denomination is in 'muon' instead of 'uatom'
