@@ -71,7 +71,7 @@ This is the complete command that I could use to submit a **mainnet** parameter-
 After posting your transaction, your command line interface (gaiacli) will provide you with the transaction's hash, which you can either query using gaiacli or by searching the hash using [Hubble](https://hubble.figment.network/cosmos/chains/cosmoshub-3/transactions/B8E2662DE82413F03919712B18F7B23AF00B50DAEB499DAD8C436514640EFC79). The hash should look something like this: `B8E2662DE82413F03919712B18F7B23AF00B50DAEB499DAD8C436514640EFC79`
 
 You can see whether or not your transaction was successful with Hubble:
-![Verify tx with Hubble](https://github.com/gavinly/CosmosCommunitySpend/blob/master/verify%20tx.png?raw=true)
+![Verify tx with Hubble](/community-pool-spend/verify%20tx.png?raw=true)
 
 ### Troubleshooting a failed transaction
 There are a number of reasons why a transaction may fail. Here are two examples:

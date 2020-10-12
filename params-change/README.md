@@ -64,5 +64,5 @@ This documentation was created by Gavin Birch ([Figment Networks](https://figmen
 - Alessio (All in Bits) for explaining how [`SigVerifyCostED25519`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Auth.md#4-sigverifycosted25519) & [`SigVerifyCostSecp256k1`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Auth.md#5-sigverifycostsecp256k1) work, and detailed answers to my many questions
 - Vidor for volunteering to explain [`ConstantFee`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Crisis.md#1-constantfee) and answering my many questions in detail
 - Hyung (B-Harvest) for volunteering how [`InflationRateChange`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Mint.md#2-inflationratechange) works
-- Joe (Chorus One) for explaining the security details involved with [using full nodes for transactions](https://github.com/gavinly/CosmosParametersWiki/blob/master/README.md#full-nodes)
+- Joe (Chorus One) for explaining the security details involved with [using full nodes for transactions](#full-nodes)
 - Sunny (All in Bits; Sikka) for volunteering an explanation of the purpose of [`withdrawaddrenabled`](https://github.com/gavinly/CosmosParametersWiki/blob/master/Distribution.md#4-withdrawaddrenabled)
