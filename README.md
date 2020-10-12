@@ -13,6 +13,10 @@ It may also come to serve as a place where proposals can be committed to, and
 potentially even modified slightly during voting. This would complement and/or
 augment current practices of posting proposals as PDF files to IPFS.
 
+If you'd like to draft a proposal, start [here](./best_practices.md).
+See the [contents](#contents) for background on the governance system,
+the different types of proposals, and how to submit one.
+
 ## Contents
 
 - [Cosmos On-Chain Governance Overview](./overview.md)
@@ -37,5 +41,4 @@ community members, including:
 - [Telegram (Governance Working Group)](https://t.me/hubgov)
 - anywhere else you might interact with members of the Cosmos community!
 
-If you'd like to draft a proposal, start [here](./drafts).
 
