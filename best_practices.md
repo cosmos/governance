@@ -1,10 +1,10 @@
 # Best Practices for Drafting a Proposal 
 
 There are currently three types of proposals supported by the Cosmos Hub: 
-- [Community Pool Spend]() - Proposal to spend funds from the community pool on
+- [Community Pool Spend](/community-pool-spend) - Proposal to spend funds from the community pool on
   an important project.
-- [Parameter Change]() - Proposal to change a core on-chain parameter.
-- [Text]() - Proposal to agree to a certain strategy, plan, commitment, future
+- [Parameter Change](/params-change) - Proposal to change a core on-chain parameter.
+- [Text](/text) - Proposal to agree to a certain strategy, plan, commitment, future
   upgrade or other statement. Text proposals are exclusively a signalling mechanism and focal point for future coordination - 
   they do not directly cause any changes.
 
@@ -13,8 +13,6 @@ review all details of your specific proposal type. What follows below are
 general best practices, regardless of proposal type.
 
 ## Engage directly with the voting community and seek feedback
-
-*Last updated: Oct 11, 2020*
 
 Engagement is likely to be critical to the success of a proposal. 
 

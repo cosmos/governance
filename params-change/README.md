@@ -8,7 +8,7 @@ Drafting and submitting a parameter-change governance proposal involves two kind
 
 If you are considering drafting a proposal, you should review the general
 background on drafting and submitting a proposal:
-1. [How the voting process and governance mechanism works](/voting.md)
+1. [How the voting process and governance mechanism works](/overview.md)
 1. [How to draft your proposal and engage with the Cosmos community about it](/best_practices.md)
 1. [How to submit your proposal](/submitting.md)
 

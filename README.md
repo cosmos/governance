@@ -21,8 +21,8 @@ augment current practices of posting proposals as PDF files to IPFS.
     - [Text Proposal](./text)
     - [Parameter Change Proposal](./params-change)
     - [Community Spend Proposal](./community-pool-spend)
-- [Proposal Drafts](./drafts)
-- [Submitted Proposals](./proposals)
+- [Submitting a Proposal](./submitting.md)
+- [Proposals](./proposals)
 
 ## Community
 
