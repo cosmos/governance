@@ -50,8 +50,24 @@ A conservative approach is to have some confidence that you roughly have initial
 ### Begin with a well-considered draft proposal
 The next major section outlines and describes some potential elements of drafting a proposal. Ensure that you have considered your proposal and anticipated questions that the community will likely ask. Once your proposal is on-chain, you will not be able to change it.
 
+The ideal format for a proposal is as a Markdown file (ie. `.md`) in a github repo. Markdown
+is a simple and accessible format for writing plain text files that is easy to
+learn. See the [Github Markdown
+Guide](https://guides.github.com/features/mastering-markdown/) for details on
+writing markdown files.
+
+If you don't have a [Github](http://github.com/) account already, register one. Then fork this
+repository, draft your proposal in the `proposals` directory, and make a
+pull-request back to this repository. For more details on using Github, see the
+[Github Forking Guide](https://guides.github.com/activities/forking/). If you
+need help using Github, don't be afraid to ask someone!
+
+If you really don't want to deal with Github, you can always draft a proposal in
+Word or Google Docs, or directly in the forums, or otherwise. However Markdown
+on Github is the ultimate standard for distributed collaboration on text files.
+
 ### Engage the community with your draft proposal
-1. Post a draft of your proposal as a topic in the 'governance' category of the [Cosmos forum](https://forum.cosmos.network/c/governance).
+1. Post a draft of your proposal as a topic in the 'governance' category of the [Cosmos forum](https://forum.cosmos.network/c/governance). Ideally this should contain a link to this repository, either directly to your proposal if it has been merged, or else to a pull-request containing your proposal if it has not been merged yet.
 2. Directly engage key members of the community for feedback. These could be large contributors, those likely to be most impacted by the proposal, and entities with high stake-backing (eg. high-ranked validators; large stakers).
 3. Engage with the Cosmos Governance Working Group (GWG). These are people focused on Cosmos governance--they won't write your proposal, but will provide feedback and recommend resources to support your work. Members can be contacted on the [forum](https://forum.cosmos.network/c/governance) (they use the tag 'GWG' in posts), in [Telegram](https://t.me/hubgov), and on [Discord](https://discord.gg/cVwYX9u).
 4. Target members of the community in a semi-public way before bringing the draft to a full public audience. The burden of public scrutiny in a semi-anonymized environment (eg. Twitter) can be stressful and overwhelming without establishing support. Solicit opinions in places with people who have established reputations first. For example, there is a private Telegram group called Cosmos Network VIP (ask for an invite [on the forum](https://forum.cosmos.network/c/governance) if you are or would like to be a Cosmos contributor). Let people in the [Discord community](https://discord.gg/cVwYX9u) know about your draft proposal.
@@ -72,6 +88,8 @@ Submitting your proposal to the testnet increases the likelihood of engagement a
 
 ## Stage 3: Your On-Chain Proposal
 A majority of the voting community should probably be aware of the proposal and have considered it before the proposal goes live on-chain. If you're taking a conservative approach, you should have reasonable confidence that your proposal will pass before risking deposit contributions. Make revisions to your draft proposal after each stage of engagement.
+
+See the [submitting guide](/submitting.md) for more on submitting proposals.
 
 ### The Deposit Period
 The deposit period currently lasts 14 days. If you submitted your transaction with the minimum deposit (512 ATOM), your proposal will immediately enter the voting period. If you didn't submit the minimum deposit amount (currently 512 ATOM), then this may be an opportunity for others to show their support by contributing (and risking) their ATOMs as a bond for your proposal. You can request contributions openly and also contact stakeholders directly (particularly stakeholders who are enthusiastic about your proposal). Remember that each contributor is risking their funds, and you can [read more about the conditions for burning deposits here](/community-pool-spend/voting.md).

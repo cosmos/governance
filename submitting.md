@@ -10,11 +10,25 @@ If you have a final draft of your proposal ready to submit, you may want to push
 
 
 ## Hosting supplementary materials
-If you think that the voting community will need more details (eg. modelling, research, etc) about the proposal, draft a document and convert it to a PDF file. Upload the PDF to the IPFS network:
+
+In general we try to minimize the amount of data pushed to the blockchain.
+Hence, detailed documentation about a proposal is usually hosted on a separate
+censorship resistant data-hosting platform, like IPFS.
+
+Once you have drafted your proposal, ideally as a Markdown file, you
+can upload it to the IPFS network:
+
 1. either by [running an IPFS node and the IPFS software](https://ipfs.io), or
 2. using a service such as [https://pinata.cloud](https://pinata.cloud)
 
-Ensure that you "pin" the PDF file so that it continues to be available on the network. You should get a URL like this: https://ipfs.io/ipfs/QmSMGEoY2dfxADPfgoAsJxjjC6hwpSNx1dXAqePiCEMCbY 
+Ensure that you "pin" the file so that it continues to be available on the network. You should get a URL like this: https://ipfs.io/ipfs/QmbkQNtCAdR1CNbFE8ujub2jcpwUcmSRpSCg8gVWrTHSWD
+The value QmbkQNtCAdR1CNbFE8ujub2jcpwUcmSRpSCg8gVWrTHSWD is called the `CID` of
+your file - it is effectively the file's hash.
+
+If you uploaded a markdown file, you can use the IPFS markdown viewer to render
+the document for better viewing. Links for the markdown viewer look like
+`https://ipfs.io/ipfs/QmTkzDwWqPbnAh5YiV5VwcTLnGdwSNsNTn2aDxdXBFca7D/example#/ipfs/<CID>`, where `<CID>` is your CID. For instance the link above would be: 
+https://ipfs.io/ipfs/QmTkzDwWqPbnAh5YiV5VwcTLnGdwSNsNTn2aDxdXBFca7D/example#/ipfs/QmbkQNtCAdR1CNbFE8ujub2jcpwUcmSRpSCg8gVWrTHSWD
 
 Share the URL with others and verify that your file is publicly accessible.
 

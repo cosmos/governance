@@ -1,20 +1,16 @@
 # Cosmos Governance
 
-The Cosmos Hub ("Gaia") has an on-chain governance mechanism for passing text
-proposals, changing consensus parameters, and spending funds from the community
-pool.
+The Cosmos Hub ("Gaia") has an on-chain governance mechanism for passing 
+[text proposals](./text), 
+changing [consensus parameters](./params-change), 
+and spending [funds from the community pool](./community-pool-spend).
 
 This repository provides background information on these different kinds of proposals
 and best-practices for drafting them and proposing them on-chain. 
-
 It also provides a place for collaborating on draft proposals in plain text on Github.
 
-It may also come to serve as a place where proposals can be committed to, and
-potentially even modified slightly during voting. This would complement and/or
-augment current practices of posting proposals as PDF files to IPFS.
-
 If you'd like to draft a proposal, start [here](./best_practices.md).
-See the [contents](#contents) for background on the governance system,
+See the contents below for more background on the governance system,
 the different types of proposals, and how to submit one.
 
 ## Contents
@@ -26,12 +22,13 @@ the different types of proposals, and how to submit one.
     - [Parameter Change Proposal](./params-change)
     - [Community Spend Proposal](./community-pool-spend)
 - [Submitting a Proposal](./submitting.md)
-- [Proposals](./proposals)
+- [List of Proposals](./proposals)
 
 ## Community
 
-Cosmos governance is driven by the Cosmos community, and much of the documentation is this repo was funded by
-the community fund itself in [Proposal 23](https://www.mintscan.io/cosmos/proposals/23). 
+Cosmos governance is driven by the Cosmos community, and much of the documentation in
+this repo was funded by the community fund itself in 
+[Proposal 23](https://www.mintscan.io/cosmos/proposals/23). 
 Governance discussions happens in a number of places moderated by diverse
 community members, including:
 
