@@ -55,8 +55,9 @@ are structural / game theory risks to making the blocks per year more closely
 match reality. On the other hand, changing this variable to more closely match
 reality is beneficial to all participants when doing any sort of economic
 calculus. Currently the true inflation rate is actually lower than the stated
-rate by a factor of 10ish %. (4.36 Mil blocks per year / 4.85 Mil blocks per
-year)
+rate by a factor of 10ish % (4.36 Mil blocks per year / 4.85 Mil blocks per
+year). So while the target rate is 7%, the actual current rate is more like
+~6.29%.
 
 **Conclusion**
 
