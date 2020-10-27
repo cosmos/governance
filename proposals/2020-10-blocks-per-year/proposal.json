@@ -1,6 +1,6 @@
 {
   "title": "Adjust Blocks Per Year to 4.35M",
-  "description": "Blocks have slowed down somewhat from ~6.5 blocks/s to ~7.24 blocks/s, and hence the number of blocks per year ought to be adjusted from 4855015 to 4360000. More details were drafted on <GITHUB> and are available on <IPFS>",
+  "description": "Blocks have slowed down somewhat from ~6.5s to ~7.24s per block, and hence the number of blocks per year ought to be adjusted from 4855015 to 4360000. More details were drafted on <GITHUB> and are available on <IPFS>",
   "changes": [
     {
       "subspace": "mint",
@@ -15,4 +15,3 @@
     }
   ]
 }
-
