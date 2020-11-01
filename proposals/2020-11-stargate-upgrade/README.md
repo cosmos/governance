@@ -70,6 +70,10 @@ Most exchanges and wallets have taken self-certification on directly. Our team c
 
 Cosmos Stargate integration success with exchanges and wallet providers reflects the quality of the code developed by the various Cosmos teams.
 
+## Prop 29
+
+This upgrade also implements the fund recovery procedure defined in proposal 29.
+
 ## Stargate Upgrade Steps
 
 ------------
