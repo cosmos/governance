@@ -35,9 +35,11 @@ The purpose of the Stargate effort was to ensure that Cosmos can fulfill the vis
 3. Dedicate significant resources in terms of full time human resources and documentation efforts to ensure that everyone integrated into the Cosmos Hub can self-certify as Stargate-ready.
 
 4. Report back to the Hub on the success of the integration process.
-  a. We expect that the primary responsibility of the Cosmos Hub is to assess whether we have mitigated the above risks sufficiently.
 
-  b. Provide a written report of the entire Stargate effort to enable Hub governance to make an informed decision.
+   - We expect that the primary responsibility of the Cosmos Hub is to assess whether we have mitigated the above risks sufficiently.
+
+   - Provide a written report of the entire Stargate effort to enable Hub governance to make an informed decision.
+
 5. At conclusion, we will indicate why we have confidence that an upgrade won't be disruptive to the Hub’s ecosystem.
 
 ## Stargate Plan Results
@@ -123,4 +125,4 @@ There are multiple circumstances while the proposal should be abandoned even if 
 
 1. A critical vulnerability may be found in the software. If the developement teams change their reccomended version of gaia, the validator set should implicitly abandon this upgrade procedure. A future proposal will be made to the Hub to upgrade to the new target commit.
 
-2. The migration process fails could fail to produce a valid `cosmoshub-4` genesis file. In this case, the validator set should restart `cosmoshub-3` and a future governance proposal will be done to initiate another upgrade.
+2. The migration process fails could fail to produce a valid cosmoshub-4 genesis file. In this case, the validator set should restart cosmoshub-3 and a future governance proposal will be done to initiate another upgrade.
