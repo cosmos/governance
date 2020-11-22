@@ -34,7 +34,7 @@ There are currently 8 modules active in the Cosmos Hub with parameters that may 
 7. [crisis](/Crisis.md) - Halting the blockchain under certain circumstances (ie. if an invariant is broken)
 8. [mint](/Mint.md) - Creation of new units of staking token
 
-There is an [index of these parameters here](params-change/param_index.md).
+There is an [index of these parameters here](/params-change/param_index.md).
 
 The value or setting for each parameter may be verified in the chain's genesis file, [found here](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json). These are the parameter settings that the latest Cosmos Hub chain launched with, and will remain so unless a governance proposal or software upgrade changes them.
 

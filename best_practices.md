@@ -78,7 +78,7 @@ on Github is the ultimate standard for distributed collaboration on text files.
 
 ### Submit your proposal to the testnet
 
-I intend to expand this [guide to include testnet instructions](/community-pool-spend/submitting.md#submitting-your-proposal-to-the-testnet). 
+I intend to expand this [guide to include testnet instructions](/submitting.md#submitting-your-proposal-to-the-testnet). 
 
 You may want to submit your proposal to the testnet chain before the mainnet for a number of reasons, such as wanting to see what the proposal description will look like, to share what the proposal will look like in advance with stakeholders, and to signal that your proposal is about to go live on the mainnet.
 
