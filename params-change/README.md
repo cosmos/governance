@@ -46,6 +46,12 @@ max_entries: 7
 bond_denom: uatom
 ```
 
+## The Voting Process & Governance Mechanism
+
+The criteria for submitting a parameter-change proposal and the subsequent voting conditions are the same as those for signalling (text-based) proposals and community-spend proposals. Details about the deposit period can be found [here](/overview.md#1-deposit-period), and voting period [here](/overview.md#what-determines-whether-or-not-a-governance-proposal-passes).
+
+If a paramater-change proposal is successful, the change takes effect immediately upon completion of the voting period.
+
 ## Note
 - You cannot currently query the `bank` module's parameter, which is `sendenabled`. You also cannot query the `crisis` module's parameters.
 - You will need to compile [`gaiacli`](/gaiacli) from source into a binary file executable by your operating system eg. MacOS, Windows, Linux
