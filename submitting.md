@@ -43,7 +43,7 @@ See the relevant section for the type of proposal you are drafting:
 
 - [Text Proposals](text/formatting.md)
 - [Community Pool Spend Proposals](community-pool-spend/formatting.md)
-- [Parameter Change Proposals](param-change/formatting.md)
+- [Parameter Change Proposals](params-change/formatting.md)
 
 Once on-chain, most people will rely upon network explorers to interpret this information with a graphical user interface (GUI).
 
