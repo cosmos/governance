@@ -2,7 +2,7 @@
 
 **ABSTRACT:**
 
-This proposal is the by-product of an ambitious community driven initiative. Its purpose is to orchestrate and coordinate an effort to increase awareness on the value proposition of $ATOM and the Cøsmos Hub, informing communities, individuals, entities about the dynamics of $ATOM in the light of the upcoming Stargate upgrade. We aim to achieve this through undertaking a marketing campaign in partnership with AiB. We propose that the community pool allocate **129,208 $ATOM** to this initiative with immediate effect upon the proposal’s passing. The funds will be used towards the following actions:
+This proposal is the by-product of an ambitious community driven initiative. Its purpose is to orchestrate and coordinate an effort to increase awareness on the value proposition of $ATOM and the Cøsmos Hub, informing communities, individuals, entities about the dynamics of $ATOM in the light of the upcoming Stargate upgrade. We aim to achieve this through undertaking a marketing campaign contracted to AiB. We propose that the community pool allocate **129,208 $ATOM** to this initiative with immediate effect upon the proposal’s passing. The funds will be used towards the following actions:
 
 **i.** One set of actions for incentivising, educating thought leaders so as to engage through media (Twitter, YouTube) for a period of 3 months and educate their audiences about $ATOM without any unnecessary hyperboles, something that would go against the values and ethos of our project;
 
