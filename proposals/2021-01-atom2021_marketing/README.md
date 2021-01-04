@@ -43,7 +43,7 @@ We need to have the support of all: community members, delegators, validators an
 
 We will need more than their vocal support. We will need their vote. We will need their subsequent support for this initiative. We all need to do nothing more than spread the knowledge. Disseminate this great idea.
 
-We also need AiB (Tendermint) to act as patrons and coordinators of this ambitious effort.
+We also need AiB (Tendermint)'s help to execute on this ambitious effort..
 
 Our proposal is requesting from the entire cosmos family to grant access to a portion of the community pool and allow a community spend of **129,208 $ATOM** in cooperation/coordination with AiB over a course of 3 months starting immediately upon its passing.
 
