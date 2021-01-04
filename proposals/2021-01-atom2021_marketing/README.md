@@ -14,7 +14,7 @@ This proposal is the by-product of an ambitious community driven initiative. Its
 
 AiB will maintain the relation with the PR Agency and will report to the committee on the status of deliverables.
 
-AiB (Tendermint) have voiced their support to our initiative and will act as a patron to our cause. We believe AiB (Tendermint) is one of those entities that have demonstrated an unparalleled dedication to the Cosmos Hub.
+We have requested and shall receive the assistance of AiB (Tendermint). We believe AiB (Tendermint) is one of those entities that have demonstrated an unparalleled dedication to the Cosmos Hub.
 
 A multi-sig committee of 6 community members will lead coordination of the effort, and approve the above specified actions and forward funds to AiB upon completion of objectives.
 
