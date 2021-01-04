@@ -45,7 +45,7 @@ We will need more than their vocal support. We will need their vote. We will nee
 
 We also need AiB (Tendermint)'s help to execute on this ambitious effort..
 
-Our proposal is requesting from the entire cosmos family to grant access to a portion of the community pool and allow a community spend of **129,208 $ATOM** in cooperation/coordination with AiB over a course of 3 months starting immediately upon its passing.
+Our proposal is requesting from the entire cosmos family to grant access to a portion of the community pool and allow a community spend of 129,208 $ATOM for marketing contracts over a course of 3 months starting immediately upon its passing.
 
 We are convinced that, by this community spend, we will increase awareness across blockchain space and get the $ATOM spaceship ready for its intergalactic journey that few - but us - have foreseen. This is not about shilling a project with no fundamentals, this is about making the best project out there known across blockchain space and beyond.
 
