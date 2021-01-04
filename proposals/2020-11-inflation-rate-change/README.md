@@ -7,7 +7,8 @@ There are 6 main variables that control the maximum, minimum, & change of the at
 
 In this proposal we will be looking at adjusting the inflation rate change variable.
 
-- When the cosmos hub inflation dynamics were originally designed, the goal was for the hub to go from the minimum rate (7%) to the maximum rate (20%) in roughly one year if a shock unbond occurred. Thusly, for the variable “inflation rate change” a value of .13 was chosen. Unfortunately, in practice the variable didn’t work as intended due to the fact the change in the inflation rate for the hub is proportional to the Target Bonded / current bonded ratio.
+- When the cosmos hub inflation dynamics were originally designed, the goal was for the hub to go from the minimum rate (7%) to the maximum rate (20%) in roughly one year after a shock had unbond occurred. Thus, for the variable “inflation rate change” a value of .13 was chosen. Unfortunately, in practice the variable didn’t work as intended due to the fact the change in the inflation rate for the hub is proportional to the Target Bonded / current bonded ratio.
+
 
 **How to select “inflation rate change” AKA Maximum Slope of the inflation curve**
 
@@ -36,5 +37,4 @@ Inflation rate Change (Max Slope of inflation curve)
 **Conclusion**
 
 I know there isn’t a right answer for maximum slope. I fully expect this to be fine-tuned over the coming years / decades. Future proposals may adjust this number by a factor of (.5 – 2+) but this gets us in the right ball park just in time for Stargate. ☺
-
 
