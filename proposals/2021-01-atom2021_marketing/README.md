@@ -16,11 +16,11 @@ AiB will maintain the relation with the PR Agency and will report to the committ
 
 We have requested and shall receive the assistance of AiB (Tendermint). We believe AiB (Tendermint) is one of those entities that have demonstrated an unparalleled dedication to the Cosmos Hub.
 
-A multi-sig committee of 6 community members will lead coordination of the effort, and approve the above specified actions and forward funds to AiB upon completion of objectives.
+A multi-sig committee of 5 community members will lead coordination of the effort, and approve the above specified actions and forward funds to AiB upon completion of objectives.
 
 Unspent funds will be refunded to the community pool by the committee.
 
-**MultiSig Address: cosmos1gwh3x2kdghqnvl3k6cwk3pwquy6r99jgumgqqc**
+**MultiSig Address: cosmos16plylpsgxechajltx9yeseqexzdzut9g8vla4k**
 
 **FULL TEXT OF DRAFT PROPOSAL**
 
