@@ -2,7 +2,7 @@
 
 **ABSTRACT:**
 
-This proposal is the by-product of an ambitious community driven initiative. Its purpose is to orchestrate and coordinate an effort to increase awareness on the value proposition of $ATOM and the Cøsmos Hub, informing communities, individuals, entities about the dynamics of $ATOM in the light of the upcoming Stargate upgrade. We aim to achieve this through undertaking a marketing campaign in partnership with AiB. We propose that the community pool allocate **129,208 $ATOM** to this initiative with immediate effect upon the proposal’s passing. The funds will be used towards the following actions:
+This proposal is the by-product of an ambitious community driven initiative. Its purpose is to orchestrate and coordinate an effort to increase awareness on the value proposition of $ATOM and the Cøsmos Hub, informing communities, individuals, entities about the dynamics of $ATOM in the light of the upcoming Stargate upgrade. We aim to achieve this through undertaking a marketing campaign contracted to AiB. We propose that the community pool allocate **129,208 $ATOM** to this initiative with immediate effect upon the proposal’s passing. The funds will be used towards the following actions:
 
 **i.** One set of actions for incentivising, educating thought leaders so as to engage through media (Twitter, YouTube) for a period of 3 months and educate their audiences about $ATOM without any unnecessary hyperboles, something that would go against the values and ethos of our project;
 
@@ -14,7 +14,7 @@ This proposal is the by-product of an ambitious community driven initiative. Its
 
 AiB will maintain the relation with the PR Agency and will report to the committee on the status of deliverables.
 
-AiB (Tendermint) have voiced their support to our initiative and will act as a patron to our cause. We believe AiB (Tendermint) is one of those entities that have demonstrated an unparalleled dedication to the Cosmos Hub.
+We have requested and shall receive the assistance of AiB (Tendermint). We believe AiB (Tendermint) is one of those entities that have demonstrated an unparalleled dedication to the Cosmos Hub.
 
 A multi-sig committee of 6 community members will lead coordination of the effort, and approve the above specified actions and forward funds to AiB upon completion of objectives.
 
@@ -43,9 +43,9 @@ We need to have the support of all: community members, delegators, validators an
 
 We will need more than their vocal support. We will need their vote. We will need their subsequent support for this initiative. We all need to do nothing more than spread the knowledge. Disseminate this great idea.
 
-We also need AiB (Tendermint) to act as patrons and coordinators of this ambitious effort.
+We also need AiB (Tendermint)'s help to execute on this ambitious effort..
 
-Our proposal is requesting from the entire cosmos family to grant access to a portion of the community pool and allow a community spend of **129,208 $ATOM** in cooperation/coordination with AiB over a course of 3 months starting immediately upon its passing.
+Our proposal is requesting from the entire cosmos family to grant access to a portion of the community pool and allow a community spend of 129,208 $ATOM for marketing contracts over a course of 3 months starting immediately upon its passing.
 
 We are convinced that, by this community spend, we will increase awareness across blockchain space and get the $ATOM spaceship ready for its intergalactic journey that few - but us - have foreseen. This is not about shilling a project with no fundamentals, this is about making the best project out there known across blockchain space and beyond.
 
