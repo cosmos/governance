@@ -8,7 +8,7 @@ This proposal is the by-product of an ambitious community driven initiative. Its
 
 **ii.** One set of actions for engaging the blockchain and crypto communities for 3 months via 3 monthly meme contests whose intention is to make $ATOM going viral on Twitter.
 
-**iii.** One set of actions for a 3 month header banner and/or homepage banner advertising campaigns on 3 websites with high and/or relevant traffic to the Cosmos Hub such as CMC, Coingecko and stakingrewards.com websites, whichever of them have available spots.
+**iii.** One set of actions for a 3 month header banner and/or homepage banner advertising campaigns on  4 platforms with high and/or relevant traffic to the Cosmos Hub such as CMC, Coingecko, Blockfolio and Staking Rewards platforms, whichever of them have available spots.
 
 **iv.** A maximum of 10% from the budget will be used to engage a high profile PR Agency to help with the Media and Marketing efforts. AiB and/or committee members will request and share offers from different PR Agencies and the offer containing the best marketing plan will be selected by the committee members through vote.
 
@@ -61,7 +61,7 @@ In order to achieve the goal of strengthening the public perception about the AT
 
 **ii.** One set of actions for engaging the blockchain and crypto communities for 3 months via 3 monthly meme contests whose intention is to make $ATOM going viral on Twitter.
 
-**iii.** One set of actions for a 3 month header banner and/or homepage banner advertising campaigns on 3 websites with high and/or relevant traffic to the Cosmos Hub such as CMC, Coingecko and stakingrewards.com websites, whichever of them have available spots.
+**iii.** One set of actions for a 3 month header banner and/or homepage banner advertising campaigns on  4 platforms with high and/or relevant traffic to the Cosmos Hub such as CMC, Coingecko, Blockfolio and Staking Rewards platforms, whichever of them have available spots.
 
 **iv.** A maximum of 10% from the budget will be used to engage a high profile PR Agency to help with the Media and Marketing efforts. AiB and/or committee members will request and share offers from different PR Agencies and the offer containing the best marketing plan will be selected by the committee members through vote.
 AiB will maintain the relation with the PR Agency and will report to the committee on the status of deliverables.
