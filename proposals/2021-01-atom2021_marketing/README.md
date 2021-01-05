@@ -79,13 +79,13 @@ Funds will be released to a multi-sig committee which in turn may - depending on
 
 The distribution of funds will be administered by 6 community members that have been selected via the governance working group. At least 4 will have to approve each spend for it to be released to AiB.
 
-@johnniecosmos, @JoeDirtay, @jackzampolin (Jack Zampolin, Pylon Validator), @nylira, (Peng Zhong, Tendermint), @immasssi (SG-1 Validator), @zakimanian (Zaki Manian, Iqlusion Validator).
+@johnniecosmos, @JoeDirtay, @jackzampolin (Jack Zampolin, Pylon Validator), @immasssi (SG-1 Validator), @zakimanian (Zaki Manian, Iqlusion Validator).
 
 Every spend action related to this proposal has to be approved via multi-sig. At least 4/6 signatures are required to confirm a spend of the allocated marketing funds.
 
 For administrative efforts, drafting the proposal and executing the marketing efforts, the 6 administrators will receive 100 ATOMs each for their time & efforts over the coming 3 months in helping to properly execute the above mentioned strategy.
 
-**MultiSig Address: cosmos1gwh3x2kdghqnvl3k6cwk3pwquy6r99jgumgqqc**
+**MultiSig Address: cosmos16plylpsgxechajltx9yeseqexzdzut9g8vla4k**
 
 **Refund of Unspent Funds to the Pool:**
 
