@@ -43,7 +43,7 @@ We need to have the support of all: community members, delegators, validators an
 
 We will need more than their vocal support. We will need their vote. We will need their subsequent support for this initiative. We all need to do nothing more than spread the knowledge. Disseminate this great idea.
 
-We also need AiB (Tendermint)'s help to execute on this ambitious effort..
+We also need AiB (Tendermint)'s help to execute on this ambitious effort.
 
 Our proposal is requesting from the entire cosmos family to grant access to a portion of the community pool and allow a community spend of 129,208 $ATOM for marketing contracts over a course of 3 months starting immediately upon its passing.
 
@@ -77,13 +77,13 @@ Funds will be released to a multi-sig committee which in turn may - depending on
 
 **Funds’ Distribution:**
 
-The distribution of funds will be administered by 6 community members that have been selected via the governance working group. At least 4 will have to approve each spend for it to be released to AiB.
+The distribution of funds will be administered by 5 community members that have been selected via the governance working group. At least 3 will have to approve each spend for it to be released to AiB.
 
 @johnniecosmos, @JoeDirtay, @jackzampolin (Jack Zampolin, Pylon Validator), @immasssi (SG-1 Validator), @zakimanian (Zaki Manian, Iqlusion Validator).
 
-Every spend action related to this proposal has to be approved via multi-sig. At least 4/6 signatures are required to confirm a spend of the allocated marketing funds.
+Every spend action related to this proposal has to be approved via multi-sig. At least 3/5 signatures are required to confirm a spend of the allocated marketing funds.
 
-For administrative efforts, drafting the proposal and executing the marketing efforts, the 6 administrators will receive 100 ATOMs each for their time & efforts over the coming 3 months in helping to properly execute the above mentioned strategy.
+For administrative efforts, drafting the proposal and executing the marketing efforts, the 5 administrators will receive 100 ATOMs each for their time & efforts over the coming 3 months in helping to properly execute the above mentioned strategy.
 
 **MultiSig Address: cosmos16plylpsgxechajltx9yeseqexzdzut9g8vla4k**
 
