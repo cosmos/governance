@@ -24,7 +24,7 @@ After the success of the community approval of the first Stargate Upgrade propos
 ## The Stargate Plan
 
 ------------
-The purpose of the Stargate effort was to ensure that Cosmos can fulfill the vision of an Internet of Blockchains in 2020 while mitigating the risks outlined above. It was also an attempt to create a process for complex future on-chain upgrades on the Cosmos Hub. That included the following steps:
+The purpose of the Stargate effort was to ensure that Cosmos can fulfill the vision of an Internet of Blockchains in 2021 while mitigating the risks outlined above. It was also an attempt to create a process for complex future on-chain upgrades on the Cosmos Hub. That included the following steps:
 
 1. Run the Stargate Testnet and use this as an integration testing target with widest possible ecosystem participation to help confirm the readiness of the release software.
 
