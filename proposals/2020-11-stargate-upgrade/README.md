@@ -102,6 +102,11 @@ Validators should expect that at least 16GB of RAM needs to be provisioned to pr
 ------------
 We propose scheduling the Cosmoshub-3 to Cosmoshub-4 simulated upgrade for Thursday Jan 28th, 2021 at 0600 UTC
 
+- West Coast USA: 10 PM on Jan 27
+- East Coast USA: 1 AM on Jan 28
+- Central Europe: 7 AM on Jan 28
+- Seoul: 5 PM on Jan 28
+
 ## The git commit of Gaia that we are upgrading to
 
 ------------
