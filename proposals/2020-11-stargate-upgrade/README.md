@@ -1,4 +1,4 @@
-# Cosmos Stargate Hub Upgrade Proposal 2
+# Cosmos Stargate Hub Upgrade Proposal 2: Chevrons Locked. Time to Upgrade.
 
 ![](https://siasky.net/AADU5rg0GvapbrICLUk7SxZeMDrKo5Q8oLrpOwl71wXhnQ)
 
