@@ -72,7 +72,7 @@ Cosmos Stargate integration success with exchanges and wallet providers reflects
 
 ## Prop 29
 
-This upgrade also implements the fund recovery procedure defined in proposal 29.
+This upgrade also implements the fund recovery procedure defined in proposal 29. The code is [here](https://github.com/cosmos/gaia/blob/main/app/prop29.go). As requested during the discussion of the governance proposal, the migration and fund recovery procedure verifies all signatures. This code was tested during the cosmoshub-3 simulated upgrade testnet.ƒ
 
 ## Stargate Upgrade Steps
 
@@ -81,7 +81,7 @@ The upgrade steps for the simulated upgrade of the current Cosmoshub mainnet to 
 
 This section is with the current `gaia 2.0.*` implementation.
 
-  1. Validators should set their `gaia` with a halt time of `1605765600`ie. 06:00 UTC on Nov 19th in Unix time.
+  1. Validators should set their `gaia` with a halt time of `1611813600`ie. 06:00 UTC on Jan 28th in Unix time.
 
   2. Validators should then export the current cosmos state with `gaiad export > cosmoshub-3-export.json`
 
@@ -100,12 +100,12 @@ Validators should expect that at least 16GB of RAM needs to be provisioned to pr
 ## Time of the Upgrade
 
 ------------
-We propose scheduling the Cosmoshub-3 to Cosmoshub-4 simulated upgrade for Thursday November 19th, 2021 at [0600 UTC]
+We propose scheduling the Cosmoshub-3 to Cosmoshub-4 simulated upgrade for Thursday Jan 28th, 2021 at 0600 UTC
 
 ## The git commit of Gaia that we are upgrading to
 
 ------------
-TBD
+`d974b27a8caf8cad3b06fbe4678871e4b0b69a51`
 
 ## What we're doing while voting is happening
 
@@ -114,6 +114,8 @@ TBD
 We expect that integration partners will be motivated to finish their preperations for the upgrade during the period when the governance proposal is running.
 
 A testnet with the final version of Gaia 3.0 will be running to assist with integrations.
+
+[Stargate Ecosystem Readiness Report](https://github.com/cosmosdevs/stargate/blob/master/ecosystem_readiness.md) is living document. We will be updating this document as we get reports of competed end to end testing. We expect a hard deadline to be movtivating.
 
 ## What is the upgrade abort process
 
