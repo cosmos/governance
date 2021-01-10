@@ -11,7 +11,7 @@ Blocked on Final Code Hashes from the IBC, Tendermint and SDK teams.
 ## Key Results
 
 ------------
-If passed, this governance proposal would commit the Cosmos Hub to upgrading to halting the `cosmoshub-3` at 06:00 UTC on Nov 19 exporting the state and starting `cosmoshub-4` based on gaia 3.0.
+If passed, this governance proposal would commit the Cosmos Hub to upgrading by halting the `cosmoshub-3` at 06:00 UTC on Nov 19, exporting the state, and starting `cosmoshub-4` based on gaia 3.0.
 
 ## Context
 
@@ -19,7 +19,7 @@ If passed, this governance proposal would commit the Cosmos Hub to upgrading to 
 
 In proposal 27, Iqlusion proposed a comprehensive process to translate the unprecented surface area of this upgrade. We called this process Stargate.
 
-Iqlusion is pleased to report that the Stargate Process has been successfully executed. We believe the chevrons are unlocked and that Hub can safely step throught the Stargate.
+Iqlusion is pleased to report that the Stargate Process has been successfully executed. We believe the chevrons are unlocked and that Hub can safely step through the Stargate.
 
 After the success of the community approval of the first Stargate Upgrade proposal, we now follow-up with the second Stargate proposal for the Cosmos Hub that will outline the results of the first proposal and the process for upgrading the Hub.
 
@@ -87,7 +87,7 @@ This section is with the current `gaia 2.0.*` implementation.
 
   2. Validators should then export the current cosmos state with `gaiad export > cosmoshub-3-export.json`
 
-  3. Validators should determine the height the last block.
+  3. Validators should determine the height of the last block.
 
   4. Validators should back up their `.gaiad` directory.
 
@@ -121,7 +121,7 @@ We have also worked with the teams to double the bug bounty on the stargate upgr
 
 ------------
 
-There are multiple circumstances while the proposal should be abandoned even if it passes.34
+There are multiple circumstances where the proposal should be abandoned even if it passes:
 
 1. A critical vulnerability may be found in the software. If the developement teams change their reccomended version of gaia, the validator set should implicitly abandon this upgrade procedure. A future proposal will be made to the Hub to upgrade to the new target commit.
 
