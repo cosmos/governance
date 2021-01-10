@@ -1,5 +1,7 @@
 # Cosmos Stargate Hub Upgrade Proposal 2
 
+![](https://siasky.net/AADU5rg0GvapbrICLUk7SxZeMDrKo5Q8oLrpOwl71wXhnQ)
+
 ## by Iqlusion
 
 Jan 11, 2021
