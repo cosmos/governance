@@ -2,16 +2,12 @@
 
 ## by Iqlusion
 
-October 31, 2020
-
-### Current Status: Draft
-
-Blocked on Final Code Hashes from the IBC, Tendermint and SDK teams.
+Jan 11, 2021
 
 ## Key Results
 
 ------------
-If passed, this governance proposal would commit the Cosmos Hub to upgrading to halting the `cosmoshub-3` at 06:00 UTC on Nov 19 exporting the state and starting `cosmoshub-4` based on gaia 3.0.
+If passed, this governance proposal would commit the Cosmos Hub to upgrading to halting the `cosmoshub-3` at 06:00 UTC on Jan 28th exporting the state and starting `cosmoshub-4` based on gaia 3.0.
 
 ## Context
 
@@ -48,7 +44,7 @@ The purpose of the Stargate effort was to ensure that Cosmos can fulfill the vis
 
 ### 1. Ecoystem Participation
 
-The results of ecosystem participation and engagement are available in our [Stargate Ecosystem Readiness Report](https://github.com/cosmosdevs/stargate/blob/master/ecosystem_readiness.md). We list on this page ecosystem partners such as Validators that provided their validator public keys as well as infrastructure partners that confirmed their integration testing the Stargate testnet tags. Validators, exchanges, and wallets have made up the most responsive of their results completing integration testing of the stargate releases.
+The results of ecosystem participation and engagement are available in our [Stargate Ecosystem Readiness Report](https://github.com/cosmosdevs/stargate/blob/master/ecosystem_readiness.md). We list on this page ecosystem partners such as Validators that provided their validator public keys as well as infrastructure partners that confirmed their integration testing the Stargate testnet tags. Validators, exchanges, and wallets have made up the most responsive of their results completing integration testing of the stargate releases. We anticpate that all actors in the ecosystem are aware and ready to respond to the new Cosmos Hub features. Integration partners have helped find regression in the legacy amino compatibility layer and those have been resolved.
 
 The Cosmos SDK, Tendermint, AiB, and IBC teams worked tirelessly to deliver the most robust software feature set that would make up the Cosmos Stargate release. Their review of their efforts are documented in their post ["How Seven Teams Collaborated To Deliver The Biggest Software Upgrade In The Cosmos Universe"](https://blog.cosmos.network/how-seven-teams-collaborated-to-deliver-the-biggest-software-upgrade-in-the-cosmos-universe-2288f4f9afe8).
 
@@ -97,10 +93,12 @@ This section is with the upgrade `gaia 3.0.*` implemenataion.
   2. Validators should delete their `~/.gaiad` directory and create a new one with `gaiad init [name]` and then edit their configuration files.
   3. Validators should then start `cosmoshub-4` with `gaiad start`. Automated audits of the genesis state can take 30-120 min using the crisis module. This can be disabled by `gaiad start --x-crisis-skip-assert-invariants`.
 
+Validators should expect that at least 16GB of RAM needs to be provisioned to process block 1 on cosmoshub-4.
+
 ## Time of the Upgrade
 
 ------------
-We propose scheduling the Cosmoshub-3 to Cosmoshub-4 simulated upgrade for Thursday November 19th, 2020 at [0600 UTC]
+We propose scheduling the Cosmoshub-3 to Cosmoshub-4 simulated upgrade for Thursday November 19th, 2021 at [0600 UTC]
 
 ## The git commit of Gaia that we are upgrading to
 
@@ -111,11 +109,9 @@ TBD
 
 ------------
 
-Testing and integration work will be ongoing with our simulated upgrade testnet running, IBC channels and opened and we will be supporting validator partners.
+We expect that integration partners will be motivated to finish their preperations for the upgrade during the period when the governance proposal is running.
 
-Large scale simulation testing will be on going.
-
-We have also worked with the teams to double the bug bounty on the stargate upgrade.
+A testnet with the final version of Gaia 3.0 will be running to assist with integrations.
 
 ## What is the upgrade abort process
 
