@@ -3,7 +3,7 @@
 There are five (5) components:
 1. **Title** - the distinguishing name of the proposal, typically the way the that explorers list proposals
 2. **Description** - the body of the proposal that further describes what is being proposed and details surrounding the proposal
-3. **Recipient** - the Cosmos Hub (hex-based) address that will receive funding from the Community Pool
+3. **Recipient** - the Cosmos Hub (bech32-based) address that will receive funding from the Community Pool
 4. **Amount** - the amount of funding that the recipient will receive in micro-ATOMs (uatom)
 5. **Deposit** - the amount that will be contributed to the deposit (in micro-ATOMs "uatom") from the account submitting the proposal
 
