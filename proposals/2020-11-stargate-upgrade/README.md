@@ -85,7 +85,7 @@ This section is with the current `gaia 2.0.*` implementation.
 
   2. Validators should then export the current cosmos state with `gaiad export > cosmoshub-3-export.json`
 
-  3. Validators should determine the height of the last block.
+  3. Validators should determine the height of the last block as `last-cosmoshub-3_block`.
 
   4. Validators should back up their `.gaiad` directory.
 
