@@ -68,7 +68,7 @@ Documentation was a success for the Cosmos Stargate effort. The upgrades with th
 
 Most exchanges and wallets have taken self-certification on directly. Our team continues to provide real-time support on multiple partner slack channels and on the Cosmos [#stargate Discord](https://discord.gg/W8trcGV) channel.
 
-We have conducted numerous testnets with different partners. A particularly important testnet conducted with a significant fraction of the Hub validator set was a simulated upgrade of the cosmoshub on Nov 25th. This tested the full upgrade flow including the prop29 implementation and height preserving upgrade functionality.
+We have conducted numerous testnets with different partners. A particularly important testnet conducted with a significant fraction of the Hub validator set was a simulated upgrade of the cosmoshub on Nov 25th,2020. This tested the full upgrade flow including the prop29 implementation and height preserving upgrade functionality.
 
 ### Cosmos Stargate Integration Success
 
