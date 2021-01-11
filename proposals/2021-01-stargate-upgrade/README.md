@@ -1,4 +1,4 @@
-# Cosmos Stargate Hub Upgrade Proposal 2: Chevrons Locked. Time to Upgrade
+# Cosmos Stargate Hub Upgrade Proposal 2: Time to Upgrade
 
 ![Stargate Upgrade banner graphic](https://siasky.net/AADU5rg0GvapbrICLUk7SxZeMDrKo5Q8oLrpOwl71wXhnQ)
 
@@ -17,7 +17,7 @@ If passed, this governance proposal would commit the Cosmos Hub to halting the `
 
 In [Proposal 27](https://ipfs.io/ipfs/Qmbo3fF54tX3JdoHZNVLcSBrdkXLie56Vh2u29wLfs4PnW), Iqlusion proposed a comprehensive process to translate the unprecented surface area of this upgrade. We called this process Stargate.
 
-Iqlusion is pleased to report that the Stargate Process has been successfully executed. We believe the chevrons are unlocked and that Hub can safely step through the Stargate.
+Iqlusion is pleased to report that the Stargate Process has been successfully executed. We believe the ecosystem is ready and the Hub can safely step through the Stargate.
 
 After the success of the community approval of the first Stargate Upgrade proposal, we now follow-up with the second Stargate proposal for the Cosmos Hub that will outline the results of the first proposal and the process for upgrading the Hub.
 
@@ -69,6 +69,11 @@ Documentation was a success for the Cosmos Stargate effort. The upgrades with th
 Most exchanges and wallets have taken self-certification on directly. Our team continues to provide real-time support on multiple partner slack channels and on the Cosmos [#stargate Discord](https://discord.gg/W8trcGV) channel.
 
 We have conducted numerous testnets with different partners. A particularly important testnet conducted with a significant fraction of the Hub validator set was a simulated upgrade of the cosmoshub on Nov 25th,2020. This tested the full upgrade flow including the prop29 implementation and height preserving upgrade functionality.
+
+
+### Conclusion
+
+The governance proposal is our report back to the community on the success of the Stargate program. We have compiled detailed information for the community as a reference in the Stargate [repository](https://github.com/cosmosdevs/stargate).
 
 ### Cosmos Stargate Integration Success
 
