@@ -76,7 +76,7 @@ Cosmos Stargate integration success with exchanges and wallet providers reflects
 
 ## Prop 29
 
-This upgrade also implements the fund recovery procedure defined in proposal 29. The code is [here](https://github.com/cosmos/gaia/blob/main/app/prop29.go). As requested during the discussion of the governance proposal, the migration and fund recovery procedure verifies all signatures. This code was tested during the cosmoshub-3 simulated upgrade testnet.ƒ
+This upgrade also implements the fund recovery procedure defined in proposal 29. The code is [here](https://github.com/cosmos/gaia/blob/main/app/prop29.go). As requested during the discussion of the governance proposal, the migration and fund recovery procedure verifies all signatures. This code was tested during the cosmoshub-3 simulated upgrade testnet.
 
 ## Stargate Upgrade Steps
 
@@ -93,18 +93,18 @@ This section is with the current `gaia 2.0.*` implementation.
 
   4. Validators should back up their `.gaiad` directory.
 
-This section is with the upgrade `gaia 3.0.*` implemenataion.
+This section is with the upgraded `gaia 3.0.*` implemenataion.
 
   1. Validators should then migrate the exported genesis state. `gaiad migrate cosmoshub-3-export.json --chain-id=cosmoshub-4 --initial-height [last_cosmoshub-3_block+1] > genesis.json`
-  2. Validators should delete their `~/.gaiad` directory and create a new one with `gaiad init [name]` and then edit their configuration files.
+  2. Validators should delete their `~/.gaiad` directory (**ENSURE IT IS BACKED UP**!) and create a new one with `gaiad init [name]` and then edit their configuration files or recover the config files from backups.
   3. Validators should then start `cosmoshub-4` with `gaiad start`. Automated audits of the genesis state can take 30-120 min using the crisis module. This can be disabled by `gaiad start --x-crisis-skip-assert-invariants`.
 
-Validators should expect that at least 16GB of RAM needs to be provisioned to process block 1 on cosmoshub-4.
+Validators should expect that at least 16GB of RAM needs to be provisioned to process the first new block on cosmoshub-4.
 
 ## Time of the Upgrade
 
 ------------
-We propose scheduling the Cosmoshub-3 to Cosmoshub-4 simulated upgrade for Thursday Jan 28th, 2021 at 0600 UTC
+We propose scheduling the Cosmoshub-3 to Cosmoshub-4 upgrade for Thursday Jan 28th, 2021 at 0600 UTC
 
 - West Coast USA: 10 PM on Jan 27
 - East Coast USA: 1 AM on Jan 28
@@ -120,11 +120,11 @@ We propose scheduling the Cosmoshub-3 to Cosmoshub-4 simulated upgrade for Thurs
 
 ------------
 
-We expect that integration partners will be motivated to finish their preperations for the upgrade during the period when the governance proposal is running.
+We expect that integration partners will be motivated to finish their preparations for the upgrade during the period when the governance proposal is running.
 
 A testnet with the final version of Gaia 3.0 will be running to assist with integrations.
 
-[Stargate Ecosystem Readiness Report](https://github.com/cosmosdevs/stargate/blob/master/ecosystem_readiness.md) is living document. We will be updating this document as we get reports of competed end to end testing. We expect a hard deadline to be movtivating.
+[Stargate Ecosystem Readiness Report](https://github.com/cosmosdevs/stargate/blob/master/ecosystem_readiness.md) is a living document. We will be updating this document as we get reports of completed end to end testing. We expect a hard deadline to be motivating.
 
 ## What is the upgrade abort process
 
@@ -135,4 +135,3 @@ There are multiple circumstances where the proposal should be abandoned even if 
 1. A critical vulnerability may be found in the software. If the development teams change their recommended version of gaia, the validator set should implicitly abandon this upgrade procedure. A future proposal will be made to the Hub to upgrade to the new target commit.
 
 2. The migration process fails could fail to produce a valid cosmoshub-4 genesis file. This would manifest as ad-hoc changes to genesis needed to start or a failure to produce blocks from `cosmoshub-4`. In this case, the validator set should restart cosmoshub-3 at `last-cosmoshub-3_block` and a future governance proposal will be done to initiate another upgrade.
-
