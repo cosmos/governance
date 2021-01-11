@@ -24,7 +24,7 @@ After the success of the community approval of the first Stargate Upgrade propos
 ## The Stargate Plan
 
 ------------
-The purpose of the Stargate effort was to ensure that Cosmos can fulfill the vision of an Internet of Blockchains in 2021 while mitigating the risks outlined above. It was also an attempt to create a process for complex future on-chain upgrades on the Cosmos Hub. That included the following steps:
+The purpose of the Stargate effort was to ensure that Cosmos can fulfill the vision of an Internet of Blockchains in 2021 while mitigating the technological and organizational risks outlined in the [original Stargate Upgrade Proposal 27](https://ipfs.io/ipfs/Qmbo3fF54tX3JdoHZNVLcSBrdkXLie56Vh2u29wLfs4PnW). It was also an attempt to create a process for complex future on-chain upgrades on the Cosmos Hub. That included the following steps:
 
 1. Run the Stargate Testnet and use this as an integration testing target with widest possible ecosystem participation to help confirm the readiness of the release software.
 
@@ -135,5 +135,4 @@ There are multiple circumstances where the proposal should be abandoned even if 
 1. A critical vulnerability may be found in the software. If the development teams change their recommended version of gaia, the validator set should implicitly abandon this upgrade procedure. A future proposal will be made to the Hub to upgrade to the new target commit.
 
 2. The migration process fails could fail to produce a valid cosmoshub-4 genesis file. This would manifest as ad-hoc changes to genesis needed to start or a failure to produce blocks from `cosmoshub-4`. In this case, the validator set should restart cosmoshub-3 at `last-cosmoshub-3_block` and a future governance proposal will be done to initiate another upgrade.
-
 
