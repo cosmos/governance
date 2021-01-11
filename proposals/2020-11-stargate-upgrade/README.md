@@ -128,6 +128,6 @@ A testnet with the final version of Gaia 3.0 will be running to assist with inte
 
 There are multiple circumstances where the proposal should be abandoned even if it passes:
 
-1. A critical vulnerability may be found in the software. If the developement teams change their reccomended version of gaia, the validator set should implicitly abandon this upgrade procedure. A future proposal will be made to the Hub to upgrade to the new target commit.
+1. A critical vulnerability may be found in the software. If the development teams change their recommended version of gaia, the validator set should implicitly abandon this upgrade procedure. A future proposal will be made to the Hub to upgrade to the new target commit.
 
 2. The migration process fails could fail to produce a valid cosmoshub-4 genesis file. In this case, the validator set should restart cosmoshub-3 and a future governance proposal will be done to initiate another upgrade.
