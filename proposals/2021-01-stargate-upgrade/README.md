@@ -60,11 +60,15 @@ We delivered critical partner support to leading ATOM exchanges. Out of the exch
 
 We also completed and delivered a completed legacy Amino Audit, [AminoRest & You](https://github.com/cosmosdevs/stargate/blob/master/audit.md). The core finding of this audit was that changes to the underlying structs result in an interface that is close to the prior version allowing legacy queries to return valid data.
 
+All previous Cosmos Hub upgrades reset the block height. Our interactions with ecosystem particpants identified this as introducing significant complexity to handling this upgrade. This will be the first upgrade of the Cosmos Hub that starts the blockchain at the height + 1 of the antecedent chain.
+
 ### 3. Documentation and Self-Certification
 
 Documentation was a success for the Cosmos Stargate effort. The upgrades with the most breaking changes such as legacy Amino have a complete audit with documentation on exceptions for blockchain API interfaces.
 
 Most exchanges and wallets have taken self-certification on directly. Our team continues to provide real-time support on multiple partner slack channels and on the Cosmos [#stargate Discord](https://discord.gg/W8trcGV) channel.
+
+We have conducted numerous testnets with different partners. A particularly important testnet conducted with a significant fraction of the Hub validator set was a simulated upgrade of the cosmoshub on Nov 25th. This tested the full upgrade flow including the prop29 implementation and height preserving upgrade functionality.
 
 ### Cosmos Stargate Integration Success
 
@@ -130,4 +134,6 @@ There are multiple circumstances where the proposal should be abandoned even if 
 
 1. A critical vulnerability may be found in the software. If the development teams change their recommended version of gaia, the validator set should implicitly abandon this upgrade procedure. A future proposal will be made to the Hub to upgrade to the new target commit.
 
-2. The migration process fails could fail to produce a valid cosmoshub-4 genesis file. In this case, the validator set should restart cosmoshub-3 and a future governance proposal will be done to initiate another upgrade.
+2. The migration process fails could fail to produce a valid cosmoshub-4 genesis file. This would manifest as ad-hoc changes to genesis needed to start or a failure to produce blocks from `cosmoshub-4`. In this case, the validator set should restart cosmoshub-3 at `last-cosmoshub-3_block` and a future governance proposal will be done to initiate another upgrade.
+
+
