@@ -101,7 +101,7 @@ This section is with the current `gaia 2.0.*` implementation.
 This section is with the upgraded `gaia 3.0.*` implemenataion.
 
   1. Validators should then migrate the exported genesis state. `gaiad migrate cosmoshub-3-export.json --chain-id=cosmoshub-4 --initial-height [last_cosmoshub-3_block+1] > genesis.json`
-  2. Validators should delete their `~/.gaiad` directory (**ENSURE IT IS BACKED UP**!) and create a new one with `gaiad init [name]` and then edit their configuration files or recover the config files from backups.
+  2. Validators should (**AFTER ENSURING IT IS BACKED UP**!) delete their `~/.gaiad` directory and create a new one with `gaiad init [name]` and then edit their configuration files or recover the config files from backups.
   3. Validators should then start `cosmoshub-4` with `gaiad start`. Automated audits of the genesis state can take 30-120 min using the crisis module. This can be disabled by `gaiad start --x-crisis-skip-assert-invariants`.
 
 Validators should expect that at least 16GB of RAM needs to be provisioned to process the first new block on cosmoshub-4.
