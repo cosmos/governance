@@ -2,7 +2,7 @@
 
 The Stargate team is recommending that the Cosmos Hub reschedule the next upgrade to a new commit hash. The new commit hash is expected to be available on Tuesday Jan 26th with a new upgrade proposal immediately after.
 
-This governance proposal will signal that [proposal 35](https://www.mintscan.io/cosmos/proposals/35) will not be executed. The Hub governance will vote on forthcoming proposal aiming for a final upgrade on Feb 11th.
+This governance proposal will signal that [proposal 35](https://www.mintscan.io/cosmos/proposals/35) will not be executed. The Hub governance will vote on forthcoming proposal aiming for a final upgrade. The earliest target date would be February 11th. Given that Lunar New Year is on Feb 12th. The next best date in Feb 18th 06:00UTC.
 
 We are recommending the delay for the following reasons.
 
