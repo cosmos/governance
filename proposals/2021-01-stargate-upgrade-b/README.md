@@ -9,7 +9,7 @@ Jan 26, 2021
 ## Key Results
 
 ------------
-If passed, this governance proposal would commit the Cosmos Hub to halting the `cosmoshub-3` at 06:00 UTC on Jan 28th exporting the state and starting `cosmoshub-4` based on gaia XX.
+If passed, this governance proposal would commit the Cosmos Hub to halting the `cosmoshub-3` at 06:00 UTC on Feb 18th exporting the state and starting `cosmoshub-4` based on gaia XX.
 
 ## Context
 
@@ -97,7 +97,7 @@ The upgrade steps for the simulated upgrade of the current Cosmoshub mainnet to 
 
 This section is with the current `gaia 2.0.*` implementation.
 
-  1. Validators should set their `gaia` with a halt time of `1611813600`ie. 06:00 UTC on Jan 28th in Unix time.
+  1. Validators should set their `gaia` with a halt time of `1613628000`ie. 06:00 UTC on Jan 28th in Unix time.
 
   2. Validators should then export the current cosmos state with `gaiad export > cosmoshub-3-export.json`
 
@@ -118,15 +118,15 @@ Validators should expect that at least 16GB of RAM needs to be provisioned to pr
 ------------
 We propose scheduling the Cosmoshub-3 to Cosmoshub-4 upgrade for Thursday Feb 18th, 2021 at 0600 UTC
 
-- West Coast USA: 10 PM on Jan 27
-- East Coast USA: 1 AM on Jan 28
-- Central Europe: 7 AM on Jan 28
-- Seoul: 5 PM on Jan 28
+- West Coast USA: 10 PM on Feb 17
+- East Coast USA: 1 AM on Feb 18
+- Central Europe: 7 AM on Feb 18
+- Seoul: 5 PM on Feb 18
 
 ## The git commit of Gaia that we are upgrading to
 
 ------------
-`d974b27a8caf8cad3b06fbe4678871e4b0b69a51`
+`xx`
 
 ## What we're doing while voting is happening
 
