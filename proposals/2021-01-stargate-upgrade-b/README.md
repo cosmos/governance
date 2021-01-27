@@ -9,7 +9,7 @@ Jan 26, 2021
 ## Key Results
 
 ------------
-If passed, this governance proposal would commit the Cosmos Hub to halting the `cosmoshub-3` at 06:00 UTC on Feb 18th exporting the state and starting `cosmoshub-4` based on gaia XX.
+If passed, this governance proposal would commit the Cosmos Hub to halting the `cosmoshub-3` at 06:00 UTC on Feb 18th exporting the state and starting `cosmoshub-4` based on gaia 4.0.0
 
 ## Context
 
@@ -105,7 +105,7 @@ This section is with the current `gaia 2.0.*` implementation.
 
   4. Validators should back up their `.gaiad` directory.
 
-This section is with the upgraded `gaia 3.0.*` implemenataion.
+This section is with the upgraded `gaia 4.0.*` implemenataion.
 
   1. Validators should then migrate the exported genesis state. `gaiad migrate cosmoshub-3-export.json --chain-id=cosmoshub-4 --initial-height [last_cosmoshub-3_block+1] > genesis.json`
   2. Validators should (**AFTER ENSURING IT IS BACKED UP**!) delete their `~/.gaiad` directory and create a new one with `gaiad init [name]` and then edit their configuration files or recover the config files from backups.
@@ -126,7 +126,7 @@ We propose scheduling the Cosmoshub-3 to Cosmoshub-4 upgrade for Thursday Feb 18
 ## The git commit of Gaia that we are upgrading to
 
 ------------
-`xx`
+`2bb04266266586468271c4ab322367acbf41188f`
 
 ## What we're doing while voting is happening
 
@@ -136,7 +136,7 @@ We expect that integration partners will be motivated to finish their preparatio
 
 A testnet with the final version of Gaia 3.0 will be running to assist with integrations.
 
-[Stargate Ecosystem Readiness Report](https://github.com/cosmosdevs/stargate/blob/master/ecosystem_readiness.md) is a living document. We will be updating this document as we get reports of completed end to end testing. We expect a hard deadline to be motivating.
+[Stargate Ecosystem Readiness Report](https://github.com/cosmos/stargate-launch/blob/master/ecosystem_readiness.md) is a living document. We will be updating this document as we get reports of completed end to end testing. We expect a hard deadline to be motivating.
 
 ## What is the upgrade abort process
 
