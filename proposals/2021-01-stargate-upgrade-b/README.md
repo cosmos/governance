@@ -1,4 +1,4 @@
-# Stargate Upgrade- Second time is a charm!
+# Stargate Upgrade- Second time is a charm
 
 ![Stargate Upgrade banner graphic](https://siasky.net/AADU5rg0GvapbrICLUk7SxZeMDrKo5Q8oLrpOwl71wXhnQ)
 
@@ -41,9 +41,9 @@ The purpose of the Stargate effort was to ensure that Cosmos can fulfill the vis
 
 4. Report back to the Hub on the success of the integration process.
 
-   - We expect that the primary responsibility of the Cosmos Hub is to assess whether we have mitigated the above risks sufficiently.
+   * We expect that the primary responsibility of the Cosmos Hub is to assess whether we have mitigated the above risks sufficiently.
 
-   - Provide a written report of the entire Stargate effort to enable Hub governance to make an informed decision.
+   * Provide a written report of the entire Stargate effort to enable Hub governance to make an informed decision.
 
 5. At conclusion, we will indicate why we have confidence that an upgrade won't be disruptive to the Hub’s ecosystem.
 
@@ -77,7 +77,6 @@ Most exchanges and wallets have taken self-certification on directly. Our team c
 
 We have conducted numerous testnets with different partners. A particularly important testnet conducted with a significant fraction of the Hub validator set was a simulated upgrade of the cosmoshub on Nov 25th,2020. This tested the full upgrade flow including the prop29 implementation and height preserving upgrade functionality.
 
-
 ### Conclusion
 
 The governance proposal is our report back to the community on the success of the Stargate program. We have compiled detailed information for the community as a reference in the Stargate [repository](https://github.com/cosmosdevs/stargate).
@@ -94,6 +93,8 @@ This upgrade also implements the fund recovery procedure defined in proposal 29.
 
 ------------
 The upgrade steps for the simulated upgrade of the current Cosmoshub mainnet to Cosmos Stargate includes the following steps:
+
+The upgrade instructions will continue to improve as a living [document](https://github.com/cosmos/gaia/blob/main/docs/migration/cosmoshub-3.md). The Gaia maintainers will continue to improve the instruction below.
 
 This section is with the current `gaia 2.0.*` implementation.
 
@@ -118,10 +119,10 @@ Validators should expect that at least 16GB of RAM needs to be provisioned to pr
 ------------
 We propose scheduling the Cosmoshub-3 to Cosmoshub-4 upgrade for Thursday Feb 18th, 2021 at 0600 UTC
 
-- West Coast USA: 10 PM on Feb 17
-- East Coast USA: 1 AM on Feb 18
-- Central Europe: 7 AM on Feb 18
-- Seoul: 5 PM on Feb 18
+* West Coast USA: 10 PM on Feb 17
+* East Coast USA: 1 AM on Feb 18
+* Central Europe: 7 AM on Feb 18
+* Seoul: 5 PM on Feb 18
 
 ## The git commit of Gaia that we are upgrading to
 
