@@ -1,4 +1,4 @@
-# Cosmos Stargate Hub Upgrade Proposal 2B: Time to Upgrade
+# Stargate Upgrade- Second time is a charm!
 
 ![Stargate Upgrade banner graphic](https://siasky.net/AADU5rg0GvapbrICLUk7SxZeMDrKo5Q8oLrpOwl71wXhnQ)
 
