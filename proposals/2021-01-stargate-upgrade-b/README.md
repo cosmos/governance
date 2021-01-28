@@ -1,6 +1,6 @@
 # Stargate Upgrade- Second time is a charm
 
-![Stargate Upgrade banner graphic](https://siasky.net/AADU5rg0GvapbrICLUk7SxZeMDrKo5Q8oLrpOwl71wXhnQ)
+![Stargate Upgrade banner graphic](https://siasky.net/bADrO0dW2KJC0ZS1uie389nmV6MTroRqTNaeFPuTtR7qow)
 
 ## by Iqlusion
 
