@@ -1,7 +1,7 @@
 
 {
     "title":"Stargate Upgrade- Second time is a charm!",
-    "description":"Proposal to complete the Stargate upgrade, halt `cosmoshub-3` at 06:00 UTC on Feb 18th, export the state and start `cosmoshub-4` based on gaia 4.0.\n\n Gaia Commit hash: \n a279d091c6f66f8a91c87943139ebaecdd84f689  Proposal details can be found on \n github: https://github.com/cosmos/governance/pull/13 \n Rendered: https://ipfs.io/ipfs/QmTkzDwWqPbnAh5YiV5VwcTLnGdwSNsNTn2aDxdXBFca7D/example#/ipfs/XX ipfs: https://cloudflare-ipfs.com/ipfs/XX \n sia: https://siasky.net/XX \n  ",
+    "description":"Proposal to complete the Stargate upgrade, halt `cosmoshub-3` at 06:00 UTC on Feb 18th, export the state and start `cosmoshub-4` based on gaia 4.0.\n\n Gaia Commit hash: \n a279d091c6f66f8a91c87943139ebaecdd84f689  Proposal details can be found on \n github: https://github.com/cosmos/governance/pull/13 \n Rendered: https://ipfs.io/ipfs/QmTkzDwWqPbnAh5YiV5VwcTLnGdwSNsNTn2aDxdXBFca7D/example#/ipfs/QmSYu8wWX7b6CgDHhbH13xjNRqEmJ54iyf5vXkpAGuHMAy \n ipfs: https://cloudflare-ipfs.com/ipfs/QmSYu8wWX7b6CgDHhbH13xjNRqEmJ54iyf5vXkpAGuHMAy \n sia: https://siasky.net/EAB-MlrJXaa6cmFek48IK7paagKWXz34Gmxr4RVxu-w93Q \n  ",
     "type":"Text",
     "deposit":"256000000uatom"
 }
