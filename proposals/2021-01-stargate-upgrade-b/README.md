@@ -102,7 +102,7 @@ This section is with the current `gaia 2.0.*` implementation.
 
   2. Validators should then export the current cosmos state with `gaiad export > cosmoshub-3-export.json`
 
-  3. Validators should determine the height of the last block as `last-cosmoshub-3_block`.
+  3. Validators should determine the height of the last block as `last-cosmoshub-3_block`. This can be easily determined from gaia logs.
 
   4. Validators should back up their `.gaiad` directory.
 
@@ -127,7 +127,7 @@ We propose scheduling the Cosmoshub-3 to Cosmoshub-4 upgrade for Thursday Feb 18
 ## The git commit of Gaia that we are upgrading to
 
 ------------
-`2bb04266266586468271c4ab322367acbf41188f`
+`a279d091c6f66f8a91c87943139ebaecdd84f689`
 
 ## What we're doing while voting is happening
 
