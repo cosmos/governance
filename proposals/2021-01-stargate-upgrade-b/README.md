@@ -98,7 +98,7 @@ The upgrade instructions will continue to improve as a living [document](https:/
 
 This section is with the current `gaia 2.0.*` implementation.
 
-  1. Validators should set their `gaia` with a halt time of `1613628000`ie. 06:00 UTC on Jan 28th in Unix time.
+  1. Validators should set their `gaia` with a halt time of `1613628000`ie. 06:00 UTC on Feb 18th in Unix time.
 
   2. Validators should then export the current cosmos state with `gaiad export > cosmoshub-3-export.json`
 
