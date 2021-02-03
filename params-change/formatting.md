@@ -33,12 +33,7 @@ You use can also use [Hubble](https://hubble.figment.network/cosmos/chains/gaia-
       "value": {"mindeposit":"200000umuon"}
     }
   ],
-  "deposit": [
-    {
-      "denom": "umuon",
-      "amount": "100000"
-    }
-  ]
+  "deposit": "100000umuon"
 }
 ```
 The deposit `denom` is `uatom` and `amount` is `100000`. Since 1,000,000 micro-ATOM is equal to 1 ATOM, a deposit of 0.1 ATOM will be included with this proposal. The gaia-13007 testnet currently has a 0.1 ATOM minimum deposit, so this will put the proposal directly into the voting period. There is a minimum deposit required for a proposal to enter the voting period, and anyone may contribute to this deposit within a 14-day period. If the minimum deposit isn't reached before this time, the deposit amounts will be burned. Deposit amounts will also be burned if quorum isn't met in the vote or if the proposal is vetoed.
@@ -62,12 +57,7 @@ To date, the Cosmos Hub's parameters have not been changed by a parameter-change
       "value": 5000
     }
   ],
-  "deposit": [
-    {
-      "denom": "uatom",
-      "amount": "512000000"
-    }
-  ]
+  "deposit": "512000000uatom"
 }
 ```
 **Note:** in the JSON file, `\n` creates a new line.
