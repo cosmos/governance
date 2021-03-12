@@ -4,7 +4,7 @@
   "changes": [
     {
       "subspace": "transfer",
-      "key":"send_enabled",
+      "key":"SendEnabled",
       "value": true
     },
     {
@@ -13,10 +13,5 @@
       "value": true
     }
   ],
-  "deposit": [
-    {
-      "denom": "uatom",
-      "amount": "1000000"
-    }
-  ]
+  "deposit": "1000000uatom"
 }
