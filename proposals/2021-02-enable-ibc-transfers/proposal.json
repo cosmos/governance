@@ -1,6 +1,6 @@
 {
-  "title": "Adjust Blocks Per Year to 4.35M",
-  "description": "While the current inflation rate is set at 7%, the effective inflation rate is more like ~6.29%. This is because blocks have slowed down somewhat from ~6.5s to ~7.24s per block, and thus the current blocks per year value of 4855015 is too high. Here we propose to adjust the blocks per year value from 4855015 to 4360000 to bring it in line with current block times, which should realign the effective inflation rate. More details were drafted on <GITHUB> and are available on <IPFS>",
+  "title": "Enable IBC transfers",
+  "description": "The Proposal enables transfering and recieving assets using the IC20 protocol on the Cosmos Hub. If this proposal passes, there will be IBC assets available in the Bank module of the Hub and ATOM will be available on Zones connected over IBC.\n Iqlusion believes that the IBC software is suffciently stable for small amounts of value transfer. We expect there to be issues with stuck funds and UX confusion but overcoming these issues will only happen once IBC is live.\n Security Model\n Tendermint full nodes produce agreement under the assumption that at most ⅓ of the voting power held by validators is Byzantine.\n IBC\nIBC is a protocol for authenticated message passing between heterogeneous sovereign blockchains. IBC requires trusting that chains on both sides of the connections operate within their security model.\n Incentive Security Extensions\n IBC has a facility to support freezing connections once a violation of the security model has occurred. The set of criteria for detecting such attacks continues to evolve and is a constant focus of research.",
   "changes": [
     {
       "subspace": "transfer",
