@@ -3,7 +3,7 @@
 The Proposal enables transfering and recieving assets using the IC20 protocol on the Cosmos Hub. If this proposal passes, there will be IBC assets available in the Bank module of the Hub and ATOM will be available on Zones connected over IBC.
 Iqlusion believes that the IBC software is suffciently stable for small amounts of value transfer. We expect there to be issues with stuck funds and UX confusion but overcoming these issues will only happen once IBC is live.
 
-Security Model
+## Security Model
 
 Tendermint full nodes produce agreement under the assumption that at most ⅓ of the voting power held by validators is Byzantine.
 
