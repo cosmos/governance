@@ -8,5 +8,8 @@ Iqlusion believes that the IBC software is sufficiently stable for small amounts
 Tendermint full nodes produce agreement under the assumption that at most ⅓ of the voting power held by validators is Byzantine.
 
 ## IBC
-IBC is a protocol for authenticated message passing between heterogeneous sovereign blockchains. IBC requires trusting that chains on both sides of the connections operate within their security model.\n Incentive Security Extensions
+IBC is a protocol for authenticated message passing between heterogeneous sovereign blockchains. IBC requires trusting that chains on both sides of the connections operate within their security model.
+
+## Incentive Security Extensions
+
 IBC has a facility to support freezing connections once a violation of the security model has occurred. The set of criteria for detecting such attacks continues to evolve and is a constant focus of research.
