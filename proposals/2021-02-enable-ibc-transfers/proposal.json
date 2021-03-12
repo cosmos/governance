@@ -9,7 +9,7 @@
     },
     {
       "subspace": "transfer",
-      "key":"recieve_enabled",
+      "key":"ReceiveEnabled",
       "value": true
     }
   ],
