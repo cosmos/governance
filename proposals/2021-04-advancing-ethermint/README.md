@@ -40,8 +40,7 @@ Upon the approval of the proposal, the treasury will distribute the funds to a �
 - Zaki Manian - Iqlusion
 - Marko Baricevic - Interchain GmbH
 
-<!-- TODO: add -->
-The account address is: cosmos1XXX
+The account address is: `cosmos124ezy53svellxqs075g69n4f5c0yzcy5slw7xz`
 
 If the proposal passes, the team will immediately receive 40% of the funds to expand its engineering team and other business development efforts to support GTM for the chain. The remaining 60% will be released in an equal proportion to the number of milestones upon the completion of each milestone. For any reason, if the proposer has not completed the next milestone within a year of the last payment, the remaining funds held in the multisig account will be returned to the community pool.
 
@@ -51,7 +50,7 @@ The current proposal aims to develop all the necessary components for a successf
 
 ### Hard Commitments
 
-These are the items that are mandatory for the release of funds. The items will be split into four milestones. 
+These are the items that are mandatory for the release of funds. The items will be split into four milestones.
 
 > NOTE: Some of the items below are currently stated under ChainSafe's service agreement with the ICF for Ethermint. Our team will collaborate with them on these items so that they are included by the time the EVM chain is launched. These items are marked below as [CS]
 
@@ -68,7 +67,7 @@ This milestone aims to reach a stage where developers can begin deployments of E
 - **Ensure compatibility with Ethereum tooling**: Test and coordinate with dev teams to test compatibility with (Truffle, Ganache, Metamask, web3.js, ethers.js, etc) and ensure the same dev UX as with Ethereum. The compatibility will then be ensured through end-to-end and integration tests. [CS]
 - **User Guides**: Relevant guides will be added to connect Ethermint with the tools mentioned above.
 - **Cosmjs Library support**: Make Ethermint keys, signing, queries, and txs compatible with the [cosmjs](https://github.com/cosmos/cosmjs) library.
-- [**EIP 3085**](https://eips.ethereum.org/EIPS/eip-3085) **support**: add wallet\_addEthereumChain JSON-RPC endpoint for Ethermint. 
+- [**EIP 3085**](https://eips.ethereum.org/EIPS/eip-3085) **support**: add `wallet_addEthereumChain` JSON-RPC endpoint for Ethermint.
 
 #### Milestone 2: Maximizing Performance and Compatibility
 
@@ -80,7 +79,7 @@ This milestone aims to enhance and benchmark the Ethermint chain's performance s
 - **Faucet support**: The team will ensure an Ethermint-compatible faucet implementation is supported to ensure the sustainability of the permanent testnet. This will be also integrated into the existing faucet library of cosmjs. [CS]
 - **Ethereum Bridge**: Integrate a combination of the following bridges in order to make Ethermint interoperable with Ethereum ERC20s: Cosmos Gravity bridge, IBC solo machine bridge, Chainbridge [CS].
 
-#### Milestone 3: Mainnet readiness 
+#### Milestone 3: Mainnet readiness
 
 This milestone's objective is to enhance security and users' accessibility to Ethermint, and stress-test the network before the mainnet launch.
 
@@ -90,7 +89,7 @@ This milestone's objective is to enhance security and users' accessibility to Et
 
 #### Milestone 4: Mainnet launch
 
-This milestone aims to provide support and coordination across the Cosmos community to ensure a safe and successful launch of the Ethermint mainnet. 
+This milestone aims to provide support and coordination across the Cosmos community to ensure a safe and successful launch of the Ethermint mainnet.
 
 - **Incentivized Testnet:** Planification, coordination and launch of the upcoming Ethermint’s incentivized testnet: Game of Ethermint.
 - **Support Mainnet launch**: The team will support Ethermint’s mainnet launch by coordinating with key stakeholders, ecosystem partners, validators, community, etc. [CS]
