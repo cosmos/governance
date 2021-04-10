@@ -1,0 +1,17 @@
+{
+  "title": "Parameter change: lower minimum proposal deposit amount",
+  "description": "The current deposit amount of 512 ATOMs prohibits valuable governance activity from small holders or those with most of their ATOM staked. We propose lowering the requirment to 64 ATOMS.",
+  "changes": [
+    {
+      "subspace": "depositparams",
+      "key":"mindeposit",
+      "value": "64000000"
+    }
+  ],
+  "deposit": [
+    {
+      "denom": "uatom",
+      "amount": "1000000"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+# Parameter change: lower minimum proposal deposit amount
+
+## Summary
+
+The current deposit amount of 512 ATOMs prohibits valuable governance activity from small holders or those with most of their ATOM staked. We propose lowering the requirment to 64 ATOMS.
+
+## Objectives
+
+1. Enable community members with good ideas but little capital to participate in governance and request resources from the community pool treasury.
+2. Improve the governance UX for holders who keep most of their ATOM staked.
+3. Increase utilization of treasury (currently 666,457 ATOM, approximately $14 MM USD, at time of writing).
+4. Accelerate Cosmos Hub development and growth.
+
+## Background
+
+Current deposit is 512 ATOMs (approximately $10k USD today). The ATOM price when the community treasury was activated (2019-05-03) was $4.99 (source: CoinMarketCap), meaning the total required deposit to submit a proposal was $2,555. Today, most proposers must coordinate with large ATOM holders to request additional funds in order to meet the minimum deposit requirements. This also applies to large ATOM holders who want to be active in governance but do not have enough liquid ATOM to meet the deposit requirements, as staked ATOM cannot be used to post deposits.
+
+## Proposers
+
+Federico Kunze Küllmer (Tharsis) and Sam Hart (Interchain).
+
+Credit to Gavin Birch (Figment Networks) and the Cosmos Governance Working Group (GWG) for initiating a recent conversation that motivated this proposal.
+
+## Proposed Parameter Change
+
+Change the minimum proposal deposit requirement from 512 ATOMs (aprox. $10,000 USD) to 64 ATOMs (aprox. $1,300 USD).
+
+## Risks
+
+__This change makes it easier to submit spam proposals.__
+
+While this is true, in order to fully mitigate spam the Cosmos Hub must increase the minimum deposit required for proposal [submission](https://cosmoscan.net/proposal/28).
+
+__By increasing the number of submissions, voter participation or the level of consideration given to each proposal may decrease.__
+
+We believe this is a justifiable trade-off for promoting more community-driven initiatives and enthusiasm for advancing Cosmos. As we lower the barrier to entry for governance participation, we invite community members to take this opportunity to enact more effective and efficient governance practices. The upcoming Groups, Authz, and Interchain Accounts modules will provide powerful abstractions to this end.
+
+## Alternatives
+
+__Wait for the Cosmos Hub to adopt proposed changes to the Governance module for variable deposit amounts, quorom thresholds, and voting periods.__
+
+These initiatives should not be mutually exclusive. While research and development of these features is ongoing, the Cosmos Hub will benefit from this parameter change today, as well as the prescedent it sets for self-improving governance.
+
+## Governance Votes
+
+The following items summarize the voting options and what it means for this proposal.
+
+- **YES**: You approve the parameter change proposal to decrease the governance proposal deposit requirements from 512 to 64 ATOMs.
+- **NO**: You request the proposed value of 64 ATOMs be changed, but agree that the minnimum deposit requirement should be lowered.
+- **NO WITH VETO**: You believe the current deposit value should be kept as-is.
+- **ABSTAIN**: You are impartial to the outcome of the proposal.
