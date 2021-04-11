@@ -48,6 +48,6 @@ These initiatives should not be mutually exclusive. While research and developme
 The following items summarize the voting options and what it means for this proposal.
 
 - **YES**: You approve the parameter change proposal to decrease the governance proposal deposit requirements from 512 to 64 ATOMs.
-- **NO**: You disapprove of the parameter change in it's current form (please indicate in the Cosmos Forum why this is the case).
+- **NO**: You disapprove of the parameter change in its current form (please indicate in the Cosmos Forum why this is the case).
 - **NO WITH VETO**: You are strongly opposed to this change and will exit the network if passed.
 - **ABSTAIN**: You are impartial to the outcome of the proposal.
