@@ -43,6 +43,10 @@ __Wait for the Cosmos Hub to adopt proposed changes to the Governance module for
 
 These initiatives should not be mutually exclusive. While research and development of these features is ongoing, the Cosmos Hub will benefit from this parameter change today, as well as the prescedent it sets for self-improving governance.
 
+__Since the ATOM price fluctuates with respect to USD, make proposal thresholds reference a stable price oracle__
+
+This is an interesting design space, however it becomes more plausible if and when the Cosmos Hub adds a decentralized exchange that can be used to produce a reference rate. Lowering the proposal threshold is a temporary solution that will help in the short-term.
+
 ## Governance Votes
 
 The following items summarize the voting options and what it means for this proposal.
