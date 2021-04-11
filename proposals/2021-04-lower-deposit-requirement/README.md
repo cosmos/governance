@@ -25,6 +25,8 @@ Credit to Gavin Birch (Figment Networks) and the Cosmos Governance Working Group
 
 Change the minimum proposal deposit requirement from 512 ATOMs (aprox. $10,000 USD) to 64 ATOMs (aprox. $1,300 USD).
 
+Note: Parameters are denominated in micro-ATOMs, as described in the [governance parameter list](https://github.com/cosmos/governance/blob/master/params-change/Governance.md).
+
 ## Risks
 
 __This change makes it easier to submit spam proposals.__
@@ -46,6 +48,6 @@ These initiatives should not be mutually exclusive. While research and developme
 The following items summarize the voting options and what it means for this proposal.
 
 - **YES**: You approve the parameter change proposal to decrease the governance proposal deposit requirements from 512 to 64 ATOMs.
-- **NO**: You request the proposed value of 64 ATOMs be changed, but agree that the minnimum deposit requirement should be lowered.
-- **NO WITH VETO**: You believe the current deposit value should be kept as-is.
+- **NO**: You disapprove of the parameter change in it's current form (please indicate in the Cosmos Forum why this is the case).
+- **NO WITH VETO**: You are strongly opposed to this change and will exit the network if passed.
 - **ABSTAIN**: You are impartial to the outcome of the proposal.
