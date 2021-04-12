@@ -3,9 +3,16 @@
   "description": "The current deposit amount of 512 ATOMs prohibits valuable governance activity from small holders or those with most of their ATOM staked. We propose lowering the requirment to 64 ATOMS.",
   "changes": [
     {
-      "subspace": "mindeposit",
+      "subspace": "gov",
       "key":"depositparams",
-      "value": "64000000"
+      "value": {
+        "min_deposit": [
+          {
+            "denom": "uatom",
+            "amount": "64000000"
+          }
+        ]
+      }
     }
   ],
   "deposit": [
