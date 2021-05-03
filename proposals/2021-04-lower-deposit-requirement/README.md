@@ -2,13 +2,13 @@
 
 ## Summary
 
-The current deposit amount of 512 ATOMs prohibits valuable governance activity from small holders or those with most of their ATOM staked. We propose lowering the requirment to 64 ATOMS.
+The current deposit amount of 512 ATOMs prohibits valuable governance activity from small holders or those with most of their ATOM staked. We propose lowering the requirement to 64 ATOMS.
 
 ## Objectives
 
 1. Enable community members with good ideas but little capital to participate in governance and request resources from the community pool treasury.
 2. Improve the governance UX for holders who keep most of their ATOM staked.
-3. Increase utilization of treasury (currently 666,457 ATOM, approximately $14 MM USD, at time of writing).
+3. Increase utilisation of treasury (currently 666,457 ATOM, approximately $14 MM USD, at time of writing).
 4. Accelerate Cosmos Hub development and growth.
 
 ## Background
@@ -41,7 +41,7 @@ We believe this is a justifiable trade-off for promoting more community-driven i
 
 __Wait for the Cosmos Hub to adopt proposed changes to the Governance module for variable deposit amounts, quorom thresholds, and voting periods.__
 
-These initiatives should not be mutually exclusive. While research and development of these features is ongoing, the Cosmos Hub will benefit from this parameter change today, as well as the prescedent it sets for self-improving governance.
+These initiatives should not be mutually exclusive. While research and development of these features is ongoing, the Cosmos Hub will benefit from this parameter change today, as well as the precedent it sets for self-improving governance.
 
 __Since the ATOM price fluctuates with respect to USD, make proposal thresholds reference a stable price oracle__
 
@@ -49,7 +49,7 @@ This is an interesting design space, however it becomes more plausible if and wh
 
 ## Governance Votes
 
-The following items summarize the voting options and what it means for this proposal.
+The following items summarise the voting options and what it means for this proposal.
 
 - **YES**: You approve the parameter change proposal to decrease the governance proposal deposit requirements from 512 to 64 ATOMs.
 - **NO**: You disapprove of the parameter change in its current form (please indicate in the Cosmos Forum why this is the case).
