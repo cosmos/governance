@@ -24,15 +24,15 @@ The Gravity Ethereum contract is highly optimized, utilizing batches to dramatic
 
 Cosmos Hub validators will run three key software components of the Gravity bridge:
 
-- The Gravity bridge module, integrated into gaiad (the main Cosmos binary)
+- The Gravity bridge module, integrated into gaiad (the binary that runs the Cosmos Hub)
 - The Gravity bridge Orchestrator
 - A Geth light client or any Ethereum full node implementing the JSON-rpc standard
 
 ### Cosmos to Ethereum:
 
-To send transactions from Cosmos to Ethereum, the Gravity Bridge module first packages the transaction data, and makes it available on an endpoint. The Orchestrator then signs this data with the validator’s Ethereum key, and submits it as a message. These signatures will then be assembled and submitted to the Ethereum chain by relayers.
+To send transactions from Cosmos to Ethereum, the Gravity Bridge module of a validator's Gaia instance first packages the transaction data, and makes it available on an endpoint. The Orchestrator then signs this data with the validator’s Ethereum key, and submits it as a message to the Ethereum network. The Ethereum signature of each Cosmos validator needs to be assembled and submitted to the Ethereum chain by relayers.
 
-Validators may be slashed if they fail to submit Ethereum signatures within 6000 blocks (about eight hours) of their creation.
+Validators may be slashed if they fail to submit Ethereum signatures within 6000 Cosmos Hub blocks (about eight hours) of their creation.
 
 Validators may also be slashed if they sign a message with their Ethereum key that was not created by the Gravity bridge module.
 
@@ -40,11 +40,11 @@ Gravity bridge has no other slashing conditions.
 
 ### Ethereum to Cosmos:
 
-The Orchestrator also monitors the Ethereum chain, submitting events that occur on Ethereum to Cosmos as messages. When more than 66% of the active voting power has sent a message observing the same Ethereum event, the Gravity module will take action.
+The Orchestrator also monitors the Ethereum chain, submitting events that occur on Ethereum to Cosmos as messages. When more than 66% of the active Cosmos voting power has sent a message observing the same Ethereum event, the Gravity module will take action.
 
 This oracle action will not be incentivized, nor will it be enforced with slashing. If validators making up more than 33% of the staked tokens do not participate in the oracle, new deposits and withdrawals will not be processed until those validators resume their oracle obligations.
 
-The oracle was designed without slashing conditions to ensure that a consensus failure on Ethereum does not affect operation of the Cosmos chain.
+The oracle was designed to adhere to the Cosmos Hub validator security model without slashing conditions to ensure that a consensus failure on Ethereum does not affect operation of the Cosmos chain.
 
 ### Slashing Conditions Spec
 
@@ -55,7 +55,7 @@ https://github.com/cosmos/gravity-bridge/blob/main/spec/slashing-spec.md
 Gravity consists of 4 parts:
 
 - An Ethereum contract called Gravity.sol
-- The Gravity Cosmos module
+- The Gravity Cosmos module of Gaia
 - The orchestrator program which is run by Cosmos validators alongside the Gravity module
 - A market of relayers, who compete to submit transactions to Ethereum
 
