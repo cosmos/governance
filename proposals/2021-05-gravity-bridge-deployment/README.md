@@ -14,7 +14,7 @@ Gravity as an Ethereum-Cosmos bridge is designed for the Cosmos Hub to pull as m
 
 ## Cosmos, Ethereum, and Gravity
 
-Gravity is a secure and highly efficient bridge between EVM and Cosmos SDK-based blockchains. At a high-level, Gravity enables token transfers from Ethereum to the Cosmos Hub and back again, by locking up tokens on the Ethereum side and minting equivalent tokens on the Cosmos side.
+Gravity is a secure and highly efficient bridge between EVM and Cosmos SDK-based blockchains. At a high-level, Gravity enables token transfers from Ethereum to the Cosmos Hub and back again by locking tokens on the Ethereum side and minting equivalent tokens on the Cosmos side.
 
 Gravity is completely non-custodial. Control of the bridge mirrors the active validator set on the Cosmos SDK-based chain, and validator stake on Cosmos can be slashed for misbehavior involving the Gravity bridge.
 
@@ -71,15 +71,15 @@ The Gravity module governs and coordinates the bridge. Generating messages for t
 
 ### Orchestrator
 
-The Gravity bridge orchestrator performs all the external tasks the Gravity bridge requires for validators. The submission of signatures and the submission of Ethereum events.
+The Gravity bridge orchestrator performs all the external tasks the Gravity bridge requires for validators, which includes submission of signatures and submission of Ethereum events.
 
-While the Gravity module concerns itself with the correctness and consensus state of the bridge the Orchestrator locates or creates the correct inputs.
+While the Gravity module concerns itself with the correctness and consensus state of the bridge, the Orchestrator is responsible for locating and creating the correct inputs.
 
 ### Market of Relayers
 
 Relayers are an unpermissioned role that observes the Cosmos chain for messages ready to be submitted to Ethereum.
 
-The relayer then packages the validators signatures into an Ethereum transaction and submits that transaction to the Ethereum blockchain. All rewards in the Gravity bridge design are paid to msg.sender on Ethereum. This means that relayers do not require any balance on the Cosmos side and can immediately liquidate their earnings into ETH to relay future messages.
+The relayer then packages the validators signatures into an Ethereum transaction and submits that transaction to the Ethereum blockchain. All rewards in the Gravity bridge design are paid to msg.sender on Ethereum. This means that relayers do not require any balance on the Cosmos side and can immediately liquidate their earnings into ETH while continuing to relay newer messages.
 
 ## Security assumptions
 
