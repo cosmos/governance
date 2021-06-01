@@ -153,13 +153,13 @@ Soliciting feedback from dozens of Cosmos hub validators and over 100 test net p
 
 ### Is the Gravity bridge secure?
 
-The Gravity bridge is undergoing an audit by Informal Systems. It will then be up to ATOM holders to interpret the results of the code audit and weigh implementation risks in another governance proposal before deployment. Fundamentally, the design of the Gravity Bridge means that its security is directly represented by the security of the validator set on Cosmos Hub.
+The Gravity bridge is undergoing an audit by Informal Systems. It will then be up to ATOM holders to interpret the results of the code audit and weigh implementation risks in another governance proposal before deployment. Fundamentally, the design of the Gravity Bridge means that its security is directly represented by the security of the validator set on Cosmos Hub. On the Cosmos side, the Gravity Bridge security design adheres to the Cosmos network's ideal of safety over liveness assured by 2/3+ validator voting power, but without sacrificing safety or liveness due to issues that may rarely arise with Ethereum.
 
 ### Are slashing conditions a problem for validators?
 
 Gravity Bridge slashing conditions closely mirror the slashing conditions which validators are already subject to.
 
-- Uptime: Validators on Cosmos currently must keep their validator software running at all times, or risk slashing. Gravity adds an additional binary which must be run, which is low in difficulty.
+- Uptime: Validators on Cosmos currently must keep their validator software running at all times, or risk slashing. Gravity adds an additional binary which must be run, which is low in difficulty, resource usage, and operational requirements.
 
 - Equivocation: Validators on Cosmos are subject to slashing if they sign two blocks at the same height. It is possible for this to happen through accidental misconfiguration. Gravity adds an additional item which must not be signed, which are the fraudulent bridge transactions that never existed on Cosmos. It is not possible for this to happen by accident, so this slashing condition is much less of a risk than the Hub’s existing slashing conditions.
 
