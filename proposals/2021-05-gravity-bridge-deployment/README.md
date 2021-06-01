@@ -10,7 +10,7 @@ By voting YES to this proposal, you will signal that you approve of having the G
 
 ## Vision
 
-Gravity as an Ethereum-Cosmos bridge is designed for the Cosmos Hub, to pull as much value as possible into the orbits of Cosmos via a direct and decentralized bridge. Gravity will be able to bring ERC20 assets from Ethereum into Cosmos, as well as Cosmos assets to Ethereum ERC20 representations. ATOM, and any other asset in the Cosmos ecosystem, will be able to trade on Uniswap and other Ethereum AMMs, and interact with Ethereum DeFi like any ERC20 token. This will bring a tremendous amount of liquidity and utility to these assets.
+Gravity as an Ethereum-Cosmos bridge is designed for the Cosmos Hub to pull as much value as possible into the orbits of Cosmos via a direct and decentralized bridge. Gravity will be able to bring ERC20 assets from Ethereum into Cosmos, as well as Cosmos assets to Ethereum ERC20 representations. ATOM, and any other asset in the Cosmos ecosystem, will be able to trade on Uniswap and other Ethereum AMMs, and interact with Ethereum DeFi like any ERC20 token. As well, Cosmos Hub users can use the Gravity DEX to trade between ERC20 assets and tokens that are transferred using IBC. This will bring a tremendous amount of liquidity and utility to these multi-chain assets.
 
 ## Cosmos, Ethereum, and Gravity
 
