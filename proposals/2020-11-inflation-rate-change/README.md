@@ -1,5 +1,6 @@
 ﻿# Quick Summary of The Issue
-There are 6 main variables that control the maximum, minimum, & change of the atom inflation rate for the cosmos hub. These variables can be found inside the mint module via the attached hyperlink: https://github.com/gavinly/CosmosParametersWiki/blob/master/Mint.md
+There are 6 main variables that control the maximum, minimum, & change of the atom inflation rate for the cosmos hub. These variables can be found inside the mint module via the attached hyperlink: https://github.com/cosmos/governance/blob/master/params-change/Mint.md
+
 In this proposal we will be looking at adjusting the inflation rate change variable.
 
 When the cosmos hub inflation dynamics were originally designed, the goal was for the hub to go from the minimum rate (7%) to the maximum rate (20%) in roughly one year after a shock unbond had occurred. Thus, for the variable “inflation rate change” a value of .13 was chosen. Unfortunately, in practice the variable didn’t work as intended due to the fact the change in the inflation rate for the hub is proportional to the Target Bonded / current bonded ratio.
