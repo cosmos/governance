@@ -3,7 +3,9 @@ There are 6 main variables that control the maximum, minimum, & change of the at
 In this proposal we will be looking at adjusting the inflation rate change variable.
 
 When the cosmos hub inflation dynamics were originally designed, the goal was for the hub to go from the minimum rate (7%) to the maximum rate (20%) in roughly one year after a shock unbond had occurred. Thus, for the variable “inflation rate change” a value of .13 was chosen. Unfortunately, in practice the variable didn’t work as intended due to the fact the change in the inflation rate for the hub is proportional to the Target Bonded / current bonded ratio.
-How to select “inflation rate change” AKA Maximum Slope of the inflation curve
+
+## How to select “inflation rate change” AKA Maximum Slope of the inflation curve
+
 
 The purpose of changing the network's inflation rate is to protect it from unbonding shocks that threaten to compromise the security of the network. When the bonded ratio gets below the goal bonded ratio (currently at 66% on the hub) the inflation rate & effective yield of staked atoms goes up in order to incentivize holders to bond new ATOM’s and thus provide additional security to the network. Inversely, if we regain a desired amount of staked tokens, the yield will drop and thus decrease effective yields for all delegators. Ideally the inflation rate starts changing fast, optimizing network security over monetary hardness. To figure out what an appropriate selection for the cosmos hub would be, I created excel sheets to run through all the different scenarios to find what value made the inflation rate react in an optimal manner. I came to the conclusion that 1 (AKA 100% per year is the maximum slope of the inflation curve) gave the most ideal characteristics, with the added benefit of simplifying the equation. I’ll give some examples on how it would react. Since unbonding is what we are protecting against, I will look at flash unbonds while the inflation rate is at the floor due to that being the #1 time of vulnerability.
 
