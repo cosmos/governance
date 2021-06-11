@@ -32,7 +32,9 @@ Cosmos Hub validators will run three key software components of the Gravity brid
 
 To send transactions from Cosmos to Ethereum, the Gravity Bridge module of a validator's Gaia instance first packages the transaction data, and makes it available on an endpoint. The Orchestrator then signs this data with the validator’s Ethereum key, and submits it as a message to the Ethereum network. The Ethereum signature of each Cosmos validator needs to be assembled and submitted to the Ethereum chain by relayers.
 
-Validators may be slashed if they fail to submit Ethereum signatures within 6000 Cosmos Hub blocks (about eight hours) of their creation.
+Validators may be slashed if they fail to submit Ethereum signatures within 10,000 blocks (about twelve to fourteen hours) of their creation.
+
+The current liveness rules require a validator to sign at least 500 of the last 10,000 blocks (about twelve to fourteen hours)
 
 Validators may also be slashed if they sign a message with their Ethereum key that was not created by the Gravity bridge module.
 
@@ -169,6 +171,6 @@ The concept of a "peg zone" has been around in Cosmos for a while. This is a sep
 
 1. The most likely type of peg zone is what will result if this proposal does not pass. There are at least 5 Cosmos SDK chains who will be using the Gravity Bridge module to connect to Ethereum. There will be no official way to bridge Ethereum assets into the Cosmos ecosystem. Instead there will be many dueling representations of Ethereum assets. It goes without saying that this will confuse Cosmos users. If one of these peg zones gains the upper hand and becomes dominant, the Cosmos Hub will miss out on all the transaction fees that it generates.
 
-2. It would also be possible to establish an official peg zone, and airdrop its staking token 1:1 to current Atom holders. This would at least allow the Cosmos Hub stakeholders to keep the economic benefit of activity on the peg zone. However, this is capital inefficient. A dollar staked  on this peg zone would not be staked on the hub and vice versa. Splitting stake between these two important chains would make both weaker. Cosmos users will also need to choose whether to put value into Atom or put value into the peg zone token, resulting in less value in Atom.
+2. It would also be possible to establish an official peg zone, and airdrop its staking token 1:1 to current Atom holders. This would at least allow the Cosmos Hub stakeholders to keep the economic benefit of activity on the peg zone. However, this is capital inefficient. A dollar staked on this peg zone would not be staked on the hub and vice versa. Splitting stake between these two important chains would make both weaker. Cosmos users will also need to choose whether to put value into Atom or put value into the peg zone token, resulting in less value in Atom.
 
 3. Shared security has been talked about for a long time in Cosmos, but it is not yet in production. Establishing a peg zone with shared security with the Cosmos Hub would allow the same validator set to validate both chains, and put the same Atoms at stake to secure each of them. This would avoid the issues of scenarios 1 and 2 above. However, we cannot afford to wait. Many other PoS blockchains already have Ethereum bridges and Cosmos needs to continue innovating to stay relevant.
