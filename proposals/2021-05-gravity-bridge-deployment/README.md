@@ -42,7 +42,7 @@ Gravity bridge has no other slashing conditions.
 
 ### Ethereum to Cosmos:
 
-The Orchestrator also monitors the Ethereum chain, submitting events that occur on Ethereum to Cosmos as messages. When more than 66% of the active Cosmos voting power has sent a message observing the same Ethereum event, the Gravity module will take action.
+The Orchestrator also monitors the Ethereum chain, submitting events that occur on Ethereum to Cosmos as messages. When more than 2/3 of the active voting power has sent a message observing the same Ethereum event, the Gravity module will take action.
 
 This oracle action will not be incentivized, nor will it be enforced with slashing. If validators making up more than 33% of the staked tokens do not participate in the oracle, new deposits and withdrawals will not be processed until those validators resume their oracle obligations.
 
