@@ -174,3 +174,13 @@ The concept of a "peg zone" has been around in Cosmos for a while. This is a sep
 2. It would also be possible to establish an official peg zone, and airdrop its staking token 1:1 to current Atom holders. This would at least allow the Cosmos Hub stakeholders to keep the economic benefit of activity on the peg zone. However, this is capital inefficient. A dollar staked on this peg zone would not be staked on the hub and vice versa. Splitting stake between these two important chains would make both weaker. Cosmos users will also need to choose whether to put value into Atom or put value into the peg zone token, resulting in less value in Atom.
 
 3. Shared security has been talked about for a long time in Cosmos, but it is not yet in production. Establishing a peg zone with shared security with the Cosmos Hub would allow the same validator set to validate both chains, and put the same Atoms at stake to secure each of them. This would avoid the issues of scenarios 1 and 2 above. However, we cannot afford to wait. Many other PoS blockchains already have Ethereum bridges and Cosmos needs to continue innovating to stay relevant.
+
+This is easier to both design and debug, and is ideal for high-value chains like the Hub.
+
+### Why not use IBC to create a bridge to Ethereum?
+
+Ethereum as it currently exists (ETH1) fundamentally can not implement IBC. It may be possible in the future to create an IBC bridge with ETH2.
+
+Implementing IBC for ETH2 require significant development effort and coordination with the Ethereum team as well as the completion and deployment of ETH2, which is on an uncertain timeline.
+
+Gravity bridge is a design that can be deployed in the forseeable future and will continue to function so long as ETH1 compatibility is maintained.
