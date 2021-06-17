@@ -22,10 +22,10 @@ The voting period is currently a fixed 14-day period. During the voting period, 
 
 ## What do the voting options mean?
 
-1. **abstain:** indicates that the voter is impartial to the outcome of the proposal.
-2. **yes:** indicates approval of the proposal in its current form.
-3. **no:** indicates disapproval of the proposal in its current form.
-4. **no-with-veto:** indicates stronger opposition to the proposal than simply voting 'No'. If the number of 'NoWithVeto' votes is greater than a third of total votes excluding abstentations, the proposal is rejected and the deposits are [burned](#burned-deposits).
+1. **Abstain:** indicates that the voter is impartial to the outcome of the proposal.
+2. **Yes:** indicates approval of the proposal in its current form.
+3. **No:** indicates disapproval of the proposal in its current form.
+4. **NoWithVeto:** indicates stronger opposition to the proposal than simply voting 'No'. If the number of 'NoWithVeto' votes is greater than a third of total votes excluding abstentations, the proposal is rejected and the deposits are [burned](#burned-deposits).
 
 As accepted by the community in [Proposal 6](https://ipfs.io/ipfs/QmRtR7qkeaZCpCzHDwHgJeJAZdTrbmHLxFDYXhw7RoF1pp), voters are expected to vote no-with-veto if a proposal leads to undesireable outcomes for the community. It states “if a proposal seems to be spam or is deemed to have caused a negative externality to Cosmos community, voters should vote _NoWithVeto_.” 
 
