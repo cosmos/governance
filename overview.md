@@ -20,6 +20,17 @@ Deposits are burned when proposals:
 ### 2. Voting Period
 The voting period is currently a fixed 14-day period. During the voting period, participants may select a vote of either 'yes', 'no', 'abstain', or 'no-with-veto'. Voters may change their vote at any time before the voting period ends.
 
+## What do the voting options mean?
+
+1. **abstain:** indicates that the voter is impartial to the outcome of the proposal.
+2. **yes:** indicates approval of the proposal in its current form.
+3. **no:** indicates disapproval of the proposal in its current form.
+4. **no-with-veto:** indicates stronger opposition to the proposal than simply voting 'no'. If the number of 'no-with-veto' votes is greater than a third of total votes excluding abstentations, the proposal is rejected and the deposits are [burned](#burned-deposits).
+
+As accepted by the community in [Proposal 6](https://ipfs.io/ipfs/QmRtR7qkeaZCpCzHDwHgJeJAZdTrbmHLxFDYXhw7RoF1pp), voters are expected to vote no-with-veto if a proposal leads to undesireable outcomes for the community. It states “if a proposal seems to be spam or is deemed to have caused a negative externality to Cosmos community, voters should vote _NoWithVeto_.” 
+
+Voting 'no-with-veto' provides a mechanism for a minority group representing a _third_ of the participating voting power to reject a proposal that would otherwise pass. This makes explicit an aspect of the consensus protocol: it works as long as only up to [a third of nodes fail](https://docs.tendermint.com/master/introduction/what-is-tendermint.html). In other words, greater than a third of validators are always in a position to cause a proposal to fail outside the formalized governance process and the network's norms, such as by censoring transactions. The purpose of internalizing this aspect of the consensus protocol into the governance process is to discourage validators from relying on collusion and censorship tactics to influence voting outcomes.
+
 ## What determines whether or not a governance proposal passes?
 There are four criteria:
 
