@@ -51,12 +51,23 @@ Once on-chain, most people will rely upon network explorers to interpret this in
 
 
 ## Sending the transaction that submits your governance proposal
-This is the command format for using gaiad (the command-line interface) to submit your proposal on-chain:
-```gaiad tx gov submit-proposal <proposal type> proposal.json --from [key/address]```
+For information on how to use gaiad (the command line interface) to submit an on-chain proposal through the governance module, please refer to the [gaiad resource](https://hub.cosmos.network/main/resources/gaiad.html) for the Cosmos Hub documentation.
 
-If `<proposal type>` is left blank, the type will be a Text proposal. Otherwise,
-it can be set to `param-change` or `community-pool-spend`. Use `--help` to get
-more info from the tool.
+### Walkthrough example
+
+This is the command format for using gaiad (the command-line interface) to submit your proposal on-chain:
+
+```
+gaiad tx gov submit-proposal \
+  --title=<title> \
+  --description=<description> \
+  --type="Text" \
+  --deposit="1000000uatom" \
+  --from=<name> \
+  --chain-id=<chain_id>
+```
+
+If `<proposal type>` is left blank, the type will be a Text proposal. Otherwise, it can be set to `param-change` or `community-pool-spend`. Use `--help` to get more info from the tool.
 
 For instance, this is the complete command that I could use to submit a **testnet** parameter-change proposal right now:
 `gaiad tx gov submit-proposal param-change param.json --from gavin --chain-id gaia-13007 --node 45.77.218.219:26657`
@@ -75,7 +86,7 @@ This is the complete command that I could use to submit a **mainnet** parameter-
    - the network still accepts zero fees, but many nodes will not transmit your transaction to the network without a minimum fee
    - many nodes (including the Figment node) use a minimum fee to disincentivize transaction spamming
    - 7500uatom is equal to 0.0075 ATOM
-6. `--chain-id cosmoshub-3` is Cosmos Hub 3
+6. `--chain-id cosmoshub-3` is Cosmos Hub 3. For current and past chain-id's, please look at the [cosmos/mainnet resource](https://github.com/cosmos/mainnet)
    - the testnet chain ID is [gaia-13007](https://hubble.figment.network/cosmos/chains/gaia-13007)
 7. `--node cosmos-node-1.figment.network:26657` is using Figment Networks' node to send the transaction to the Cosmos Hub 3 network
 
