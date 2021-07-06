@@ -51,20 +51,31 @@ Once on-chain, most people will rely upon network explorers to interpret this in
 
 
 ## Sending the transaction that submits your governance proposal
-This is the command format for using gaiacli (the command-line interface) to submit your proposal on-chain:
-```gaiacli tx gov submit-proposal <proposal type> proposal.json --from [key/address]```
+For information on how to use gaiad (the command line interface) to submit an on-chain proposal through the governance module, please refer to the [gaiad resource](https://hub.cosmos.network/main/resources/gaiad.html) for the Cosmos Hub documentation.
 
-If `<proposal type>` is left blank, the type will be a Text proposal. Otherwise,
-it can be set to `param-change` or `community-pool-spend`. Use `--help` to get
-more info from the tool.
+### Walkthrough example
+
+This is the command format for using gaiad (the command-line interface) to submit your proposal on-chain:
+
+```
+gaiad tx gov submit-proposal \
+  --title=<title> \
+  --description=<description> \
+  --type="Text" \
+  --deposit="1000000uatom" \
+  --from=<name> \
+  --chain-id=<chain_id>
+```
+
+If `<proposal type>` is left blank, the type will be a Text proposal. Otherwise, it can be set to `param-change` or `community-pool-spend`. Use `--help` to get more info from the tool.
 
 For instance, this is the complete command that I could use to submit a **testnet** parameter-change proposal right now:
-`gaiacli tx gov submit-proposal param-change param.json --from gavin --chain-id gaia-13007 --node 45.77.218.219:26657`
+`gaiad tx gov submit-proposal param-change param.json --from gavin --chain-id gaia-13007 --node 45.77.218.219:26657`
 
 This is the complete command that I could use to submit a **mainnet** parameter-change proposal right now:
-`gaiacli tx gov submit-proposal param-change param.json --from gavin --gas 500000 --fees 7500uatom --chain-id cosmoshub-3 --node cosmos-node-1.figment.network:26657`
+`gaiad tx gov submit-proposal param-change param.json --from gavin --gas 500000 --fees 7500uatom --chain-id cosmoshub-3 --node cosmos-node-1.figment.network:26657`
 
-1. `gaiacli` is the command-line interface client that is used to send transactions and query the Cosmos Hub
+1. `gaiad` is the command-line interface client that is used to send transactions and query the Cosmos Hub
 2. `tx gov submit-proposal param-change` indicates that the transaction is submitting a parameter-change proposal
 3. `--from gavin` is the account key that pays the transaction fee and deposit amount
 4. `--gas 500000` is the maximum amount of gas permitted to be used to process the transaction
@@ -75,14 +86,14 @@ This is the complete command that I could use to submit a **mainnet** parameter-
    - the network still accepts zero fees, but many nodes will not transmit your transaction to the network without a minimum fee
    - many nodes (including the Figment node) use a minimum fee to disincentivize transaction spamming
    - 7500uatom is equal to 0.0075 ATOM
-6. `--chain-id cosmoshub-3` is Cosmos Hub 3
-   - the testnet chain ID is [gaia-13007](https://hubble.figment.network/cosmos/chains/gaia-13007)
+6. `--chain-id cosmoshub-3` is Cosmos Hub 3. For current and past chain-id's, please look at the [cosmos/mainnet resource](https://github.com/cosmos/mainnet)
+   - the testnet chain ID is [gaia-13007](https://hubble.figment.network/cosmos/chains/gaia-13007). For current and past testnet information, please look at the [testnet repository](https://github.com/cosmos/testnets)
 7. `--node cosmos-node-1.figment.network:26657` is using Figment Networks' node to send the transaction to the Cosmos Hub 3 network
 
 **Note**: be careful what you use for `--fees`. A mistake here could result in spending hundreds or thousands of ATOMs accidentally, which cannot be recovered.
 
 ### Verifying your transaction
-After posting your transaction, your command line interface (gaiacli) will provide you with the transaction's hash, which you can either query using gaiacli or by searching the hash using [Hubble](https://hubble.figment.network/cosmos/chains/cosmoshub-3/transactions/B8E2662DE82413F03919712B18F7B23AF00B50DAEB499DAD8C436514640EFC79). The hash should look something like this: `B8E2662DE82413F03919712B18F7B23AF00B50DAEB499DAD8C436514640EFC79`
+After posting your transaction, your command line interface (gaiad) will provide you with the transaction's hash, which you can either query using gaiad or by searching the hash using [Hubble](https://hubble.figment.network/cosmos/chains/cosmoshub-3/transactions/B8E2662DE82413F03919712B18F7B23AF00B50DAEB499DAD8C436514640EFC79). The hash should look something like this: `B8E2662DE82413F03919712B18F7B23AF00B50DAEB499DAD8C436514640EFC79`
 
 You can see whether or not your transaction was successful with Hubble:
 ![Verify tx with Hubble](/community-pool-spend/verify%20tx.png?raw=true)

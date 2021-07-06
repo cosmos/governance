@@ -24,7 +24,7 @@ The cosmoshub-1 chain launched with `sendenabled` set to `false` and with [`with
 
 # Verify Parameter Values
 ## Genesis (aka launch) Parameters
-This is useful if you don't have `gaiacli` installed and don't have a reason to believe that the parameter has changed since the chain launched.
+This is useful if you don't have `gaiad` installed and don't have a reason to believe that the parameter has changed since the chain launched.
 
 Each parameter may be verified in the chain's genesis file, [found here](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json). These are the parameters that the latest Cosmos Hub chain launched with, and will remain so, unless a governance proposal changes them. I've outlined those original values in the [Technical Specifications section](#technical-specifications).
 
@@ -33,8 +33,8 @@ The genesis file is text-based and large. The genesis parameter naming scheme is
 For example, if I want to search for `sendenabled`, I'll search the [genesis file](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json) for `send_enabled`.
 
 ## Current Parameters
-You may verify the current parameter values (in case they were modified via governance proposal post-launch) with the [gaiacli command-line application](/gaiacli). Here are the commands for each:
-1. `sendenabled` - `gaiacli q ..` --> **to do** <--
+You may verify the current parameter values (in case they were modified via governance proposal post-launch) with the [gaiad command-line application](/gaiad). Here are the commands for each:
+1. `sendenabled` - `gaiad q ..` --> **to do** <--
 
 # Technical Specifications
 

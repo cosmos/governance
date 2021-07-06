@@ -17,9 +17,9 @@ In this simple example ([below](#testnet-example)), a network explorer will list
 
 Not all explorers will show the proposed parameter changes that are coded into the proposal, so ensure that you verify that the description aligns with what the governance proposal is programmed to enact. If the description says that a certain parameter will be increased, it should also be programmed to do that, but it's possible that that's not the case (accidentally or otherwise).
 
-You can query the proposal details with the gaiacli command-line interface using this command: `gaiacli q gov proposal 30 --chain-id gaia-13007 --node 45.77.218.219:26657`
+You can query the proposal details with the gaiad command-line interface using this command: `gaiad q gov proposal 30 --chain-id gaia-13007 --node 45.77.218.219:26657`
 
-You use can also use [Hubble](https://hubble.figment.network/cosmos/chains/gaia-13007/transactions/B5AB56719ADB7117445F6E191E1FCE775135832AFE6C9922B8703AADBC4B13F3?format=json) or gaiacli to query the transaction that I sent to create a similar proposal on-chain in full detail: `gaiacli q tx B5AB56719ADB7117445F6E191E1FCE775135832AFE6C9922B8703AADBC4B13F3 --chain-id gaia-13007 --node 45.77.218.219:26657`
+You use can also use [Hubble](https://hubble.figment.network/cosmos/chains/gaia-13007/transactions/B5AB56719ADB7117445F6E191E1FCE775135832AFE6C9922B8703AADBC4B13F3?format=json) or gaiad to query the transaction that I sent to create a similar proposal on-chain in full detail: `gaiad q tx B5AB56719ADB7117445F6E191E1FCE775135832AFE6C9922B8703AADBC4B13F3 --chain-id gaia-13007 --node 45.77.218.219:26657`
 
 #### Testnet Example: changing a parameter from the `gov` module
 ```

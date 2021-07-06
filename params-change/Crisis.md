@@ -24,7 +24,7 @@ Only [registered invariants](https://github.com/cosmos/cosmos-sdk/blob/master/x/
 
 # Verify Parameter Values
 ## Genesis (aka launch) Parameters
-This is useful if you don't have `gaiacli` installed and don't have a reason to believe that the parameter has changed since the chain launched.
+This is useful if you don't have `gaiad` installed and don't have a reason to believe that the parameter has changed since the chain launched.
 
 Each parameter may be verified in the chain's genesis file, [found here](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json). These are the parameters that the latest Cosmos Hub chain launched with, and will remain so, unless a governance proposal changes them. I've outlined those original values in the [Technical Specifications section](#technical-specifications).
 
@@ -33,9 +33,9 @@ The genesis file is text-based and large. The genesis parameter naming scheme is
 For example, if I want to search for `ConstantFee`, I'll search the [genesis file](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json) for `constant_fee`.
 
 ## Current Parameters
-You may verify the current `ConstantFee` parameter value (in case they were modified via governance proposal post-launch) with the [gaiacli command-line application](/gaiacli). Here is the command:
+You may verify the current `ConstantFee` parameter value (in case they were modified via governance proposal post-launch) with the [gaiad command-line application](/gaiad). Here is the command:
 
- `gaiacli q ..` --> **to do** <--
+ `gaiad q ..` --> **to do** <--
 
 # Technical Specifications
 
