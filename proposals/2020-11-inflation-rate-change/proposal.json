@@ -1,17 +1,12 @@
 {
-  "title": "Adjust InflationRateChange to 1",
-  "description": "When the number of bonded atoms falls below the target ratio (ie currently 67% of total supply), the inflation rate is increased to incentivize more bonding. The inflation changes at a rate parameterized by the InflationRateChange, currently set at 0.13. It seems this parameter is mis-specified, since this generally leads to slow response to shock unbonding - eg. if the bonded atoms fall to only 34% of the supply, will take 2 years to get from the minimum 7% inflation to the maximum 20% rate. Here we propose to increase this parameter to 1, which enables incentives to adapt much more quickly to shock unbonds. More details were drafted on <GITHUB> and are available on <IPFS>",
+  "title": "Inflation Rate Change Correction",
+  "description": "The purpose of changing the network’s inflation rate is to protect it from unbonding shocks that threaten to compromise the security of the network. When the bonded ratio gets below the goal bonded ratio (currently at 66% on the hub) the inflation rate & effective yield of staked atoms goes up in order to incentivize holders to bond new ATOM’s, providing additional security to the network. Inversely, if we regain a desired amount of staked tokens, the yield will drop, decreasing effective yields for all delegators. Ideally the inflation rate starts changing fast, optimizing network security over monetary hardness. To figure out what an appropriate selection for the cosmos hub would be, I created excel sheets to run through all the different scenarios to find what value made the inflation rate react in an optimal manner. I came to the conclusion that 1 (AKA 100% per year is the maximum slope of the inflation curve) gave the most ideal characteristics, with the added benefit of simplifying the equation. I’ll give some examples on how it would react. Since unbonding is what we are protecting against, I will look at flash unbonds while the inflation rate is at the floor due to that being the #1 time of vulnerability.",
   "changes": [
     {
       "subspace": "mint",
-      "key":"InflationRateChange",
-      "value": "1"
+      "key": "InflationRateChange",
+      "value": 1.0
     }
   ],
-  "deposit": [
-    {
-      "denom": "uatom",
-      "amount": "1000000"
-    }
-  ]
+  "deposit": "64000000uatom"
 }
