@@ -1,4 +1,14 @@
 # Cosmos Hub - Index of Governable Parameters
+
+<h2 v-for="(value, subspace) in $themeConfig.currentParameters">
+<code>{{ subspace }}</code> module
+   <ul>
+      <li v-for="(v,k) in value" >
+         <code>{{ k }}</code> : {{ v }}
+      </li>
+   </ul>
+</h2>
+
 ## The `auth` Module
 The [`auth` module](params-change/Auth.md) is responsible for authenticating accounts and transactions.
 1. [`MaxMemoCharacters`](params-change/Auth.md#1-maxmemocharacters) - 512
