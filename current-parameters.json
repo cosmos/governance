@@ -1,0 +1,66 @@
+{
+    "auth": {
+      "max_memo_characters": "512",
+      "sig_verify_cost_ed25519": "590",
+      "sig_verify_cost_secp256k1": "1000",
+      "tx_sig_limit": "7",
+      "tx_size_cost_per_byte": "10"
+    },
+    "bank": {
+      "default_send_enabled": true,
+      "send_enabled": []
+    },
+    "crisis": {
+      "constant_fee": {
+        "amount": "1333000000",
+        "denom": "uatom"
+      }
+    },
+    "distribution": {
+      "base_proposer_reward": "0.010000000000000000",
+      "bonus_proposer_reward": "0.040000000000000000",
+      "community_tax": "0.020000000000000000",
+      "withdraw_addr_enabled": true
+    },
+    "gov": {
+      "deposit_params": {
+        "max_deposit_period": "1209600s",
+        "min_deposit": [
+          {
+            "amount": "512000000",
+            "denom": "uatom"
+          }
+        ]
+      },
+      "tally_params": {
+        "quorum": "0.400000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto_threshold": "0.334000000000000000"
+      },
+      "voting_params": {
+        "voting_period": "1209600s"
+      }
+    },
+    "mint": {
+      "blocks_per_year": "4360000",
+      "goal_bonded": "0.670000000000000000",
+      "inflation_max": "0.200000000000000000",
+      "inflation_min": "0.070000000000000000",
+      "inflation_rate_change": "0.130000000000000000",
+      "mint_denom": "uatom"
+    },
+    "slashing": {
+      "downtime_jail_duration": "600s",
+      "min_signed_per_window": "0.050000000000000000",
+      "signed_blocks_window": "10000",
+      "slash_fraction_double_sign": "0.050000000000000000",
+      "slash_fraction_downtime": "0.000100000000000000"
+    },
+    "staking": {
+      "bond_denom": "uatom",
+      "historical_entries": 10000,
+      "max_entries": 7,
+      "max_validators": 125,
+      "unbonding_time": "1814400s"
+    }
+  }
