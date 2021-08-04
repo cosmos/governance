@@ -1,66 +1,111 @@
 {
-    "auth": {
-      "max_memo_characters": "512",
-      "sig_verify_cost_ed25519": "590",
-      "sig_verify_cost_secp256k1": "1000",
-      "tx_sig_limit": "7",
-      "tx_size_cost_per_byte": "10"
-    },
-    "bank": {
-      "default_send_enabled": true,
-      "send_enabled": []
-    },
-    "crisis": {
-      "constant_fee": {
-        "amount": "1333000000",
-        "denom": "uatom"
+  "auth": {
+      "MaxMemoCharacters": "512",
+      "SigVerifyCostED25519": "590",
+      "SigVerifyCostSecp256k1": "1000",
+      "TxSigLimit": "7",
+      "TxSizeCostPerByte": "10"
+  },
+  "bank": {
+      "DefaultSendEnabled": true,
+      "SendEnabled": []
+  },
+  "baseapp": {
+      "BlockParams": {
+          "max_bytes": "200000",
+          "max_gas": "40000000"
+      },
+      "EvidenceParams": {
+          "max_age_duration": "172800000000000",
+          "max_age_num_blocks": "1000000",
+          "max_bytes": "50000"
+      },
+      "ValidatorParams": {
+          "pub_key_types": [
+              "ed25519"
+          ]
       }
-    },
-    "distribution": {
-      "base_proposer_reward": "0.010000000000000000",
-      "bonus_proposer_reward": "0.040000000000000000",
-      "community_tax": "0.020000000000000000",
-      "withdraw_addr_enabled": true
-    },
-    "gov": {
-      "deposit_params": {
-        "max_deposit_period": "1209600s",
-        "min_deposit": [
+  },
+  "crisis": {
+      "ConstantFee": {
+          "amount": "1333000000",
+          "denom": "uatom"
+      }
+  },
+  "distribution": {
+      "baseproposerreward": "0.010000000000000000",
+      "bonusproposerreward": "0.040000000000000000",
+      "communitytax": "0.020000000000000000",
+      "withdrawaddrenabled": true
+  },
+  "gov": {
+      "depositparams": {
+          "max_deposit_period": "1209600000000000",
+          "min_deposit": [
+              {
+                  "amount": "64000000",
+                  "denom": "uatom"
+              }
+          ]
+      },
+      "tallyparams": {
+          "quorum": "0.400000000000000000",
+          "threshold": "0.500000000000000000",
+          "veto_threshold": "0.334000000000000000"
+      },
+      "votingparams": {
+          "voting_period": "1209600000000000"
+      }
+  },
+  "liquidity": {
+      "CircuitBreakerEnabled": false,
+      "InitPoolCoinMintAmount": "1000000",
+      "MaxOrderAmountRatio": "0.100000000000000000",
+      "MaxReserveCoinAmount": "0",
+      "MinInitDepositAmount": "1000000",
+      "PoolCreationFee": [
           {
-            "amount": "512000000",
-            "denom": "uatom"
+              "amount": "40000000",
+              "denom": "uatom"
           }
-        ]
-      },
-      "tally_params": {
-        "quorum": "0.400000000000000000",
-        "threshold": "0.500000000000000000",
-        "veto_threshold": "0.334000000000000000"
-      },
-      "voting_params": {
-        "voting_period": "1209600s"
-      }
-    },
-    "mint": {
-      "blocks_per_year": "4360000",
-      "goal_bonded": "0.670000000000000000",
-      "inflation_max": "0.200000000000000000",
-      "inflation_min": "0.070000000000000000",
-      "inflation_rate_change": "0.130000000000000000",
-      "mint_denom": "uatom"
-    },
-    "slashing": {
-      "downtime_jail_duration": "600s",
-      "min_signed_per_window": "0.050000000000000000",
-      "signed_blocks_window": "10000",
-      "slash_fraction_double_sign": "0.050000000000000000",
-      "slash_fraction_downtime": "0.000100000000000000"
-    },
-    "staking": {
-      "bond_denom": "uatom",
-      "historical_entries": 10000,
-      "max_entries": 7,
-      "max_validators": 125,
-      "unbonding_time": "1814400s"
-    }
+      ],
+      "PoolTypes": [
+          {
+              "description": "Standard liquidity pool with pool price function X/Y, ESPM constraint, and two kinds of reserve coins",
+              "id": 1,
+              "max_reserve_coin_num": 2,
+              "min_reserve_coin_num": 2,
+              "name": "StandardLiquidityPool"
+          }
+      ],
+      "SwapFeeRate": "0.003000000000000000",
+      "UnitBatchHeight": 1,
+      "WithdrawFeeRate": "0.000000000000000000"
+  },
+  "mint": {
+      "BlocksPerYear": "4360000",
+      "GoalBonded": "0.670000000000000000",
+      "InflationMax": "0.200000000000000000",
+      "InflationMin": "0.070000000000000000",
+      "InflationRateChange": "1.000000000000000000",
+      "MintDenom": "uatom"
+  },
+  "slashing": {
+      "DowntimeJailDuration": "600000000000",
+      "MinSignedPerWindow": "0.050000000000000000",
+      "SignedBlocksWindow": "10000",
+      "SlashFractionDoubleSign": "0.050000000000000000",
+      "SlashFractionDowntime": "0.000100000000000000"
+  },
+  "staking": {
+      "BondDenom": "uatom",
+      "HistoricalEntries": 10000,
+      "MaxEntries": 7,
+      "MaxValidators": 125,
+      "UnbondingTime": "1814400000000000"
+  },
+  "transfer": {
+      "ReceiveEnabled": true,
+      "SendEnabled": true
   }
+}
