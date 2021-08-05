@@ -18,7 +18,7 @@ You should also review details specific to Parameter Change proposals:
 1. [Best practices for a Parameter Change Proposal](best_practices.md)
 1. [How to format Parameter Change Proposals](formatting.md)
 
-# Params Wiki
+## Params Wiki
 
 The complete parameters of the Cosmos Hub are split up into different modules.
 Each module has its own set of parameters. Any of them can be updated with a
@@ -62,7 +62,7 @@ If a paramater-change proposal is successful, the change takes effect immediatel
 Running a full node can be difficult for those not technically-inclined, so you may choose to use a third-party's full node. In this case, the primary security risk is that of censorship: it's the single place where you have a single gateway to the network, and any messages submitted through an untrusted node could be censored.
 - http://51.79.82.228:26657 ([Figment Networks](https://figment.network/networks/cosmos/))
 
-# Contributors
+## Contributors
 This documentation was created by Gavin Birch ([Figment Networks](https://figment.network)). Its development was supported by community funding that was approved on January 29, 2020 by the Cosmos Hub via community-spend proposal [Prop23](https://hubble.figment.network/cosmos/chains/cosmoshub-3/governance/proposals/23). You can read the [full proposal PDF here](https://ipfs.io/ipfs/QmSMGEoY2dfxADPfgoAsJxjjC6hwpSNx1dXAqePiCEMCbY). You can also create an issue or pull request to participate in its development at any time!
 
 **Special thanks** to the following for helping to provide credible information that contributed to this wiki's development:
