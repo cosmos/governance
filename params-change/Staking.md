@@ -1,4 +1,4 @@
-# The `staking` Module
+# `staking` subspace
 The `staking` module is responsible for the proof of stake (PoS) layer of the Cosmos Hub blockchain. It includes the following parameters:
 
 <table>
