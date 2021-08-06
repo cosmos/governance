@@ -332,21 +332,19 @@ ICSs are standards that document a particular protocol, standard, or feature of 
 
 ## Observations and Discussion
 
-
-
+This report provides a descriptive account of the existing governance documentation and a snapshot of existing processes. Future work can probe specific questions and assumptions (e.g., if the goals to distribute decision-making or ensure a degree of sovereignty for zones are met) and focus on process refinement and [maturity](https://docs.google.com/document/d/1k2dxvd9IQF5WKXn67656bRloBtgdOWJ4mJ29m_qstPo/edit#heading=h.m8lb7fphmit0).
 
 ### On-chain processes
 
 - UX limits who can create and vote for proposals, currently requiring the use of the CLI. If Cosmos Hub sees [itself as a port city](https://blog.cosmos.network/the-cosmos-hub-is-a-port-city-5b7f2d28debf), offering the best possible services, there is an argument to be made that it should extend that commitment to governance to ensure a diverse range of city dwellers and visitors can participate.
 - Some validators feel that active participation in governance is a bottleneck to setting up validator businesses. I.e., that there are already a number of proposals they are asked to vote on.
-- Cosmos Hub governance documentation is out of date, challenging to maintain, and difficult to discover. Assessing this and making improvements is work that Hypha is currently undertaking.
-- The [upcoming x/gov and x/group alignment](https://docs.google.com/document/d/1w-fwa8i8kkgirbn9DOFklHwcu9xO_IdbMN910ASr2oQ/edit#) will allow for permissions related to governance to be delegated to other groups, opening up possibilities for multi-stakeholder governance approaches and products (see [related links](https://linktr.ee/cosmos_gov)).\
-
+- Cosmos Hub governance documentation is out of date, challenging to maintain, and difficult to discover. Assessing this and making improvements is work that Hypha is currently undertaking, but there can be ongoing improvements
+- The [upcoming x/gov and x/group alignment](https://docs.google.com/document/d/1w-fwa8i8kkgirbn9DOFklHwcu9xO_IdbMN910ASr2oQ/edit#) will allow for permissions related to governance to be delegated to other groups, opening up possibilities for multi-stakeholder governance approaches and products (see [related links](https://linktr.ee/cosmos_gov)).
 
 ### Off-chain processes
 
-- More clarity is needed on when the CIPs should be used. It could be seen as the canonical home for high level decisions where alignment is required across the ecosystem. 
+- More clarity is needed on when the CIPs should be used. It could be seen as the canonical home for high level decisions where alignment is required across the ecosystem but needs to be presented as such and the process needs refinement
 - Some CIPS clearly impact all Cosmos ecosystem and blockchains and need ecosystem-wide buy-in, for example [CIP-11: Cosmos Hierarchical Deterministic key derivation](https://github.com/cosmos/cips/pull/11).
 - ["RFC Interchain Staking Light Paper"](https://github.com/cosmos/gaia/issues/659) an example of a potential CIP that was PRd to the Gaia repo. The ambiguity makes sense: it fits criteria of informational CIP about the Cosmos environment (Light Paper), but also a shorter and higher level document is needed to function as more of a summary in order to get early user feedback and market ideas that isn't a CIP <https://github.com/cosmos/gaia/issues/659>
-- The terms "Cosmos" and "Cosmos Hub" are used interchangeably in the repository, so the intended audience could be made more clear. The [module readiness process and checklist](https://github.com/cosmos/cips/pull/6/files), which proposes a process for modules to be adopted by the Gaia team, suggests that the process is intended for teams involved in development related to the Cosmos Hub.
+- The terms "Cosmos" and "Cosmos Hub" are used interchangeably in the CIPs repository, so the intended audience could be made more clear. The [module readiness process and checklist](https://github.com/cosmos/cips/pull/6/files), which proposes a process for modules to be adopted by the Gaia team, suggests that the process is intended for teams involved in development related to the Cosmos Hub.
 - Tendermint has an [ADR process](https://github.com/tendermint/tendermint/tree/master/docs/architecture) as well. Documentation around the relationship between the Tendermint ADR and the RFC processes would be valuable.
