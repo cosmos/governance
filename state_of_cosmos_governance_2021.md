@@ -42,6 +42,8 @@ Governance practices and decisions are communicated through different types of d
 
 ### Decision-making and Discussion Venues
 
+Venues involve community members to different degrees and individuals often perform multiple roles in the Cosmos ecosystem (e.g., Validator and member of Core Development Team). Because technical direction setting and development is almost always happening in the open, involvement from members in the extended community occurs organically.
+
 [Working group](https://github.com/cosmos/cosmos-sdk/wiki/Architecture-Design-Process#working-groups) meetings and coordinating Cosmos stakeholders occurs in semi-/open online spaces:
 
 - **[All in Bits Cosmos Forum](http://forum.cosmos.network/)**
@@ -74,16 +76,46 @@ Governance practices and decisions are communicated through different types of d
   - For individuals and collaborators to develop and iterative on governance ideas before proposing them formally
 - **[Matrix chat](https://riot.im/app/#/room/#cosmos_validators:matrix.org)** (deprecated)
 
-Venues involve community members to different degrees and individuals often perform multiple roles in the Cosmos ecosystem (e.g., Validator and member of Core Development Team). Because technical direction setting and development is almost always happening in the open, involvement from members in the extended community occurs organically.
-
 ### Roles and Stakeholders
 
+As mentioned above, stakeholders often perform multiple roles in the Cosmos ecosystem (e.g., both a Validator and member of the Core Development Team). As a result, visualizing the roles each stakeholder can take up in current governance can fail to reflex the overlapping roles. Within the ecosystem,  decision-making power and process "ownership" has been decentralized to an extent, reflecting system goals.
 
+What roles can each stakeholder take up in current governance?
+
+**Viewer (V)** - Able to easily review previous governance decisions, see current state of governance
+**Active Participant (P)** - Regularly providing input or helping to move governance decisions forward, but does not drive them or necessarily initiate
+**Governance Proposer (I)** - Initiates a proposal for updating Cosmos Hub governance
+**Decision Maker (DM)** - Can vote or be part of the final governance decision
+**Process Owner (PO)** - Owns the creation, refinement, and execution of the governance mechanism 
+
+| **Role** | **Cosmos Hub <br /> On-chain** | **CIPs** | **Cosmos SDK <br /> ADRs** | **Tendermint <br /> RFCs** | **ICSs** |
+|---|:-:|:-:|:-:|:-:|:-:|
+| ATOM holders (retail and <br /> professional) | V |  |  |  |  |  |
+| Hub Delegators  | DM |  |  |  |  |  |
+| Hub Validators  | DM |  |  |  |  |  |
+| Interchain Foundation team  | DM |  |  |  |  |  |
+| Cosmos Core Development <br /> teams | PO | PO | DM | P | PO |
+| Cosmos SDK Core Team    | DM  | DM  | PO  | P | DM  |
+| Tendermint Developers   | DM  | DM  | DM  | PO | DM  |
+| Cosmos Integrators (wallets, <br /> exchanges, services) | DM | P | ?  | ? | ? |
+| Other zones and hubs members   | DM  | P?  | P?  | P?  | P?  |
 
 
 #### Role Ability to Govern
 
+What aspects of the Cosmos ecosystem does each role have the ability to govern? 
 
+| **Role** | **Cosmos Hub  <br />  Blockchain  <br />  (through on-chain proposals)** | **Cosmos Hub  <br />  Community Pool (treasury)** | **Cosmos Hub On-chain  <br /> governance processes** | **Cosmos  <br /> Ecosystem Tech Decision Records, Specs, Standards Development** | **Cosmos Ecosystem  <br /> Off-chain governance processes** |
+|---|:-:|:-:|:-:|:-:|:-:|
+| ATOM holders (retail and  <br />  professional) | Must delegate ATOMs | Must delegate ATOMs | Must delegate ATOMs |  |  |
+| Hub Delegators | ✔ | ✔ | ✔ |  |  |
+| Hub Validators | ✔ | ✔ | ✔ |  |  |
+| Interchain Foundation team |  | ✔ | ✔ |  | ✔ |
+| Cosmos Core Development  <br />  teams |  |  | ✔ | ✔ | ✔ |
+| Cosmos SDK Core Team |  |  |  | ✔ | ✔ |
+| Tendermint Developers |  |  |  | ✔ | ✔ |
+| Cosmos Integrators (wallets, <br />  exchanges, services) |  |  |  | ✔ |  |
+| Other zones and hubs members |  |  | ✔ | ✔ | ✔ |
 
 ---
 
