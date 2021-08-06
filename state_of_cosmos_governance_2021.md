@@ -151,7 +151,7 @@ Example: [Proposal 51](https://hubble.figment.io/cosmos/chains/cosmoshub-4/gover
 
 ### User Story: Chain-Wide Governance
 
-_Reproduced from [Governance User Stories]](https://docs.google.com/document/d/1GJTTVlRU1qDzIbiwhRo-RVFq7pQ-BOjABgVpDdrpAAM/edit#heading=h.84b4lthf6mm)_
+_Reproduced from [Gov Use Cases](https://docs.google.com/document/d/1GJTTVlRU1qDzIbiwhRo-RVFq7pQ-BOjABgVpDdrpAAM/edit#heading=h.84b4lthf6mm)_
 
 A community member, Alice, wants to submit an on-chain proposal to change a parameter, the average number of blocks per year, which is used to calculate the inflation rate for the chain. To do this Alice first asks in a chat forum discord for instance whether this is a good idea and something the community would like to see happen. There is some initial discussion to confirm that this is in fact something the community wants. Another community member, Bob, also offers to collaborate on the proposal.
 
@@ -163,8 +163,18 @@ Once the proposal has been finalized an IPFS hash of the README.md is added to t
 
 The proposal is then submitted on chain through the CLI and a Cosmos forum post is made to notify the community that the proposal has been submitted. Links to the forum post are then shared in various community channels and on twitter. The merits of the proposal are discussed in these respective channels and validators / ATOM holders vote.
 
-![](https://lh3.googleusercontent.com/PdxLDigUu43T923ForZniajsxokjMmApfU3xxn9Nqzw_MKx03qCcIFjPTOuEODb1UxIHuxI5-61p4JfR9r5q9-Vi4eLe3Bdy-6ctT_XaQMwBLLcwDnuULZLav1doZB_ox2hh7bsM)
-
+| **Venues** | **1 <br /> Problem Identification** | **2 <br /> Problem validation and proposal development** | **3 <br /> Review, debating pros and cons** | **4 <br /> Incorporating feedback** | **5 <br /> Initiate process** | **6 <br /> Decision finalization and adoption** |
+|---|:-:|:-:|:-:|:-:|:-:|:-:|
+| Cosmos Hub Discord |   | ✔ |   |   | ✔ |   |
+| Gaia call |   |   |   |   |   |   |
+| Cosmos Gov GitHub Repo |   |   | ✔ | ✔ |   |   |
+| Cosmos Hub Gov WG Telegram |   |   |   |   |   |   |
+| Discourse forum |   |   | ✔ |   | ✔ |   |
+| On chain vote |   |   |   |   |   | ✔ |
+| Community Discord |   |   |   |   | ✔ |   |
+| Twitter |   |   |   |   | ✔ |   |
+| Other unofficial chat channels |   |   |   |   | ✔ |   |
+| Subreddit |   |   |   |   | ✔ |   |
 
 ### Process overview
 
