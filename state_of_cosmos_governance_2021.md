@@ -190,7 +190,7 @@ Participants in the process include:
 
 ### Process owners
 
-- Ethan Buchman ([@ebuchman](https://github.com/ebuchman)), Zaki Manian ([@zmanian](https://github.com/zmanian)), Sam Hart ([@hxrts](https://github.com/hxrts)), Maria Gomez ([@mariapao](https://github.com/mariapao)).
+- Listed in [governance](https://github.com/cosmos/governance) repo: Ethan Buchman ([@ebuchman](https://github.com/ebuchman)), Zaki Manian ([@zmanian](https://github.com/zmanian)), Sam Hart ([@hxrts](https://github.com/hxrts)), Maria Gomez ([@mariapao](https://github.com/mariapao)).
 
 ### Process maturity
 
@@ -212,6 +212,7 @@ CIPs serve as the process for describing major changes or providing info about t
 Alice, a member of one core development team, submits a PR to the Cosmos cips repo after a recurring issue is identified in the standing GAIA / ATOM call. There has been a recurring discussion about how to formalize emerging agreement on a distinctive Cosmos interpretation of a technical feature common to blockchains. There are existing prior specifications in the bitcoin ecosystem that were the direct inspiration for Cosmos development, but over time the core development teams have developed a contrasting understanding of how their implementation provides a pathway to future specification development. At the end of last call, Alice decides this was important enough to step forward and take a first pass at drafting the spec based on the current roadmap.
 
 Alice follows the template from the repo to draft an early CIP and updates the frontmatter of the file to indicate the status is "draft." Once the PR is submitted, Alice pings a few developers who mentioned they would provide feedback in Discord and Slack bridge channels. The developers review the PR and leave inline comments and suggestions. Alice incorporates this feedback and requests the CIP be discussed at the next GAIA / ATOM call. In the meantime, Alice solicits community feedback on the PR, sharing it to the Cosmos Hub Discord and a relevant Slack connect channel. Once again Alice is asked to make minor changes, which are completed before the PR is finalized, the cip status is updated to "living" and it is merged by the cips repo owner.
+
 
 ### Process overview
 
@@ -338,7 +339,8 @@ This report provides a descriptive account of the existing governance documentat
 
 - UX limits who can create and vote for proposals, currently requiring the use of the CLI. If Cosmos Hub sees [itself as a port city](https://blog.cosmos.network/the-cosmos-hub-is-a-port-city-5b7f2d28debf), offering the best possible services, there is an argument to be made that it should extend that commitment to governance to ensure a diverse range of city dwellers and visitors can participate.
 - Some validators feel that active participation in governance is a bottleneck to setting up validator businesses. I.e., that there are already a number of proposals they are asked to vote on.
-- Cosmos Hub governance documentation is out of date, challenging to maintain, and difficult to discover. Assessing this and making improvements is work that Hypha is currently undertaking, but there can be ongoing improvements
+- Cosmos Hub governance documentation is out of date, challenging to maintain, and difficult to discover. Current governance documentation is in the [`governance` repo as markdown](https://github.com/cosmos/governance), the [`gaia` documentation as vuepress](https://hub.cosmos.network/main/), and [`cosmos-sdk` documentation as vuepress](https://docs.cosmos.network/).
+-   Assessing this and making improvements is work that Hypha is currently undertaking, but there can be ongoing improvements
 - The [upcoming x/gov and x/group alignment](https://docs.google.com/document/d/1w-fwa8i8kkgirbn9DOFklHwcu9xO_IdbMN910ASr2oQ/edit#) will allow for permissions related to governance to be delegated to other groups, opening up possibilities for multi-stakeholder governance approaches and products (see [related links](https://linktr.ee/cosmos_gov)).
 
 ### Off-chain processes
