@@ -16,7 +16,7 @@ On-chain governance standardizes forms of coordination but leaves many governanc
 
 ### Flexibility through On-chain Parameters
 
-Each blockchain in the Cosmos ecosystem can be tailored to a specific application or use case, as opposed to building everything on top of a general purpose chain (and as a result without a Turing complete virtual machine like Ethereum's, for example). This approach provides flexibility through allowing stakeholders to vote on live parameter changes. In addition, Cosmos ecosystem ecosystem teams are working on smart contract functionality. For example, the CosmWasm team have explored [permissioned smart contracts](https://medium.com/cosmwasm/cosmwasm-launches-its-permissioned-testnet-gaiaflex-e32635232026), where on-chain governance is required to approve instantiation of smart contracts.
+Each blockchain in the Cosmos ecosystem can be tailored to a specific application or use case, as opposed to building everything on top of a general purpose chain (and as a result without a Turing complete virtual machine like Ethereum's, for example). This approach provides flexibility through allowing stakeholders to vote on live parameter changes. In addition, Cosmos ecosystem teams are working on smart contract functionality. For example, the CosmWasm team have explored [permissioned smart contracts](https://medium.com/cosmwasm/cosmwasm-launches-its-permissioned-testnet-gaiaflex-e32635232026), where on-chain governance is required to approve instantiation of smart contracts.
 
 ### Development of Governance Processes Over Time
 
