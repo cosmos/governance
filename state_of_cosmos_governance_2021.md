@@ -8,19 +8,20 @@ The Cosmos ecosystem emphasizes governance mechanisms in order to achieve the vi
 
 Cosmos Hub has a [Governance (x/gov) module](https://docs.cosmos.network/master/modules/gov/) for coordinating various changes to the blockchain through parameters, upgrades and proposals (the [white paper](https://v1.cosmos.network/resources/whitepaper) refers to text amendments to the "human-readable constitution" setting out Cosmos Hub policies). However, the ecosystem also has additional on- and off- chain processes that exist to set technical direction and inculcate social norms.
 
-Reviewing existing documentation of governance, a few key governance themes and aspects important to the Cosmos ecosystem surfaced:
-
-### Flexibility through On-chain Proposal Types
-
-The existing on-chain governance provides just enough standardization to provide flexibility. Sunny Aggarwal [uses the analogy](https://blog.cosmos.network/deep-dive-how-will-ibc-create-value-for-the-cosmos-hub-eedefb83c7a0) that IBC as a form of standardization allows for "economic integration without political integration." Each blockchain in the Cosmos ecosystem can be tailored to a specific application or use case, as opposed to building everything on top of a general purpose chain (and as a result without a Turing complete virtual machine like Ethereum's, for example). This approach provides flexibility through allowing stakeholders to vote on live parameter changes. In addition, Cosmos ecosystem ecosystem teams are working on smart contract functionality. For example, the CosmWasm team have explored [permissioned smart contracts](https://medium.com/cosmwasm/cosmwasm-launches-its-permissioned-testnet-gaiaflex-e32635232026), where on-chain governance is required to approve instantiation of smart contracts.
+Reviewing existing governance documentation and discussion, a few key themes surfaced:
 
 ### Emphasis on Self-governance and Sovereignty
 
-If each blockchain is application-specific, they can be developed to serve the needs of its community more closely. Not just the application logic, but the governance design, can vary from blockchain to blockchain. Sunny Aggarwal [talks about](https://www.youtube.com/watch?v=LApEkXJR_0M) how governance controlled by a community that shares culture and trust can "achieve greater security than economic incentives alone." For example, the Regen Network has a [governance model](https://medium.com/regen-network/community-stake-governance-model-b949bcb1eca3) that identifies multiple constituencies that require representation in governance. This allows diverse chains to exchange value while retaining the ability to self-govern.
+On-chain governance standardizes forms of coordination but leaves many governance decisions to each application-specific blockchain or zone. Sunny Aggarwal [uses the analogy](https://blog.cosmos.network/deep-dive-how-will-ibc-create-value-for-the-cosmos-hub-eedefb83c7a0) that IBC as a form of standardization allows for "economic integration without political integration." Sunny also [talks about](https://www.youtube.com/watch?v=LApEkXJR_0M) how governance controlled by a community that shares culture and trust can "achieve greater security than economic incentives alone." For example, the Regen Network has a [governance model](https://medium.com/regen-network/community-stake-governance-model-b949bcb1eca3) that identifies multiple constituencies that require representation in governance. This allows diverse chains to exchange value while retaining the ability to self-govern. 
+
+### Flexibility through On-chain Parameters
+
+Each blockchain in the Cosmos ecosystem can be tailored to a specific application or use case, as opposed to building everything on top of a general purpose chain (and as a result without a Turing complete virtual machine like Ethereum's, for example). This approach provides flexibility through allowing stakeholders to vote on live parameter changes. In addition, Cosmos ecosystem ecosystem teams are working on smart contract functionality. For example, the CosmWasm team have explored [permissioned smart contracts](https://medium.com/cosmwasm/cosmwasm-launches-its-permissioned-testnet-gaiaflex-e32635232026), where on-chain governance is required to approve instantiation of smart contracts.
 
 ### Development of Governance Processes Over Time
 
 The existing [governance module](https://docs.cosmos.network/master/modules/gov/)  is described as a minimum viable product for the governance module, with [ideas for future improvement](https://docs.cosmos.network/master/modules/gov/05_future_improvements.html) . For example an active product team is currently aligning [groups and governance functionality](https://docs.google.com/document/d/1w-fwa8i8kkgirbn9DOFklHwcu9xO_IdbMN910ASr2oQ/edit#)  will change current governance practices and open up new avenues to explore and support through on- and off- chain processes
+
 
 ## On- and off-chain Governance Structure
 
@@ -84,7 +85,7 @@ Venues involve community members to different degrees and individuals often perf
 
 
 
-
+---
 
 ## Review of Governance processes
 
