@@ -133,5 +133,6 @@ Decreasing the value of the `veto_threshold` subkey will decrease the proportion
 1. enable a smaller minority group to prevent proposals from passing, and
 2. decrease the likelihood that contentious proposals will pass. 
 
+
 ##### Increasing the value of `veto_threshold`
 Increasing the value of the `veto_threshold` subkey will increase the proportion of participating voting power required to veto. This will require a larger minority group to prevent proposals from passing, and will likely increase the likelihood that contentious proposals will pass.

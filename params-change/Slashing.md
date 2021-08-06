@@ -136,4 +136,5 @@ Increasing the value of the `SlashFractionDowntime` parameter will heighten the 
 * deprecated in `cosmoshub-4`
 * `cosmoshub-3` default: `1814400000000000`
 
+
 This parameter was present in `cosmoshub-3`, but was [deprecated](https://github.com/cosmos/cosmos-sdk/pull/5952) for `cosmoshub-4` genesis.

@@ -121,7 +121,7 @@ Aumentar el valor de subkey `veto` aumentará la proporción del poder de voto r
 
 # Verificar los valores de los parámetros
 ## Parámetros de Génesis (aka lanzamiento)
-Esto es útil si no tienes `gaiacli` instalado y no tienes una razón para creer que el parámetro ha cambiado desde que se lanzó la cadena.
+Esto es útil si no tienes `gaiad` instalado y no tienes una razón para creer que el parámetro ha cambiado desde que se lanzó la cadena.
 
 Cada parámetro puede ser verificado en el archivo génesis de la cadena, que encuentra [aquí](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json). Estos son los parámetros con los que la última cadena del Hub de Cosmos se lanzó, y seguirá haciéndolo, a menos que una propuesta de gobierno los cambie. He resumido esos valores originales en la sección [Especificaciones Técnicas](params-change/Governance.md#technical-specifications).
 
@@ -130,8 +130,8 @@ El archivo génesis contiene texto y es grande. El esquema de nombres de los par
 Por ejemplo, si quiero buscar `depositparams`, buscaré en el [génesis](https://raw.githubusercontent.com/cosmos/launch/master/genesis.json) `deposit_params`.
 
 ## Parámetros actuales
-Puede verificar los valores actuales de los parámetros (en caso de que hayan sido modificados mediante la propuesta de gobierno posterior al lanzamiento) con la aplicación de [línea de comandos gaiacli](params-change/gaiacli). Aquí están los comandos para cada uno:
-1. `depositparams` - `gaiacli q ..` --> **to do** <--
+Puede verificar los valores actuales de los parámetros (en caso de que hayan sido modificados mediante la propuesta de gobierno posterior al lanzamiento) con la aplicación de [línea de comandos gaiad](params-change/gaiad). Aquí están los comandos para cada uno:
+1. `depositparams` - `gaiad q ..` --> **to do** <--
 
 ## Futuro
 

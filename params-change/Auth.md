@@ -95,5 +95,6 @@ Decreasing the value of `SigVerifyCostSecp256k1` will decrease the amount of gas
 #### Increasing the value of `SigVerifyCostSecp256k1`
 Increasing the value of `SigVerifyCostSecp256k1` will increase the amount of gas that is consumed by practically all Cosmos Hub transactions, which require Secp256k1 signature verifications. Increasing this parameter may have unintended effects on how the Cosmos Hub operates, since the computational cost of verifying a transaction may be less than what the system's assumption is.
 
+
 #### Notes
 There should be a better understanding of what the potential implications are for changing `SigVerifyCostSecp256k1`. For example, gas calculations are important because blocks have a gas limit. Transactions could be rejected for exceeding the block gas limit, breaking application functionality or perhaps preventing addresses controlled by multiple signatures from moving funds.

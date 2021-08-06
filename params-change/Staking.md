@@ -93,9 +93,3 @@ Changing the `BondDenom` parameter will make any bond transactions with `uatom` 
 
 ### `HistoricalEntries`
 **The number of HistoricalEntries to keep.**
-
-* on-chain value: `{{ $themeConfig.currentParameters.staking.HistoricalEntries }}`
-* `cosmoshub-4` default: `10000`
-* Did not exist in `cosmoshub-3` genesis
-
-Read [ADR-17](https://github.com/cosmos/cosmos-sdk/blob/master/docs/architecture/adr-017-historical-header-module.md) for more on the Historical Header Module.
