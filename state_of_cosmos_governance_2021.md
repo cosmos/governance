@@ -178,6 +178,8 @@ The proposal is then submitted on chain through the CLI and a Cosmos forum post 
 
 ### Process overview
 
+![Diagram of process for on-chain governance proposals](https://lh6.googleusercontent.com/FPQ176gx_-0jR5zbpImJtWx3iTnL-JJPc41hT4NUsNIYj5FziO6bsFWFn_CWV2ARr4vxm-HJi_3Fn4zowN1d2JuXB_CW2mTzJwn8L45mIPY0W_8sfjz3w3jeFr2q1NCcFVeRu7j_)
+
 On-chain governance on the hub is implemented in Gaia using the x/gov module in the Cosmos SDK. Every bonded token is allowed a single vote.
 
 Participants in the process include:
@@ -213,13 +215,15 @@ Alice follows the template from the repo to draft an early CIP and updates the f
 
 ### Process overview
 
+![Diagram of standarization process for CIPS](https://github.com/cosmos/cips/raw/main/assets/cip-1/CIP-process.png)
+
 - Ideas are ideally socialized first: "It is thus recommended to open a discussion thread on the Cosmos forum to do this, but you can also use the Cosmos Discord, the Cosmos subreddit or the Issues section of this repository." If the author decides to proceed, CIPs are drafted and submitted using the [cosmos/cips](https://github.com/cosmos/cips/) GitHub repo.
 - When a CIP reaches the "Final" state, it represents a completed standard that is ready to be adopted.
 - CIPs do not represent the views of the wider Cosmos community. CIP-1 states that "finalization of a CIP does not equate to acceptance into Cosmos. For that, CIP authors must turn to Cosmos Governance." 
 - Not all CIPS are taken through an on-chain vote
 - A situation where CIPs interact with Cosmos Governance is while coordinating a software upgrade among validators. [CIP-5](https://github.com/cosmos/cips/blob/17a9ffc1cc40933ea3cf4460849ae713e6c244e3/CIPS/cip-5.md) [PR not merged], which offers guidelines for new modules to be integrated into Cosmos Hub ensuring safety and robustness, states "motivated by decentralization and the Cosmos community's decisions, a module's code is activated by submitting a parameter change proposal."
   
-![](https://lh5.googleusercontent.com/9YI_atqwjzIx1umQE_8P5EObCR9P91ojDnLZaN6yZ5o3nstDzJlKo8IOp8qvZl0zx2zXnuV8HxzpSwbJWD3CbfbUvnncGvBZcxoiaH8YlrqFNed7YV-sijQX0DtHzuDlJNzlkOnz)
+
 
 ### Process owners
 
@@ -337,7 +341,7 @@ ICSs are standards that document a particular protocol, standard, or feature of 
 - Some validators feel that active participation in governance is a bottleneck to setting up validator businesses. I.e., that there are already a number of proposals they are asked to vote on.
 - Cosmos Hub governance documentation is out of date, challenging to maintain, and difficult to discover. Assessing this and making improvements is work that Hypha is currently undertaking.
 - The [upcoming x/gov and x/group alignment](https://docs.google.com/document/d/1w-fwa8i8kkgirbn9DOFklHwcu9xO_IdbMN910ASr2oQ/edit#) will allow for permissions related to governance to be delegated to other groups, opening up possibilities for multi-stakeholder governance approaches and products (see [related links](https://linktr.ee/cosmos_gov)).\
-![](https://lh6.googleusercontent.com/FPQ176gx_-0jR5zbpImJtWx3iTnL-JJPc41hT4NUsNIYj5FziO6bsFWFn_CWV2ARr4vxm-HJi_3Fn4zowN1d2JuXB_CW2mTzJwn8L45mIPY0W_8sfjz3w3jeFr2q1NCcFVeRu7j_)
+
 
 ### Off-chain processes
 
