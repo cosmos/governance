@@ -1,5 +1,6 @@
 # ⚛️ Make the Cosmos Hub the IBC Router ⚛️
 
+This is a proposal to include a new feature to IBC that allows a simplified version of multi-hop packet routing. This version is simplified in that it only works for token transfers. By appending a list of channels, ports and addresses the destination can outline more than one transfer at a time. Each set of channel, port and destination addresses is utilized until the sequence is exhausted. If one of the hops fails, the tokens stay within the address used in the last successful transfer, or goes back to the sender address should it fail on the first hop.
 The following is a selection from the [Cosmos Whitepaper](https://v1.cosmos.network/resources/whitepaper):
 
 ```
