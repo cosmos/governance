@@ -1,6 +1,5 @@
 # ⚛️ Make the Cosmos Hub the IBC Router ⚛️
 
-This is a proposal to include a new feature to IBC that allows a simplified version of multi-hop packet routing. This version is simplified in that it only works for token transfers. By appending a list of channels, ports and addresses the destination can outline more than one transfer at a time. Each set of channel, port and destination addresses is utilized until the sequence is exhausted. If one of the hops fails, the tokens stay within the address used in the last successful transfer, or goes back to the sender address should it fail on the first hop.
 The following is a selection from the [Cosmos Whitepaper](https://v1.cosmos.network/resources/whitepaper):
 
 ```
@@ -18,6 +17,28 @@ This is understandable: Cosmos needed so many other pieces to come together befo
 These new zones joining are noticing a problem: they need to maintain a large amount of infrastructure (archive nodes and relayers for each counterparty chain) to connect with all the chains in the ecosystem, a number that is continuing to increase quickly.
 
 Luckly this problem has been anticipated and IBC architected to accomodate multi-hop transactions. However, a packet forwarding/routing feature was not in the initial IBC release. This proposal aims to fix this for the Hub.
+
+This is a proposal to include a new feature to IBC on the Hub that allows for multi-hop packet routing for ICS20 transfers. By appending an intermediate address, and the port/channel identifiers for the final destination, clients will be able to outline more than one transfer at a time. The following example shows routing from Terra to Osmosis through the Hub:
+
+```json
+// Packet sent from Terra to the hub, note the format of the forwaring info
+// {intermediate_refund_address}|{foward_port}/{forward_channel}:{final_destination_address}
+{
+    "denom": "uluna",
+    "amount": "100000000",
+    "sender": "terra15gwkyepfc6xgca5t5zefzwy42uts8l2m4g40k6",
+    "receiver": "cosmos1vzxkv3lxccnttr9rs0002s93sgw72h7ghukuhs|transfer/channel-141:osmo1vzxkv3lxccnttr9rs0002s93sgw72h7gl89vpz",
+}
+
+// When OnRecvPacket on the hub is called, this packet will be modified for fowarding to transfer/channel-141.
+// Notice that all fields execept amount are modified as follows:
+{
+    "denom": "ibc/FEE3FB19682DAAAB02A0328A2B84A80E7DDFE5BA48F7D2C8C30AAC649B8DD519",
+    "amount": "100000000",
+    "sender": "cosmos1vzxkv3lxccnttr9rs0002s93sgw72h7ghukuhs",
+    "receiver": "osmo1vzxkv3lxccnttr9rs0002s93sgw72h7gl89vpz",
+}
+```
 
 Strangelove Ventures has delivered an [IBC Middleware module](https://github.com/cosmos/ibc-go/pull/373) that will allow the hub to play the role of IBC Router that was always envisioned for it. Passing of this propsal will begin the era of the Hub offering interchain services to other chains and profiting from those relationships.
 
