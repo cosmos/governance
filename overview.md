@@ -15,10 +15,21 @@ In the past, different people have considered contributions amounts differently.
 Deposits are burned when proposals:
 1. **Expire** - deposits will be burned if the deposit period ends before reaching the minimum deposit (512 ATOM)
 2. **Fail** to reach quorum - deposits will be burned for proposals that do not reach quorum ie. 40% of all staked ATOM must vote
-3. **Are vetoed** - deposits for proposals with 33.4% of voting power backing the 'no-with-veto' option are also burned
+3. **Are vetoed** - deposits for proposals with 33.4% of voting power backing the 'NoWithVeto' option are also burned
 
 ### 2. Voting Period
-The voting period is currently a fixed 14-day period. During the voting period, participants may select a vote of either 'yes', 'no', 'abstain', or 'no-with-veto'. Voters may change their vote at any time before the voting period ends.
+The voting period is currently a fixed 14-day period. During the voting period, participants may select a vote of either 'Yes', 'No', 'Abstain', or 'NoWithVeto'. Voters may change their vote at any time before the voting period ends.
+
+## What do the voting options mean?
+
+1. **Abstain:** indicates that the voter is impartial to the outcome of the proposal.
+2. **Yes:** indicates approval of the proposal in its current form.
+3. **No:** indicates disapproval of the proposal in its current form.
+4. **NoWithVeto:** indicates stronger opposition to the proposal than simply voting 'No'. If the number of 'NoWithVeto' votes is greater than a third of total votes excluding 'Abstain' votes, the proposal is rejected and the deposits are [burned](#burned-deposits).
+
+As accepted by the community in [Proposal 6](https://ipfs.io/ipfs/QmRtR7qkeaZCpCzHDwHgJeJAZdTrbmHLxFDYXhw7RoF1pp), voters are expected to vote 'NoWithVeto' if a proposal leads to undesireable outcomes for the community. It states “if a proposal seems to be spam or is deemed to have caused a negative externality to Cosmos community, voters should vote _NoWithVeto_.” 
+
+Voting 'NoWithVeto' provides a mechanism for a minority group representing a _third_ of the participating voting power to reject a proposal that would otherwise pass. This makes explicit an aspect of the consensus protocol: it works as long as only up to [a third of nodes fail](https://docs.tendermint.com/master/introduction/what-is-tendermint.html). In other words, greater than a third of validators are always in a position to cause a proposal to fail outside the formalized governance process and the network's norms, such as by censoring transactions. The purpose of internalizing this aspect of the consensus protocol into the governance process is to discourage validators from relying on collusion and censorship tactics to influence voting outcomes.
 
 ## What determines whether or not a governance proposal passes?
 There are four criteria:
@@ -27,8 +38,8 @@ There are four criteria:
    - anyone may contribute to this deposit
    - the deposit must be reached within 14 days (this is the deposit period)
 2. A minimum of 40% of the network's voting power (quorum) is required to participate to make the proposal valid
-3. A simple majority (greater than 50%) of the participating voting power must back the 'yes' vote during the 14-day voting period
-4. Less than 33.4% of participating voting power votes 'no-with-veto'
+3. A simple majority (greater than 50%) of the participating voting power must back the 'Yes' vote during the 14-day voting period
+4. Less than 33.4% of participating voting power votes 'NoWithVeto'
 
 Currently, the criteria for submitting and passing/failing all proposal types is the same. 
 
@@ -37,8 +48,8 @@ Voting power is determined by stake weight at the end of the 14-day voting perio
 
 Inactive validators can cast a vote, but their voting power (including the backing of their delegators) will not count toward the vote if they are not in the active set when the voting period ends. That means that if I delegate to a validator that is either jailed, tombstoned, or ranked lower than 125 in stake-backing at the time that the voting period ends, my stake-weight will not count in the vote.
 
-Though a simple majority 'yes' vote (ie. 50% of participating voting power) is required for a governance proposal vote to pass, a 'no-with-veto' vote of 33.4% of participating voting power or greater can override this outcome and cause the proposal to fail. This enables a minority group representing greater than 1/3 of voting power to fail a proposal that would otherwise pass.
+Though a simple majority 'Yes' vote (ie. 50% of participating voting power) is required for a governance proposal vote to pass, a 'NoWithVeto' vote of 33.4% of participating voting power or greater can override this outcome and cause the proposal to fail. This enables a minority group representing greater than 1/3 of voting power to fail a proposal that would otherwise pass.
 
 ### How is quorum determined?
 
-Voting power, whether backing a vote of 'yes', 'abstain', 'no', or 'no-with-veto', counts toward quorum. Quorum is required for the outcome of a governance proposal vote to be considered valid and for deposit contributors to recover their deposit amounts. If the proposal vote does not reach quorum (ie. less than 40% of the network's voting power is participating) within 14 days, any deposit amounts will be burned and the proposal outcome will not be considered to be valid.
+Voting power, whether backing a vote of 'Yes', 'Abstain', 'No', or 'NoWithVeto', counts toward quorum. Quorum is required for the outcome of a governance proposal vote to be considered valid and for deposit contributors to recover their deposit amounts. If the proposal vote does not reach quorum (ie. less than 40% of the network's voting power is participating) within 14 days, any deposit amounts will be burned and the proposal outcome will not be considered to be valid.
