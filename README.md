@@ -1,4 +1,6 @@
-# Cosmos Governance
+# ARCHIVED Cosmos Governance
+
+### ⚠️ Please note: This repository is no longer updated. Governance documents for Cosmos Hub have been moved to the [Gaia repo](https://github.com/cosmos/gaia), and can be viewed at [hub.cosmos.network](https://hub.cosmos.network/main/hub-overview/overview.html). 
 
 The Cosmos Hub ("Gaia") has an on-chain governance mechanism for passing 
 [text proposals](./text), 
